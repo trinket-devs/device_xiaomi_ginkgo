@@ -700,4 +700,7 @@
 
     <!-- Whether to allow sending active app broadcast -->
     <bool name="config_allowActivePackageBroadcast">true</bool>
+
+    <!-- If this is true, device supports Sustained Performance Mode. -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 </resources>
