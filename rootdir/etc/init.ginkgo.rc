@@ -123,3 +123,7 @@ on property:vendor.post_boot.parsed=1
     write /sys/block/zram0/comp_algorithm lz4
     write /sys/block/zram0/max_comp_streams 8
     write /proc/sys/vm/page-cluster 0
+
+    # Override readahead to 128KiB
+    write /sys/block/mmcblk0/queue/read_ahead_kb 128
+    write /sys/block/mmcblk1/queue/read_ahead_kb 128
