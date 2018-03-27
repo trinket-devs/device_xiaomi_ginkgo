@@ -59,6 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_excl_rect=0 \
     vendor.display.disable_hw_recovery_dump=0 \
     vendor.display.disable_inline_rotator=1 \
+    vendor.display.disable_rotator_downscale=1 \
     vendor.display.disable_scaler=0 \
     vendor.gralloc.disable_ubwc=0 \
     vendor.display.disable_ui_3d_tonemap=1 \
