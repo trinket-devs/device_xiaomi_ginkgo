@@ -1360,7 +1360,7 @@ vendor/firmware/ipa_fws.mdt
 vendor/firmware/ipa_fws.elf
 
 # IR
-vendor/lib64/hw/consumerir.default.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.trinket.so
 
 # Listen
 vendor/lib/libadpcmdec.so
