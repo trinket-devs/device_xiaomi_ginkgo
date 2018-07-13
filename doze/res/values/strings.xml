@@ -28,8 +28,8 @@
     <!-- Ambient Display -->
     <string name="ambient_display_title">Ambient display</string>
 
-    <!-- Tilt sensor -->
-    <string name="tilt_sensor_title">Tilt sensor</string>
+    <!-- Pickup sensor -->
+    <string name="pickup_sensor_title">Pickup sensor</string>
 
     <!-- Proximity sensor -->
     <string name="proximity_sensor_title">Proximity sensor</string>
