@@ -216,9 +216,7 @@ PRODUCT_COPY_FILES += \
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # IR
 PRODUCT_PACKAGES += \
@@ -346,8 +344,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson \
     libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
+    librmnetctl
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
