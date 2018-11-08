@@ -25,6 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-pa
 
 PRODUCT_PACKAGES += \
+    NoCutoutOverlay \
     NotchBarKiller
 
 # Device uses high-density artwork where available
