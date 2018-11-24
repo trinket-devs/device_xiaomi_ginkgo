@@ -29,4 +29,8 @@
     <dimen name="status_bar_height_portrait">28dp</dimen>
     <dimen name="status_bar_height_landscape">28dp</dimen>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
+
 </resources>
