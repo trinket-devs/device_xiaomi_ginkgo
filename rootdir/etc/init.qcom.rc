@@ -47,6 +47,9 @@ on early-init
     chmod 0620 /dev/kmsg
 
 on init
+    # Loading kernel modules in background
+    start insmod_sh
+
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
@@ -59,6 +62,12 @@ on init
     write /dev/stune/top-app/schedtune.boost 10
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
+on post-fs
+    chmod 0755 /sys/kernel/debug/tracing
+
+    # Disable sched autogroup
+    write /proc/sys/kernel/sched_autogroup_enabled 0
+
     # Start services for bootanim
     start surfaceflinger
     start bootanim
@@ -66,22 +75,10 @@ on init
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
-on post-fs
-    chmod 0755 /sys/kernel/debug/tracing
-
-    # Disable sched autogroup
-    write /proc/sys/kernel/sched_autogroup_enabled 0
-
 on early-boot
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
-    # Allow subsystem (modem etc) debugging
-    write /sys/kernel/debug/bootkpi/kpi_values "M - Start adsp"
-    write /sys/kernel/boot_adsp/boot 1
-    write /sys/kernel/boot_cdsp/boot 1
-    write /sys/devices/virtual/npu/msm_npu/boot 1
-    write /sys/kernel/boot_slpi/boot 1
-    write /sys/devices/virtual/cvp/cvp/boot 1
+    # Wait for devices
+    wait_for_prop vendor.all.devices.ready 1
+
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
 
@@ -533,9 +530,6 @@ on property:sys.boot_completed=1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
-
-    # Enable UFS powersaving
-    write /sys/module/lpm_levels/parameters/sleep_disabled N
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
@@ -1002,6 +996,13 @@ service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
     class late_start
     user system
     group system
+
+service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.cfg
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
 
 service esepmdaemon /system/vendor/bin/esepmdaemon
     class core
