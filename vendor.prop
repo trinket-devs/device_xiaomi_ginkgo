@@ -98,7 +98,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 drm.service.enabled=true
 
 # Display
-ro.sf.lcd_density=440
 ro.vendor.display.sensortype=2
 
 # FM

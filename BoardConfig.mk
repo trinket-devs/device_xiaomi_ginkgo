@@ -105,6 +105,9 @@ endif
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
