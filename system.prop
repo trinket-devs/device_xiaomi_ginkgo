@@ -60,9 +60,6 @@ ro.netflix.bsp_rev=Q6125-17995-1
 ro.sensor.proximity=true
 ro.sensor.pickup=xiaomi.sensor.pickup
 
-# OEM Unlock
-ro.oem_unlock_supported=1
-
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
