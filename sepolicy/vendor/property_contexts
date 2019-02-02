@@ -15,6 +15,9 @@ vendor.camera.                                  u:object_r:vendor_camera_prop:s0
 vendor.camera.boot_complete                     u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.                           u:object_r:vendor_camera_prop:s0
 
+# Dirac
+persist.audio.dirac.                u:object_r:dirac_prop:s0
+
 # Fingerprint
 persist.vendor.sys.fp.  u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.     u:object_r:vendor_fp_prop:s0
