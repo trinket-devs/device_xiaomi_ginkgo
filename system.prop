@@ -20,6 +20,7 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.data.df.dev_name=rmnet_usb0
 
 # Display
+debug.cpurend.vsync=false
 persist.hwc.enable_vds=1
 persist.demo.hdmirotationlock=false
 
