@@ -62,6 +62,7 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.data.df.dev_name=rmnet_usb0
 
 # Graphics
+debug.cpurend.vsync=false
 persist.demo.hdmirotationlock=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
