@@ -47,6 +47,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
+    public static final String CATEGORY_FASTCHARGE = "usb_fastcharge";
+    public static final String PREF_USB_FASTCHARGE = "fastcharge";
+    public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
+
     public static final String CATEGORY_VIBRATOR = "vibration";
     public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
     public static final String VIBRATION_STRENGTH_PATH = "/sys/class/leds/vibrator/vtg_level";
@@ -56,6 +60,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final int MAX_VIBRATION = 3544;
 
     private Preference mClearSpeakerPref;
+    private SecureSettingSwitchPreference mFastcharge;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -105,6 +110,12 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         });
 
+        if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
+            mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
+            mFastcharge.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
+            mFastcharge.setOnPreferenceChangeListener(this);
+        } else { getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE)); }
+
         if (FileUtils.fileWritable(VIBRATION_STRENGTH_PATH)) {
             VibrationSeekBarPreference vibrationStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
             vibrationStrength.setOnPreferenceChangeListener(this);
@@ -141,6 +152,10 @@ public class DeviceSettings extends PreferenceFragment implements
                     getContext().startService(new Intent(getContext(), DiracService.class));
                     DiracService.sDiracUtils.setLevel(String.valueOf(value));
                 }
+                break;
+
+            case PREF_USB_FASTCHARGE:
+                FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 break;
 
             case PREF_VIBRATION_STRENGTH:
