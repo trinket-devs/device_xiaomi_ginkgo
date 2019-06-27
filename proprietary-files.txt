@@ -784,7 +784,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Time services
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert
 vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # TUI
