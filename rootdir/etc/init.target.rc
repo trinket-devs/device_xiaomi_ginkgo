@@ -43,9 +43,6 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
-on early-fs
-    start vold
-
 on fs
     start hwservicemanager
     mount_all /vendor/etc/fstab.qcom --early
