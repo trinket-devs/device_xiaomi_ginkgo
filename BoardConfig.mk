@@ -158,6 +158,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
@@ -186,12 +189,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
-
-# Treble
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-BOARD_VNDK_VERSION := current
-PRODUCT_VENDOR_MOVE_ENABLED := true
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
