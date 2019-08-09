@@ -631,3 +631,13 @@ on property:sys.camera.not.cts.apk=*
 #add cts verify flag
 on property:sys.camera.not.ctsverify.apk=*
     setprop vendor.camera.not.ctsverify.apk ${sys.camera.not.ctsverify.apk}
+
+service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@2.4-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    writepid /dev/cpuset/system-background/tasks
+    socket pps stream 0660 system system
