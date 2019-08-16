@@ -369,6 +369,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
+    init.xiaomi_parts.rc \
     ueventd.qcom.rc \
     fstab.qcom
 
