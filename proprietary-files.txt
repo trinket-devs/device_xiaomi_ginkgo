@@ -1312,9 +1312,9 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # FM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 lib/fm_helium.so|3e02cb1f3b0896cb42e9c1bb145cc260b570f006
-lib/libfm-hci.so|9744656579cada902baeebcbed521e77c2a54517
+lib/libfm-hci.so|d6214ae6da054ad32221ed27a10b722b31a08317
 lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
-lib64/libfm-hci.so|589e9e290acfa18a49deba33606ed158d5e7f898
+lib64/libfm-hci.so|1def11a6c90a7895a91d71e3aafe6bc79297321e
 -product/lib/vendor.qti.hardware.fm@1.0.so|71efd722f71d858c6b02d4a0baaff0163691348e
 -product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
 vendor/bin/fm_qsoc_patches|2043cf7a0245b6dc81f049478afe1bb0af8f8ef7
@@ -1667,7 +1667,7 @@ product/lib64/vendor.display.color@1.1.so|0e6a94dafc8ff10e54bae0004fe01e5f24ea3d
 product/lib64/vendor.display.color@1.2.so|53b7d9d754f8909700d4b79c3145a209f638c7fd
 product/lib64/vendor.display.color@1.3.so|61a41164e43f45ad8c5dc1117e3705422f4095fa
 product/lib64/vendor.display.postproc@1.0.so|2c389d80a5c5cc87608babf29a056a74d69697e4
-vendor/bin/hw/vendor.display.color@1.0-service|64d86659c34fe5ec16fc555223df9f99e1fc4007
+vendor/bin/hw/vendor.display.color@1.0-service|2d708de4ef2af398e3a5470a42d103125a80f1fb
 vendor/bin/ppd|2fd656b00f66bf63cc22889466f8ea78edc9f769
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib/vendor.display.color@1.0.so|c11d6fc47fb8fa685241e6ec6142b8ea66f5e8e9
@@ -1981,8 +1981,8 @@ product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|a003a
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|8613a107e2e318f67d27888cedea2e583263088f
 product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|1374198e008c0bcc9f09172eb70dddc458f4790b
 product/lib64/vendor.qti.hardware.scve.panorama@1.0.so|b7a1fd4813ce3204d140ca8110fda6018c709daa
-vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service|0f6a4b01eea87d577d380d1ae39df4a07a23293b
-vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service|de4ade25b00fb278a3e0b20b9b8e6ce8ba4b3174
+vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service|1090cc3a42e416fd8be62f5ed7db9b1f5cb18114
+vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service|9303d71ec835462c4d8e66ab1ecde8c688e58070
 vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc|f9a24454c4dee54e9fad73e9ead57b96a212c5b6
 vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc|b9fad8788ca16fbe7daabe88f536ca411e3ab364
 vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|aef878f4c68313e9ec1b214d45f6aff6bf0e5fe4
@@ -2004,9 +2004,9 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d1
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|637e3c05ff05fb62ff9eede4ba394cd8f1874e18
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|b1c232b8fe7a11754a2f2148d4d2f12496a1dbe1
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so|16d09e271d13d84e74ebde403f7dd819cac9f164
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so|85f6d4fd0186e1aa3a41590da1121cfbb5ed4004
 vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|6f968b5eb270e643274c631ab5d9d558ab0b621f
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so|7574002d8635e85b9b0e11c7c88c5034fcfdc8aa
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so|07c65474bf7ec19e55a569c2aa9e35db164fb3ea
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|5ed9860d826b0438625b5a8101a651ca8b7573f8
 vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|a08237f61b443bacb278a1e0ae3058dfa509a391
 vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|a08237f61b443bacb278a1e0ae3058dfa509a391
@@ -2112,7 +2112,7 @@ lib64/libwfdcommonutils.so|d211e4f18f5c99cdb285295325bfc9fa8569875e
 lib64/libwfdconfigutils.so|8f976c375799e26ce45952922abe3f9c4d51ed04
 lib64/libwfdmminterface.so|e393a942a6fe909c271386822018d3ad439fc094
 lib64/libwfdmmsink.so|34fe2e29bb264b85adacc563dad732f6f6c7d89c
-lib64/libwfdnative.so|3657ae21e8d533177bbead6f1a88630980d55b65
+lib64/libwfdnative.so|06a2cd9cfb5053191ef202e700fb214bcd59125d
 lib64/libwfdrtsp.so|67c648c4821c1d8ffbdc6b372b0da412efd93f65
 lib64/libwfdsinksm.so|52ba2f17453a8ee3e9bc2cd83f7d9f9791cdc6f8
 lib64/libwfdsm.so|f960b4b586175c169b97112b8470f3b0e368ea91
