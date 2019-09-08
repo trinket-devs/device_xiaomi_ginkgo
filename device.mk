@@ -156,6 +156,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor \
+    libshim_camera \
     Snap
 
 # Context Hub
