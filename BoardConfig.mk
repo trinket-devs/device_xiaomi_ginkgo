@@ -203,6 +203,11 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib/hw/camera.trinket.so|libshim_camera.so \
+    /vendor/lib/libalRnBRT_GL_GBWRAPPER.so|libshim_camera.so
+
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
