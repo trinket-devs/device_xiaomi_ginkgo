@@ -16,16 +16,29 @@
 
 package org.lineageos.settings.display;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import android.view.MenuItem;
 
-public class KcalSettingsActivity extends PreferenceActivity {
+import org.lineageos.settings.R;
+
+public class KcalSettingsActivity extends Activity {
 
     private static final String TAG = "kcal_settings";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(android.R.id.content,new KcalSettingsFragment(), TAG).commit();
+        setContentView(R.layout.activity_kcal);
+        getFragmentManager().beginTransaction().replace(R.id.fragment_kcal, new KcalSettingsFragment(), TAG).commit();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
