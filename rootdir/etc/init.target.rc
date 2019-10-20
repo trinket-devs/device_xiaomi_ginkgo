@@ -289,3 +289,10 @@ on property:sys.thermallct.isincall=1
 
 on property:sys.thermallct.isincall=0
     write /sys/class/power_supply/battery/device/thermalcall 0
+
+# Smart Charging
+on boot 
+	chown system system /sys/class/power_supply/battery/charging_enabled 
+	chmod 0666 /sys/class/power_supply/battery/charging_enabled 
+	chown system system /sys/class/power_supply/battery/input_suspend 
+	chmod 0666 /sys/class/power_supply/battery/input_suspend
