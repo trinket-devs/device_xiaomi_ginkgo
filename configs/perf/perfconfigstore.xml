@@ -23,7 +23,11 @@ property Name is called. -->
                  <Prop Name="ro.vendor.iocgrp.config" Value="1" />
 
                  <!--Vendor Properties -->
-                 <Prop Name="vendor.iop.enable_uxe" Value="0" />
+                 <Prop Name="vendor.iop.enable_iop" Value="1" />
+                 <Prop Name="vendor.iop.enable_uxe" Value="1" />
+                 <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
+                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
+                 <Prop Name="vendor.enable.prefetch" Value="1" />
                  <Prop Name="vendor.debug.enable.lm" Value="true" />
                  <Prop Name="vendor.debug.enable.memperfd" Value="true" />
                  <Prop Name="ro.vendor.qti.am.reschedule_service" Value="true" />
