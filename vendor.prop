@@ -83,6 +83,7 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
