@@ -109,6 +109,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
 
+# LMKD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.low_ram=false \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.kill_timeout_ms=100 \
+    ro.lmk.use_minfree_levels=true
+
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
