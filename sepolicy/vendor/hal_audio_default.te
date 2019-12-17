@@ -3,3 +3,5 @@ allow hal_audio_default property_socket:sock_file write;
 
 get_prop(hal_audio_default, vendor_audio_prop)
 set_prop(hal_audio_default, vendor_audio_prop)
+
+dontaudit hal_audio_default sysfs:dir read;
