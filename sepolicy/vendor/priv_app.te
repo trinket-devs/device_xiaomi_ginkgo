@@ -7,5 +7,8 @@ allow priv_app proc_modules:file open;
 allow priv_app proc_net:file getattr;
 allow priv_app sysfs:dir open;
 allow priv_app sysfs_android_usb:file open;
+dontaudit priv_app bt_firmware_file:filesystem getattr;
+dontaudit priv_app firmware_file:filesystem getattr;
+dontaudit priv_app mnt_vendor_file:dir search;
 
 get_prop(priv_app, vendor_default_prop)
