@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
     com.nxp.nfc.nq \
     NQNfcNci \
     Tag \
-    vendor.nxp.hardware.nfc@1.2-service \
+    vendor.nxp.hardware.nfc@2.0-service
 
 PRODUCT_BOOT_JARS += \
     com.nxp.nfc.nq
