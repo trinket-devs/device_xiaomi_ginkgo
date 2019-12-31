@@ -6,7 +6,7 @@
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/violet
+DEVICE_PATH := device/xiaomi/ginkgo
 
 # Architecture
 TARGET_ARCH := arm64
@@ -27,19 +27,19 @@ TARGET_USES_64_BIT_BINDER := true
 
 BUILD_BROKEN_DUP_RULES := true
 
-MSMSTEPPE := sm6150
-TARGET_SEPOLICY_DIR := msmsteppe
+MSMSTEPPE := trinket
+TARGET_SEPOLICY_DIR := trinket
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := violet
+TARGET_OTA_ASSERT_DEVICE := ginkgo,willow
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sm6150
+TARGET_BOOTLOADER_BOARD_NAME := trinket
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -48,12 +48,12 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
-TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/ginkgo
+TARGET_KERNEL_CONFIG := vendor/ginkgo-perf_defconfig
 
 # Platform
-TARGET_BOARD_PLATFORM := sm6150
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno612
+TARGET_BOARD_PLATFORM := trinket
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -122,8 +122,8 @@ TARGET_PROVIDES_KEYMASTER := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_violet
-TARGET_RECOVERY_DEVICE_MODULES := libinit_violet
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo
+TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -133,11 +133,11 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 116748414464
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
+BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -192,7 +192,7 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
@@ -209,4 +209,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/violet/BoardConfigVendor.mk
+-include vendor/xiaomi/ginkgo/BoardConfigVendor.mk

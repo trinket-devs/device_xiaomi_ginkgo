@@ -5,7 +5,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/violet/violet-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
 # GoogleCamera
 $(call inherit-product-if-exists, packages/apps/GoogleCamera/gcam.mk)
@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64 \
+    android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Context Hub
@@ -167,15 +167,15 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.sm6150 \
-    hwcomposer.sm6150 \
+    gralloc.trinket \
+    hwcomposer.trinket \
     libdisplayconfig \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    memtrack.sm6150 \
+    memtrack.trinket \
     vendor.display.config@1.10 \
     vendor.qti.hardware.display.allocator-service
 
@@ -205,7 +205,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.violet
+    android.hardware.biometrics.fingerprint@2.1-service.ginkgo
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -276,13 +276,13 @@ PRODUCT_COPY_FILES += \
     
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/sm6150-idp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sm6150-idp-snd-card_Button_Jack.kl \
+    $(LOCAL_PATH)/keylayout/trinket-idp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/trinket-idp-snd-card_Button_Jack.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.violet
+    android.hardware.light@2.0-service.ginkgo
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -306,7 +306,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.violet
+    android.hardware.power@1.2-service.ginkgo
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
@@ -409,7 +409,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
-    thermal.sm6150
+    thermal.trinket
 
 # Touchscreen
 PRODUCT_PACKAGES += \

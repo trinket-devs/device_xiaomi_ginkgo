@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=violet
+DEVICE=ginkgo
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2019
