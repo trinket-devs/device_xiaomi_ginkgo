@@ -1,7 +1,7 @@
 [
   {
-    "repository": "kernel_xiaomi_sm6150",
-    "target_path": "kernel/xiaomi/sm6150",
+    "repository": "kernel_xiaomi_ginkgo",
+    "target_path": "kernel/xiaomi/ginkgo",
     "branch": "ten"
   },
   {
