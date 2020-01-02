@@ -76,13 +76,13 @@ vendor/lib64/libhdmipassthru.so|882fe62187d282a4c0fe257cd54a7090fe809824
 vendor/lib64/libqtigef.so|886285c40cd45a4f17d3b2e5e909da5a4fd9bf6c
 vendor/lib64/soundfx/libasphere.so|bd48aa3d7cf27bf3b12ce29f429b719383e104fc
 
-# Audio - hardware - from violet-user 9 PKQ1.181203.001 9.7.4 release-keys
-vendor/lib/hw/audio.primary.trinket.so|2349f2b3f63e0e032989fea81d87457f2249fbae
-vendor/lib/libaudio_log_utils.so|df3362525f612e00988a16307c4a3781e564516d
-vendor/lib/libtinycompress_vendor.so|f1b9ea591545cede86490fd6ab9092391c56be86
-vendor/lib64/hw/audio.primary.trinket.so|a9976b6d6718ab194f3b56d1d139baf531fa1994
-vendor/lib64/libaudio_log_utils.so|a8e0f5215004c493ff9bc4541e91ed8d1b4411a6
-vendor/lib64/libtinycompress_vendor.so|9ba9aecb21cdf179a9acbcf3996c967eb81fd181
+# Audio - hardware
+vendor/lib/hw/audio.primary.trinket.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib64/hw/audio.primary.trinket.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libtinycompress_vendor.so
 
 # Audio ACDB - from violet-user 9 PKQ1.181203.001 9.7.4 release-keys
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|9227eef7533d7d0e50f0fb436aea674e9c64a10d
@@ -1380,8 +1380,8 @@ vendor/lib64/libsdmextension.so|baa5807e39b25134fbe6c9ba2667eead26256e25
 vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
 
 # Graphics (Vulkan) - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/hw/vulkan.trinket.so|86a16a955d0a88c1e852251d3c5c11fcfe0e1520
-vendor/lib64/hw/vulkan.trinket.so|ad4413d46d4c3007546e75165cb5b2c2dcf43784
+vendor/lib/hw/vulkan.trinket.so|f4ebce41a1f7fad72250b19a133fb5630601caaa
+vendor/lib64/hw/vulkan.trinket.so|a6353fe423bbe2a273a2639bb79708f385863845
 
 # IO Prefetcher - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|98c38e3647a6c286e5bfb8b271827328f6c04148
@@ -1429,6 +1429,17 @@ vendor/lib/vendor.qti.hardware.data.latency@1.0.so|35cfc140a8852d1ae054f6e0f66ad
 vendor/lib/vendor.qti.latency@2.0.so|c6b9efda9c2e39fd33bc42e6aee745bd6ee176c8
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|ff7a319e51ddd4de14af28a84f7bca5e82547f6e
 vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
+
+# Listen - Hardware
+vendor/lib/hw/sound_trigger.primary.trinket.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/librice.so
+vendor/lib/libsmwrapper.so
+vendor/lib64/hw/sound_trigger.primary.trinket.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2vop.so
+vendor/lib64/librice.so
 
 # Listen - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/lib/libadpcmdec.so|8dc9036e15aa62a85becfda6eb4865de4308ce33
