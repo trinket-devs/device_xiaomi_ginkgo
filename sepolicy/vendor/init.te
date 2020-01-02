@@ -1,1 +1,2 @@
 allow init vendor_file:file { execute };
+allow init persist_block_device:lnk_file { relabelto };
