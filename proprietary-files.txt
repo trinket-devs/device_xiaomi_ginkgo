@@ -1033,6 +1033,9 @@ vendor/lib64/libsnsdiaglog.so|4f0071ae3f00a08f9685f5c6e55f6cefccfc1b39
 vendor/lib64/libswvdec.so|75f67cc6a0b63e234c43e8c7cbd0e25134f274d1
 vendor/lib64/libsysmon_cdsp_skel.so|b2de14e6ba34988347a66536aa286bb412aab22e
 
+# Camera Ginkgo - dyneteve
+vendor/lib/libmmcamera_ginkgo_vtcamera.so|b89cd02a2469b6d9bf23dc65b57554e38cb68d7c
+
 # Camera-firmware - from willow-user 9 PKQ1.190616.001 V11.0.2.0.PCXEUXM release-keys
 vendor/firmware/cpp_firmware_v1_10_0.fw|a3c0fc706eb3f23b99852fe8c52c26f63999f70c
 vendor/firmware/cpp_firmware_v1_12_0.fw|c7939d46f9875054c5b30c3280862e7d9df3dcf9
