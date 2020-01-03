@@ -161,21 +161,20 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.composer@2.2-impl \
+    android.hardware.graphics.composer@2.2-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.trinket \
-    hwcomposer.trinket \
+    libqdutils \
+    libdrm.vendor \
     libdisplayconfig \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    memtrack.trinket \
-    vendor.display.config@1.10 \
-    vendor.qti.hardware.display.allocator-service
+    vendor.display.config@1.8 \
+    vendor.display.config@1.8.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
