@@ -1156,6 +1156,42 @@ vendor/lib64/libcvp_stub.so|addf270a9e8339cec283e31ad72f1cebb27c5550
 vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so|d9ad45b11f3779ecac38f28ab3f1e44bc09119f6
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so|8b4756451c038042970bd57330801cb49f89e1f2
 
+# Display - hardware
+vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service
+vendor/etc/init/vendor.qti.hardware.display.allocator@1.0-service.rc
+vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
+vendor/lib64/hw/gralloc.trinket.so
+vendor/lib64/hw/hwcomposer.trinket.so
+vendor/lib64/hw/memtrack.trinket.so
+vendor/lib64/libdisplaydebug.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdpps.so
+vendor/lib64/libgpu_tonemapper.so
+vendor/lib64/libgralloccore.so
+vendor/lib64/libgrallocutils.so
+vendor/lib64/libqdMetaData.so
+vendor/lib64/libdrmutils.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
+vendor/lib/hw/gralloc.trinket.so
+vendor/lib/hw/hwcomposer.trinket.so
+vendor/lib/hw/memtrack.trinket.so
+vendor/lib/libdisplaydebug.so
+vendor/lib/libdisplayqos.so
+vendor/lib/libdpps.so
+vendor/lib/libgpu_tonemapper.so
+vendor/lib/libgralloccore.so
+vendor/lib/libgrallocutils.so
+vendor/lib/libqdMetaData.so
+vendor/lib/libdrmutils.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsdmcore.so
+vendor/lib/libsdmutils.so
+vendor/lib/libsdm-colormgr-algo.so
+
 # Display calibration
 vendor/etc/qdcm_calib_data_ft8719_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_shenchao_panel.xml
@@ -1393,25 +1429,21 @@ vendor/lib64/librs_adreno_sha1.so|df03717b40ad5457dbf9234ce4475129f83aff92
 vendor/lib/libhdr_tm.so|fffd91bcfe1b9ae33498624e3e36b46364bf7991
 vendor/lib64/libhdr_tm.so|103b2f0893a767f162ffc2945b5edea062fb0354
 
-# Graphics (SDM) - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--vendor/lib/libsdm-disp-vndapis.so|c78d69efe54441c39146991bf748aa453bc38d1a
--vendor/lib64/libsdm-disp-vndapis.so|aa658050b07c04b114cb43e6535fe45883943152
-vendor/lib/libdpps.so|508d7d5aa3ad34aea4ae47f943f4c018ee9f77cf
-vendor/lib/libqseed3.so|be6d4f64c5a41e5cce849617df3f13c23a4a9de6
-vendor/lib/libsdedrm.so|8cf0c7475f3e3a492f5dc148f80016a15ea66843
-vendor/lib/libsdm-color.so|300fc08d79821c29155338c25dbb5c3a7920253f
-vendor/lib/libsdm-colormgr-algo.so|5e90df89db6d8957d9e9dc69023a83f7d2ee1c4b
-vendor/lib/libsdm-diag.so|0e9a778b540bcb918f84bb125cf07f29e422e6dc
-vendor/lib/libsdmextension.so|487209c63dc901b6fc55e5c66f93fbd4a4756e92
-vendor/lib/libtinyxml2_1.so|655efc7e2a0ec6714d6c2883a2836197a1b4a8eb
-vendor/lib64/libdpps.so|91623bbe09758fad2f109b1e64605be011495a12
-vendor/lib64/libqseed3.so|4a4fbff019467a4531816ab58e259b22d95630fa
-vendor/lib64/libsdedrm.so|3c82dc9fa9b249d3d00d209ed2c06ad458d3f167
-vendor/lib64/libsdm-color.so|e5c120cb6acbecf5a2c344029b103d6b61fc3925
-vendor/lib64/libsdm-colormgr-algo.so|992e5066d0f7bf284c599f65a89849ae9693c456
-vendor/lib64/libsdm-diag.so|d7a96d76dd2fb7516a9ed89c39a3f0992ec3266e
-vendor/lib64/libsdmextension.so|baa5807e39b25134fbe6c9ba2667eead26256e25
-vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
+# Graphics (SDM)
+-vendor/lib/libsdm-disp-vndapis.so
+-vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib/libdpps.so
+vendor/lib/libqseed3.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib64/libdpps.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
 
 # Graphics (Vulkan) - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/lib/hw/vulkan.trinket.so|f4ebce41a1f7fad72250b19a133fb5630601caaa
