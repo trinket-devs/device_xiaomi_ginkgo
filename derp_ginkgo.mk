@@ -27,6 +27,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
 PRODUCT_MANUFACTURER := Xiaomi
 
+export DERP_BUILDTYPE=Official
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="ginkgo" \
     TARGET_DEVICE="ginkgo"
