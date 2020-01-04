@@ -1,2 +1,2 @@
-allow hal_secure_element_default default_android_hwservice:hwservice_manager { add find };
-allow hal_secure_element_default mnt_vendor_file:dir r_dir_perms;
+add_hwservice(hal_secure_element_default, nxpese_hwservice)
+allow hal_secure_element_default nxpnfc_hwservice:hwservice_manager { find };
