@@ -57,6 +57,9 @@ persist.radio.calls.on.ims=1
 # Hack for Youtube
 sys.display-size=3840x2160
 
+# Time
+persist.vendor.delta_time.enable=true
+
 # Wireless display
 debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
