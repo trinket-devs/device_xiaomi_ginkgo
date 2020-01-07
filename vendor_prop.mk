@@ -266,6 +266,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
+# Time
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.vendor.delta_time.enable=true
+
 # WFD
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
