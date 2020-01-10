@@ -43,3 +43,10 @@ persist.data.df.dev_name=rmnet_usb0
 
 # Netflix
 ro.netflix.bsp_rev=Q6150-17263-1
+
+# Radio - VoLTE / VoWifi
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.calls.on.ims=1
