@@ -86,4 +86,9 @@
         <value>7</value>
         <value>5</value>
     </array>
+    <item name="gps.voltage">3700</item>
+    <item name="bluetooth.controller.idle">1</item>
+    <item name="bluetooth.controller.rx">50</item>
+    <item name="bluetooth.controller.tx">50</item>
+    <item name="bluetooth.controller.voltage">3300</item>
 </device>
