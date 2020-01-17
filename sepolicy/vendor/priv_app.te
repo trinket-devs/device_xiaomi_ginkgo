@@ -1,0 +1,1 @@
+allow priv_app vendor_default_prop:file { read };
