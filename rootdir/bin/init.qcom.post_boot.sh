@@ -2981,44 +2981,35 @@ case "$target" in
             echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
             echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
+            # Disable Core control on silver
+            echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
+
             # Setting b.L scheduler parameters
-            echo 67 > /proc/sys/kernel/sched_downmigrate
-            echo 77 > /proc/sys/kernel/sched_upmigrate
-            echo 85 > /proc/sys/kernel/sched_group_downmigrate
+            echo 95 95 > /proc/sys/kernel/sched_upmigrate
+            echo 85 85 > /proc/sys/kernel/sched_downmigrate
             echo 100 > /proc/sys/kernel/sched_group_upmigrate
-
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
-
+            echo 10 > /proc/sys/kernel/sched_group_downmigrate
+            echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
             # configure governor settings for little cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 1305600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+            echo 2000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+            echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl
             echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
             # configure governor settings for big cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+            echo 2000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
             echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
+            echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl
             echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-	    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-
-            # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-            echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu1/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu2/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu3/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu4/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
-            echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-            echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-            echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+            # Disable wsf, beacause we are using efk.
+            # wsf Range : 1..1000 So set to bare minimum value 1.
+            echo 1 > /proc/sys/vm/watermark_scale_factor
 
             # Set Memory parameters
             configure_memory_parameters
@@ -3071,10 +3062,9 @@ case "$target" in
 
             done
 
-            # colcoation v3 disabled
-            echo 0 > /proc/sys/kernel/sched_min_task_util_for_boost
-            echo 0 > /proc/sys/kernel/sched_min_task_util_for_colocation
-            echo 0 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
+            # cpuset settings
+            echo 0-5 > /dev/cpuset/background/cpus
+            echo 0-5 > /dev/cpuset/system-background/cpus
 
             # Turn off scheduler boost at the end
             echo 0 > /proc/sys/kernel/sched_boost
