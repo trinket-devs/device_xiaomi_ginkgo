@@ -80,4 +80,10 @@
     <item name="bluetooth.controller.rx">50</item>
     <item name="bluetooth.controller.tx">50</item>
     <item name="bluetooth.controller.voltage">3300</item>
+    <item name="radio.active">100</item>
+    <item name="radio.scanning">95</item>
+    <array name="radio.on">
+        <value>7</value>
+        <value>5</value>
+    </array>
 </device>
