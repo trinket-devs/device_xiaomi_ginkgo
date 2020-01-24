@@ -119,6 +119,9 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     libldacBT_dec
 
+# Boot SPL
+BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+
 # Sensor HAL conf file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -326,6 +329,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect.vendor
+
+# Vendor SPL
+VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # Vibrator
 PRODUCT_PACKAGES += \
