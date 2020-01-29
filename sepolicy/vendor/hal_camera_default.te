@@ -1,0 +1,2 @@
+allow hal_camera_default default_prop:file read;
+allow hal_camera_default mnt_vendor_file:dir search;

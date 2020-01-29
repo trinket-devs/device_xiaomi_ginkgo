@@ -1,0 +1,2 @@
+allow priv_app cgroup:file read;
+allow priv_app default_android_hwservice:hwservice_manager find;

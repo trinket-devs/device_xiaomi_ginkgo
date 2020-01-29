@@ -1,0 +1,5 @@
+allow untrusted_app_27 dalvikcache_data_file:file execmod;
+allow untrusted_app_27 proc:file read;
+allow untrusted_app_27 proc_zoneinfo:file read;
+allow untrusted_app_27 persist_camera_prop:file read;
+allow untrusted_app_27 vendor_default_prop:file read;
