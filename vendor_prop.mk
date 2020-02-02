@@ -27,7 +27,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio_hal.period_size=192 \
-    vendor.voice.path.for.pcm.voip=true
+    vendor.voice.path.for.pcm.voip=true \
+    use.dts_eagle=true \
+    vendor.audio.use.dts_eagle=true
+
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
