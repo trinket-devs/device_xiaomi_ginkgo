@@ -553,4 +553,7 @@
     <!-- Whether to artificially interpret all signal strengths as
          one bar higher than they actually are -->
     <bool name="config_inflateSignalStrength">true</bool>
+    
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
