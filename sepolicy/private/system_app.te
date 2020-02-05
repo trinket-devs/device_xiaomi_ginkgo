@@ -1,2 +1,4 @@
 hal_client_domain(system_app, hal_mlipay)
 allow system_app system_data_file:dir write;
+allow system_server default_android_service:service_manager add;
+

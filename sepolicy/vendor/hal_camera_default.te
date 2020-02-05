@@ -1,2 +1,5 @@
 allow hal_camera_default default_prop:file read;
 allow hal_camera_default mnt_vendor_file:dir search;
+allow hal_camera_default sysfs:file { read };
+allow hal_camera_default mnt_vendor_file:file { getattr };
+
