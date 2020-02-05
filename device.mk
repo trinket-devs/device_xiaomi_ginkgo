@@ -29,8 +29,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-nogapps
+endif
+
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
