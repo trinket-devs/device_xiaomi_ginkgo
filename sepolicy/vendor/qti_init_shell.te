@@ -8,5 +8,3 @@ allow qti_init_shell persist_sensors_file:fifo_file { read getattr relabelfrom r
 allow qti_init_shell unlabeled:dir { read open search getattr relabelfrom relabelto };
 allow qti_init_shell unlabeled:file { read getattr relabelfrom relabelto };
 allow qti_init_shell unlabeled:fifo_file { read getattr relabelfrom relabelto };
-allow qti_init_shell sysfs:file { write }
-

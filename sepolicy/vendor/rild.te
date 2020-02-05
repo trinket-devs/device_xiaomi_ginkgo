@@ -1,2 +1,0 @@
-allow rild default_prop:file {read};
-

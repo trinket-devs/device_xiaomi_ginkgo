@@ -1,1 +1,0 @@
-allow misc_writer sysfs_dt_firmware_android:dir { search }
