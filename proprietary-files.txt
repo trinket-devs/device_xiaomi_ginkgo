@@ -2047,11 +2047,9 @@ vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc|aacefc44da5e
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc|0ad6f8871ffb8130d6af385434b2eb0512c04733
 vendor/etc/wifi/aoa_cldb_falcon.bin|7511e868c40e66e9758568b7112894cbce2650a4
 vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
-vendor/etc/wifi/p2p_supplicant_overlay.conf|0725cc89d1658b695f0345490dc5cab61c912480
-vendor/etc/wifi/wigig_p2p_supplicant.conf|2ba755ef8ae5f665b830b6930026534ddd3a1a4b
-vendor/etc/wifi/wigig_supplicant.conf|c62e0b2dee7cb149accbe658d841daabbc92a6b9
-vendor/etc/wifi/wpa_supplicant_overlay.conf|289b5ff519e935f4a1431414c83e2e7e9e6603d0
-vendor/firmware/wigig/wigig.ini|1ec12833a14cab778168c24c283e237cadbd1781
+vendor/etc/wifi/wigig_p2p_supplicant.conf|add33c197c2e740071e0e55fe8b14eadc3eedf4c
+vendor/etc/wifi/wigig_supplicant.conf|c3114b4c7dddad57eb3bfb66974d440777d22054
+vendor/firmware/wigig/wigig.ini|165fdbe0c75ddee78fe6a3a8cc8feebd31b903c2
 vendor/lib/libaoa.so|430896da0e452a9f82dc5b5955fd1e898f40e974
 vendor/lib/libwigig_flashaccess.so|fe5c6a215a17eea835458990aa62150da1ad23ab
 vendor/lib/libwigig_pciaccess.so|dfdb4b624b75bb4379fb9b45360865af1ca07b94
