@@ -1,3 +1,6 @@
+on boot
+    start vendor.light-hal-2-0
+
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.ginkgo
     interface android.hardware.light@2.0::ILight default
     class hal
@@ -5,3 +8,4 @@ service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.g
     group system
     # shutting off lights while powering-off
     shutdown critical
+    disabled
