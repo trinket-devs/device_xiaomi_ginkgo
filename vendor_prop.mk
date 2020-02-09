@@ -52,11 +52,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
-    persist.hwc.enable_vds=1 \
-    debug.sf.hw=0 \
-    debug.sf.recomputecrop=0 \
-    debug.sf.latch_unsignaled=0 \
     ro.opengles.version=196610 \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.cabl=0 \
@@ -71,6 +66,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=0 \
     vendor.display.enable_null_display=0 \
     vendor.gralloc.disable_ubwc=0
+
+# Graphics 
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_hwc_vds=1 \
+    persist.hwc.enable_vds=1 \
+    debug.sf.hw=0 \
+    debug.sf.recomputecrop=0 \
+    debug.sf.latch_unsignaled=0 \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.enable_gl_backpressure=1 \
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -108,6 +113,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.enableadvancedscan=true \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.atfwd.start=true \
+    persist.vendor.radio.custom_ecc=1 \
+    persist.vendor.radio.enable_temp_dds=true \
+    persist.vendor.radio.enableadvancedscan=true \
+    persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.redir_party_num=1 \
     persist.vendor.radio.report_codec=1 \
