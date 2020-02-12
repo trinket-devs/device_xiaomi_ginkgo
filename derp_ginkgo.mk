@@ -16,7 +16,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 DERP_BUILDTYPE=Official
-CURRENT_BUILD_TYPE=nogapps
+DERP_BUILD_ZIP_TYPE := VANILLA
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
