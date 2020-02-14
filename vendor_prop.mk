@@ -77,7 +77,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
-
+    debug.sf.early_phase_offset_ns=5000000	
+i
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
