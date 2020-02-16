@@ -91,6 +91,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
+
+# Nfc
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.se.type=HCE,UICC
+
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
