@@ -1,18 +1,14 @@
 [
   {
-    "repository": "kernel_xiaomi_ginkgo",
-    "target_path": "kernel/xiaomi/ginkgo",
-    "branch": "ten"
-  },
-  {
-    "repository": "vendor_xiaomi",
-    "target_path": "vendor/xiaomi",
-    "branch": "ten"
-  },
-  {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
     "branch": "lineage-17.0",
     "remote": "lineage"
+  },
+  {
+    "repository": "pshreejoy15/vendor_xiaomi_firmware",
+    "target_path": "vendor/xiaomi/firmware",
+    "branch": "ten",
+    "remote": "gitlab"
   }
 ]

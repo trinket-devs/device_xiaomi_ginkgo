@@ -7,6 +7,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
+# include common firmware
+$(call inherit-product, vendor/xiaomi/firmware/firmware.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
