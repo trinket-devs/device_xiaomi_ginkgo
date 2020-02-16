@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_ginkgo",
+    name: "libinit_willow",
     recovery_available: true,
-    srcs: ["init_ginkgo.cpp"],
+    srcs: ["init_willow.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"
