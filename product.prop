@@ -95,3 +95,9 @@ ro.hwui.text_large_cache_height=1024
 
 # Always use GPU for screen compositing
 debug.sf.disable_hwc=1
+
+# Hack for Youtube
+sys.display-size=3840x2160
+
+# Enable virtual display
+debug.sf.enable_hwc_vds=1
