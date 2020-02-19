@@ -23,7 +23,7 @@ BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(DEVICE_PATH)/charger/images
 TARGET_SCREEN_DENSITY := 440
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml

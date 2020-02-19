@@ -153,8 +153,8 @@ on boot
     chown system system /sys/class/leds/flashlight/brightness
 
     # DT2W
-    chown system system /proc/tp_gesture
-    chmod 0660 /proc/tp_gesture
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
 
     # Kernelspace battery saver
     chown system system /sys/module/battery_saver/parameters/enabled
