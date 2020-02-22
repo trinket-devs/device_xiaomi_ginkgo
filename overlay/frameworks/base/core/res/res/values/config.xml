@@ -564,4 +564,7 @@
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
     <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
+   <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">true</bool>
 </resources>
