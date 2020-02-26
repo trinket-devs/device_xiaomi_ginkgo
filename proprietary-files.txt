@@ -1445,8 +1445,8 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
 # Graphics (Vulkan) - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/hw/vulkan.trinket.so|f4ebce41a1f7fad72250b19a133fb5630601caaa
-vendor/lib64/hw/vulkan.trinket.so|a6353fe423bbe2a273a2639bb79708f385863845
+vendor/lib/hw/vulkan.trinket.so|83633155c116a8728ee9a1dee32c082d6cb1cbc1
+vendor/lib64/hw/vulkan.trinket.so|6c9bf7bd6b5ac96cea83aa63bf7f10e37db68e62
 
 # IO Prefetcher - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|98c38e3647a6c286e5bfb8b271827328f6c04148
@@ -1675,13 +1675,13 @@ product/lib64/vendor.display.color@1.0.so|e90c75046ba1f6f677b9f719caaae8d91d1a5c
 vendor/bin/hw/vendor.display.color@1.0-service|ab46995540bd4721e1241de17241e55dbbd5435c
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib/libdisp-aba.so|95e3dbcf26416500a23ceac04e6b1b881a9204ba
-vendor/lib/libdisplayqos.so|5b68a1a8f6e13e32e481a3c7d3d26d7633808929
+vendor/lib/libdisplayqos.so|80763104cc5296cfc1ee98956877ad57838d871b
 vendor/lib/vendor.display.color@1.0.so|1c6cdfd0be07497fd82c509b0e8d43eb1b2516c3
 vendor/lib/vendor.display.color@1.1.so|1db61e68a6fe9e99debc63a00d68e665564881d5
 vendor/lib/vendor.display.color@1.2.so|df54fd87747b8b78c73b18e9426e28d668e790ce
 vendor/lib/vendor.display.postproc@1.0.so|d51673718da0fe3437f87bd8b223885f0ccf03d6
 vendor/lib64/libdisp-aba.so|3a35a8c7120d5f0748b4584dd56b1398d1acdd69
-vendor/lib64/libdisplayqos.so|535c9247d47d15936cae3fecb585687889dd635a
+vendor/lib64/libdisplayqos.so|b67d8ba7846f4dfeef4fecb805c0273b040db3b3
 vendor/lib64/vendor.display.color@1.0.so|3939e4d1ab4f74e6bbd04524a9e6211ade9c5d0b
 vendor/lib64/vendor.display.color@1.1.so|ce0030a7e6593236277962ffff290b834eaf1f25
 vendor/lib64/vendor.display.color@1.2.so|6adfa77494dbad3be8a34b259b25f8a4d9dd6a04
@@ -2026,7 +2026,6 @@ vendor/lib/libthermalfeature.so
 vendor/lib64/libthermalfeature.so
 
 # Time services - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|0e8fd168d881c017eac09452df816eadba7de6a1
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib/libtime_genoff.so|8578fc5aab1509fedb744f9b73721dc1acfd9748
