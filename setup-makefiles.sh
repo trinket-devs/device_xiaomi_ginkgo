@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=ginkgo
+DEVICE=willow
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2019
