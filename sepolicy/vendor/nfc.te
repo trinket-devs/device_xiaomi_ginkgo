@@ -1,2 +1,2 @@
-allow nfc theme_prop:file { read };
+allow nfc theme_prop:file { open read };
 

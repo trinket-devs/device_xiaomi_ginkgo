@@ -1,2 +1,2 @@
 allow hal_nfc_default default_android_hwservice:hwservice_manager { find };
-allow hal_nfc_default default_prop:file { read open };
+allow hal_nfc_default default_prop:file { read open getattr };
