@@ -49,7 +49,7 @@ persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac
 persist.data.df.dev_name=rmnet_usb0
 
 # Netflix
-ro.netflix.bsp_rev=Q6150-17263-1
+ro.netflix.bsp_rev=Q6125-17995-1
 
 # Radio - VoLTE / VoWifi
 persist.dbg.ims_volte_enable=1
