@@ -4,6 +4,7 @@ allow platform_app privapp_data_file:file execute;
 allow platform_app sysfs:dir read;
 allow platform_app sysfs_switch:dir search;
 allow platform_app vendor_default_prop:file { getattr map open read };
+allow platform_app nfc_service:service_manager { find };
 
 get_prop(platform_app, vendor_default_prop)
 get_prop(platform_app, vendor_audio_prop);
