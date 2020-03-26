@@ -1505,12 +1505,12 @@ vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
 vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
-vendor/lib/librice.so
+vendor/lib/librice.so|5e21acde0ba82f20ab892a9a300e6a0a576c7427
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/sound_trigger.primary.trinket.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
-vendor/lib64/librice.so
+vendor/lib64/librice.so|1a027bc0331d3f8e6345ab6ac8cf1a8571424ef9
 
 # Listen - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/lib/libadpcmdec.so|8dc9036e15aa62a85becfda6eb4865de4308ce33
@@ -2072,7 +2072,7 @@ vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|25ba0bbdef2872364f636fa
 -priv-app/WfdService/WfdService.apk|c2fa7cb39bdc37c2aff6378b6c52403f701fec75
 bin/wfdservice|65bfa86e06a2b74dd9b3e7716d6c059944449ae6
 etc/init/wfdservice.rc|ad1b96df2cbf46df6aa47bf74e2fd88e251047fd
-etc/wfdconfigsink.xml|9524b8fdbb81204e3779954db3f11515d4540a92
+etc/wfdconfigsink.xml|75c1e192ccc6248a860958026950c6bc4f052ef7
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|3ada843c1e852d7a3aa3c4c66067c164cce53ea0
 lib/libFileMux.so|e83aada073ee4ed9b27626b2ee4e051aa4f368df
 lib/libmmosal.so|4319b95e50c4cf244a0186f3d327be43054d7772
