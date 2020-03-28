@@ -43,6 +43,18 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    # Boot time fs tuning
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/scheduler cfq
+    write /sys/block/sda/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/read_ahead_kb 2048
+    write /sys/block/sda/queue/nr_requests 256
+    write /sys/block/sde/queue/iostats 0
+    write /sys/block/sde/queue/scheduler cfq
+    write /sys/block/sde/queue/iosched/slice_idle 0
+    write /sys/block/sde/queue/read_ahead_kb 2048
+    write /sys/block/sde/queue/nr_requests 256
+
 on early-fs
     start vold
 
@@ -296,3 +308,15 @@ on boot
 	chmod 0666 /sys/class/power_supply/battery/charging_enabled 
 	chown system system /sys/class/power_supply/battery/input_suspend 
 	chmod 0666 /sys/class/power_supply/battery/input_suspend
+
+on property:sys.boot_completed=1
+    stop boot_lc_main
+    stop boot_dmesg
+
+    # Runtime fs tuning
+    write /sys/block/sda/queue/read_ahead_kb 128
+    write /sys/block/sda/queue/nr_requests 128
+    write /sys/block/sda/queue/iostats 1
+    write /sys/block/sde/queue/read_ahead_kb 128
+    write /sys/block/sde/queue/nr_requests 128
+    write /sys/block/sde/queue/iostats 1
