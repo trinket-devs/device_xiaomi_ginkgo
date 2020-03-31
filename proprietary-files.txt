@@ -1404,35 +1404,20 @@ vendor/lib/libpvr.so|b136124b70c996aedc269580088b15a86d8152bb
 vendor/lib/librs_adreno.so|81ac0aaaf36c049113e1dec7640d962a07e07f7f
 vendor/lib/librs_adreno_sha1.so|ca3051d0730a23e029573fb27d4618c76d5a2fca
 
-# Graphics (DRM) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/lib64/libsdedrm.so|887ce5e5e3ac9c4272a0c1d025c443dabb6283b2
-vendor/lib/libsdedrm.so|04d0f723196d677ba1f3812ead00f3913e82feb0
-
-# Graphics (HDR) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/lib64/libhdr_tm.so|a8538faa77fa5d2b6e8210daaefe5267d9eb43a0
-vendor/lib/libhdr_tm.so|16dd863f092e23e19aa5c1b3f0b4181d59195b94
-
-# Graphics (SDM) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/lib64/libdisp-aba.so|592b00db6d77a6f0145999feb872614d4cbb961f
-vendor/lib64/libdisplayqos.so|1337ca12244f40332e5b6c40640c0ebffa0ebb0f
-vendor/lib64/libdpps.so|1f035dd0d42efbfb64349d7849f9f482e5c0287d
-vendor/lib64/libqseed3.so|9c6d67741570d8b52adc87ba876c5578f0ec9e91
-vendor/lib64/libsdm-color.so|d7e0b410cecdcd88d504f374500a0313b2e21f0d
-vendor/lib64/libsdm-colormgr-algo.so|8b122d863a2e7b0437cc94325bee83fa27fd20ec
-vendor/lib64/libsdm-diag.so|5b3176953a3b439dd36d35a6fdd8a1e52735cc87
-vendor/lib64/libsdm-disp-vndapis.so|5872d39e03468bb5fd8d0121373b3341c4c34138
-vendor/lib64/libsdmextension.so|a5e8b6c7a337ac73f4b132a863ebe7b9e52de1ed
-vendor/lib64/libtinyxml2_1.so|d87dfed7c044e24c90fe4ae9fcd9b3812f432ff4
-vendor/lib/libdisp-aba.so|dc24e2943b50dc62833043fdf757ec0b90447eb6
-vendor/lib/libdisplayqos.so|097a0921d624c374735aef290b66f2429d7d6cd2
-vendor/lib/libdpps.so|50bed8a4bbe2fb0130abfb5711d4b7648a88dbe5
-vendor/lib/libqseed3.so|2bedfc7bf3968a4153f3516cd2b644b251eb718e
-vendor/lib/libsdm-color.so|a7aacaa7294490b37322bc7c2e220231dd60def4
-vendor/lib/libsdm-colormgr-algo.so|4ac39b3a84a8daaf2f7956e8b81f574fc9b83c86
-vendor/lib/libsdm-diag.so|f0e47cdb8c118dbbfb32a728644c8f655f6f0a27
-vendor/lib/libsdm-disp-vndapis.so|9e89df495bf8e6f379e913f149ce978850443992
-vendor/lib/libsdmextension.so|dec8f2fd565864975042790fc48f5dda852c49bf
-vendor/lib/libtinyxml2_1.so|f54f81359c78715315bc24678c34c129413e6c92
+# Graphics (SDM) - from LA.UM.8.1.r1-14500-sm8150.0
+vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
+vendor/lib64/libdpps.so|dc21df7b0af8f05f0f0d4c39e2c103c7989ece8b
+vendor/lib64/libdisplayqos.so|8e5f13a5b7ea0efa8db2902c8719380d710bc857
+vendor/lib64/libhdr_tm.so|a04a0abf52d940ddb4916e74d48cc2b16526e355
+vendor/lib64/libqseed3.so|3fb480721b26a2df0a2a96359814ef37a5da9148
+vendor/lib64/libsdedrm.so|21ef252babf0bba0d79a22fa3c67a7ec15bba5b4
+vendor/lib64/libsdm-color.so|9d301706c16ce768a3fe72e9990f2d8799aeb9f6
+vendor/lib64/libsdm-colormgr-algo.so|98a55014ebce7dd77319745c118af8368dec5e27
+vendor/lib64/libsdm-diag.so|f080993703d425a337faaa5d2cc3c05119db6ac1
+vendor/lib64/libsdm-disp-vndapis.so|d928e16612715d7a416d8c3b7920311bd9a93fed
+vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
+vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
+vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
 # Graphics (Vulkan) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/lib/hw/vulkan.trinket.so|ec434cfa02cbb6b783a74d6c9518451e8126fe2f
