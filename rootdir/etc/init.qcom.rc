@@ -399,12 +399,17 @@ on post-fs-data
 
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
-
+    
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
     user system
     oneshot
+
+service anxfilecheck_sh /vendor/bin/init.anxfilecheck.sh 
+    class main
+    user root
+    group root
 
 service iop /system/vendor/bin/iop
     class main
@@ -502,6 +507,9 @@ on property:sys.boot_completed=1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
+    
+    # Start anxfilecheck
+    start anxfilecheck_sh
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
