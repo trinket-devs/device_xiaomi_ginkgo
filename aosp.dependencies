@@ -1,9 +1,9 @@
 [
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch": "lineage-17.0",
-    "remote": "lineage"
+    "repository": "mg712702/vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch": "master",
+    "remote": "github"
   },
   {
     "repository": "pshreejoy15/vendor_xiaomi_firmware",
