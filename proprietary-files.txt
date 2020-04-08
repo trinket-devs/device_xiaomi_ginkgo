@@ -1136,6 +1136,16 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|bf7766fbd49a3aa3426a93ab
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|c471659fc3fb56dcdcda183e080397a737e4708b
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|90f1106f7462a9e01721e1159ed3301579adee07
 
+# ConfigStore - from LA.UM.8.9.r1-07700-SM6xx.0
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|53762150ee4adb0bbad7102c2e2c5aec14f266a6
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5e732a1b324f5cfab439217e19b9dcd6663d6082
+-vendor/lib64/libplatformconfig.so|750ca2e0c66f36022402c489b9dc9e76618a8e4e
+-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|2f440e8acecdc9a4d38602c3f97512dcbe25fcea
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5f68e590dc67927c8240ea7ce9e8a1b65abbe8d5
+-vendor/lib/libplatformconfig.so|ac93a5abb64d1e187e214e9e5310b80b2bf55f91
+-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|3a872c53fe654cab3d64f19eecc3871bb0907bb2
+
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
 
@@ -1503,16 +1513,6 @@ vendor/lib64/libmls_utils_vendor.so|a8846d685dcf3422234ae0ffea0ed7780c9e9161
 vendor/lib64/libmls_v4l2enc_vendor.so|ad32c9bb5d9f3df237c22ab2d4903a4e623adb68
 vendor/lib64/vendor.qti.hardware.mlshal@1.0-halimpl.so|7d35b04a54e456bed0fcc9ce2fb9a85efb29463c
 vendor/lib64/vendor.qti.hardware.mlshal@1.0.so|d1657e9511971f6262eae310d580d4e58068590b
-
-# Configstore - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--vendor/lib/libplatformconfig.so|05f9ad27a2e17f3df6ee9258744e0369ef16e8fa
--vendor/lib64/libplatformconfig.so|68ffaf8e448c32b11b5da47708170d0decb8dc7b
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|21cba9e17196a7b6f0a66fb17bade23cab4b5b94
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|ecf907cce3c8fcb8594bc025c78c4be6505bc563
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|bf310fa21ed2d3500f30228b36bcce3173b85d8b
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|2755930adacac26e11801db7a8f1957b869aabd6
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|9e02db5f6b99905b22b0814da97852dff38a578b
 
 # Media - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 -vendor/lib/libMpeg4SwEncoder.so|a8e1523fd9d27853506d4e2261284a5fb19169d8
