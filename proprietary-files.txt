@@ -1229,52 +1229,44 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|fbff6357ee46dd6d62f490a942ff567b6ce955d1
 vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
 
-# DRM - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/qseecomd|085fe618caebc1ee728f14ddac3333d5982f90aa
-vendor/etc/init/qseecomd.rc|3e596c60490756388a5bd56378a91d0db7c3779b
-vendor/lib/libGPreqcancel.so|41827597d177591e4a3881c38bccb186ebb5e4a8
-vendor/lib/libGPreqcancel_svc.so|ccd4cae24edc0201957e9dd249e3586f248de4c0
-vendor/lib/libQSEEComAPI.so|6ac1ec0084ba279461b34e5929c696ad12ce2e93
-vendor/lib/libSecureUILib.so|af772d798d4f59878a41b477d8e64036e40d630d
-vendor/lib/libStDrvInt.so|d8633c902955af23245f70fbb8780f3416dfa789
-vendor/lib/libdrmfs.so|e5074fc139a5185fa6f591823ed382ce7de893fe
-vendor/lib/libdrmtime.so|3afe1f0c11dd8674c962e816804dcecf6cc5a3d8
-vendor/lib/libqisl.so|7ab9610b5aabeaf07b218cc4830edbd0a0f12bd9
-vendor/lib/librpmb.so|9f7193f44a115eaedf2e44dd584ed3f610447300
-vendor/lib/libsecureui.so|8294d97b8d0544fa3d76ad623bde278ac186f307
-vendor/lib/libsecureui_svcsock.so|bcad3caf9102d4ba326b0eaf64b717d83352f2bc
-vendor/lib/libssd.so|d2fcb392dc20ea781b63add646e17daa01084f0f
-vendor/lib64/libGPreqcancel.so|e097d1e6e7f15c74e2c8bdbee13b0cadb90c59f1
-vendor/lib64/libGPreqcancel_svc.so|5f9948ca68a0e007208063d7fe8d6cd9f0fceec9
-vendor/lib64/libQSEEComAPI.so|ed64c096d694b75658dd4a54f888f48639a5c8c0
-vendor/lib64/libSecureUILib.so|6988566aaa37fea83d32057bc79b5a2740ff1d98
-vendor/lib64/libStDrvInt.so|a7bd8140e2cd5aa70a7d929e01233e5b71844cd8
-vendor/lib64/libdrmfs.so|0165b548483aa9c08ba3f3979851bbdf1dcfefc4
-vendor/lib64/libdrmtime.so|5f42c99c4d550a01ece412d0d82c5b8e45c008b4
-vendor/lib64/libqisl.so|f81d523e3e257e99bd055f6576521519a074e630
-vendor/lib64/librpmb.so|fafcef298c853e656be94b353b19bc504db1631c
-vendor/lib64/libsecureui.so|6cac3cdc3645084aae88ea7cca3a7e58ff9bd70b
-vendor/lib64/libsecureui_svcsock.so|395c566741520f1c6d97259355f04d6095eb1688
-vendor/lib64/libssd.so|5ca153e887b9e386de6ae998af9f849ada111747
+# DRM - from LA.UM.8.9.r1-07700-SM6xx.0
+vendor/bin/qseecomd|87fe1e38e2e0b60b0f982c041ebf13b70b6b287b
+vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
+vendor/etc/init/qseecomd.rc|9c3b9c649e2bb8959b14d0e1278a390ddb15dc5e
+vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
+vendor/lib64/libGPreqcancel_svc.so|68f52c5e02974ba794221a71e39bb3f49cf0ad0b
+vendor/lib64/libQSEEComAPI.so|cea9c876ba099b883f533c1f403dfa9cec9ebed1
+vendor/lib64/libSecureUILib.so|a94e0e7083f1cbbde128443bc717efd4b9ed3f81
+vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
+vendor/lib64/libdrmfs.so|7f142d13fb099037498c9e665ed0faf7ca43145b
+vendor/lib64/libdrmtime.so|46ed3e5f81d2fdfa35cb7494c88655f484fecef9
+vendor/lib64/libops.so|f725fe53c004018de9e15502745337cd4a629960
+vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
+vendor/lib64/librpmb.so|fb82c93f8c4fe2d72c066c39436ddde651225ebb
+vendor/lib64/libsecureui.so|35db0c0e12388b5e2170dad3d5acab85a399c72e
+vendor/lib64/libsecureui_svcsock.so|fe6cfef77aa2e8e51ae76290bb583d9f24c6c563
+vendor/lib64/libsi.so|3855a8f4f5e117fadb282d5ff6fef76c7140aaf5
+vendor/lib64/libspl.so|933d83825894de0fb9f868437423c772c4c38f1c
+vendor/lib64/libssd.so|6bd9608adb484f5362beecd12b5c71d3132d2ca7
+vendor/lib/libQSEEComAPI.so|33acbf990f3813aace5d833e66c5e860364eef70
+vendor/lib/libcpion.so|9972e0cf4f37b3fc48ab28f25be73bbad35ac8d0
+vendor/lib/libdrmfs.so|2ae65d9a62f9343cf54103b545eff938a8bcd921
 
-# DRM - Widevine - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
+# DRM - Widevine - from LA.UM.8.9.r1-07700-SM6xx.0
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|95fb8c0063c50bd34c43c58c55840239207f26cb
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
-vendor/lib/libbase64.so|55aa81f6d225cdf33d3db4eb944a17c5255659c4
-vendor/lib/libcpion.so|2595dade0b89605c1222545c8265691d17b7148c
-vendor/lib/libhdcp1prov.so|e89b72a1c978a6205679a597f63e5f86222b23a9
-vendor/lib/libhdcp2p2prov.so|7ad3dae486ab62663c0ad435a803016f8f53a79d
-vendor/lib/libhdcpsrm.so|b0ac12fa63f3626c208531b57ffac8815b6bfa55
-vendor/lib/libmm-hdcpmgr.so|9f6b5ebb0cbc4fc0ecdcbe3d94071161206ce515
-vendor/lib/liboemcrypto.so|d672422449c6e49f932e401d4452c653540f1d22
+vendor/lib64/libbase64.so|d401c8afa0cf35e20149943abf94717b79e93e32
+vendor/lib64/libcpion.so|bf42036be4fcb098622ba8ec98371665650d443d
+vendor/lib64/liboemcrypto.so|55092595072548104cf66f7a610f53d65c04dd65
+vendor/lib64/librmp.so|f952b2ab9dab2f412f7f014a90089d529e784f3b
+vendor/lib64/mediadrm/libwvdrmengine.so|0e3181aea6857db7f4378064fc102f800b44f027
+vendor/lib/libbase64.so|90345ddebb0517e1b2ebbd43b938a318f13bc40a
+vendor/lib/libcppf.so|f7030a408959bff1f11499230b6d357cf570c7b5
+vendor/lib/libdrmfs.so|2ae65d9a62f9343cf54103b545eff938a8bcd921
+vendor/lib/liboemcrypto.so|d1d433d460266194f1385df9fe1dce5c2eeb4337
+vendor/lib/librmp.so|5a78255271ec2d83bd906b12e5168b653514b4c9
 vendor/lib/libwvhidl.so|c6250a2107597ec978cec3a91e74a12d042e4f32
-vendor/lib64/libbase64.so|f7f20f4c0708d89f1d86703d73b1518981dd2343
-vendor/lib64/libcpion.so|becd3018e5780ef4862852da8743933759ce14ac
-vendor/lib64/libhdcp1prov.so|b20cf8dd6de72e57615c3740f2790c9af8c9c31d
-vendor/lib64/libhdcp2p2prov.so|d2c4040f08e6052d4f1ae7afea96fc5f9aceeb9b
-vendor/lib64/libhdcpsrm.so|a8be07baf75681a045172d68c5301a3d4ef26efb
-vendor/lib64/libmm-hdcpmgr.so|3b87d3e59dfcbd25da345581013162560fa4a067
-vendor/lib64/liboemcrypto.so|84cf7252ae349548d0e33296aa62e983be3178f0
+vendor/lib/mediadrm/libwvdrmengine.so|990102c67939cb5fd5a183feb7a9aa4acd5c3aa1
 
 # ESE-Powermanager - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|6d76ad36f33e885c14b7176753ee228d405e64d4
