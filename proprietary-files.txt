@@ -1249,7 +1249,6 @@ vendor/lib64/libsi.so|3855a8f4f5e117fadb282d5ff6fef76c7140aaf5
 vendor/lib64/libspl.so|933d83825894de0fb9f868437423c772c4c38f1c
 vendor/lib64/libssd.so|6bd9608adb484f5362beecd12b5c71d3132d2ca7
 vendor/lib/libQSEEComAPI.so|33acbf990f3813aace5d833e66c5e860364eef70
-vendor/lib/libcpion.so|9972e0cf4f37b3fc48ab28f25be73bbad35ac8d0
 vendor/lib/libdrmfs.so|2ae65d9a62f9343cf54103b545eff938a8bcd921
 
 # DRM - Widevine - from LA.UM.8.9.r1-07700-SM6xx.0
@@ -1262,7 +1261,7 @@ vendor/lib64/librmp.so|f952b2ab9dab2f412f7f014a90089d529e784f3b
 vendor/lib64/mediadrm/libwvdrmengine.so|0e3181aea6857db7f4378064fc102f800b44f027
 vendor/lib/libbase64.so|90345ddebb0517e1b2ebbd43b938a318f13bc40a
 vendor/lib/libcppf.so|f7030a408959bff1f11499230b6d357cf570c7b5
-vendor/lib/libdrmfs.so|2ae65d9a62f9343cf54103b545eff938a8bcd921
+vendor/lib/libcpion.so|9972e0cf4f37b3fc48ab28f25be73bbad35ac8d0
 vendor/lib/liboemcrypto.so|d1d433d460266194f1385df9fe1dce5c2eeb4337
 vendor/lib/librmp.so|5a78255271ec2d83bd906b12e5168b653514b4c9
 vendor/lib/libwvhidl.so|c6250a2107597ec978cec3a91e74a12d042e4f32
@@ -1700,12 +1699,6 @@ vendor/bin/pm-proxy|4200aecba89950e684d284b521a0896347b59487
 vendor/bin/pm-service|0115038b692a2914e28df8b250689306887e2d9b
 vendor/lib/libperipheral_client.so|7ef98f63b1cec72113f7c2193bc4e8ff523f7503
 vendor/lib64/libperipheral_client.so|179a96f4e443c754fd70ff4e0c3c76b71047836c
-
-# Qualcomm Display Utils - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|680370eae4858b06e5be5d3380bdebd0d8b13b8d
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|9aa1eacb0880e2cf95f3745f13b1e2222dceb562
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|f227ee67b99082b8aeea5ef9830a3c23efc7e4c6
 
 # Postprocessing - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 product/lib64/vendor.display.color@1.0.so|e90c75046ba1f6f677b9f719caaae8d91d1a5cde
