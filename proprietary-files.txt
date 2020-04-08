@@ -1137,6 +1137,16 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|bf7766fbd49a3aa3426a93ab
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|c471659fc3fb56dcdcda183e080397a737e4708b
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|90f1106f7462a9e01721e1159ed3301579adee07
 
+# ConfigStore - from LA.UM.8.9.r1-07700-SM6xx.0
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|53762150ee4adb0bbad7102c2e2c5aec14f266a6
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5e732a1b324f5cfab439217e19b9dcd6663d6082
+-vendor/lib64/libplatformconfig.so|750ca2e0c66f36022402c489b9dc9e76618a8e4e
+-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|2f440e8acecdc9a4d38602c3f97512dcbe25fcea
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5f68e590dc67927c8240ea7ce9e8a1b65abbe8d5
+-vendor/lib/libplatformconfig.so|ac93a5abb64d1e187e214e9e5310b80b2bf55f91
+-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|3a872c53fe654cab3d64f19eecc3871bb0907bb2
+
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
 
