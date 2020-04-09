@@ -8,11 +8,6 @@ ro.config.vc_call_vol_steps=7
 ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
 
-# WFD
-debug.sf.enable_hwc_vds=1
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
 persist.vendor.camera.preview.ubwc=0
@@ -66,5 +61,7 @@ persist.radio.calls.on.ims=1
 # Hack for Youtube
 sys.display-size=3840x2160
 
-# Enable virtual display
-debug.sf.enable_hwc_vds=1
+# Wireless display
+debug.sf.latch_unsignaled=1
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
