@@ -59,5 +59,5 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "ginkgo-user 9 PKQ1.190616.001 9.12.26 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
 }
