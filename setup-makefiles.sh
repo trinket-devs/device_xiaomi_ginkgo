@@ -16,9 +16,9 @@ INITIAL_COPYRIGHT_YEAR=2019
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-MK_ROOT="${MY_DIR}/../../.."
+LINEAGE_ROOT="${MY_DIR}/../../.."
 
-HELPER="${MK_ROOT}/vendor/aosp/build/tools/extract_utils.sh"
+HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -26,7 +26,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${MK_ROOT}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 
 # Copyright headers and guards
 write_headers
