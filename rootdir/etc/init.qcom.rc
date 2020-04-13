@@ -248,6 +248,9 @@ on boot
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
+    # Thermal Profile
+    write /sys/class/thermal/thermal_message/sconfig 0
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
