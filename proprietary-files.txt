@@ -1459,9 +1459,9 @@ vendor/lib/libsdm-disp-vndapis.so|7ae31b682f1f99eda8f1185c11c09e9cbf38ac7f
 vendor/lib/libsdmextension.so|0017d3259e8548bda4ba35b95a19f604b95dbe7f
 vendor/lib/libtinyxml2_1.so|e84b6021097719954ff1878607c635b98ab602a5
 
-# Graphics (Vulkan) - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/hw/vulkan.trinket.so|f4ebce41a1f7fad72250b19a133fb5630601caaa
-vendor/lib64/hw/vulkan.trinket.so|a6353fe423bbe2a273a2639bb79708f385863845
+# Graphics (Vulkan) - from LA.UM.8.9.r1-07700-SM6xx.0
+vendor/lib/hw/vulkan.trinket.so|50e63be36db57624f361359c5094f11427974294
+vendor/lib64/hw/vulkan.trinket.so|cf18cf79a35863458e97d31f02f1dd6a880be682
 
 # IO Prefetcher - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|98c38e3647a6c286e5bfb8b271827328f6c04148
