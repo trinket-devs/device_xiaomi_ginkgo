@@ -1652,14 +1652,6 @@ vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
 vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
 vendor/libnfc-nxp_RF.conf
 
-# Mlipay - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/mlipayd@1.1|caff3f800ba16c251d0f7ace8e031fe86dd47a2e
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
-vendor/lib64/libmlipay@1.1.so|ab573a93d659e7496368d5e4f22befee29346431
-vendor/lib64/libmlipay.so|8510d27c292ca9077704724564b635978c0992b9
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|43cae59576c8570a37bbf9d4a059b5e9c207360d
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|521357ee808c1a248db9e76269880b1f9d0a0617
-
 # Perf - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|1bfabae277be75c5caa2946868ca8d88ff05467f
 vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78

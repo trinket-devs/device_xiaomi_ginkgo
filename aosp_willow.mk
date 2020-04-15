@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/ANXCamera/config.mk)
 
 #GAPPS
 TARGET_GAPPS_ARCH := arm64
@@ -24,10 +24,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 DERP_BUILDTYPE=Official
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_willow
+PRODUCT_NAME := aosp_willow
 PRODUCT_DEVICE := willow
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8T
