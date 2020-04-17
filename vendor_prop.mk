@@ -24,6 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+    persist.vendor.service.bdroid.sibs=false \
     ro.bluetooth.a2dp_offload.supported=true \
     vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee
