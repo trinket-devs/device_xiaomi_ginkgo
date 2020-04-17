@@ -59,6 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display/Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
+    debug.hwui.renderer=skiavk \
     debug.mdpcomp.logs=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
