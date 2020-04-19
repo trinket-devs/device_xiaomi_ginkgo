@@ -1146,21 +1146,13 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5f68e590dc67
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
 
-# CVP - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service|c4d796056f605408da827289559e4d5a8cdfb8b3
-vendor/etc/init/vendor.qti.hardware.cvp@1.0-service.rc|8bc22298c934bdfc6290ae97b13da80fe99d1f89
-vendor/lib/hw/vendor.qti.hardware.cvp@1.0-impl.so|3b5eb1d53f9f0c67f20b833aff17f500df27fc6a
-vendor/lib/libcvp.so|65170c2e2af22862be6536213c6eff370d8609e9
-vendor/lib/libcvp_common.so|2f491a8ee32f0e5eddca98d82cc5fafc16ec154d
-vendor/lib/libcvp_stub.so|8175c8ffbc59cc243ee7bf9f6078f7008da6df43
-vendor/lib/vendor.qti.hardware.cvp@1.0-halimpl.so|3b22c1434b161f43452c2a1eefedc42480d80770
-vendor/lib/vendor.qti.hardware.cvp@1.0.so|7536777a5210033ad4d0cf45c635b8061a382168
-vendor/lib64/hw/vendor.qti.hardware.cvp@1.0-impl.so|d890c7a62dec4b11362c0d3bcf7ee5bf613ee8ac
-vendor/lib64/libcvp.so|c6cd518e70fa6d95213abda1893b9ac4790fd9b9
-vendor/lib64/libcvp_common.so|dd8b04458aeb8f8747b3901540aa8a3bd4200c43
-vendor/lib64/libcvp_stub.so|addf270a9e8339cec283e31ad72f1cebb27c5550
-vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so|d9ad45b11f3779ecac38f28ab3f1e44bc09119f6
-vendor/lib64/vendor.qti.hardware.cvp@1.0.so|8b4756451c038042970bd57330801cb49f89e1f2
+# CVP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib64/vendor.qti.hardware.cvp@1.0.so|ac06f07156d7f4b778d7d5d26b275587fd37be3f
+vendor/lib/vendor.qti.hardware.cvp@1.0.so|77f9ef294f432745e9ce91ea2bafa3c731f683b0
+product/lib64/vendor.qti.hardware.cvp@1.0.so|265c759a38bb71c736c3ab6dd1caf1c8bd58f284
+product/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so|9df0bce39bd8c35dd26b5448f1aeee7ee52f965b
+product/lib/vendor.qti.hardware.cvp@1.0.so|d8048265e768794829e09caac03b7529dd94e812
+product/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so|c4584b6d5dec187aa30782dda1812017613e237f
 
 # Display - hardware
 vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service
@@ -1941,6 +1933,20 @@ vendor/etc/sensors/config/tmx4903.json
 vendor/etc/sensors/sns_reg_config
 
 # Snapdragon Computer Vision Engine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|27e96067d1b96cc1d6efbc7d988fbf03cc3a41e1
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|c4c864724ffe4ba7d8f4ffb5fa1eecf9ce4131a9
+product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|8d5c27721ff0ab9dff140e156b6bc2895dcbf840
+product/lib/vendor.qti.hardware.scve.panorama@1.0.so|f4a3c4c04cc1774546f4991c8cc39e49a75acc22
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|a003a4e3290e7777d52f5695cc6491a376ca71da
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|8613a107e2e318f67d27888cedea2e583263088f
+product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|1374198e008c0bcc9f09172eb70dddc458f4790b
+product/lib64/vendor.qti.hardware.scve.panorama@1.0.so|b7a1fd4813ce3204d140ca8110fda6018c709daa
+vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service|0f6a4b01eea87d577d380d1ae39df4a07a23293b
+vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service|de4ade25b00fb278a3e0b20b9b8e6ce8ba4b3174
+vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc|f9a24454c4dee54e9fad73e9ead57b96a212c5b6
+vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc|b9fad8788ca16fbe7daabe88f536ca411e3ab364
+vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|aef878f4c68313e9ec1b214d45f6aff6bf0e5fe4
+vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so|d09c722ad7a1d7a5159af1917f337d0c00321f3c
 vendor/lib/libfastcvdsp_stub.so|5ceb289becc5ddd0838472d8f57f46125231f234
 vendor/lib/libfastcvopt.so|bce6003513fdb4281290978d24cfddd30b61309d
 vendor/lib/libscveBlobDescriptor.so|34a0abee4a0018feb3ae21da3437f89dcbcdd2b0
@@ -1958,6 +1964,14 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d1
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|637e3c05ff05fb62ff9eede4ba394cd8f1874e18
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|b1c232b8fe7a11754a2f2148d4d2f12496a1dbe1
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so|16d09e271d13d84e74ebde403f7dd819cac9f164
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|6f968b5eb270e643274c631ab5d9d558ab0b621f
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so|7574002d8635e85b9b0e11c7c88c5034fcfdc8aa
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|5ed9860d826b0438625b5a8101a651ca8b7573f8
+vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|a08237f61b443bacb278a1e0ae3058dfa509a391
+vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|a08237f61b443bacb278a1e0ae3058dfa509a391
+vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so|f1bb31ee6cd684844e862bdb88adbb9a64881ccf
+vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so|f1bb31ee6cd684844e862bdb88adbb9a64881ccf
 vendor/lib64/libfastcvdsp_stub.so|ca9111bbae96a6c62936d91d8fe86d8199480f46
 vendor/lib64/libfastcvopt.so|6d269d07e82cdfcef7754485683463f5bff44c18
 vendor/lib64/libscveBlobDescriptor.so|afac314d971d53ff7eac4fca305cdf372a7c94b3
@@ -1970,6 +1984,8 @@ vendor/lib64/libscveObjectTracker.so|86f9e82c6d937df04d56d47c1471525f92281913
 vendor/lib64/libscveObjectTracker_stub.so|a5fdf3100b012c34f7b5c3974805c204111835fd
 vendor/lib64/libscvePanorama.so|7a6fd6cd7baf0477a081878d280251decae3026c
 vendor/lib64/libscvePanorama_lite.so|c49017ad2072037480dbb61895b2d66aadf4e8a0
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|d3f2a7b171981c759a8e791a3820d52d54300644
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|4a767e9b40fe8f084c476b2251fd4be1bc097b7a
 
 # Soter - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 -vendor/app/SoterService/SoterService.apk|05a33f07ddabd56f8027762ce142016632936498
