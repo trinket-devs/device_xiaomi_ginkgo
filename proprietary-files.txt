@@ -1255,13 +1255,13 @@ vendor/lib/librmp.so|ca9d2b9f036bce0b3700300cb327013425e0bc32
 vendor/lib/libwvhidl.so|ec0599ce744b8edde4f3b655534464f975d37da8
 vendor/lib/mediadrm/libwvdrmengine.so|65259496bd678e01ff56aaebc3e0d1734dad282a
 
-# ESE-Powermanager - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|6d76ad36f33e885c14b7176753ee228d405e64d4
+# ESE-Powermanager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|3bec43c4dfc46072a5c142b91392fd825d5ab3e6
 vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|48768b9be453eb86ffbff3a71fe5654841bc048a
-vendor/lib/vendor.qti.esepowermanager@1.0.so|730827ea12433a6de18d32f54041a74531c32c18
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|b9a03bfc607fb74462346eecacf27a7afda8d114
-vendor/lib64/vendor.qti.esepowermanager@1.0.so|0dc949a16129a9d3d06429723641b6fba11ee1d2
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|fd95cf6c9b36324fb5d0e5e8498721b65749ee94
+vendor/lib/vendor.qti.esepowermanager@1.0.so|12f57cdb3ea7f7e7a248f9a3d7de4f8e5755ac79
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|0210eedb323d2d08e676c0318b58f4d71289ef6a
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|f54548d8a5edc727bf23a09ff4068bc31e581008
 
 # Fingerprint sensor
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
