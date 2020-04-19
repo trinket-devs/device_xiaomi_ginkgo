@@ -1407,19 +1407,19 @@ vendor/lib/libtinyxml2_1.so|f54f81359c78715315bc24678c34c129413e6c92
 vendor/lib/hw/vulkan.trinket.so|ec434cfa02cbb6b783a74d6c9518451e8126fe2f
 vendor/lib64/hw/vulkan.trinket.so|7de77bf67c85334dda4e01805e5170b4a4609fb3
 
-# IO Prefetcher - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|98c38e3647a6c286e5bfb8b271827328f6c04148
+# IO Prefetcher - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|4ecba6fdc1ef0c7796a03afb7e6cc1a3f1ed51c0
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|feaee7a3969d3f711db4fa5f12d1d4cca5fc2072
-vendor/lib/libqti-iopd-client.so|be2e00af81ea63b6f37fb8a884d7af7d1def566b
-vendor/lib/libqti-iopd.so|207e42a1d561098c4eda74e08044d32b3a02362b
-vendor/lib/vendor.qti.hardware.iop@1.0.so|d1cbf74e7236bfe9a977bb7f609bb68fdf4d6750
-vendor/lib/vendor.qti.hardware.iop@2.0.so|f692b707076a933f865e3564e3263c3d7b7ae5a6
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|9c5ff1a7e6bf4b88fac19f27a0cee2baecd18341
-vendor/lib64/libqti-iopd-client.so|7fddeeb59ebe01eb2e87de56fe2c2d0899806bc9
-vendor/lib64/libqti-iopd.so|f795759359dc7db1adc178d6f47d254eab34189f
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|8ccdc1463dcb554297b0c96d768126f0ca42b83a
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|d5bafc1daeb1b417bbad1160f92e330610f09b8a
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|f78fd7791961c0ceea03dfae8154207820c61be9
+vendor/lib/libqti-iopd-client.so|ea48eb1e1d1f97ca9d2f53ffe635f9ab1925679c
+vendor/lib/libqti-iopd.so|1a395064d31fb4400a5bd089d9feea33ec4e25e3
+vendor/lib/vendor.qti.hardware.iop@1.0.so|8094748d325b8b71ba48ec07f3d8575b42e21754
+vendor/lib/vendor.qti.hardware.iop@2.0.so|e49a76a90d88b630c5f3f9640cb8996c89f1b851
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|88e8f4e5fdf11ac745937a608783bb125204be68
+vendor/lib64/libqti-iopd-client.so|71d5dc476b02ff9532fc6c84257060e4965239b8
+vendor/lib64/libqti-iopd.so|03a25699e6a468c57845271ec5d696cd226fb082
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|4b888566e43b5da4293338961fc19e91370e25a9
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|cb4bd932e3a8b72569d3607b08b0dbaaf2cc7649
 
 # IPA
 vendor/firmware/ipa_fws.b00
@@ -1547,39 +1547,38 @@ vendor/lib64/libmlipay.so|8510d27c292ca9077704724564b635978c0992b9
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|43cae59576c8570a37bbf9d4a059b5e9c207360d
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|521357ee808c1a248db9e76269880b1f9d0a0617
 
-# Perf - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|1bfabae277be75c5caa2946868ca8d88ff05467f
-vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
+# Perf - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|2f8f83abe95d11fa48b866b07b5d3cc44ad0ae5f
+vendor/bin/msm_irqbalance|54c73b55125b13fa40abf3852bfae31bc217eddc
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|0101a3294311c2988060a00f7b25d8abf2f428f9
 vendor/etc/lm/AdaptLaunchFeature.xml|ad4516342729e79a8914762c2737f7faa08b1e9d
 vendor/etc/lm/AppClassifierFeature.xml|69baba75bf7880a3bac99a9aefa2f97a047e9eea
 vendor/etc/lm/GameOptimizationFeature.xml|df9720376ef888a48882d5e27d453204230b5d8d
-vendor/etc/perf/commonresourceconfigs.xml|7bf6b442875ec6244db05ffcc2ebb85a1c370863
-vendor/etc/perf/perfboostsconfig.xml|7a54775a61ec9b9af4a224a628ac5f697a89cdc9
-vendor/etc/perf/perfconfigstore.xml|afb6ef1b9891d979a01867fbb38546ac303037e1
+vendor/etc/perf/commonresourceconfigs.xml|cf2a4ad135e2c9e3e72ffeb090542c991c8b7ec2
+vendor/etc/perf/perfboostsconfig.xml|f23b2d4cf480e519ca6ca8a880f7696ee534f484
+vendor/etc/perf/perfconfigstore.xml|1c92e3aed456c40300eb3f25177dd6272715d299
 vendor/etc/perf/targetconfig.xml|c5d0434e8e80a11c59dd841c12be2b61b7f98ed3
 vendor/etc/perf/targetresourceconfigs.xml|357b35d7ecfe2259447d2d27a9c8b0b63da0594f
-vendor/etc/perf/thermalboost.conf|3a70ac91160e48a64578f0b7775798f19040e87d
-vendor/lib/libperfconfig.so|645d5170d7cd9413604ae756cd5ec383ca7e5092
-vendor/lib/libperfgluelayer.so|dfabc7c38f54f0aba2a0ea7fbe6cd5c3822cee2d
-vendor/lib/libqti-perfd-client.so|c94451c1a19d460c6b919cb5ff84c76946a6d399
-vendor/lib/libqti-perfd.so|772c1ba40b382be233b7d756e2de65cf90f4b7df
-vendor/lib/libqti-util.so|2c3fdef8f812e5541634b17255480baa6a1f8650
-vendor/lib/libqti-utils.so|81d3d40097615baad8ff77a6ba3e6ec0706b4d71
-vendor/lib/vendor.qti.hardware.perf@2.0.so|79b74df48e39d46038b5ba13e7a0ae3513364a10
-vendor/lib64/libadaptlaunch.so|3d0d481af1112df5a5cc5eff886fad9d5d334c58
-vendor/lib64/libappclassifier.so|da027fb34f7c6ce67999b64810e231943b052278
-vendor/lib64/libgameoptfeature.so|b82be985421dd21bb25ed217f762e3955db16765
-vendor/lib64/liblearningmodule.so|d7a76fc9e48af3bf30dc928c80f71b7517793024
-vendor/lib64/libmeters-ns.so|73f78b3461a4cbee6419721149dd95fec9029f8b
-vendor/lib64/libmeters.so|5a518301ad77996a47c9c893093f2c2f36085ded
-vendor/lib64/libperfconfig.so|6b7535b00836fe98ff330864740b5bba293c8e87
-vendor/lib64/libperfgluelayer.so|b8d4864e2bc3b903e1a0d9c548686e5fac81fe54
-vendor/lib64/libqti-perfd-client.so|9db27376ef994c4c90eb90dc3c7c4e493c2902e4
-vendor/lib64/libqti-perfd.so|51b81ed5a4f6bdeb299e364e9d4c3dc80bba4d11
-vendor/lib64/libqti-util.so|c78b855b3909b01071ced5fc898add769de4a5b6
-vendor/lib64/libqti-utils.so|3726d65486928bc014e657960dc023d920524922
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|3717b35807fd7b33dced6e311c3b609d57399363
+vendor/lib/libperfconfig.so|d158eb9acd941c17bdff23c1968d488402604fcc
+vendor/lib/libperfgluelayer.so|b0868dc48c412b51a410e264477fac06ec276891
+vendor/lib/libqti-perfd-client.so|ee954f9709cebc46f0f583326e4cad8a45a248c5
+vendor/lib/libqti-perfd.so|32946baf2a2c04bfd0425453b2327d0df93e3b83
+vendor/lib/libqti-util.so|e7882172095bb0df546d4c358744761aba932b5a
+vendor/lib/libqti-utils.so|81cff03510772c85807b880103ff1428a562e7ad
+vendor/lib/vendor.qti.hardware.perf@2.0.so|2bd82bb06e4651d59ecc7433680fabbde5173643
+vendor/lib64/libadaptlaunch.so|25b68340a9d30f5495088ee0109d82f8d1337e03
+vendor/lib64/libappclassifier.so|6af2457030996a68f921852354ef45de03627e14
+vendor/lib64/libgameoptfeature.so|04df0ffaee8c5676cc86a236d875d99fa5409b4b
+vendor/lib64/liblearningmodule.so|8eedde058c8a40239cdf24500525505663090dd3
+vendor/lib64/libmeters-ns.so|628c93909e0f311fdec4bbbebfaf03865b213df8
+vendor/lib64/libmeters.so|3dd613b5cea7f023189f4fd6ef0a0c23df213a87
+vendor/lib64/libperfconfig.so|9af5b37de4dffdccd86d03207ec0698611dc58a5
+vendor/lib64/libperfgluelayer.so|a1b53349bcd3783b2d8dcf680400fec80a09b9ab
+vendor/lib64/libqti-perfd-client.so|941da516c48d801041ee229f9b87c809c7969aae
+vendor/lib64/libqti-perfd.so|8f4b6de8301b95d40942b4d28b647b348a7e559b
+vendor/lib64/libqti-util.so|a8d68967fedf87d569b15d30b93f814f152f9fe7
+vendor/lib64/libqti-utils.so|12badf9a19f7708be0012979eb9fe5d3afeb446d
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|5126e4795575b543c133af640e806de3310c5079
 
 # Peripheral manager - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/pm-proxy|4200aecba89950e684d284b521a0896347b59487
@@ -1987,11 +1986,11 @@ vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib/libtime_genoff.so|8578fc5aab1509fedb744f9b73721dc1acfd9748
 vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
 
-# TUI - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a0d692fe10ef9dc4479497fa666640612f06fbb4
+# TUI - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|9f5434d184f868c576ac86e950a305d6b4924430
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|de568c428f28470cbd03fc32774b20a11ea5e610
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b4b412a672
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|f34f921b3e2a889cada5f9588009aae11af46a96
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|53203fc5b6aa073e6396180b49d11ec4a5a8f208
 
 # Wifi - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/cnss-daemon|fa3a0a2618d7cc51a23b3de5110c9aee391018d2
