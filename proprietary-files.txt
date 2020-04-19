@@ -1052,8 +1052,8 @@ vendor/lib/libcdsprpc.so|991f6ba0ad95f24050040c9a5bf8ea2826eb6e24
 vendor/lib64/libcdsp_default_listener.so|921ed7d9a103932e152ffd6097a56840ff346ecf
 vendor/lib64/libcdsprpc.so|7bbffe619580bb7feaad4fc4ad65df70c1bd484f
 
-# Charger - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hvdcp_opti|f2dd72f3ce6874e33f893cd03aaf188b4c95050c
+# Charger - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hvdcp_opti|c7c5140c5e1f84a039618d5211c754df6bd0290c
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|3dab489feaf8d00e06894db7c92b462d701e4c98
 
 # CNE - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
