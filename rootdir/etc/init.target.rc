@@ -270,6 +270,26 @@ service nv_mac /vendor/bin/nv_mac
     group system inet net_admin wifi net_raw
     oneshot
 
+service adsprpcd_root /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+
+service adsprpcd /vendor/bin/adsprpcd audiopd
+   class main
+   user media
+   group media
+
+service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
+   class main
+   user system
+   group system
+
+service cdsprpcd /vendor/bin/cdsprpcd
+   class main
+   user system
+   group system
+
 on property:sys.thermallct.isincall=1
     write /sys/class/power_supply/battery/device/thermalcall 1
 
