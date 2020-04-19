@@ -1186,43 +1186,43 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|8b4f2f7912d6d583800ae6fb65169077447588b9
 vendor/lib64/libdpmqmihal.so|2a920f1c0d21b9e114b44b3de88d23da8a94fb5c
 
-# DRM - from LA.UM.8.9.r1-07700-SM6xx.0
-vendor/bin/qseecomd|87fe1e38e2e0b60b0f982c041ebf13b70b6b287b
+# DRM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/qseecomd|99c5d283f751144d60c0a6297286888e9c85f966
 vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
 vendor/etc/init/qseecomd.rc|9c3b9c649e2bb8959b14d0e1278a390ddb15dc5e
-vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
-vendor/lib64/libGPreqcancel_svc.so|68f52c5e02974ba794221a71e39bb3f49cf0ad0b
-vendor/lib64/libQSEEComAPI.so|cea9c876ba099b883f533c1f403dfa9cec9ebed1
-vendor/lib64/libSecureUILib.so|a94e0e7083f1cbbde128443bc717efd4b9ed3f81
-vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
-vendor/lib64/libdrmfs.so|7f142d13fb099037498c9e665ed0faf7ca43145b
-vendor/lib64/libdrmtime.so|46ed3e5f81d2fdfa35cb7494c88655f484fecef9
+vendor/lib64/libGPreqcancel.so|8551445a670c19720b6e8fe9c0afaa63ce2f5958
+vendor/lib64/libGPreqcancel_svc.so|baa00e1f31fa6c02faaaae99ef7e69cc088837fc
+vendor/lib64/libQSEEComAPI.so|57665ea71d559cc10f6494bccefa03fed96f2c3f
+vendor/lib64/libSecureUILib.so|1600234979d5792b177a4667c85ec096fed18a73
+vendor/lib64/libStDrvInt.so|c60fa62d2947aab327b8a59d51d257aef87414b2
+vendor/lib64/libdrmfs.so|0b16ba0990c2751ea93d251e27eaeaac988ca6c5
+vendor/lib64/libdrmtime.so|32bc051a1368290bd627a93a8b6d9695f07c926c
 vendor/lib64/libops.so|f725fe53c004018de9e15502745337cd4a629960
-vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
-vendor/lib64/librpmb.so|fb82c93f8c4fe2d72c066c39436ddde651225ebb
-vendor/lib64/libsecureui.so|35db0c0e12388b5e2170dad3d5acab85a399c72e
-vendor/lib64/libsecureui_svcsock.so|fe6cfef77aa2e8e51ae76290bb583d9f24c6c563
-vendor/lib64/libsi.so|3855a8f4f5e117fadb282d5ff6fef76c7140aaf5
+vendor/lib64/libqisl.so|82a1acc232db3d74c670134db4e9db292a479ac2
+vendor/lib64/librpmb.so|30049d222c0afe4aeec0405ab85c0994d5b5a134
+vendor/lib64/libsecureui.so|1868ee55bf85e56b8a894c7909f61cb0bf5ace6a
+vendor/lib64/libsecureui_svcsock.so|8023a507bad3d0412d754d58529115549988e9fc
+vendor/lib64/libsi.so|0dc54567ae76755c42f1bdd0702d4bce1beebc7f
 vendor/lib64/libspl.so|933d83825894de0fb9f868437423c772c4c38f1c
-vendor/lib64/libssd.so|6bd9608adb484f5362beecd12b5c71d3132d2ca7
-vendor/lib/libQSEEComAPI.so|33acbf990f3813aace5d833e66c5e860364eef70
-vendor/lib/libdrmfs.so|2ae65d9a62f9343cf54103b545eff938a8bcd921
+vendor/lib64/libssd.so|0e61d96752d415791a9dcf5c10161fb60ec22b5d
+vendor/lib/libQSEEComAPI.so|bdbb4237735d162029ec38077fdbd805bfcc3f93
+vendor/lib/libdrmfs.so|e65f666b6b094654eacbdde720efacfd0332e965
 
-# DRM - Widevine - from LA.UM.8.9.r1-07700-SM6xx.0
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|95fb8c0063c50bd34c43c58c55840239207f26cb
+# DRM - Widevine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|4db49073828ddcf51d54e278896b6279f17f75b7
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
-vendor/lib64/libbase64.so|d401c8afa0cf35e20149943abf94717b79e93e32
-vendor/lib64/libcpion.so|bf42036be4fcb098622ba8ec98371665650d443d
-vendor/lib64/liboemcrypto.so|55092595072548104cf66f7a610f53d65c04dd65
-vendor/lib64/librmp.so|f952b2ab9dab2f412f7f014a90089d529e784f3b
-vendor/lib64/mediadrm/libwvdrmengine.so|0e3181aea6857db7f4378064fc102f800b44f027
-vendor/lib/libbase64.so|90345ddebb0517e1b2ebbd43b938a318f13bc40a
-vendor/lib/libcppf.so|f7030a408959bff1f11499230b6d357cf570c7b5
-vendor/lib/libcpion.so|9972e0cf4f37b3fc48ab28f25be73bbad35ac8d0
-vendor/lib/liboemcrypto.so|d1d433d460266194f1385df9fe1dce5c2eeb4337
-vendor/lib/librmp.so|5a78255271ec2d83bd906b12e5168b653514b4c9
-vendor/lib/libwvhidl.so|c6250a2107597ec978cec3a91e74a12d042e4f32
-vendor/lib/mediadrm/libwvdrmengine.so|990102c67939cb5fd5a183feb7a9aa4acd5c3aa1
+vendor/lib64/libbase64.so|bcf4e19a754b810c0cbf1f8143ecc8cbeb779107
+vendor/lib64/libcpion.so|e48d07b7b69907ef6145006fcaeb35973a3b07f3
+vendor/lib64/liboemcrypto.so|14289b52bddd8d5ad100452c475cf4cbedca67cb
+vendor/lib64/librmp.so|7a45552afc4bea2cb7031239bde0c3db71192264
+vendor/lib64/mediadrm/libwvdrmengine.so|b676e670d2561ec2b8585341859031baf5211f3f
+vendor/lib/libbase64.so|890a6f1686952663c2382f299bcac82f27b43e66
+vendor/lib/libcppf.so|6f3408621697755a498b7bef497b3bf0a2c6703f
+vendor/lib/libcpion.so|9476c57635affa77186bdd56026535d42f45a39b
+vendor/lib/liboemcrypto.so|822a8413aa5229e66b090113295f79d6839c004f
+vendor/lib/librmp.so|ca9d2b9f036bce0b3700300cb327013425e0bc32
+vendor/lib/libwvhidl.so|ec0599ce744b8edde4f3b655534464f975d37da8
+vendor/lib/mediadrm/libwvdrmengine.so|65259496bd678e01ff56aaebc3e0d1734dad282a
 
 # ESE-Powermanager - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|6d76ad36f33e885c14b7176753ee228d405e64d4
@@ -1636,19 +1636,19 @@ vendor/lib64/libqmi_csi.so|e71b58c6a1439ed46553a34680c4dadc0019e52b
 vendor/lib64/libqmi_encdec.so|5e536057be350651379b772aa1bba5f4735d11ee
 vendor/lib64/libqmiservices.so|4c8e2085245a4be823f908e64a8bb4fcad6409ca
 
-# Qualcomm Trusted Execution Environment - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|186b7410234082720a7c9fc3cd8f27b9c9cfe962
+# Qualcomm Trusted Execution Environment - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|2a9f02e8b042a726357c8875804d217b1e6547d7
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|ee750c252381ee7d89ca2ac4080ed582edbf1fbf
-vendor/lib/libGPQTEEC_vendor.so|fb74184230689cb939ef35a44f1d05d7d0a36614
-vendor/lib/libGPTEE_vendor.so|6e37794ef02d135df40aa867b75b2610daf86ff5
-vendor/lib/libQTEEConnector_vendor.so|79b7b3d90e7fe640a96420370382db65689d8a23
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|a2ecf9a389892d21f6f17288a48f41ddb6e77074
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|7102523307cbf44c01364b725bb72a7bd0cae2c8
-vendor/lib64/libGPQTEEC_vendor.so|3ef2c29d24e13460226daac355a7495b91f84940
-vendor/lib64/libGPTEE_vendor.so|0abd055676626e20585b9ab396c8973fd53af191
-vendor/lib64/libQTEEConnector_vendor.so|48275dc35631062248c7d697478c58eb6793a92a
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|3202c209bd8249e3f76dec1108788b1a85b53561
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|da092b85544768d146c30e365cc443e119eb5a6f
+vendor/lib/libGPQTEEC_vendor.so|923d7fcf594e84d6890606e2c09eaef08b26ee6d
+vendor/lib/libGPTEE_vendor.so|31a7dd92e19fad28f980a94bdbc48cdefc8a6323
+vendor/lib/libQTEEConnector_vendor.so|8de6731779807901e731232de4b844f0b5df1abe
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|5010f60bd1cf2a3b212b366cc4e46f28d5fbfa94
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|a6264af733c7af1f6264357dacc226d6509785db
+vendor/lib64/libGPQTEEC_vendor.so|406a64389883c2b2c36aebaa31726879016042c3
+vendor/lib64/libGPTEE_vendor.so|3dc7837571204f609bc93e4ca2d1b827ab11334d
+vendor/lib64/libQTEEConnector_vendor.so|a89cbeaed5302ab4a6ebe593f68bd2c104f02c7a
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|deb4c2efaa06b4af49023896c5f35d6451b94ff6
 
 # Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
 product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
@@ -1940,12 +1940,17 @@ vendor/lib64/libscvePanorama_lite.so|c49017ad2072037480dbb61895b2d66aadf4e8a0
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|d3f2a7b171981c759a8e791a3820d52d54300644
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|4a767e9b40fe8f084c476b2251fd4be1bc097b7a
 
-# Soter - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--vendor/app/SoterService/SoterService.apk|05a33f07ddabd56f8027762ce142016632936498
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|4f7e3c8a6cde9efefd8b9bf440fb1ed442e21fd3
+# SOTER - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+-product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
+product/lib/vendor.qti.hardware.soter@1.0.so|5905c81c54d3ee3246f0520ba445f506561c26bb
+product/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|1ec1c5cd7c065d53772c0c29dd4892e631321a52
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|9db52ab44741d7e8fa3cab295c7dd3f352243c02
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|208a00cb9c154c53e6c0f28eb24fbc4d7f6f15cf
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|5815859dc07d3181901596d06612b379e86fe6fd
+vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so|bd77d72dad18cf1a5d2e52d2fe6317f141943c2e
+vendor/lib/vendor.qti.hardware.soter@1.0.so|ccdf8c5fc5ace0065bbce034e09b776bfae2ac8f
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1c4a430b758f6697363570e113f9284bd8d538d3
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|3603b75fe841690121b82aced4ab1b6b619f1819
 
 # Thermal
 -vendor/lib/libthermalclient.so
