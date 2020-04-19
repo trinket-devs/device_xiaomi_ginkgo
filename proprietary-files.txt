@@ -1246,18 +1246,18 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM - from laurel_sprout-user 9 PKQ1.190416.001 V10.3.4.0.PFQMIXM release-keys
--lib/vendor.qti.hardware.fm@1.0.so|d50021b553ab924835e5472470064b2816e67870
--lib64/vendor.qti.hardware.fm@1.0.so|100979a7f77eb3fd6fd84785c0b55e397d8229f7
-lib/fm_helium.so|d0b20653d6b5f74ee298c4c539e2cbf7e8a5910e
-lib/libfm-hci.so|a1bf3a8e7b854e3d42bfaa59149ae571fdd51939
-lib64/fm_helium.so|b4c342e57541cb842f757a39db55669b468cffca
-lib64/libfm-hci.so|2bc70e398b4f43a463f5fc95a754579365c7346a
-vendor/bin/fm_qsoc_patches|9ace34a25bee431559c45f975953dd0ad873f58c
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|9cf41306b2f7d814f4b55cc86c852ac45ecf3d96
-vendor/lib/vendor.qti.hardware.fm@1.0.so|567282b3c776e5c6639a4c9a34483482acd1afd1
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|92f52da7a0785074c3102b10137ad13cd00ab4fa
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|65e5f44a54f42fcebc3d2eec62dee3d80640e006
+# FM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+lib/fm_helium.so|3e02cb1f3b0896cb42e9c1bb145cc260b570f006
+lib/libfm-hci.so|9744656579cada902baeebcbed521e77c2a54517
+lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
+lib64/libfm-hci.so|589e9e290acfa18a49deba33606ed158d5e7f898
+-product/lib/vendor.qti.hardware.fm@1.0.so|71efd722f71d858c6b02d4a0baaff0163691348e
+-product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
+vendor/bin/fm_qsoc_patches|2043cf7a0245b6dc81f049478afe1bb0af8f8ef7
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|2087fee60eb44c097ee9e6c93f4c873fff280866
+vendor/lib/vendor.qti.hardware.fm@1.0.so|89a7ec5cc673d13afc73116eccff2e58f218a34d
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|edbe696265de547d8f56570f29bd7fee4e3dbc1f
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|e14abd3a8413ccfac55339ad03b592bfe642b833
 
 # Gatekeeper - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|1e405ee7b305ae0b2df850177c695459e2c5a234
