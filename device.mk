@@ -183,10 +183,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.trinket \
     hwcomposer.trinket \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
-    libqdMetaData \
-    libqdMetaData.system \
     libtinyxml \
     libvulkan \
     memtrack.trinket \
@@ -492,7 +488,11 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl
+    libdisplayconfig.vendor \
+    libnl \
+    libqdMetaData \
+    libqdMetaData.system \
+    libqdMetaData.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
