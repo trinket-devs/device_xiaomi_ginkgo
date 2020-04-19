@@ -39,7 +39,7 @@ vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|273739730b88ed740fbcbe06890916211
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|38bcdefdc8f59c14631c0ae777c7d1188a16fee6
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|6d33525b3f966c9b50cb5e1e0b5310eb8b073092
 
-# Audio - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
+# Audio - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
 framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
 vendor/lib/libacdb-fts.so|a390c675f029b8adbb8e781c73cf9f902b134e97
@@ -72,15 +72,20 @@ vendor/lib64/soundfx/libqcbassboost.so|620c2c840a0ab87d0f4c816ea6a79087b193cee4
 vendor/lib64/soundfx/libqcreverb.so|b9dd737b6f6da59b9db3fb283b70aa2e7f32933c
 vendor/lib64/soundfx/libqcvirt.so|e6d157b90ba98e325110ba7de053e1ebe0444771
 
-# Audio - hardware
-vendor/lib/hw/audio.primary.trinket.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libtinycompress.so
-vendor/lib64/hw/audio.primary.trinket.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libtinycompress.so
+# Audio - hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/hw/audio.primary.trinket.so|6b7caa59f5cac31b0d1c689e5a44fb6b1576c56d
+vendor/lib/libaudio_log_utils.so|ad36513df2524539496677ff1cbec37037d0b476
+vendor/lib/libtinycompress.so|04f0af43da04cdb30c7b9cc187962b33df96b941
+vendor/lib64/hw/audio.primary.trinket.so|09c71924df5449a15375078d07847783f24210f2
+vendor/lib64/libaudio_log_utils.so|987862da75a584802bc69d3d5fa94f03aedef27f
+vendor/lib64/libtinycompress.so|0642623dde2fe61ac153eed519c58da480e3f80f
 
-# Audio ACDB - from violet-user 9 PKQ1.181203.001 9.7.4 release-keys
+# Audio effects - Dirac
+vendor/etc/diracmobile.config
+vendor/lib/libDiracAPI_SHARED.so
+vendor/lib/soundfx/libdirac.so
+
+# Audio ACDB - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a2f072a6e1e963271ede327fca282afcc3794e8b
 vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|e769c3f9a87f46ce5e454e4fee76748c5a3e3d9c
 vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|1ca9b48b88d758151ac85c8b928e9da6d0d705b8

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!--- Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.       -->
+<!--- Copyright (c) 2014-2019, The Linux Foundation. All rights reserved.       -->
 <!---                                                                           -->
 <!--- Redistribution and use in source and binary forms, with or without        -->
 <!--- modification, are permitted provided that the following conditions are    -->
@@ -62,6 +62,10 @@
     <ctl name="EC Reference Channels" value="Zero"/>
     <ctl name="EC Reference Bit Format" value="0"/>
     <ctl name="EC Reference SampleRate" value="0"/>
+    <ctl name="TX_DEC0 Volume" value="84" />
+    <ctl name="TX_DEC1 Volume" value="84" />
+    <ctl name="TX_DEC2 Volume" value="84" />
+    <ctl name="TX_DEC3 Volume" value="84" />
 
     <path name="listen-voice-wakeup-1">
         <ctl name="TX_CDC_DMA_TX_3 LSM Function" value="SWAUDIO" />
@@ -162,6 +166,7 @@
     <path name="listen-ape-handset-mic">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX_DEC0 Volume" value="102" />
         <ctl name="TX DMIC MUX0" value="DMIC2" />
     </path>
 
@@ -172,6 +177,8 @@
     <path name="listen-ape-handset-dmic">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX_DEC0 Volume" value="102" />
+        <ctl name="TX_DEC1 Volume" value="102" />
         <ctl name="TX DMIC MUX0" value="DMIC2" />
         <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
         <ctl name="TX DMIC MUX1" value="DMIC3" />
@@ -180,6 +187,9 @@
     <path name="listen-ape-handset-tmic">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Three" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX_DEC0 Volume" value="102" />
+        <ctl name="TX_DEC1 Volume" value="102" />
+        <ctl name="TX_DEC2 Volume" value="102" />
         <ctl name="TX DMIC MUX0" value="DMIC2" />
         <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
         <ctl name="TX DMIC MUX1" value="DMIC0" />
@@ -190,6 +200,10 @@
     <path name="listen-ape-handset-qmic">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Four" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX_DEC0 Volume" value="102" />
+        <ctl name="TX_DEC1 Volume" value="102" />
+        <ctl name="TX_DEC2 Volume" value="102" />
+        <ctl name="TX_DEC3 Volume" value="102" />
         <ctl name="TX DMIC MUX0" value="DMIC2" />
         <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
         <ctl name="TX DMIC MUX1" value="DMIC0" />
