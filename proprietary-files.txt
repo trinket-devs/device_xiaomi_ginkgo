@@ -42,49 +42,55 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|6d33525b3f966c9b50cb5e1e0b5310e
 # Audio - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
 framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
-vendor/lib/libacdb-fts.so|1578268cdbd2a722affc4be02872353cc702a969
-vendor/lib/libacdbloader.so|4bbea222afe1a9a20566ff097c59e623ff0738f4
-vendor/lib/libacdbrtac.so|1804fa13c8bac7f02af550ef9ca0bb7ca672dd73
-vendor/lib/libadiertac.so|dde05100c7bc3e752ea984a6e74dafa5617e1bac
-vendor/lib/libadm.so|fd0c0a2a1864023c221a23bc4587fb85134e4e28
-vendor/lib/libaudcal.so|38efce23772f90564123ef842dfb1cd66f63b5a2
-vendor/lib/libaudioalsa.so|89665aca431ac6de9f0848ff23fba585e70820e5
-vendor/lib/libaudioparsers.so|11ad61b7e57e57fe45929a66310c101984c3b341
-vendor/lib/libdrc.so|80297cbca91cc6ef470cd667d003e2b27990ef8e
-vendor/lib/libhdmipassthru.so|9791b492788d3f678e1dfe63b53d091ef7f6459b
-vendor/lib/libqtigef.so|23f654b3be361b422d7d36375460d1dac232b350
-vendor/lib/libsurround_3mic_proc.so|9020976e90c2b78bcff5cbd6a913b1de8a436000
-vendor/lib/soundfx/libasphere.so|b16636ad3a2d5b4bf575012ed212b8e51269c7d5
-vendor/lib64/libacdb-fts.so|7ab3d376308ff949358819a4b65cd0bf095f2da1
-vendor/lib64/libacdbloader.so|a423320848031e21091bc9e163b2ce9dc27f2d90
-vendor/lib64/libacdbrtac.so|381ea26c98ce1bd00d0d3f0e30b8ced802703a1e
-vendor/lib64/libadiertac.so|9e4c4f06ad861f89487f3780c197a9a2cbbe12ed
-vendor/lib64/libaudcal.so|28757d7f2947efbd6b3909630edfd7b03635a65b
-vendor/lib64/libaudioalsa.so|a743be854f0af2ae8f60d6c598f078a4c09f8b41
-vendor/lib64/libaudioparsers.so|ab849844b97f005231b1b3150e61cd4b67cbdb11
-vendor/lib64/libhdmipassthru.so|882fe62187d282a4c0fe257cd54a7090fe809824
-vendor/lib64/libqtigef.so|886285c40cd45a4f17d3b2e5e909da5a4fd9bf6c
-vendor/lib64/soundfx/libasphere.so|bd48aa3d7cf27bf3b12ce29f429b719383e104fc
+vendor/lib/libacdb-fts.so|a390c675f029b8adbb8e781c73cf9f902b134e97
+vendor/lib/libacdbloader.so|7e28896fdc1b7698bc11543087506fdc20c58236
+vendor/lib/libacdbrtac.so|b1582d501a5f6378029395038280f3a893cb506d
+vendor/lib/libadiertac.so|f4699a2a0c2f6ecd7fe11548284794e2bc152925
+vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
+vendor/lib/libaudcal.so|fd9289bed762e70add08b40de1d7c08783c14cdb
+vendor/lib/libaudioalsa.so|272cd6a93bca7edbe3cf4323ca1612737f4f9cde
+vendor/lib/libaudioparsers.so|485bbd30e2ea7e40d7fbcb3d7aa1f8a222cd2fc4
+vendor/lib/libdrc.so|854e12157d5f09831b81fcf7a4cecf0f491d660a
+vendor/lib/libhdmipassthru.so|eb0be5057af22ffd3e2e10d9a0d9f7c39b2955bb
+vendor/lib/libqtigef.so|d70ce932a3cc799d91ead157b870cd0c00dd195c
+vendor/lib/libsurround_3mic_proc.so|3c98223a30bf84ff91ec6e000dfea5be4a86d3cc
+vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
+vendor/lib/soundfx/libqcbassboost.so|7fb233f9b48b5c87b1fa0338d9a893c25be56451
+vendor/lib/soundfx/libqcreverb.so|ec1a00233de7f13a86248cd29740e8caee988119
+vendor/lib/soundfx/libqcvirt.so|debe6ae1d17ee2f2f9fe77ce836af666b5b72da6
+vendor/lib64/libacdb-fts.so|ef26d4571fcfd3df84496ca78caa1d5a23e06a04
+vendor/lib64/libacdbloader.so|856e47d0c38e36c0c2d03d3d786cd8f976f4a44c
+vendor/lib64/libacdbrtac.so|975c02869f533a6076e73fa332dbc37478eb310b
+vendor/lib64/libadiertac.so|774c4f491f40ba3a1c08975e16150a179142e561
+vendor/lib64/libaudcal.so|2b2fbf48bf6bd13715f72c97b9f8845073dd7e11
+vendor/lib64/libaudioalsa.so|5a3d2400b25d073be45cc777a2dada281d9e9aa9
+vendor/lib64/libaudioparsers.so|364bf4dbadc81ac2d44918c28d5f1ddc676bdee4
+vendor/lib64/libhdmipassthru.so|a6ace660e191070a4b7972fecf81ac7b7e398181
+vendor/lib64/libqtigef.so|a18a65bdf341955ec1c429ffad7e85693ff95b3c
+vendor/lib64/soundfx/libasphere.so|a404102354aebb0486c6a829d546e60e83b8217b
+vendor/lib64/soundfx/libqcbassboost.so|620c2c840a0ab87d0f4c816ea6a79087b193cee4
+vendor/lib64/soundfx/libqcreverb.so|b9dd737b6f6da59b9db3fb283b70aa2e7f32933c
+vendor/lib64/soundfx/libqcvirt.so|e6d157b90ba98e325110ba7de053e1ebe0444771
 
 # Audio - hardware
 vendor/lib/hw/audio.primary.trinket.so
 vendor/lib/libaudio_log_utils.so
-vendor/lib/libtinycompress_vendor.so
+vendor/lib/libtinycompress.so
 vendor/lib64/hw/audio.primary.trinket.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libtinycompress_vendor.so
+vendor/lib64/libtinycompress.so
 
 # Audio ACDB - from violet-user 9 PKQ1.181203.001 9.7.4 release-keys
-vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|9227eef7533d7d0e50f0fb436aea674e9c64a10d
-vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|2c3ba336fd6a852619892c1627fead53d84ebc25
-vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|c6c127816342485ad1016b962abbfd87a69f8fce
-vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|2f96a2b08891d441bb488b48516d7726322624a4
-vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|fe61527b5d82ff1aab79730492a976cc54d3ad4e
-vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|2fe3895d35dd39b59cba444f0eed515c54ffddee
-vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|0de141210d207e57fa9a6a32c245d1302490a0e6
-vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|4d57919157b4218bc6cd3032901285f5a5da30aa
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|41a5a897f5298c9c7fce130457e53afb4ad097d0
-vendor/etc/acdbdata/adsp_avs_config.acdb|3a8a0f2908756d39ee600c02b429f131716f6044
+vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a2f072a6e1e963271ede327fca282afcc3794e8b
+vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|e769c3f9a87f46ce5e454e4fee76748c5a3e3d9c
+vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|1ca9b48b88d758151ac85c8b928e9da6d0d705b8
+vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|0f4ae6de5a1cf0f868b4b6dcdc03ae62bf7e22a0
+vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|f05dc2acddd3e4a294d7bf8bb8f68965643ec3ca
+vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|68530c3f306080ee7c0f776669a69b92cde7ac40
+vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|75200c10b96a871c3ae07306cc0463abb137a70f
+vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|cf2107bf84e9235cbb0a88c2b8c8f71f95265559
+vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|1ae3274fa8901fe32a67c08c85823fd68431fcf9
+vendor/etc/acdbdata/adsp_avs_config.acdb|0132130ff591a68a501e2e50c47a951b3b9253ea
 
 # Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -1438,29 +1444,27 @@ vendor/lib/vendor.qti.latency@2.0.so|c6b9efda9c2e39fd33bc42e6aee745bd6ee176c8
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|ff7a319e51ddd4de14af28a84f7bca5e82547f6e
 vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
 
-# Listen - Hardware
-vendor/lib/hw/sound_trigger.primary.trinket.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/librice.so|5e21acde0ba82f20ab892a9a300e6a0a576c7427
-vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.trinket.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/librice.so|1a027bc0331d3f8e6345ab6ac8cf1a8571424ef9
+# Listen - Hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/hw/sound_trigger.primary.trinket.so|f6bef5e9b40b49526f2036a462f2f851af1c0176
+vendor/lib/libcapiv2svacnn.so|845ad0ee77f417d3934f9b8392285f0836d5fe63
+vendor/lib/libcapiv2vop.so|3ea3509b29e35e5c19714b605e6ecf2ce020031a
+vendor/lib/libsmwrapper.so|1d4112fa63d5b11d306d1c7e9465047c08e99b18
+vendor/lib64/hw/sound_trigger.primary.trinket.so|baf39e593076de9c2fc8ce65fad63f3cb9e6f487
+vendor/lib64/libcapiv2svacnn.so|ab08e84c6dc08e90a8d45bd7db2e9920490491ab
+vendor/lib64/libcapiv2vop.so|703836be24ce91c4a64ab0e4d872e7297979ded0
 
-# Listen - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/libadpcmdec.so|8dc9036e15aa62a85becfda6eb4865de4308ce33
-vendor/lib/libgcs-calwrapper.so|fa8ba4c39920f8ab1ffd8bb84a1b5d3953b377c5
-vendor/lib/libgcs-ipc.so|7bc3733efc941edc176a3c702d6d85438f4971f1
-vendor/lib/libgcs-osal.so|8d3a12a99a1da67cf0897a2ee6e6859e482c122c
-vendor/lib/libgcs.so|41d9701411cb42160fa3dee31ba86bb341909476
-vendor/lib/liblistensoundmodel2.so|04c2e792b63cc6074dc62c2c7baf5d85fbfc05c5
-vendor/lib64/libgcs-calwrapper.so|5a828b9697123634569eaa2f1751550ae6bf1601
-vendor/lib64/libgcs-ipc.so|963b1183b1950d16bd462d47b9149bfbd8c3a14a
-vendor/lib64/libgcs-osal.so|5eca0a8d8ea32505d5b8d69b3e13bf640b34976a
-vendor/lib64/libgcs.so|144b92a0f996879349400c6f0fc5daff0d8f5180
-vendor/lib64/liblistensoundmodel2.so|8aaa1875266d9c1798d3f78544599978e534d354
+# Listen - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
+vendor/lib/libgcs-calwrapper.so|a703d6b820ee8c581c7f2f4ea992b03782d8ffa2
+vendor/lib/libgcs-ipc.so|f64ac3ed7fa0ba1b15dc4b4fd4c7cd41ea17743c
+vendor/lib/libgcs-osal.so|dfae7d1bb15b7bd19fef7427f0a6f6df28d5d30a
+vendor/lib/libgcs.so|c3673c0b7079d954b1ee0dbf58dba9632ce23406
+vendor/lib/liblistensoundmodel2.so|766d3855b2c4bdcaebf0580010c0909bcdd1dada
+vendor/lib64/libgcs-calwrapper.so|968e5989868464a05143aa4d87cc64e9075ac7c5
+vendor/lib64/libgcs-ipc.so|7370368defaba7d5f10334ac12687a5f5e3c2abf
+vendor/lib64/libgcs-osal.so|90febb19a109d473f96eb2c0dfef46f8adb43a4d
+vendor/lib64/libgcs.so|20c944d98ce1523b8c20fd95a4c8aeb570b4ed10
+vendor/lib64/liblistensoundmodel2.so|68d8d3d7a425702287f9fff0c55fbc25f20063e5
 
 # Media - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 -vendor/lib/libMpeg4SwEncoder.so|a8e1523fd9d27853506d4e2261284a5fb19169d8
