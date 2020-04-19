@@ -112,6 +112,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
 
+# PASR
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.power.pasr.enabled=true
+
 # ParanoidDoze
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sensor.proximity=true \

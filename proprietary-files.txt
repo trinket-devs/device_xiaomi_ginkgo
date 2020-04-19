@@ -1546,6 +1546,15 @@ vendor/lib64/libmlipay.so|8510d27c292ca9077704724564b635978c0992b9
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|43cae59576c8570a37bbf9d4a059b5e9c207360d
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|521357ee808c1a248db9e76269880b1f9d0a0617
 
+# PASR Manager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+-vendor/app/pasrservice/pasrservice.apk|6fda948d980c1e84bf51db1ade322b804f550012
+vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|d86b35735d370d6f33d2dbf420e31b53b1a45013
+vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc|b34c1b9179c89cd47adce145bae9a609e5141bc0
+vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so|8f5f998afd7e56ccff23c4e4a8900cd9b917db0e
+vendor/lib/vendor.qti.power.pasrmanager@1.0.so|c086159479259e7352b7d58ef467723bdf27fdba
+vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|411e98d78ec956d1a0f4be61b8f2590b036838ae
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|865b363010a5ce365e7e5c11be6c881e761c1c54
+
 # Perf - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|2f8f83abe95d11fa48b866b07b5d3cc44ad0ae5f
 vendor/bin/msm_irqbalance|54c73b55125b13fa40abf3852bfae31bc217eddc
