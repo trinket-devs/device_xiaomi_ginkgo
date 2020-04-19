@@ -1,32 +1,24 @@
-# ADSP - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|13d8a911642844bde32d533948a35730e17d41ad
-vendor/lib/libadsp_default_listener.so|7da1a1cfef2f04e3577d0e1cda81ce12204598fa
-vendor/lib/libadsprpc.so|28a1d664aba2bda20e62d04c09c117eea136d3c7
-vendor/lib/libmdsprpc.so|07e492c35dc205391d8d7e2d4684801ed870d329
-vendor/lib/libsdsprpc.so|f4d860f07a9e44a04eb9578771f079528c770109
-vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
-vendor/lib64/libadsprpc.so|aea62273ca4355ceb76dfeec2cd11d39614a854e
-vendor/lib64/libmdsprpc.so|df135d5ca3e0ac4ccc670a4133f781d77315f089
-vendor/lib64/libsdsprpc.so|65f23710d4895b738c9eb827b513b1d9d9480aad
+# ADSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/adsprpcd|2e28ed075e8d2686ec33a63253d4e31e605aa276
+vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
+vendor/lib/libadsprpc.so|261606110272a14b58711ab70e5c4138b674aebe
+vendor/lib/libmdsprpc.so|0e174694f7de192a15c56cc558a1ed63cc5451d9
+vendor/lib/libsdsprpc.so|db73d636aa383ae74cc74ea9232fe289eead94d9
+vendor/lib64/libadsp_default_listener.so|1316afa37cf8047c6008d504ce777aaf8640de97
+vendor/lib64/libadsprpc.so|feaff57fc71448ea8a7e83af934d0925d3ffc43a
+vendor/lib64/libmdsprpc.so|3f6d4e3f8575dcfbb4515543d36cbd6277a869ba
+vendor/lib64/libsdsprpc.so|593381b7215163f4c5898e745678c27cf8b23f63
 
-# ADSP modules - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
-vendor/lib/rfsa/adsp/dirac_resource.dar|8697ff9e77a872b849cd2ce95afa45dac97cb01e
+# ADSP modules - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so|936d440dc25c049efe71d9fe404b8c141250dcc6
 vendor/lib/rfsa/adsp/libVC1Dec.so|79a8425bc640ed3401a784ca5f4f04865a3e38e3
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|e108bf1175b6ebaead5b9eec3b9279c8edbb52e3
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|de5ea1c639d93d1a66f43d3d3e8f4e1602c0a83e
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so|29d949909c9f115491b781ff93604be238e0f965
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so|58cbb97212073cf7e4780c6d77a7628c3ee845bd
-vendor/lib/rfsa/adsp/libdirac-capiv2.so|c1432e70a935bc34b3787a4973fce4bab1faf4e2
 vendor/lib/rfsa/adsp/libdspCV_skel.so|c1ab1b81cd2f2c584aa51e722244c436a0f24f6b
-vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so|481cdec174e77e5cb555d715057170568892a18f
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
-vendor/lib/rfsa/adsp/libdsp_streamer_skel.so|aee67209556f075cabdb55ddc70d7a76ffc74b3b
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|1dc2f84efcb8ac9a72f98de014b7f763ad61847b
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib/rfsa/adsp/misound_res.bin|60e475cb5c8dccedac50e9758bb56ad7f20f0bfb
 
 # Alarm - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|29ea64d6d9b20b29f7b3ffb3f71a81038a0ec64c
@@ -1049,12 +1041,12 @@ vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
 vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
 vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 
-# CDSP - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee
-vendor/lib/libcdsp_default_listener.so|40ace1e3eb14fc8aa5aa04b0870b752980c70400
-vendor/lib/libcdsprpc.so|0e14f3b527c6ab9b13b350ae32cc368480b73f21
-vendor/lib64/libcdsp_default_listener.so|ebde03266606d634172d41bbc97ba9ebc5606423
-vendor/lib64/libcdsprpc.so|ee74a437bd96c0e1d4acf139099eb00689db9f42
+# CDSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/cdsprpcd|b76dd062f530a4a9d51e4e5107ccd7588e33e55f
+vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
+vendor/lib/libcdsprpc.so|991f6ba0ad95f24050040c9a5bf8ea2826eb6e24
+vendor/lib64/libcdsp_default_listener.so|921ed7d9a103932e152ffd6097a56840ff346ecf
+vendor/lib64/libcdsprpc.so|7bbffe619580bb7feaad4fc4ad65df70c1bd484f
 
 # Charger - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/hvdcp_opti|f2dd72f3ce6874e33f893cd03aaf188b4c95050c
@@ -1893,41 +1885,36 @@ vendor/etc/sensors/config/tmd2725.json
 vendor/etc/sensors/config/tmx4903.json
 vendor/etc/sensors/sns_reg_config
 
-# Snapdragon Computer Vision Engine - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
-vendor/lib/libfastcvdsp_stub.so|bf139041e559e10df95c0ac3246c0cca6112d162
-vendor/lib/libfastcvopt.so|7909f3636ae3b20892d58e7ff94ef84c710d845b
-vendor/lib/libscveBlobDescriptor.so|c058ca01299e1d93e472e1254bbc953d5c58821d
-vendor/lib/libscveBlobDescriptor_stub.so|080a236c8443f0f9c3a68eba0a56d93e57751c7c
-vendor/lib/libscveCommon.so|27a291ecf026df9d48871bb9aae4b74557e470f1
-vendor/lib/libscveCommon_stub.so|3b8f4afb7764d35b0ea652dc8577ea830b61d94c
-vendor/lib/libscveFaceLandmarks.so|b5963f16a49bfa6ebe05f1b8ff7237caf590715a
-vendor/lib/libscveFaceRecognition.so|6ab9978a585910c3a6a8a1a18fab1d57f8285be0
-vendor/lib/libscveObjectSegmentation.so|029244dff49b883678b99a2ff79c907ed9b388c6
-vendor/lib/libscveObjectSegmentation_stub.so|be23d62049f7adf9a4412ebbebe0c0176364a78e
-vendor/lib/libscveObjectTracker.so|646c13fda247004a04ff3803a2b155c091d20298
-vendor/lib/libscveObjectTracker_stub.so|6bf43b9f643ec642db25b719990209ae4ddfa06a
-vendor/lib/libscvePanorama.so|43dec408a005426ffdcfe7dbc88cf67ae91534c2
-vendor/lib/libscvePanorama_lite.so|59172b93589f202bdf211a1c3cf7eda9854302f6
+# Snapdragon Computer Vision Engine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/libfastcvdsp_stub.so|5ceb289becc5ddd0838472d8f57f46125231f234
+vendor/lib/libfastcvopt.so|bce6003513fdb4281290978d24cfddd30b61309d
+vendor/lib/libscveBlobDescriptor.so|34a0abee4a0018feb3ae21da3437f89dcbcdd2b0
+vendor/lib/libscveBlobDescriptor_stub.so|c26e9de3c564760734843274577a34d1b6f130d2
+vendor/lib/libscveCommon.so|5ef54affaa6df4d2328a20c8e42ade4b6be30e39
+vendor/lib/libscveCommon_stub.so|3a8685352857a64d01b9f9411083b160fd135b87
+vendor/lib/libscveObjectSegmentation.so|9675011baa09bbb50bfa1d8491f32525d4cc8e0f
+vendor/lib/libscveObjectSegmentation_stub.so|d7d62ceac6b104f987b01e75a059bc2ede375ac9
+vendor/lib/libscveObjectTracker.so|bd29aca4cb465b8cd854e7499fdbb531db03928b
+vendor/lib/libscveObjectTracker_stub.so|deb807e02a7a3ed218bbbf4bd2391b7eb1b18e81
+vendor/lib/libscvePanorama.so|d45a07969217f2b07d23f11771ca7a6e91f14279
+vendor/lib/libscvePanorama_lite.so|c1d2f2f389726c7cf37b115cb69c666a3076f705
 vendor/lib/rfsa/adsp/libfastcvadsp.so|5c86de2533d60534ce5b07e6be13bcf988e4b03b
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d16a
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|637e3c05ff05fb62ff9eede4ba394cd8f1874e18
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|b1c232b8fe7a11754a2f2148d4d2f12496a1dbe1
-vendor/lib64/libfastcvdsp_stub.so|acb42c1e615c25428740bfcc98173e9c2bb50578
-vendor/lib64/libfastcvopt.so|8c8ffef560b7eae88824b13ef05af3a6a5e2ee39
-vendor/lib64/libscveBlobDescriptor.so|269ff8fc2a5a576dab62b4e69d2d5ceca1dd3264
-vendor/lib64/libscveBlobDescriptor_stub.so|b8fe6a37a7de62739b015351cb0fac86330af654
-vendor/lib64/libscveCommon.so|edafe544e687224832ab0067168fc5a24a3e07b9
-vendor/lib64/libscveCommon_stub.so|7f5aa0b1fca2e9c56457c1b332e4bea3d5f03a8f
-vendor/lib64/libscveFaceLandmarks.so|a82249aeca4e16a9ae266891c1f383ac28ef3206
-vendor/lib64/libscveFaceRecognition.so|bc056a7d839c0883c3d50f6bfaf46a3bedd13115
-vendor/lib64/libscveObjectSegmentation.so|c16f50e3c6226691b0479ff0c6c811e1fd7d129d
-vendor/lib64/libscveObjectSegmentation_stub.so|8e6a7170164f5cc7b1756d50506e31bd072e6b9c
-vendor/lib64/libscveObjectTracker.so|525a20595e13ab5937e4ac3f7156a66b68aa5ab5
-vendor/lib64/libscveObjectTracker_stub.so|b4ab0472e565a69f3c4dce0d1061fad9e990e42b
-vendor/lib64/libscvePanorama.so|62cb5a9e8f00a856c6834a95cee4970dd007f63f
-vendor/lib64/libscvePanorama_lite.so|ef7dbeff0c7fbfd5b2faa78dc3521ccbc90d4044
+vendor/lib64/libfastcvdsp_stub.so|ca9111bbae96a6c62936d91d8fe86d8199480f46
+vendor/lib64/libfastcvopt.so|6d269d07e82cdfcef7754485683463f5bff44c18
+vendor/lib64/libscveBlobDescriptor.so|afac314d971d53ff7eac4fca305cdf372a7c94b3
+vendor/lib64/libscveBlobDescriptor_stub.so|1ef52c8d21c6c76344d5360059e039bcae9f66d3
+vendor/lib64/libscveCommon.so|18e1662c250d80256ce8da8bffe069e0b3560718
+vendor/lib64/libscveCommon_stub.so|3b69ead7cb6efb63d00794a098170d94ccdb3a1d
+vendor/lib64/libscveObjectSegmentation.so|c5322d0d4994f92218ca969d17e1ed3a55695af1
+vendor/lib64/libscveObjectSegmentation_stub.so|ec8d0288efbff88aae301061c9228a76994d695e
+vendor/lib64/libscveObjectTracker.so|86f9e82c6d937df04d56d47c1471525f92281913
+vendor/lib64/libscveObjectTracker_stub.so|a5fdf3100b012c34f7b5c3974805c204111835fd
+vendor/lib64/libscvePanorama.so|7a6fd6cd7baf0477a081878d280251decae3026c
+vendor/lib64/libscvePanorama_lite.so|c49017ad2072037480dbb61895b2d66aadf4e8a0
 
 # Soter - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 -vendor/app/SoterService/SoterService.apk|05a33f07ddabd56f8027762ce142016632936498
@@ -1968,9 +1955,9 @@ vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc|aacefc44da5e
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc|0ad6f8871ffb8130d6af385434b2eb0512c04733
 vendor/etc/wifi/aoa_cldb_falcon.bin|7511e868c40e66e9758568b7112894cbce2650a4
 vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
-vendor/etc/wifi/wigig_p2p_supplicant.conf|add33c197c2e740071e0e55fe8b14eadc3eedf4c
-vendor/etc/wifi/wigig_supplicant.conf|c3114b4c7dddad57eb3bfb66974d440777d22054
-vendor/firmware/wigig/wigig.ini|165fdbe0c75ddee78fe6a3a8cc8feebd31b903c2
+vendor/etc/wifi/wigig_p2p_supplicant.conf|2ba755ef8ae5f665b830b6930026534ddd3a1a4b
+vendor/etc/wifi/wigig_supplicant.conf|c62e0b2dee7cb149accbe658d841daabbc92a6b9
+vendor/firmware/wigig/wigig.ini|1ec12833a14cab778168c24c283e237cadbd1781
 vendor/lib/libaoa.so|430896da0e452a9f82dc5b5955fd1e898f40e974
 vendor/lib/libwigig_flashaccess.so|fe5c6a215a17eea835458990aa62150da1ad23ab
 vendor/lib/libwigig_pciaccess.so|dfdb4b624b75bb4379fb9b45360865af1ca07b94
@@ -2058,7 +2045,7 @@ vendor/lib/libwfdsourcesm_proprietary.so|36b5ab958541648e1629a1c6404ee3a7a6847e1
 vendor/lib/libwfduibcinterface_proprietary.so|ce2982acb8ddcc59d6dbe82cebaae1da0c3e50b8
 vendor/lib/libwfduibcsinkinterface_proprietary.so|ea23f943390aa1a45f1c3f8c111de6d322717304
 vendor/lib/libwfduibcsink_proprietary.so|53ed65686f347b14520302b0664061108473a24b
-vendor/lib/libwfduibcsrcinterface_proprietary.so|0caa66ac14411f8e055fd02195e68a0e555554fe
+vendor/lib/libwfduibcsrcinterface_proprietary.so|fbc5bb0a69d17e5b915ed5326ebe8e9adf4b7c5c
 vendor/lib/libwfduibcsrc_proprietary.so|f6a2afe63999611c71735ccd14f06efae065a837
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|5883162a2891cb109c46af59d5aac3f2eb133b43
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|0b3f05ebd11098193e5f50af3f56dd2d4ba6fffd
