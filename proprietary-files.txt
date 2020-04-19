@@ -20,14 +20,14 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib/rfsa/adsp/misound_res.bin|60e475cb5c8dccedac50e9758bb56ad7f20f0bfb
 
-# Alarm - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--product/app/PowerOffAlarm/PowerOffAlarm.apk|29ea64d6d9b20b29f7b3ffb3f71a81038a0ec64c
+# Alarm - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
 product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
-vendor/bin/power_off_alarm|9f800336a28ad1ad111f164b8c779313cddc98c1
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
+vendor/bin/power_off_alarm|9781703c7caa0ad6a22abb046e783862fbb004ee
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|c7c712f51e09931d30d3746a616221e535eca289
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|1e2631850cc97dfedbde50a9d0d55c8d14881b44
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|271f85f1c6dc0c65dc3aa9a8603f3910fa50e1ea
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|b3e4b897e3481bc7261360d45bd6da41c797e2cf
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|0f7921947ddbb25591f6b3abf0bcb4f34eff141f
 
 # ANT+ (system) - from laurel_sprout-user 9 PKQ1.190416.001 V10.3.4.0.PFQMIXM release-keys
 -lib/libantradio.so|8d9bd787f54a5ad028591ca8a68ba2e0ba43158a
