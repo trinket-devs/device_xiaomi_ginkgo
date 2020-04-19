@@ -1530,14 +1530,13 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|c387b980e5c524b4d78c725ed043e6c1333e
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|171b951d8b110fc2649306741db28434b4549a1c
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|45d07ab814b4c7ca3784935d8171eae1a204717b
 
-# Neural-networks - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti|06613a0e0541e27ddf2af5e9c6512890012d0d06
+# Neural-networks - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti|6d9e9de8a13f10b1b0f51080a86984704a7df8a2
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc|db9900f3a9d88f2f207c1a86ec6184f32551ab39
-vendor/lib64/libhexagon_nn_stub.so|baa9dca0c174e10f05a49f2678f21f7becf011da
-vendor/lib64/unnhal-acc-adreno.so|f877a5020dde74756fba26d6f82a0134f13ca551
-vendor/lib64/unnhal-acc-common.so|ddceb10f1008a3b2ab6f4f64a3b519b042a91894
-vendor/lib64/unnhal-acc-hta.so|c96f5b5fb99909b0da2cf9a8abc956d589480359
-vendor/lib64/unnhal-acc-hvx.so|3ef790f573551e8dcda378e86ea389ce0a66a3e4
+vendor/lib64/libhexagon_nn_stub.so|2d6e67292cf0440c1eef4d8de74d661ee58fb336
+vendor/lib64/unnhal-acc-adreno.so|a503c8face277880eacbf89c7ad0c5efbb5ad2d5
+vendor/lib64/unnhal-acc-common.so|8a4480e55306c620fe9c77dc383cbe00f2b6a901
+vendor/lib64/unnhal-acc-hvx.so|dacf445adc87646738b5c65626c56a49bbf5082d
 
 # Mlipay - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/mlipayd@1.1|caff3f800ba16c251d0f7ace8e031fe86dd47a2e
