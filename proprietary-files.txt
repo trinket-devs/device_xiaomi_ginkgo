@@ -29,17 +29,15 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|b3e4b897e3481bc7261360d45bd6da41c797e2cf
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|0f7921947ddbb25591f6b3abf0bcb4f34eff141f
 
-# ANT+ (system) - from laurel_sprout-user 9 PKQ1.190416.001 V10.3.4.0.PFQMIXM release-keys
--lib/libantradio.so|8d9bd787f54a5ad028591ca8a68ba2e0ba43158a
--lib64/libantradio.so|b1b05e284c71a9552bc7e3f5407520f0757033a8
-lib/com.qualcomm.qti.ant@1.0.so|fd8a3ac1c865ef3b0f6f3eedd85786a9993db114
-lib64/com.qualcomm.qti.ant@1.0.so|ad4f7601400bbe6ca9d82dcc6a38023e48d35469
-
-# ANT+ (vendor) - from laurel_sprout-user 9 PKQ1.190416.001 V10.3.4.0.PFQMIXM release-keys
-vendor/lib/com.qualcomm.qti.ant@1.0.so|33cd99e965f44ad13c5d2496dace78445f7d1734
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|1626b16bd3de85db4bd68e933bef0d24fa573818
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|671430030323a3e8b5dd334383143df6dd85d0fa
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|83759b8f07fb1e64baecff205cef1f2e67381243
+# ANT+ (system) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+-lib/libantradio.so|d343bed6e26f99d9870f730303096f6ea8a9bcf8
+-lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
+product/lib/com.qualcomm.qti.ant@1.0.so|a6e5dc519d76a0d938701b8773df19cfa98596b4
+product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+vendor/lib/com.qualcomm.qti.ant@1.0.so|1b5236c8ad7990c2bcf5a91f1d3b3a7f2c8f8adf
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|273739730b88ed740fbcbe068909162116552dd1
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|38bcdefdc8f59c14631c0ae777c7d1188a16fee6
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|6d33525b3f966c9b50cb5e1e0b5310eb8b073092
 
 # Audio - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
