@@ -1259,11 +1259,11 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|567282b3c776e5c6639a4c9a34483482acd1afd
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|92f52da7a0785074c3102b10137ad13cd00ab4fa
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|65e5f44a54f42fcebc3d2eec62dee3d80640e006
 
-# Gatekeeper - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|a189a50515831e6ac9a7e88a165ac979ae6ac077
+# Gatekeeper - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|1e405ee7b305ae0b2df850177c695459e2c5a234
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|c55e5c78d0e5e6268cc03cb4232005e3ccc5a223
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|80a74259090a718fee2da944aecb914fd9460544
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|085acf62328630a00f0c84dea89ffb6bbacba398
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|8bf06661f77fdbdb3e17f72f6cf22cb5e08e8447
 
 # GPS - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/garden_app|a5d9db8922eda5427fb7cefea4eb0fcbf1c53d54
@@ -1418,17 +1418,17 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
 vendor/firmware/ipa_fws.elf
 
-# Keystore - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|312e4ff5d9f7e3548a0f1404b0c33c1a56b3b0f6
+# Keymaster - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|ca9dfe453ebfd45ff1233df70f557c72ae3808c3
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
-vendor/lib/libkeymasterdeviceutils.so|fdef44a1d20019ed0aa4de1216135b72a4070507
-vendor/lib/libkeymasterprovision.so|452a790d727910a024dc95aafa95668bf7c3336b
-vendor/lib/libkeymasterutils.so|a7f8525879222e88b74e474141ab14d5139c795c
-vendor/lib/libqtikeymaster4.so|b1e9cec081b502fc6febbfddefb9091ef96348d2
-vendor/lib64/libkeymasterdeviceutils.so|763a02841eb133e698180e0cacf309450a4ce0e0
-vendor/lib64/libkeymasterprovision.so|09a61b1a36e28b9d5c485dfa7a290b3923abfb04
-vendor/lib64/libkeymasterutils.so|679491d7b415f45469990380e4fd61e4bfbc445e
-vendor/lib64/libqtikeymaster4.so|08e3341250f7cec2c0cd9b203bacd3bccf79e8f5
+vendor/lib/libkeymasterdeviceutils.so|bc2aac023d99ec9e423d2f769019d187c99a8afb
+vendor/lib/libkeymasterprovision.so|870921e99eca37e6180b1e4501877f4f0ee91090
+vendor/lib/libkeymasterutils.so|599755dde51af5289f1f2776651bb2f93eb8507e
+vendor/lib/libqtikeymaster4.so|c7db55e68f5e2ceb79f2513694a67bb3f7b9cad9
+vendor/lib64/libkeymasterdeviceutils.so|34b0c7b66f54038e8762c5136739706d978c51ca
+vendor/lib64/libkeymasterprovision.so|e9a3ea8f0ada6134edf12cc37eda6cc6860a6e1e
+vendor/lib64/libkeymasterutils.so|b464b8c1ce5d43c4d32403d21242b9302960c5d6
+vendor/lib64/libqtikeymaster4.so|aef9d6ac431832ef77d0e4b5ef3f5ad31ffe962a
 
 # Latency - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
