@@ -56,17 +56,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
 
-# Display/Graphics
+# Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.hwui.renderer=skiavk \
     debug.mdpcomp.logs=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.early_app_phase_offset_ns=500000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000 \
-    debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_phase_offset_ns=500000 \
+    debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=0 \
     persist.hwc.enable_vds=1 \
@@ -80,12 +77,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_hw_recovery_dump=0 \
     vendor.display.disable_inline_rotator=1 \
     vendor.display.disable_scaler=0 \
+    vendor.gralloc.disable_ubwc=0 \
     vendor.display.disable_ui_3d_tonemap=1 \
-    vendor.display.enable_default_color_mode=0 \
+    vendor.display.enable_default_color_mode=1 \
     vendor.display.enable_force_split=0 \
     vendor.display.enable_null_display=0 \
-    vendor.display.enable_optimize_refresh=1 \
-    vendor.gralloc.disable_ubwc=0
+    vendor.display.enable_optimize_refresh=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -150,6 +147,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    debug.sf.early_app_phase_offset_ns=500000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_phase_offset_ns=500000 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
