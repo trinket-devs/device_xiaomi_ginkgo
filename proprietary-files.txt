@@ -72,30 +72,30 @@ vendor/lib64/soundfx/libqcbassboost.so|620c2c840a0ab87d0f4c816ea6a79087b193cee4
 vendor/lib64/soundfx/libqcreverb.so|b9dd737b6f6da59b9db3fb283b70aa2e7f32933c
 vendor/lib64/soundfx/libqcvirt.so|e6d157b90ba98e325110ba7de053e1ebe0444771
 
-# Audio - hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/lib/hw/audio.primary.trinket.so|6b7caa59f5cac31b0d1c689e5a44fb6b1576c56d
-vendor/lib/libaudio_log_utils.so|ad36513df2524539496677ff1cbec37037d0b476
-vendor/lib/libtinycompress.so|04f0af43da04cdb30c7b9cc187962b33df96b941
-vendor/lib64/hw/audio.primary.trinket.so|09c71924df5449a15375078d07847783f24210f2
-vendor/lib64/libaudio_log_utils.so|987862da75a584802bc69d3d5fa94f03aedef27f
-vendor/lib64/libtinycompress.so|0642623dde2fe61ac153eed519c58da480e3f80f
+# Audio - hardware
+vendor/lib/hw/audio.primary.trinket.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib64/hw/audio.primary.trinket.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libtinycompress_vendor.so
+
+# Audio ACDB
+vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio effects - Dirac
 vendor/etc/diracmobile.config
 vendor/lib/libDiracAPI_SHARED.so
 vendor/lib/soundfx/libdirac.so
-
-# Audio ACDB - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a2f072a6e1e963271ede327fca282afcc3794e8b
-vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|e769c3f9a87f46ce5e454e4fee76748c5a3e3d9c
-vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|1ca9b48b88d758151ac85c8b928e9da6d0d705b8
-vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|0f4ae6de5a1cf0f868b4b6dcdc03ae62bf7e22a0
-vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|f05dc2acddd3e4a294d7bf8bb8f68965643ec3ca
-vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|68530c3f306080ee7c0f776669a69b92cde7ac40
-vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|75200c10b96a871c3ae07306cc0463abb137a70f
-vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|cf2107bf84e9235cbb0a88c2b8c8f71f95265559
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|1ae3274fa8901fe32a67c08c85823fd68431fcf9
-vendor/etc/acdbdata/adsp_avs_config.acdb|0132130ff591a68a501e2e50c47a951b3b9253ea
 
 # Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -1315,6 +1315,15 @@ vendor/lib64/vendor.qti.gnss@3.0.so|00bf10ebe87ad3268443c844c2a2dea54bf743dd
 
 # GPU firmware
 vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/a608_rgmu.bin
+vendor/firmware/a610_zap.b00
+vendor/firmware/a610_zap.b01
+vendor/firmware/a610_zap.b02
+vendor/firmware/a610_zap.elf
+vendor/firmware/a610_zap.mdt
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a640_gmu.bin
 vendor/firmware/focaltech_ts_fw_huaxing.bin
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
@@ -1322,14 +1331,6 @@ vendor/firmware/novatek_ts_ebbg_fw.bin
 vendor/firmware/novatek_ts_ebbg_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
-
-# GPU firmware - Adreno 610 - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
-vendor/firmware/a610_zap.b01|75d1ebb03307e45511d0bbc966a0edd3ac79be17
-vendor/firmware/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
-vendor/firmware/a610_zap.elf|6399a696bc74368543ba6596b4db20973c4da6bb
-vendor/firmware/a610_zap.mdt|9497b7ec2e7c60b66deb281c4d58362c0d937156
-vendor/firmware/a630_sqe.fw|a7a91327db8043a3c9ad85f11356984bbc401026
 
 # Graphics - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/lib64/egl/eglSubDriverAndroid.so|ca30ccf7aea7fcc032b5ec6e8ab92ba4cfb5af76
@@ -1439,14 +1440,16 @@ vendor/lib/vendor.qti.latency@2.0.so|c6b9efda9c2e39fd33bc42e6aee745bd6ee176c8
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|824e79bfc95f3cdf1606f5555a78bd7197f7d911
 vendor/lib64/vendor.qti.latency@2.0.so|2f519fc5779fd8a5c6dbb0817547a0382644cc0c
 
-# Listen - Hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/lib/hw/sound_trigger.primary.trinket.so|f6bef5e9b40b49526f2036a462f2f851af1c0176
-vendor/lib/libcapiv2svacnn.so|845ad0ee77f417d3934f9b8392285f0836d5fe63
-vendor/lib/libcapiv2vop.so|3ea3509b29e35e5c19714b605e6ecf2ce020031a
-vendor/lib/libsmwrapper.so|1d4112fa63d5b11d306d1c7e9465047c08e99b18
-vendor/lib64/hw/sound_trigger.primary.trinket.so|baf39e593076de9c2fc8ce65fad63f3cb9e6f487
-vendor/lib64/libcapiv2svacnn.so|ab08e84c6dc08e90a8d45bd7db2e9920490491ab
-vendor/lib64/libcapiv2vop.so|703836be24ce91c4a64ab0e4d872e7297979ded0
+# Listen - Hardware
+vendor/lib/hw/sound_trigger.primary.trinket.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/librice.so|5e21acde0ba82f20ab892a9a300e6a0a576c7427
+vendor/lib/libsmwrapper.so
+vendor/lib64/hw/sound_trigger.primary.trinket.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2vop.so
+vendor/lib64/librice.so|1a027bc0331d3f8e6345ab6ac8cf1a8571424ef9
 
 # Listen - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
