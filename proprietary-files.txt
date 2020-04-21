@@ -2031,10 +2031,18 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|f34f921b3e2a889cada5f9588009aae11af46a96
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|53203fc5b6aa073e6396180b49d11ec4a5a8f208
 
-# Wifi - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/cnss-daemon|fa3a0a2618d7cc51a23b3de5110c9aee391018d2
-vendor/bin/nv_mac|a1e4c9d0032732e9d5a2fa38f1dfb9d0005451a8
-vendor/bin/wifilearner|78d083c35899b6e01a92e6893e4e9e1c27c5dc42
+# WiFi - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+product/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar|9ba9f90a361fb50a7f85d1abaa22581d414aab8c
+product/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar|88c3f539d6fd51909ce79bb03a9ca0c5ca042e2b
+product/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so|b13e1b0996a4b4ed688d778c27b93cc9999aaa88
+product/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so|91f3b910f9abb9d8436f78c4bcc24f27e2a156d6
+product/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|3d53ba7ca2e6694625faf44e4c79174059e7ac93
+product/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|22151742f895b86efd5a085e91799560a35b2f1c
+vendor/bin/cnss-daemon|b0d24ac8caa3892f7fe8d73ff920f364bf546a29
+vendor/bin/wifilearner|77db23d6de2dfa6d13e642a40fd242922c66e046
+vendor/bin/wigig_wiburn|20da82b013156dfc3189f95a60a5bf24c6348779
+vendor/bin/wigighalsvc|374d18e16b1d167386450dae483447a6e9054c35
+vendor/bin/wigignpt|7ad5270bceddc8d07f84cb617d956f1c8cdf0049
 vendor/etc/configstore/wigig.xml|2752200cc901da4a2f514f07f9bf1b0a3272884d
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc|aacefc44da5e64760bc12779a83b905ca6b78f01
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc|0ad6f8871ffb8130d6af385434b2eb0512c04733
@@ -2043,17 +2051,19 @@ vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
 vendor/etc/wifi/wigig_p2p_supplicant.conf|2ba755ef8ae5f665b830b6930026534ddd3a1a4b
 vendor/etc/wifi/wigig_supplicant.conf|c62e0b2dee7cb149accbe658d841daabbc92a6b9
 vendor/firmware/wigig/wigig.ini|1ec12833a14cab778168c24c283e237cadbd1781
-vendor/lib/libaoa.so|430896da0e452a9f82dc5b5955fd1e898f40e974
-vendor/lib/libwigig_flashaccess.so|fe5c6a215a17eea835458990aa62150da1ad23ab
-vendor/lib/libwigig_pciaccess.so|dfdb4b624b75bb4379fb9b45360865af1ca07b94
-vendor/lib/libwigig_utils.so|ad2102d4d936418a180514132b314302fcac8469
-vendor/lib64/libwigig_flashaccess.so|8f554607d8ce51c0b4ac9a8a6ca9cf2005aa54fa
-vendor/lib64/libwigig_pciaccess.so|29c7f1720108baae5aa08e3c3050e196cabf01b5
-vendor/lib64/libwigig_utils.so|658963ecac8f0156458bd95b37f8874d8980fbd9
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so|d20889da64cf0e5d86311e31e3a503b348aebd46
-vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so|c343972cbc348c03399ad07136a70c05b745a060
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|344a9028b19b8bc53b23686caabf21b612f2f2ef
-vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|25ba0bbdef2872364f636faf794d098074e81f4a
+vendor/lib/libaoa.so|f80a5f29d4d9462cc11d85439ea407920d59f407
+vendor/lib/libwigig_flashaccess.so|f91b2b5cb62b83d5ecb6cc6a1d1159f75a64d328
+vendor/lib/libwigig_ftm_flows.so|e34885a004619d9fc90867dff7741089cfd4d152
+vendor/lib/libwigig_pciaccess.so|c5215a747a449057cdeb61bf1e9ba89ec536fdfe
+vendor/lib/libwigig_utils.so|3a56990e039532dc7cd8859946dbe0ae7dafac00
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so|ee73c0c3f9f9d336b9de1717514f1dd23abe0717
+vendor/lib64/libwigig_flashaccess.so|d0f813f2a27bc00acc0ae20a099cbf64844d14ed
+vendor/lib64/libwigig_ftm_flows.so|dfe863da907bd16d28b5525d659ac5074bfb23e1
+vendor/lib64/libwigig_pciaccess.so|a21f2bd0d6f143cf7a7e83c11917d36ca83f1b8f
+vendor/lib64/libwigig_utils.so|f17c4f0bbc6e57bc0b5dea242dd046bf7f1d64df
+vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so|30579356bb379b0262bdc920a5fe8559784cd395
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|f2eef9ea97e083e76f528a566f9d3d7db961ea14
+vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|48af1f835582f8b4a252f5a882fbf5a60aff0768
 
 # WiFi Display - from LA.UM.8.9.r1-07700-SM6xx.0
 bin/wfdservice|796065af8c62bf53bab826597b05c5db40b2de5e
