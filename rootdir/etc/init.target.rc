@@ -269,12 +269,6 @@ service energy-awareness /system/vendor/bin/energy-awareness
     group system
     oneshot
 
-service nv_mac /vendor/bin/nv_mac
-    class late_start
-    user system
-    group system inet net_admin wifi net_raw
-    oneshot
-
 service adsprpcd_root /vendor/bin/adsprpcd
    class main
    user media
