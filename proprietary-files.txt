@@ -102,10 +102,40 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Bluetooth - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so|347fd42e145d2044f8b4ff20cee7d1e2c2bcf7b9
+product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|3ade126c3cf1590f6b66fc38c19d3ed0c7618efb
+product/lib/vendor.qti.hardware.btconfigstore@1.0.so|230346aba118dbb585128047c5c7e8e0968706a5
+product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|c995ef2f3a67047da6222d8b5237fb2facdf1844
+product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|995a8127aea3b2de9efe68a5e5a6a61c80f438e7
+product/lib64/vendor.qti.hardware.btconfigstore@1.0.so|42aa6258f3bf4e8ef72b7664f2277db49837e4da
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|3f90eadbbb611fc553fca41c9b789e51ba3a9960
+vendor/etc/bluetooth_qti_audio_policy_configuration.xml|436db4c2774eeab6133b0b3d968d73b8090c9909
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib/btaudio_offload_if.so|d9a9795e173dffd4b5ee000acac66c1ad6f1648c
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so|ee297ecea3336d8c690e485779982d6be88f6476
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|d16ed9ad9bd6dd8ae2daa12c5e1920319ebe10da
+vendor/lib/hw/audio.bluetooth_qti.default.so|9c599252b44d97f977a17a060eaaf619853adc16
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|947afef6bf7a05a9a2b45022edfed06bd7c00e64
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|1360ae1d4f10d3762699d6ce82b456d8a0145a23
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|b2a644519ad0d890274c384f76269de76e706058
+vendor/lib/libbluetooth_audio_session_qti.so|3642eeaaa8ed81fb25a999d89b3ee1a0e668193c
+vendor/lib/libbt-hidlclient.so|db653f95deffc108ab3c12821589a0e64e8c7a30
+vendor/lib/libbtnv.so|45eb264eb2f627c6a62f1fa01d26ac30b4bdb405
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|9aafedaa8da8f0eb13bc957acbabece4bebd0507
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|5c24249adf85a30aa66f6a391bf697063d989a87
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|20464213b5f2cdb7d9c10f31b5b53fc03526698f
+vendor/lib64/btaudio_offload_if.so|32e6e50c73da9309b50f941425d99d5fceae0794
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|9a0e20391c952253af624cea09bcbfd38f335056
+vendor/lib64/hw/audio.bluetooth_qti.default.so|4116230749c2a474d6cd2cf3f122a9544f0afe4d
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|b469b784cd35aa7afeaba7e948a41537b0c09334
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|384b6ceca9703c6f2fee5edc21947fdd6fdcc8d1
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4995571288da93036acbab6d052ec3dbeb90641d
+vendor/lib64/libbluetooth_audio_session_qti.so|4b16868adba29bcc8b748276f9571055ccad3fa0
+vendor/lib64/libbt-hidlclient.so|149e5d023c1aa194c8edbb96947a3465e20199a5
+vendor/lib64/libbtnv.so|d7b09c0e44ef00b5f29398aa2e1d86dbc775fd28
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|68e006b5116603d3d091df1e549f152afee663b3
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|1b8ea7096ded35acef0bbc1a25840c0b1c12be04
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|9425f3b3d1b27cf1342499dd80bbac2d58a1b3f0
 
 # Camera - from willow-user 9 PKQ1.190616.001 V11.0.2.0.PCXEUXM release-keys
 vendor/etc/camera/CFR_para.bin|4841a40236c12b3bbba263a406dfecca31b9c256
