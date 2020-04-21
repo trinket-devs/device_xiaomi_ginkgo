@@ -40,8 +40,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    persist.vendor.bluetooth.modem_nv_support=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+    vendor.audio.feature.a2dp_offload.enable=false \
     vendor.qcom.bluetooth.soc=cherokee
 
 # CNE and DPM
