@@ -56,6 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Ccodec
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=1 \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
 
