@@ -1175,8 +1175,10 @@ product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|3b2e731f58932600b
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|cf3acfde26c991b4c301d7bab375deec2952cad5
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|c9459c96581b4da688cfd53dfefa702b984a425f
+-vendor/lib64/libplatformconfig.so|053ca925756da4a85114f41b5bcc3d77da2d9977
 -vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|f3f3754fc57d6412f547e1e7f3f646e3b36d01d2
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5bdff394e250119917c6483e3a8648eaa4507c3e
+-vendor/lib/libplatformconfig.so|e06df4f9abac8cf91b30b7a2ed962e6642b384d5
 -vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|d00514e8dc821b67e37b53576c54bf9776b49292
 
 # Consumerir
