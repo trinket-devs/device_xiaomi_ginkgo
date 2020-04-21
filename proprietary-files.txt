@@ -2019,11 +2019,12 @@ vendor/etc/thermal-engine-normal.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
 vendor/etc/thermal-engine.conf|1721adec8d87b35e17fb1a52b3346a67a2006704
 vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
 
-# Time services - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/time_daemon|0e8fd168d881c017eac09452df816eadba7de6a1
+# Time services - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/move_time_data.sh|56f1f79a88db709a0c7ed5c507b14c55976d6f32
+vendor/bin/time_daemon|4c00de8b3b9096ca784c1ddc9c5b7a43e2b85824
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib/libtime_genoff.so|8578fc5aab1509fedb744f9b73721dc1acfd9748
-vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
+vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
+vendor/lib64/libtime_genoff.so|34e97baaa5993b2369e67654363487ca79e45a81
 
 # TUI - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|9f5434d184f868c576ac86e950a305d6b4924430
