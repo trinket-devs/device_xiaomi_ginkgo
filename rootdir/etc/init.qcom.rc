@@ -405,6 +405,10 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     group nfc
     user system
     oneshot
+    disabled
+
+on property:ro.product.device=willow
+    enable nqnfcinfo
 
 service iop /system/vendor/bin/iop
     class main
