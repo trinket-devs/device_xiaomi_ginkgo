@@ -25,7 +25,7 @@
    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
    OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+*/
 
 #include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
@@ -35,29 +35,44 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
+using android::base::GetProperty;
 using android::init::property_set;
+using std::string;
 
-void property_override(char const prop[], char const value[])
+void property_override(string prop, string value)
 {
-    prop_info *pi;
+    auto pi = (prop_info*) __system_property_find(prop.c_str());
 
-    pi = (prop_info*) __system_property_find(prop);
-    if (pi)
-        __system_property_update(pi, value, strlen(value));
+    if (pi != nullptr)
+        __system_property_update(pi, value.c_str(), value.size());
     else
-        __system_property_add(prop, strlen(prop), value, strlen(value));
-}
-
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-    char const value[])
-{
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
+        __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
 }
 
 void vendor_load_properties()
 {
-    // fingerprint
-    property_override("ro.build.description", "ginkgo-user 9 PKQ1.190616.001 9.12.26 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    string device, model, desc;
+    string fp = "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys";
+
+    string device_region = GetProperty("ro.boot.hwc", "");
+    string device_hwversion = GetProperty("ro.boot.hwversion", "");
+
+    if (device_region == "Global_B" && device_hwversion == "18.39.0") {
+        device = "willow";
+        model = "Redmi Note 8T";
+    } else {
+        device = "ginkgo";
+        model = "Redmi Note 8";
+    }
+
+    // Override all partitions' props
+    string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
+
+    for (const string &prop : prop_partitions) {
+        property_override(string("ro.product.") + prop + string("name"), device);
+        property_override(string("ro.product.") + prop + string("device"), device);
+        property_override(string("ro.product.") + prop + string("model"), model);
+        property_override(string("ro.") + prop + string("build.product"), device);
+        property_override(string("ro.") + prop + string("build.fingerprint"), fp);
+    }
 }
