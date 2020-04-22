@@ -116,6 +116,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.use_psi=true \
     ro.lmk.use_minfree_levels=true
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.se.type=HCE,UICC
+
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \

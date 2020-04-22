@@ -159,6 +159,11 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/mdss_rotator         0664   system     system
 /dev/cpu_dma_latency      0660   root       system
 
+#nfc permissions
+/dev/nfc-nci              0660    nfc         nfc
+/dev/nq-nci               0660    nfc         nfc
+/dev/assd                 0660    nfc         nfc
+
 #QDSS
 /dev/byte-cntr            0660   system    oem_2902
 /dev/mhi_qdss             0660   system    oem_2902
