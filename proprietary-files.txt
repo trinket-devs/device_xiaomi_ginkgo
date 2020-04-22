@@ -42,37 +42,30 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|6d33525b3f966c9b50cb5e1e0b5310e
 # Audio - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
 framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
-vendor/lib/libacdb-fts.so|1578268cdbd2a722affc4be02872353cc702a969
-vendor/lib/libacdbloader.so|4bbea222afe1a9a20566ff097c59e623ff0738f4
-vendor/lib/libacdbrtac.so|1804fa13c8bac7f02af550ef9ca0bb7ca672dd73
-vendor/lib/libadiertac.so|dde05100c7bc3e752ea984a6e74dafa5617e1bac
-vendor/lib/libadm.so|fd0c0a2a1864023c221a23bc4587fb85134e4e28
-vendor/lib/libaudcal.so|38efce23772f90564123ef842dfb1cd66f63b5a2
-vendor/lib/libaudioalsa.so|89665aca431ac6de9f0848ff23fba585e70820e5
-vendor/lib/libaudioparsers.so|11ad61b7e57e57fe45929a66310c101984c3b341
-vendor/lib/libdrc.so|80297cbca91cc6ef470cd667d003e2b27990ef8e
-vendor/lib/libhdmipassthru.so|9791b492788d3f678e1dfe63b53d091ef7f6459b
-vendor/lib/libqtigef.so|23f654b3be361b422d7d36375460d1dac232b350
-vendor/lib/libsurround_3mic_proc.so|9020976e90c2b78bcff5cbd6a913b1de8a436000
-vendor/lib/soundfx/libasphere.so|b16636ad3a2d5b4bf575012ed212b8e51269c7d5
-vendor/lib64/libacdb-fts.so|7ab3d376308ff949358819a4b65cd0bf095f2da1
-vendor/lib64/libacdbloader.so|a423320848031e21091bc9e163b2ce9dc27f2d90
-vendor/lib64/libacdbrtac.so|381ea26c98ce1bd00d0d3f0e30b8ced802703a1e
-vendor/lib64/libadiertac.so|9e4c4f06ad861f89487f3780c197a9a2cbbe12ed
-vendor/lib64/libaudcal.so|28757d7f2947efbd6b3909630edfd7b03635a65b
-vendor/lib64/libaudioalsa.so|a743be854f0af2ae8f60d6c598f078a4c09f8b41
-vendor/lib64/libaudioparsers.so|ab849844b97f005231b1b3150e61cd4b67cbdb11
-vendor/lib64/libhdmipassthru.so|882fe62187d282a4c0fe257cd54a7090fe809824
-vendor/lib64/libqtigef.so|886285c40cd45a4f17d3b2e5e909da5a4fd9bf6c
-vendor/lib64/soundfx/libasphere.so|bd48aa3d7cf27bf3b12ce29f429b719383e104fc
-
-# Audio - hardware
-vendor/lib/hw/audio.primary.trinket.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libtinycompress_vendor.so
-vendor/lib64/hw/audio.primary.trinket.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libtinycompress_vendor.so
+vendor/lib/libacdb-fts.so|a390c675f029b8adbb8e781c73cf9f902b134e97
+vendor/lib/libacdbloader.so|7e28896fdc1b7698bc11543087506fdc20c58236
+vendor/lib/libacdbrtac.so|b1582d501a5f6378029395038280f3a893cb506d
+vendor/lib/libadiertac.so|f4699a2a0c2f6ecd7fe11548284794e2bc152925
+vendor/lib/libaudcal.so|fd9289bed762e70add08b40de1d7c08783c14cdb
+vendor/lib/libaudioparsers.so|485bbd30e2ea7e40d7fbcb3d7aa1f8a222cd2fc4
+vendor/lib/libdrc.so|854e12157d5f09831b81fcf7a4cecf0f491d660a
+vendor/lib/libqtigef.so|d70ce932a3cc799d91ead157b870cd0c00dd195c
+vendor/lib/libsurround_3mic_proc.so|3c98223a30bf84ff91ec6e000dfea5be4a86d3cc
+vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
+vendor/lib/soundfx/libqcbassboost.so|7fb233f9b48b5c87b1fa0338d9a893c25be56451
+vendor/lib/soundfx/libqcreverb.so|ec1a00233de7f13a86248cd29740e8caee988119
+vendor/lib/soundfx/libqcvirt.so|debe6ae1d17ee2f2f9fe77ce836af666b5b72da6
+vendor/lib64/libacdb-fts.so|ef26d4571fcfd3df84496ca78caa1d5a23e06a04
+vendor/lib64/libacdbloader.so|856e47d0c38e36c0c2d03d3d786cd8f976f4a44c
+vendor/lib64/libacdbrtac.so|975c02869f533a6076e73fa332dbc37478eb310b
+vendor/lib64/libadiertac.so|774c4f491f40ba3a1c08975e16150a179142e561
+vendor/lib64/libaudcal.so|2b2fbf48bf6bd13715f72c97b9f8845073dd7e11
+vendor/lib64/libaudioparsers.so|364bf4dbadc81ac2d44918c28d5f1ddc676bdee4
+vendor/lib64/libqtigef.so|a18a65bdf341955ec1c429ffad7e85693ff95b3c
+vendor/lib64/soundfx/libasphere.so|a404102354aebb0486c6a829d546e60e83b8217b
+vendor/lib64/soundfx/libqcbassboost.so|620c2c840a0ab87d0f4c816ea6a79087b193cee4
+vendor/lib64/soundfx/libqcreverb.so|b9dd737b6f6da59b9db3fb283b70aa2e7f32933c
+vendor/lib64/soundfx/libqcvirt.so|e6d157b90ba98e325110ba7de053e1ebe0444771
 
 # Audio ACDB
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
@@ -86,10 +79,10 @@ vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio effects - Dirac
-vendor/etc/diracmobile.config
-vendor/lib/libDiracAPI_SHARED.so
-vendor/lib/soundfx/libdirac.so
+# Audio effects (Dirac) - from Xiaomi
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 
 # Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
