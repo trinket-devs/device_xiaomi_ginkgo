@@ -7,9 +7,6 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
-# include common firmware
-$(call inherit-product, vendor/xiaomi/firmware/firmware.mk)
-
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 

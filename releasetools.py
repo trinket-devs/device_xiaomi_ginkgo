@@ -27,18 +27,11 @@ def IncrementalOTA_Assertions(info):
   return
 
 def FullOTA_InstallEnd(info):
-  OTA_UpdateFirmware(info)
   input_zip = info.input_zip
   OTA_InstallEnd(info, input_zip)
   return
 
-def OTA_UpdateFirmware(info):
-  info.script.AppendExtra('ui_print("Flashing firmware images");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");')
-
 def IncrementalOTA_InstallEnd(info):
-  OTA_UpdateFirmware(info)
   input_zip = info.target_zip
   OTA_InstallEnd(info, input_zip)
   return
