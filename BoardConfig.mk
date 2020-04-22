@@ -31,7 +31,7 @@ MSMSTEPPE := trinket
 TARGET_SEPOLICY_DIR := trinket
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := ginkgo
+TARGET_OTA_ASSERT_DEVICE := ginkgo,willow
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := trinket
