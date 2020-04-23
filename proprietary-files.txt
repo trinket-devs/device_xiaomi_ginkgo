@@ -869,7 +869,6 @@ vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_india_i_zsl_preview_3a_its.so|a446fe
 vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_india_i_zsl_preview_3a_sn.so|b3e93921f394e142fdd0d7b298fe9a0c621f21d6
 vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_india_i_zsl_video_3a.so|2a1f72e48b0f54d6090dd7115e5fb5adf67f6cdd
 vendor/lib/libdepthmapwrapper.so|b2f6b7e08453278af0856a8c11671484f8771478
-vendor/lib/libdng_sdk.so|00a97447a572f3f25e1814241486ca7d22395bb0
 vendor/lib/libflash_pmic.so|9778739134d7768d08d7d2389dbb40b7294ad3ae
 vendor/lib/libft2vendor.so|5f1a509b1a7ad57bef48a41cea00b9722b3fe797
 vendor/lib/libhal_dbg.so|ef9e6c80a34ddd24c253b68a2d51dd7d53a49082
@@ -1180,42 +1179,6 @@ product/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so|9df0bce39bd8c35dd26b
 product/lib/vendor.qti.hardware.cvp@1.0.so|d8048265e768794829e09caac03b7529dd94e812
 product/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so|c4584b6d5dec187aa30782dda1812017613e237f
 
-# Display - hardware
-vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service
-vendor/etc/init/vendor.qti.hardware.display.allocator@1.0-service.rc
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib64/hw/gralloc.trinket.so
-vendor/lib64/hw/hwcomposer.trinket.so
-vendor/lib64/hw/memtrack.trinket.so
-vendor/lib64/libdisplaydebug.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdpps.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdMetaData.so
-vendor/lib64/libdrmutils.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib/hw/gralloc.trinket.so
-vendor/lib/hw/hwcomposer.trinket.so
-vendor/lib/hw/memtrack.trinket.so
-vendor/lib/libdisplaydebug.so
-vendor/lib/libdisplayqos.so
-vendor/lib/libdpps.so
-vendor/lib/libgpu_tonemapper.so
-vendor/lib/libgralloccore.so
-vendor/lib/libgrallocutils.so
-vendor/lib/libqdMetaData.so
-vendor/lib/libdrmutils.so
-vendor/lib/libsdedrm.so
-vendor/lib/libsdmcore.so
-vendor/lib/libsdmutils.so
-vendor/lib/libsdm-colormgr-algo.so
-
 # Display calibration
 vendor/etc/qdcm_calib_data_ft8719_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_shenchao_panel.xml
@@ -1505,18 +1468,18 @@ vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/librice.so|1a027bc0331d3f8e6345ab6ac8cf1a8571424ef9
 
-# Listen - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/libadpcmdec.so|8dc9036e15aa62a85becfda6eb4865de4308ce33
-vendor/lib/libgcs-calwrapper.so|fa8ba4c39920f8ab1ffd8bb84a1b5d3953b377c5
-vendor/lib/libgcs-ipc.so|7bc3733efc941edc176a3c702d6d85438f4971f1
-vendor/lib/libgcs-osal.so|8d3a12a99a1da67cf0897a2ee6e6859e482c122c
-vendor/lib/libgcs.so|41d9701411cb42160fa3dee31ba86bb341909476
-vendor/lib/liblistensoundmodel2.so|04c2e792b63cc6074dc62c2c7baf5d85fbfc05c5
-vendor/lib64/libgcs-calwrapper.so|5a828b9697123634569eaa2f1751550ae6bf1601
-vendor/lib64/libgcs-ipc.so|963b1183b1950d16bd462d47b9149bfbd8c3a14a
-vendor/lib64/libgcs-osal.so|5eca0a8d8ea32505d5b8d69b3e13bf640b34976a
-vendor/lib64/libgcs.so|144b92a0f996879349400c6f0fc5daff0d8f5180
-vendor/lib64/liblistensoundmodel2.so|8aaa1875266d9c1798d3f78544599978e534d354
+# Listen - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
+vendor/lib/libgcs-calwrapper.so|a703d6b820ee8c581c7f2f4ea992b03782d8ffa2
+vendor/lib/libgcs-ipc.so|f64ac3ed7fa0ba1b15dc4b4fd4c7cd41ea17743c
+vendor/lib/libgcs-osal.so|dfae7d1bb15b7bd19fef7427f0a6f6df28d5d30a
+vendor/lib/libgcs.so|c3673c0b7079d954b1ee0dbf58dba9632ce23406
+vendor/lib/liblistensoundmodel2.so|766d3855b2c4bdcaebf0580010c0909bcdd1dada
+vendor/lib64/libgcs-calwrapper.so|968e5989868464a05143aa4d87cc64e9075ac7c5
+vendor/lib64/libgcs-ipc.so|7370368defaba7d5f10334ac12687a5f5e3c2abf
+vendor/lib64/libgcs-osal.so|90febb19a109d473f96eb2c0dfef46f8adb43a4d
+vendor/lib64/libgcs.so|20c944d98ce1523b8c20fd95a4c8aeb570b4ed10
+vendor/lib64/liblistensoundmodel2.so|68d8d3d7a425702287f9fff0c55fbc25f20063e5
 
 # Media - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 -vendor/lib/libMpeg4SwEncoder.so|0d7475db94fe09f25d1c9609ae5b74942e81b328
@@ -1572,15 +1535,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|c387b980e5c524b4d78c725ed043e6c1333e
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|171b951d8b110fc2649306741db28434b4549a1c
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|45d07ab814b4c7ca3784935d8171eae1a204717b
 
-# Neural-networks - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
-vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti|6d9e9de8a13f10b1b0f51080a86984704a7df8a2
-vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc|db9900f3a9d88f2f207c1a86ec6184f32551ab39
-vendor/lib64/libhexagon_nn_stub.so|2d6e67292cf0440c1eef4d8de74d661ee58fb336
-vendor/lib64/unnhal-acc-adreno.so|a503c8face277880eacbf89c7ad0c5efbb5ad2d5
-vendor/lib64/unnhal-acc-common.so|8a4480e55306c620fe9c77dc383cbe00f2b6a901
-vendor/lib64/unnhal-acc-hvx.so|dacf445adc87646738b5c65626c56a49bbf5082d
-
-# NFC - from willow-user 9 PKQ1.190616.001 V11.0.7.0.PCXEUXM release-keys
+# NFC
 vendor/bin/nqnfcinfo|74e45f565d8be40a1377909b411465502dd366e7
 vendor/lib/libsn100u_fw.so|8f22d9b555acc25b501f1c48983e7d33547231f7
 vendor/etc/sn100u_pnx_pcv.pnscr|709a2628cf83bbbed2760145db92d4300715efca
@@ -1600,6 +1555,22 @@ vendor/etc/sn100u_bootup.pnscr|ef641bf68ae831f38552bfeb1c54b3f20b2421f6
 vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
 vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
 vendor/libnfc-nxp_RF.conf
+
+# Neural-networks - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti|6d9e9de8a13f10b1b0f51080a86984704a7df8a2
+vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc|db9900f3a9d88f2f207c1a86ec6184f32551ab39
+vendor/lib64/libhexagon_nn_stub.so|2d6e67292cf0440c1eef4d8de74d661ee58fb336
+vendor/lib64/unnhal-acc-adreno.so|a503c8face277880eacbf89c7ad0c5efbb5ad2d5
+vendor/lib64/unnhal-acc-common.so|8a4480e55306c620fe9c77dc383cbe00f2b6a901
+vendor/lib64/unnhal-acc-hvx.so|dacf445adc87646738b5c65626c56a49bbf5082d
+
+# Mlipay - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
+vendor/bin/mlipayd@1.1|caff3f800ba16c251d0f7ace8e031fe86dd47a2e
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+vendor/lib64/libmlipay@1.1.so|ab573a93d659e7496368d5e4f22befee29346431
+vendor/lib64/libmlipay.so|8510d27c292ca9077704724564b635978c0992b9
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|43cae59576c8570a37bbf9d4a059b5e9c207360d
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|521357ee808c1a248db9e76269880b1f9d0a0617
 
 # PASR Manager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 -vendor/app/pasrservice/pasrservice.apk|6fda948d980c1e84bf51db1ade322b804f550012
@@ -1756,8 +1727,8 @@ vendor/bin/qrtr-ns|90a5a0c488b09fed69e4f402eb30d0c22340fcba
 vendor/bin/qti|582f76cb40f904521d95b55509ec0619334936c8
 vendor/bin/rmt_storage|6a16304ce0087a35773196a19aebd8056968bf08
 vendor/bin/tftp_server|36115c6677db29635e80354a1f9ef673b049c4ca
-vendor/etc/data/dsi_config.xml|5caf86ed7e28403955f7d9e076f459b8be2df81c
-vendor/etc/data/netmgr_config.xml|592ffa90cd1ed06ee414a42ed4ebe041b1f461a7
+vendor/etc/data/dsi_config.xml|c57bfe60718980cff9af7b9cace7a280f6959cee
+vendor/etc/data/netmgr_config.xml|b5976c6f711ad19ac206f6e9c676e851c07425b8
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
@@ -1810,7 +1781,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|e9fea0c010f809e2
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|21773237c68924b6ee5a27c78a981b31c0405408
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|22ab381fb2e85004d07c5a94386f29490f17a191
 vendor/radio/qcril_database/qcril.db|bd7412ef90c076dac8f3a69596e2ed8d4b3f55fd
-vendor/radio/qcril_database/upgrade/0_initial.sql|e00b243261d8941802bdea9d4e659dc5e927c216
+vendor/radio/qcril_database/upgrade/0_initial.sql|9cbee4a33105dab1a51db04881b210fc72862345
 vendor/radio/qcril_database/upgrade/1_version_intro.sql|67b96cb3e94737bfe271b2519b9eb5fae17373a2
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql|b4a825ba20fea3e2f20c7f02c8bd64596c24a75e
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql|0571aacaf9fc0868c48bba2f7542f5b4e68c9022
