@@ -923,8 +923,10 @@ service profiler_daemon /system/bin/profiler_daemon
 
 service charger /system/bin/charger
     class charger
-    group system graphics
+    user root
+    group root system graphics input
     seclabel u:r:charger:s0
+    capabilities SYS_BOOT
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
