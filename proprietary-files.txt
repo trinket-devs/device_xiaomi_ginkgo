@@ -1457,16 +1457,14 @@ vendor/lib/vendor.qti.latency@2.0.so|c6b9efda9c2e39fd33bc42e6aee745bd6ee176c8
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|824e79bfc95f3cdf1606f5555a78bd7197f7d911
 vendor/lib64/vendor.qti.latency@2.0.so|2f519fc5779fd8a5c6dbb0817547a0382644cc0c
 
-# Listen - Hardware
-vendor/lib/hw/sound_trigger.primary.trinket.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/librice.so|5e21acde0ba82f20ab892a9a300e6a0a576c7427
-vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.trinket.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/librice.so|1a027bc0331d3f8e6345ab6ac8cf1a8571424ef9
+# Listen - Hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+vendor/lib/hw/sound_trigger.primary.trinket.so|f6bef5e9b40b49526f2036a462f2f851af1c0176
+vendor/lib/libcapiv2svacnn.so|845ad0ee77f417d3934f9b8392285f0836d5fe63
+vendor/lib/libcapiv2vop.so|3ea3509b29e35e5c19714b605e6ecf2ce020031a
+vendor/lib/libsmwrapper.so|1d4112fa63d5b11d306d1c7e9465047c08e99b18
+vendor/lib64/hw/sound_trigger.primary.trinket.so|baf39e593076de9c2fc8ce65fad63f3cb9e6f487
+vendor/lib64/libcapiv2svacnn.so|ab08e84c6dc08e90a8d45bd7db2e9920490491ab
+vendor/lib64/libcapiv2vop.so|703836be24ce91c4a64ab0e4d872e7297979ded0
 
 # Listen - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
 vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
