@@ -1,4 +1,4 @@
-# ADSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# ADSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/adsprpcd|2e28ed075e8d2686ec33a63253d4e31e605aa276
 vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
 vendor/lib/libadsprpc.so|261606110272a14b58711ab70e5c4138b674aebe
@@ -9,7 +9,7 @@ vendor/lib64/libadsprpc.so|feaff57fc71448ea8a7e83af934d0925d3ffc43a
 vendor/lib64/libmdsprpc.so|3f6d4e3f8575dcfbb4515543d36cbd6277a869ba
 vendor/lib64/libsdsprpc.so|593381b7215163f4c5898e745678c27cf8b23f63
 
-# ADSP modules - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# ADSP modules - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so|936d440dc25c049efe71d9fe404b8c141250dcc6
 vendor/lib/rfsa/adsp/libVC1Dec.so|79a8425bc640ed3401a784ca5f4f04865a3e38e3
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|e108bf1175b6ebaead5b9eec3b9279c8edbb52e3
@@ -20,7 +20,7 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib/rfsa/adsp/misound_res.bin|60e475cb5c8dccedac50e9758bb56ad7f20f0bfb
 
-# Alarm - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Alarm - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
 product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
 vendor/bin/power_off_alarm|9781703c7caa0ad6a22abb046e783862fbb004ee
@@ -29,7 +29,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|b3e4b897e3481bc7261360d45bd6da41c797e2cf
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|0f7921947ddbb25591f6b3abf0bcb4f34eff141f
 
-# ANT+ (system) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# ANT+ (system) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -lib/libantradio.so|d343bed6e26f99d9870f730303096f6ea8a9bcf8
 -lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
 product/lib/com.qualcomm.qti.ant@1.0.so|a6e5dc519d76a0d938701b8773df19cfa98596b4
@@ -39,7 +39,7 @@ vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|273739730b88ed740fbcbe06890916211
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|38bcdefdc8f59c14631c0ae777c7d1188a16fee6
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|6d33525b3f966c9b50cb5e1e0b5310eb8b073092
 
-# Audio - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Audio - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
 framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
 vendor/lib/libacdb-fts.so|a390c675f029b8adbb8e781c73cf9f902b134e97
@@ -88,7 +88,7 @@ vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# Bluetooth - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Bluetooth - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so|347fd42e145d2044f8b4ff20cee7d1e2c2bcf7b9
 product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|3ade126c3cf1590f6b66fc38c19d3ed0c7618efb
 product/lib/vendor.qti.hardware.btconfigstore@1.0.so|230346aba118dbb585128047c5c7e8e0968706a5
@@ -1067,22 +1067,22 @@ vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
 vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
 vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 
-# CDSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# CDSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/cdsprpcd|b76dd062f530a4a9d51e4e5107ccd7588e33e55f
 vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
 vendor/lib/libcdsprpc.so|991f6ba0ad95f24050040c9a5bf8ea2826eb6e24
 vendor/lib64/libcdsp_default_listener.so|921ed7d9a103932e152ffd6097a56840ff346ecf
 vendor/lib64/libcdsprpc.so|7bbffe619580bb7feaad4fc4ad65df70c1bd484f
 
-# Charger - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Charger - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hvdcp_opti|c7c5140c5e1f84a039618d5211c754df6bd0290c
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|3dab489feaf8d00e06894db7c92b462d701e4c98
 
-# CNE - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# CNE - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -vendor/app/CneApp/CneApp.apk|b582ee0bc180dfb051b76857d0081cf1af7a7fbc
-etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
-etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
-etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
+etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7
+etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35
+etc/cne/Nexus/VZW/VZW_profiles.xml|0d35b3266ea656d8868ae8f5d7e938f4859e9b0a
 product/framework/com.quicinc.cne.api-V1.1-java.jar|207b66fb9d79b4f06e0a67a0e82c19c1f3b2d210
 product/framework/com.quicinc.cne.constants-V1.0-java.jar|96476b6df625fcd79d546faa097a20eb6360d858
 product/framework/com.quicinc.cne.constants-V2.0-java.jar|847d4c453e6192da9374f0b01f72f28a297a65d1
@@ -1155,7 +1155,7 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|8006a13b54d1fe2854b3f121
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|33652edd8b3b954bd858f9a5f4c225020b92a3d2
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|4ca1fb1558ba36b64245dacb4200c307ebbecf9d
 
-# ConfigStore - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# ConfigStore - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -product/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar|2aad62f08ac944157a47d2c28620053b1128c6b4
 product/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|0eb3e7be9c535ec2cece0bba8a3fca3a9c64213f
 product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|3b2e731f58932600b6483108c12a91336a72cc86
@@ -1171,7 +1171,7 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|5bdff394e250
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
 
-# CVP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# CVP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so|ac06f07156d7f4b778d7d5d26b275587fd37be3f
 vendor/lib/vendor.qti.hardware.cvp@1.0.so|77f9ef294f432745e9ce91ea2bafa3c731f683b0
 product/lib64/vendor.qti.hardware.cvp@1.0.so|265c759a38bb71c736c3ab6dd1caf1c8bd58f284
@@ -1185,7 +1185,7 @@ vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_shenchao_panel.xml
 vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_tianma_panel.xml
 vendor/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml
 
-# DPM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# DPM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 framework/tcmclient.jar|a55e6981795bf74b3249c5e7297ea4e3cf1dea83
 product/bin/dpmd|7503d40ddb06e41333aafe4613d0dba6aed9b896
@@ -1206,7 +1206,7 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|8b4f2f7912d6d583800ae6fb65169077447588b9
 vendor/lib64/libdpmqmihal.so|2a920f1c0d21b9e114b44b3de88d23da8a94fb5c
 
-# DRM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# DRM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/qseecomd|99c5d283f751144d60c0a6297286888e9c85f966
 vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
 vendor/etc/init/qseecomd.rc|9c3b9c649e2bb8959b14d0e1278a390ddb15dc5e
@@ -1228,9 +1228,9 @@ vendor/lib64/libssd.so|0e61d96752d415791a9dcf5c10161fb60ec22b5d
 vendor/lib/libQSEEComAPI.so|bdbb4237735d162029ec38077fdbd805bfcc3f93
 vendor/lib/libdrmfs.so|e65f666b6b094654eacbdde720efacfd0332e965
 
-# DRM - Widevine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# DRM - Widevine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|4db49073828ddcf51d54e278896b6279f17f75b7
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
 vendor/lib64/libbase64.so|bcf4e19a754b810c0cbf1f8143ecc8cbeb779107
 vendor/lib64/libcpion.so|e48d07b7b69907ef6145006fcaeb35973a3b07f3
 vendor/lib64/liboemcrypto.so|14289b52bddd8d5ad100452c475cf4cbedca67cb
@@ -1244,7 +1244,7 @@ vendor/lib/librmp.so|ca9d2b9f036bce0b3700300cb327013425e0bc32
 vendor/lib/libwvhidl.so|ec0599ce744b8edde4f3b655534464f975d37da8
 vendor/lib/mediadrm/libwvdrmengine.so|65259496bd678e01ff56aaebc3e0d1734dad282a
 
-# ESE-Powermanager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# ESE-Powermanager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|3bec43c4dfc46072a5c142b91392fd825d5ab3e6
 vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
 vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|fd95cf6c9b36324fb5d0e5e8498721b65749ee94
@@ -1266,7 +1266,7 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# FM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 lib/fm_helium.so|3e02cb1f3b0896cb42e9c1bb145cc260b570f006
 lib/libfm-hci.so|d6214ae6da054ad32221ed27a10b722b31a08317
 lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
@@ -1279,13 +1279,13 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|89a7ec5cc673d13afc73116eccff2e58f218a34
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|edbe696265de547d8f56570f29bd7fee4e3dbc1f
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|e14abd3a8413ccfac55339ad03b592bfe642b833
 
-# Gatekeeper - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Gatekeeper - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|1e405ee7b305ae0b2df850177c695459e2c5a234
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|085acf62328630a00f0c84dea89ffb6bbacba398
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|8bf06661f77fdbdb3e17f72f6cf22cb5e08e8447
 
-# GPS - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# GPS - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 product/lib64/vendor.qti.gnss@1.0.so|bf11e2b7a104ed1689623f5a772269d24e00bd14
 product/lib64/vendor.qti.gnss@1.1.so|4b88888fcba1bc3f709889cbf086d9ba2b997b91
 product/lib64/vendor.qti.gnss@2.1.so|7f69b6098f779f6ed396bbf366b496b0b228c743
@@ -1349,7 +1349,7 @@ vendor/firmware/novatek_ts_ebbg_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
-# Graphics - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Graphics - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib64/egl/eglSubDriverAndroid.so|ca30ccf7aea7fcc032b5ec6e8ab92ba4cfb5af76
 vendor/lib64/egl/libEGL_adreno.so|f6421b5c8cfbd496d51feee321d93cfcaa395298
 vendor/lib64/egl/libGLESv1_CM_adreno.so|d8de942d91e7e1a87ee3388911c2e8eaf13c76ef
@@ -1406,11 +1406,11 @@ vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
 vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
 vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
-# Graphics (Vulkan) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Graphics (Vulkan) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib/hw/vulkan.trinket.so|ec434cfa02cbb6b783a74d6c9518451e8126fe2f
 vendor/lib64/hw/vulkan.trinket.so|7de77bf67c85334dda4e01805e5170b4a4609fb3
 
-# IO Prefetcher - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# IO Prefetcher - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|4ecba6fdc1ef0c7796a03afb7e6cc1a3f1ed51c0
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|f78fd7791961c0ceea03dfae8154207820c61be9
@@ -1433,7 +1433,7 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
 vendor/firmware/ipa_fws.elf
 
-# Keymaster - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Keymaster - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|ca9dfe453ebfd45ff1233df70f557c72ae3808c3
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
 vendor/lib/libkeymasterdeviceutils.so|bc2aac023d99ec9e423d2f769019d187c99a8afb
@@ -1457,7 +1457,7 @@ vendor/lib/vendor.qti.latency@2.0.so|c6b9efda9c2e39fd33bc42e6aee745bd6ee176c8
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|824e79bfc95f3cdf1606f5555a78bd7197f7d911
 vendor/lib64/vendor.qti.latency@2.0.so|2f519fc5779fd8a5c6dbb0817547a0382644cc0c
 
-# Listen - Hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Listen - Hardware - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib/hw/sound_trigger.primary.trinket.so|f6bef5e9b40b49526f2036a462f2f851af1c0176
 vendor/lib/libcapiv2svacnn.so|845ad0ee77f417d3934f9b8392285f0836d5fe63
 vendor/lib/libcapiv2vop.so|3ea3509b29e35e5c19714b605e6ecf2ce020031a
@@ -1466,7 +1466,7 @@ vendor/lib64/hw/sound_trigger.primary.trinket.so|baf39e593076de9c2fc8ce65fad63f3
 vendor/lib64/libcapiv2svacnn.so|ab08e84c6dc08e90a8d45bd7db2e9920490491ab
 vendor/lib64/libcapiv2vop.so|703836be24ce91c4a64ab0e4d872e7297979ded0
 
-# Listen - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Listen - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
 vendor/lib/libgcs-calwrapper.so|a703d6b820ee8c581c7f2f4ea992b03782d8ffa2
 vendor/lib/libgcs-ipc.so|f64ac3ed7fa0ba1b15dc4b4fd4c7cd41ea17743c
@@ -1479,7 +1479,7 @@ vendor/lib64/libgcs-osal.so|90febb19a109d473f96eb2c0dfef46f8adb43a4d
 vendor/lib64/libgcs.so|20c944d98ce1523b8c20fd95a4c8aeb570b4ed10
 vendor/lib64/liblistensoundmodel2.so|68d8d3d7a425702287f9fff0c55fbc25f20063e5
 
-# Media - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Media - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -vendor/lib/libMpeg4SwEncoder.so|0d7475db94fe09f25d1c9609ae5b74942e81b328
 -vendor/lib64/libMpeg4SwEncoder.so|490ff628ce553aba40a4f4b4a4a1269aae29f9ea
 product/lib/vendor.qti.hardware.vpp@1.1.so|6990dfdeb1b68989318fc9dfab4fb4245e0fd681
@@ -1554,7 +1554,7 @@ vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
 vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
 vendor/libnfc-nxp_RF.conf
 
-# Neural-networks - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Neural-networks - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti|6d9e9de8a13f10b1b0f51080a86984704a7df8a2
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc|db9900f3a9d88f2f207c1a86ec6184f32551ab39
 vendor/lib64/libhexagon_nn_stub.so|2d6e67292cf0440c1eef4d8de74d661ee58fb336
@@ -1570,7 +1570,7 @@ vendor/lib64/libmlipay.so|8510d27c292ca9077704724564b635978c0992b9
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|43cae59576c8570a37bbf9d4a059b5e9c207360d
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|521357ee808c1a248db9e76269880b1f9d0a0617
 
-# PASR Manager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# PASR Manager - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -vendor/app/pasrservice/pasrservice.apk|6fda948d980c1e84bf51db1ade322b804f550012
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|d86b35735d370d6f33d2dbf420e31b53b1a45013
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc|b34c1b9179c89cd47adce145bae9a609e5141bc0
@@ -1579,7 +1579,7 @@ vendor/lib/vendor.qti.power.pasrmanager@1.0.so|c086159479259e7352b7d58ef467723bd
 vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|411e98d78ec956d1a0f4be61b8f2590b036838ae
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|865b363010a5ce365e7e5c11be6c881e761c1c54
 
-# Perf - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Perf - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|2f8f83abe95d11fa48b866b07b5d3cc44ad0ae5f
 vendor/bin/msm_irqbalance|54c73b55125b13fa40abf3852bfae31bc217eddc
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|0101a3294311c2988060a00f7b25d8abf2f428f9
@@ -1618,7 +1618,7 @@ vendor/bin/pm-service|0115038b692a2914e28df8b250689306887e2d9b
 vendor/lib/libperipheral_client.so|7ef98f63b1cec72113f7c2193bc4e8ff523f7503
 vendor/lib64/libperipheral_client.so|179a96f4e443c754fd70ff4e0c3c76b71047836c
 
-# Postprocessing - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Postprocessing - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 product/lib/vendor.display.color@1.0.so|f8e4967d0277023b1e2dd273a102c454b7717e0c
 product/lib/vendor.display.color@1.1.so|3ec3ceb15f11f4a8590f5e5de5da918264328ae0
 product/lib/vendor.display.color@1.2.so|b14e8341e95f8410d454e16cf2bf4128ad64995e
@@ -1677,7 +1677,7 @@ vendor/lib64/libqmi_csi.so|e71b58c6a1439ed46553a34680c4dadc0019e52b
 vendor/lib64/libqmi_encdec.so|5e536057be350651379b772aa1bba5f4735d11ee
 vendor/lib64/libqmiservices.so|4c8e2085245a4be823f908e64a8bb4fcad6409ca
 
-# Qualcomm Display Utils - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Qualcomm Display Utils - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 product/lib/vendor.qti.hardware.qdutils_disp@1.0.so|5860f129103a3cc9b82916fb39cb636d7756a9be
 product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|e28476fe7646ba4467cf4c8ff6417135bc1421c7
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|d236c57ce1d2747e942beecdca006798e22cc285
@@ -1685,7 +1685,7 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8a
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|ea25038448692ee9fe7b6a498e54654ce0928ccd
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|0f47d6cf21bea16c61587f706f3c9d774064b79a
 
-# Qualcomm Trusted Execution Environment - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Qualcomm Trusted Execution Environment - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|2a9f02e8b042a726357c8875804d217b1e6547d7
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|da092b85544768d146c30e365cc443e119eb5a6f
@@ -1934,7 +1934,7 @@ vendor/etc/sensors/config/tmd2725.json
 vendor/etc/sensors/config/tmx4903.json
 vendor/etc/sensors/sns_reg_config
 
-# Snapdragon Computer Vision Engine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Snapdragon Computer Vision Engine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|27e96067d1b96cc1d6efbc7d988fbf03cc3a41e1
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|c4c864724ffe4ba7d8f4ffb5fa1eecf9ce4131a9
 product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|8d5c27721ff0ab9dff140e156b6bc2895dcbf840
@@ -1989,7 +1989,7 @@ vendor/lib64/libscvePanorama_lite.so|c49017ad2072037480dbb61895b2d66aadf4e8a0
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|d3f2a7b171981c759a8e791a3820d52d54300644
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|4a767e9b40fe8f084c476b2251fd4be1bc097b7a
 
-# SOTER - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# SOTER - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
 product/lib/vendor.qti.hardware.soter@1.0.so|5905c81c54d3ee3246f0520ba445f506561c26bb
 product/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
@@ -2001,7 +2001,7 @@ vendor/lib/vendor.qti.hardware.soter@1.0.so|ccdf8c5fc5ace0065bbce034e09b776bfae2
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1c4a430b758f6697363570e113f9284bd8d538d3
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|3603b75fe841690121b82aced4ab1b6b619f1819
 
-# Thermal - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Thermal - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
 -vendor/lib64/libthermalclient.so|11f008e2a8fe51ca67637e7aaeefaf7f276a882c
 vendor/bin/thermal-engine|532fd0c51f6e50ad3f83fdef69f3d0366e2df7b6
@@ -2012,20 +2012,20 @@ vendor/etc/thermal-engine-normal.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
 vendor/etc/thermal-engine.conf|1721adec8d87b35e17fb1a52b3346a67a2006704
 vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
 
-# Time services - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# Time services - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/move_time_data.sh|56f1f79a88db709a0c7ed5c507b14c55976d6f32
 vendor/bin/time_daemon|4c00de8b3b9096ca784c1ddc9c5b7a43e2b85824
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
 vendor/lib64/libtime_genoff.so|34e97baaa5993b2369e67654363487ca79e45a81
 
-# TUI - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# TUI - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|9f5434d184f868c576ac86e950a305d6b4924430
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|f34f921b3e2a889cada5f9588009aae11af46a96
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|53203fc5b6aa073e6396180b49d11ec4a5a8f208
 
-# WiFi - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# WiFi - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 product/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar|9ba9f90a361fb50a7f85d1abaa22581d414aab8c
 product/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar|88c3f539d6fd51909ce79bb03a9ca0c5ca042e2b
 product/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so|b13e1b0996a4b4ed688d778c27b93cc9999aaa88
@@ -2046,20 +2046,20 @@ vendor/etc/wifi/wigig_p2p_supplicant.conf|2ba755ef8ae5f665b830b6930026534ddd3a1a
 vendor/etc/wifi/wigig_supplicant.conf|c62e0b2dee7cb149accbe658d841daabbc92a6b9
 vendor/firmware/wigig/wigig.ini|1ec12833a14cab778168c24c283e237cadbd1781
 vendor/lib/libaoa.so|f80a5f29d4d9462cc11d85439ea407920d59f407
-vendor/lib/libwigig_flashaccess.so|f91b2b5cb62b83d5ecb6cc6a1d1159f75a64d328
-vendor/lib/libwigig_ftm_flows.so|e34885a004619d9fc90867dff7741089cfd4d152
-vendor/lib/libwigig_pciaccess.so|c5215a747a449057cdeb61bf1e9ba89ec536fdfe
-vendor/lib/libwigig_utils.so|3a56990e039532dc7cd8859946dbe0ae7dafac00
+vendor/lib/libwigig_flashaccess.so|c6fc42c4f577153a59caf1a8c7bf29187abcc87b
+vendor/lib/libwigig_ftm_flows.so|e3c7fad4d0ca2b36f6e6b326de34762f60308300
+vendor/lib/libwigig_pciaccess.so|a84a94ee5b439d1a978d3b02f5c42079c837bb7b
+vendor/lib/libwigig_utils.so|87e5e14f7fc466adeeca7b6dc58864a71da62e9e
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so|ee73c0c3f9f9d336b9de1717514f1dd23abe0717
-vendor/lib64/libwigig_flashaccess.so|d0f813f2a27bc00acc0ae20a099cbf64844d14ed
-vendor/lib64/libwigig_ftm_flows.so|dfe863da907bd16d28b5525d659ac5074bfb23e1
-vendor/lib64/libwigig_pciaccess.so|a21f2bd0d6f143cf7a7e83c11917d36ca83f1b8f
-vendor/lib64/libwigig_utils.so|f17c4f0bbc6e57bc0b5dea242dd046bf7f1d64df
+vendor/lib64/libwigig_flashaccess.so|7943c01acb08b9f67c55737c93ec2003644a5920
+vendor/lib64/libwigig_ftm_flows.so|45543b0252bc49ff7cebc270c2bb77eecaa766e9
+vendor/lib64/libwigig_pciaccess.so|1837bd63fd7cfcec249d391f46a36623ae7a20dd
+vendor/lib64/libwigig_utils.so|1d6639dbc6fb5145fdde36b145abfd10e444aafd
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so|30579356bb379b0262bdc920a5fe8559784cd395
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|f2eef9ea97e083e76f528a566f9d3d7db961ea14
 vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|48af1f835582f8b4a252f5a882fbf5a60aff0768
 
-# WiFi Display - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# WiFi Display - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 bin/wfdservice|65bfa86e06a2b74dd9b3e7716d6c059944449ae6
 etc/init/wfdservice.rc|117d11af28ceda7ecf6009d7dc10ffc6bda25fa5
 etc/wfdconfigsink.xml|75c1e192ccc6248a860958026950c6bc4f052ef7
@@ -2139,7 +2139,7 @@ vendor/lib/libwfduibcsrc_proprietary.so|7a2121ab9983aa54cead0f22bde60d6d26da730d
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|b0293351fa3dd978111e023142f7afb007a6f708
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|00b30b068ed9a6198370d45f6eda0ab7f5a6b3c7
 
-# WiFi Display - HDCP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.11.0.QFQMIXM:user/release-keys
+# WiFi Display - HDCP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/wfdhdcphalservice|b9e91b5f89b3220d055f42ccf98b36b4a64b3f9a
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc|c266f08783a17f6583e3f22c85e55b0c200442ea
 vendor/lib64/libhdcp1prov.so|d6ec9ab5c2e362d300c20586d08b21a340d8cbb6
