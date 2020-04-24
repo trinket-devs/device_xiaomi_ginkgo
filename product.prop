@@ -1,12 +1,7 @@
-# Audio
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicecomm=true
-persist.audio.fluence.voicerec=false
-ro.config.media_vol_steps=25
-ro.config.vc_call_vol_steps=7
-ro.qc.sdk.audio.fluencetype=none
-ro.qc.sdk.audio.ssr=false
+# Bluetooth SOC type
+vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.splita2dp=false
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac-aptxadaptive
 
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
@@ -39,11 +34,6 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 persist.mm.enable.prefetch=true
-
-# Bluetooth SOC type
-vendor.bluetooth.soc=cherokee
-persist.vendor.btstack.enable.splita2dp=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
 
 # Netmgr
 persist.data.df.dev_name=rmnet_usb0

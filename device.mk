@@ -85,7 +85,6 @@ PRODUCT_PACKAGES += \
     audio.primary.trinket \
     audio.r_submix.default \
     audio.usb.default \
-    liba2dpoffload \
     libaudio-resampler \
     libaudioroute \
     libbatterylistener \
