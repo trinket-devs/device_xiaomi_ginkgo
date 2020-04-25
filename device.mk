@@ -19,11 +19,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# DTS
-PRODUCT_GENERIC_PROPERTIES += \
-    use.dts_eagle=true \
-    hpx_send_params=1
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
