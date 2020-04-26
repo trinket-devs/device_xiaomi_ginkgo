@@ -124,9 +124,6 @@ on fs
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
     chown root root /sys/class/thermal/thermal_message/temp_state
 
-    rm /cache/boot_lc_main.txt
-    start boot_lc_main
-
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -287,18 +284,8 @@ service cdsprpcd /vendor/bin/cdsprpcd
    user system
    group system
 
-service boot_lc_main /system/bin/logcat -f /cache/boot_lc_main.txt
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
 on property:sys.thermallct.isincall=1
     write /sys/class/power_supply/battery/device/thermalcall 1
 
 on property:sys.thermallct.isincall=0
     write /sys/class/power_supply/battery/device/thermalcall 0
-
-on property:sys.boot_completed=1
-    stop boot_lc_main
