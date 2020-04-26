@@ -1,2 +1,10 @@
 get_prop({ appdomain -isolated_app }, ifaa_prop)
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
+
+# Allow appdomain to get persist_camera_prop
+get_prop(appdomain, vendor_camera_prop)
+get_prop(appdomain, persist_camera_prop)
+
+# Allow vendor_init to set vendor_camera_prop
+set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, persist_camera_prop)
