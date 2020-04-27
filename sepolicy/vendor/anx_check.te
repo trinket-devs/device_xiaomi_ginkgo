@@ -1,0 +1,4 @@
+type anx_check, domain, coredomain;
+type anx_check_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(anx_check)
