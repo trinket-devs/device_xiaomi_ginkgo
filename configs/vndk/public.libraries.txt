@@ -8,3 +8,5 @@ liblistensoundmodel2.so
 libOpenCL.so
 libnpu.so
 libhta_hexagon_runtime.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
