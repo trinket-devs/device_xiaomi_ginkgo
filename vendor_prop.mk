@@ -24,6 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7 \
     ro.vendor.audio.sdk.fluencetype=fluence \
+    ro.vendor.audio.sdk.ssr=false \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio_hal.period_size=192 \

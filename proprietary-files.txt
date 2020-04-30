@@ -52,9 +52,6 @@ vendor/lib/libdrc.so|854e12157d5f09831b81fcf7a4cecf0f491d660a
 vendor/lib/libqtigef.so|d70ce932a3cc799d91ead157b870cd0c00dd195c
 vendor/lib/libsurround_3mic_proc.so|3c98223a30bf84ff91ec6e000dfea5be4a86d3cc
 vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
-vendor/lib/soundfx/libqcbassboost.so|7fb233f9b48b5c87b1fa0338d9a893c25be56451
-vendor/lib/soundfx/libqcreverb.so|ec1a00233de7f13a86248cd29740e8caee988119
-vendor/lib/soundfx/libqcvirt.so|debe6ae1d17ee2f2f9fe77ce836af666b5b72da6
 vendor/lib64/libacdb-fts.so|ef26d4571fcfd3df84496ca78caa1d5a23e06a04
 vendor/lib64/libacdbloader.so|856e47d0c38e36c0c2d03d3d786cd8f976f4a44c
 vendor/lib64/libacdbrtac.so|975c02869f533a6076e73fa332dbc37478eb310b
@@ -63,9 +60,6 @@ vendor/lib64/libaudcal.so|2b2fbf48bf6bd13715f72c97b9f8845073dd7e11
 vendor/lib64/libaudioparsers.so|364bf4dbadc81ac2d44918c28d5f1ddc676bdee4
 vendor/lib64/libqtigef.so|a18a65bdf341955ec1c429ffad7e85693ff95b3c
 vendor/lib64/soundfx/libasphere.so|a404102354aebb0486c6a829d546e60e83b8217b
-vendor/lib64/soundfx/libqcbassboost.so|620c2c840a0ab87d0f4c816ea6a79087b193cee4
-vendor/lib64/soundfx/libqcreverb.so|b9dd737b6f6da59b9db3fb283b70aa2e7f32933c
-vendor/lib64/soundfx/libqcvirt.so|e6d157b90ba98e325110ba7de053e1ebe0444771
 
 # Audio ACDB
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
