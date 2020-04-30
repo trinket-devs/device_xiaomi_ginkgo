@@ -1995,16 +1995,16 @@ vendor/lib/vendor.qti.hardware.soter@1.0.so|ccdf8c5fc5ace0065bbce034e09b776bfae2
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1c4a430b758f6697363570e113f9284bd8d538d3
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|3603b75fe841690121b82aced4ab1b6b619f1819
 
-# Thermal - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
--vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
--vendor/lib64/libthermalclient.so|11f008e2a8fe51ca67637e7aaeefaf7f276a882c
-vendor/bin/thermal-engine|532fd0c51f6e50ad3f83fdef69f3d0366e2df7b6
-vendor/etc/thermal-engine-high.conf|646948a5d3a378feb1595c63c578407af6f70b90
-vendor/etc/thermal-engine-map.conf|8cee010443a42052353f3134894dc8d6b2280a23
-vendor/etc/thermal-engine-nolimits.conf|4ba48db70f7afd6f0e4387859c3ebe91ac723eb1
-vendor/etc/thermal-engine-normal.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
-vendor/etc/thermal-engine.conf|1721adec8d87b35e17fb1a52b3346a67a2006704
-vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
+# Thermal
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/bin/thermal-engine
+vendor/etc/thermal-engine-camera.conf
+vendor/etc/thermal-engine-map.conf
+vendor/etc/thermal-engine-normal.conf
+vendor/etc/thermal-engine.conf
+vendor/lib/libthermalfeature.so
+vendor/lib64/libthermalfeature.so
 
 # Time services - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/move_time_data.sh|56f1f79a88db709a0c7ed5c507b14c55976d6f32
