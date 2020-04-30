@@ -138,8 +138,10 @@ on fs
 
     rm /cache/boot_lc_main.txt
     rm /cache/boot_dmesg.txt
+    rm /cache/denials.txt
     start boot_lc_main
     start boot_dmesg
+    start denials_logger
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
@@ -315,6 +317,13 @@ service boot_dmesg /system/bin/sh -c "dmesg -w > /cache/boot_dmesg.txt"
     disabled
     oneshot
 
+service denials_logger /system/bin/sh -c "dmesg -w | grep denied >> /cache/denials.txt"
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 on property:sys.thermallct.isincall=1
     write /sys/class/power_supply/battery/device/thermalcall 1
 
@@ -328,7 +337,7 @@ on property:sys.boot_completed=1
     # Runtime fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
-    write /sys/block/sda/queue/iostats 1
+    write /sys/block/sda/queue/iostats 0
     write /sys/block/sde/queue/read_ahead_kb 128
     write /sys/block/sde/queue/nr_requests 128
-    write /sys/block/sde/queue/iostats 1
+    write /sys/block/sde/queue/iostats 0
