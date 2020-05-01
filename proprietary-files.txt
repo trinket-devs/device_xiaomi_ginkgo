@@ -103,7 +103,7 @@ vendor/lib64/libbtnv.so|d7b09c0e44ef00b5f29398aa2e1d86dbc775fd28
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|1b8ea7096ded35acef0bbc1a25840c0b1c12be04
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|9425f3b3d1b27cf1342499dd80bbac2d58a1b3f0
 
-# Camera - from willow-user 9 PKQ1.190616.001 V11.0.2.0.PCXEUXM release-keys
+# Camera
 vendor/etc/camera/CFR_para.bin
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/LDC_packdata_xiaomi_C3J_src1_sunny.dat
@@ -1237,6 +1237,33 @@ vendor/firmware/cpp_firmware_v1_5_1.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
+
+# Camera HIDLs
+lib/android.hardware.camera.common@1.0.so
+lib/android.hardware.camera.device@1.0.so
+lib/android.hardware.camera.device@3.2.so
+lib/android.hardware.camera.device@3.3.so
+lib/android.hardware.camera.device@3.4.so
+lib/android.hardware.camera.provider@2.4.so
+lib/vendor.qti.hardware.camera.device@1.0.so
+lib/vndk-28/android.hardware.camera.common@1.0.so:lib/vndk-29/android.hardware.camera.common@1.0.so
+lib/vndk-28/android.hardware.camera.device@1.0.so:lib/vndk-29/android.hardware.camera.device@1.0.so
+lib/vndk-28/android.hardware.camera.device@3.2.so:lib/vndk-29/android.hardware.camera.device@3.2.so
+lib/vndk-28/android.hardware.camera.device@3.3.so:lib/vndk-29/android.hardware.camera.device@3.3.so
+lib/vndk-28/android.hardware.camera.device@3.4.so:lib/vndk-29/android.hardware.camera.device@3.4.so
+lib/vndk-28/android.hardware.camera.metadata@3.2.so:lib/vndk-29/android.hardware.camera.metadata@3.2.so
+lib/vndk-28/android.hardware.camera.metadata@3.3.so:lib/vndk-29/android.hardware.camera.metadata@3.3.so
+lib/vndk-28/android.hardware.camera.provider@2.4.so:lib/vndk-29/android.hardware.camera.provider@2.4.so
+lib/vndk-28/libcamera_metadata.so:lib/vndk-29/libcamera_metadata.so
+vendor/bin/hw/android.hardware.camera.provider@2.4-service
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-external-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 
 # CDSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/cdsprpcd|b76dd062f530a4a9d51e4e5107ccd7588e33e55f
