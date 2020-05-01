@@ -1,3 +1,16 @@
+on boot
+    # Backlight
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+    chmod 0644 /sys/class/backlight/panel0-backlight/brightness
+    chmod 0644 /sys/class/backlight/panel0-backlight/max_brightness
+
+    # Real notification light
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/red/breath
+    chmod 660 /sys/class/leds/red/brightness
+    chmod 660 /sys/class/leds/red/breath
+
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.ginkgo
     interface android.hardware.light@2.0::ILight default
     class hal
