@@ -1,8 +1,3 @@
-# Bluetooth SOC type
-vendor.bluetooth.soc=cherokee
-persist.vendor.btstack.enable.splita2dp=false
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac-aptxadaptive
-
 # Camera
 camera.disable_zsl_mode=true
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
