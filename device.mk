@@ -85,6 +85,7 @@ PRODUCT_PACKAGES += \
     audio.primary.trinket \
     audio.r_submix.default \
     audio.usb.default \
+    liba2dpoffload \
     libaudio-resampler \
     libaudioroute \
     libbatterylistener \
@@ -125,9 +126,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
-    liba2dpoffload \
     libbthost_if \
-    libldacBT_dec
+    libldacBT_dec \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
