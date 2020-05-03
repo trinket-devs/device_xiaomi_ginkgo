@@ -1846,6 +1846,28 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|c387b980e5c524b4d78c725ed043e6c1333e
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|171b951d8b110fc2649306741db28434b4549a1c
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|45d07ab814b4c7ca3784935d8171eae1a204717b
 
+# Misys
+etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
+framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
+framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
+lib/vendor.xiaomi.hardware.misys@1.0.so
+lib/vendor.xiaomi.hardware.misys@2.0.so
+lib64/vendor.xiaomi.hardware.misys@1.0.so
+lib64/vendor.xiaomi.hardware.misys@2.0.so
+vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
+vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
+vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
+vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
+vendor/lib/vendor.xiaomi.hardware.misys@1.0.so
+vendor/lib/vendor.xiaomi.hardware.misys@2.0.so
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
+
 # NFC
 vendor/bin/nqnfcinfo|74e45f565d8be40a1377909b411465502dd366e7
 vendor/lib/libsn100u_fw.so|8f22d9b555acc25b501f1c48983e7d33547231f7
