@@ -2,6 +2,7 @@
 persist.camera.             u:object_r:vendor_camera_prop:s0
 camera.                     u:object_r:vendor_camera_prop:s0
 ro.boot.hwc                 u:object_r:vendor_camera_prop:s0
+sys.camera.                 u:object_r:vendor_camera_prop:s0
 vendor.camera.              u:object_r:vendor_camera_prop:s0
 vidhance.                   u:object_r:vendor_camera_prop:s0
 
