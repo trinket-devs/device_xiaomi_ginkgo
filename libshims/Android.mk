@@ -21,3 +21,16 @@ LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+
+#include $(CLEAR_VARS)
+#LOCAL_SRC_FILES := libshim_cameraservice.cpp
+#LOCAL_SHARED_LIBRARIES := \
+#    libcameraservice \
+#    libcamera_client \
+#    libcamera_metadata \
+#    android.hardware.camera.common@1.0 \
+#    android.hardware.camera.device@3.5 \
+#    android.hardware.camera.provider@2.5
+#LOCAL_MODULE := libshim_cameraservice
+#LOCAL_MODULE_TAGS := optional
+#include $(BUILD_SHARED_LIBRARY)
