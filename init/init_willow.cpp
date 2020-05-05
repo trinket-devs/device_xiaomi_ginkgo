@@ -51,28 +51,80 @@ void property_override(string prop, string value)
 
 void vendor_load_properties()
 {
-    string device, model, desc;
-    string fp = "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys";
-
-    string device_region = GetProperty("ro.boot.hwc", "");
-    string device_hwversion = GetProperty("ro.boot.hwversion", "");
-
-    if (device_region == "Global_B" && device_hwversion == "18.39.0") {
-        device = "willow";
-        model = "Redmi Note 8T";
-    } else {
-        device = "ginkgo";
-        model = "Redmi Note 8";
+    property_override(string("ro.opa.eligible_device"), string("true"));
+    property_override(string("ro.com.google.ime.theme_idi"), string("5"));
+    property_override(string("ro.com.google.ime.height_ratio"), string("1.0"));
+    property_override(string("ro.com.google.ime.bs_theme"), string("true"));
+    property_override(string("ro.com.google.ime.system_lm_dir"), string("/product/usr/share/ime/google/d3_lms"));
+    property_override(string("persist.rcs.supported"), string("1"));
+    property_override(string("ro.product.model"), string("Pixel 4 XL"));
+    property_override(string("ro.product.brand"), string("google"));
+    property_override(string("ro.product.name"), string("coral"));
+    property_override(string("ro.product.device"), string("coral"));
+    property_override(string("ro.product.manufacturer"), string("Google"));
+    property_override(string("ro.build.fingerprint"), string("google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys"));
+    property_override(string("ro.system.build.date"), string("Wed Apr  1 05:17:57 UTC 2020"));
+    property_override(string("ro.system.build.date.utc"), string("1585718277"));
+    property_override(string("ro.system.build.fingerprint"), string("google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys"));
+    property_override(string("ro.system.build.id"), string("QQ2A.200501.001.A3"));
+    property_override(string("ro.system.build.tags"), string("release-keys"));
+    property_override(string("ro.system.build.version.incremental"), string("6353761"));
+    property_override(string("ro.product.system.brand"), string("google"));
+    property_override(string("ro.product.system.device"), string("generic"));
+    property_override(string("ro.product.system.manufacturer"), string("Google"));
+    property_override(string("ro.product.system.model"), string("mainline"));
+    property_override(string("ro.product.system.name"), string("mainline"));
+    property_override(string("ro.build.id"), string("QQ2A.200501.001.A3"));
+    property_override(string("ro.build.display.id"), string("QQ2A.200501.001.A3"));
+    property_override(string("ro.build.version.incremental"), string("6353761"));
+    property_override(string("ro.build.date"), string("Wed Apr  1 05:17:57 UTC 2020"));
+    property_override(string("ro.build.date.utc"), string("1585718277"));
+    property_override(string("ro.build.type"), string("user"));
+    property_override(string("ro.build.user"), string("android-build"));
+    property_override(string("ro.build.host"), string("abfarm-01331"));
+    property_override(string("ro.build.tags"), string("release-keys"));
+    property_override(string("ro.build.flavor"), string("coral-user"));
+    property_override(string("ro.build.product"), string("coral"));
+    property_override(string("ro.build.description"), string("coral-user 10 QQ2A.200501.001.A3 6353761 release-keys"));
+    property_override(string("ro.product.build.date"), string("Wed Apr  1 05:17:57 UTC 2020"));
+    property_override(string("ro.product.build.date.utc"), string("1585718277"));
+    property_override(string("ro.product.build.fingerprint"), string("google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys"));
+    property_override(string("ro.product.build.id"), string("QQ2A.200501.001.A3"));
+    property_override(string("ro.product.build.tags"), string("release-keys"));
+    property_override(string("ro.product.build.type"), string("user"));
+    property_override(string("ro.product.build.version.incremental"), string("6353761"));
+    property_override(string("ro.product.build.version.release"), string("10"));
+    property_override(string("ro.product.build.version.sdk"), string("29"));
+    property_override(string("ro.product.product.brand"), string("google"));
+    property_override(string("ro.product.product.device"), string("coral"));
+    property_override(string("ro.product.product.manufacturer"), string("Google"));
+    property_override(string("ro.product.product.model"), string("Pixel 4 XL"));
+    property_override(string("ro.product.product.name"), string("coral"));
+    property_override(string("ro.product.first_api_level"), string("29"));
+    property_override(string("ro.vendor.build.security_patch"), string("2020-04-05"));
+    property_override(string("ro.vendor.build.date"), string("Wed Apr  1 05:17:57 UTC 2020"));
+    property_override(string("ro.vendor.build.date.utc"), string("1585718277"));
+    property_override(string("ro.vendor.build.fingerprint"), string("google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys"));
+    property_override(string("ro.vendor.build.id"), string("QQ2A.200501.001.A3"));
+    property_override(string("ro.vendor.build.tags"), string("release-keys"));
+    property_override(string("ro.vendor.build.version.incremental"), string("6353761"));
+    property_override(string("ro.product.vendor.brand"), string("google"));
+    property_override(string("ro.product.vendor.device"), string("coral"));
+    property_override(string("ro.product.vendor.manufacturer"), string("Google"));
+    property_override(string("ro.product.vendor.model"), string("Pixel 4 XL"));
+    property_override(string("ro.product.vendor.name"), string("coral"));
+    property_override(string("ro.bootimage.build.date"), string("Tue Mar 3 00:22:58 UTC 2020"));
+    property_override(string("ro.bootimage.build.date.utc"), string("1585718277"));
+    property_override(string("ro.bootimage.build.fingerprint"), string("google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys"));
+    property_override(string("ro.odm.build.date"), string("Wed Apr  1 05:17:57 UTC 2020"));
+    property_override(string("ro.odm.build.date.utc"), string("1585718277"));
+    property_override(string("ro.odm.build.fingerprint"), string("google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys"));
+    property_override(string("ro.odm.build.id"), string("QQ2A.200501.001.A3"));
+    property_override(string("ro.odm.build.tags"), string("release-keys"));
+    property_override(string("ro.odm.build.version.incremental"), string("6353761"));
+    property_override(string("ro.product.odm.brand"), string("google"));
+    property_override(string("ro.product.odm.device"), string("coral"));
+    property_override(string("ro.product.odm.manufacturer"), string("Google"));
+    property_override(string("ro.product.odm.model"), string("Pixel 4 XL"));
+    property_override(string("ro.product.odm.name"), string("coral"));
     }
-
-    // Override all partitions' props
-    string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
-
-    for (const string &prop : prop_partitions) {
-        property_override(string("ro.product.") + prop + string("name"), device);
-        property_override(string("ro.product.") + prop + string("device"), device);
-        property_override(string("ro.product.") + prop + string("model"), model);
-        property_override(string("ro.") + prop + string("build.product"), device);
-        property_override(string("ro.") + prop + string("build.fingerprint"), fp);
-    }
-}
