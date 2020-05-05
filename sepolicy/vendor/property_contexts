@@ -2,6 +2,7 @@
 persist.camera.             u:object_r:vendor_camera_prop:s0
 camera.                     u:object_r:vendor_camera_prop:s0
 ro.boot.hwc                 u:object_r:vendor_camera_prop:s0
+sys.camera.                 u:object_r:vendor_camera_prop:s0
 vendor.camera.              u:object_r:vendor_camera_prop:s0
 vidhance.                   u:object_r:vendor_camera_prop:s0
 
@@ -18,6 +19,7 @@ persist.vendor.sys.fp.      u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.         u:object_r:vendor_fp_prop:s0
 persist.sys.fp.             u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor            u:object_r:vendor_fp_prop:s0
+sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
 
 # Thermal
 sys.thermal.                u:object_r:thermal_engine_prop:s0

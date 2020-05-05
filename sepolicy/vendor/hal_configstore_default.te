@@ -1,0 +1,2 @@
+allow hal_configstore_default mnt_vendor_file:dir getattr;
+allow hal_configstore_default persist_audio_file:dir getattr;

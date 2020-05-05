@@ -23,4 +23,4 @@
 /(vendor|system/vendor)/bin/mlipayd@1\.1     u:object_r:hal_mlipay_default_exec:s0
 
 # ANXCamera
-/system/bin/anxfilecheck\.sh                 u:object_r:anx_check_exec:s0
+/system/bin/anxfilecheck\.sh    u:object_r:anx_check_exec:s0
