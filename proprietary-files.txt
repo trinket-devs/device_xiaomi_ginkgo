@@ -1662,47 +1662,47 @@ vendor/firmware/novatek_ts_ebbg_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
-# Graphics - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/lib64/egl/eglSubDriverAndroid.so|ca30ccf7aea7fcc032b5ec6e8ab92ba4cfb5af76
-vendor/lib64/egl/libEGL_adreno.so|f6421b5c8cfbd496d51feee321d93cfcaa395298
-vendor/lib64/egl/libGLESv1_CM_adreno.so|d8de942d91e7e1a87ee3388911c2e8eaf13c76ef
-vendor/lib64/egl/libGLESv2_adreno.so|815803c959cbe38498fc78d046a154661838942e
-vendor/lib64/egl/libQTapGLES.so|e060cdc619053569470859626aa2a41b61da9227
-vendor/lib64/egl/libq3dtools_adreno.so|1d02e38fa7ca54d41b35b9f65b7b823ccc749336
-vendor/lib64/egl/libq3dtools_esx.so|e77ffc3f035e9f91890acd222dc96754a771afd0
-vendor/lib64/libC2D2.so|63b0a96005bb60bc273fb6d1cdd99bf60dfe1af4
-vendor/lib64/libCB.so|b1cd0604f6422fef3b79e0cee24c91ca6c91218f
-vendor/lib64/libOpenCL.so|b7fc263c86db38668e54570616fcadcfacbbd33d
-vendor/lib64/libRSDriver_adreno.so|4fc43018fbf0c8c0648b956211fbe2189fdecff4
-vendor/lib64/libadreno_utils.so|a06c33ca9f010e3ca3b2af08fc3a854f6402ea89
-vendor/lib64/libbccQTI.so|2105f35a46f936940e124ddba3d4bcf3c7162404
-vendor/lib64/libc2d30_bltlib.so|257612866c2c6fa45847dac0252f2d50c1a74f3b
-vendor/lib64/libgsl.so|1231cdab03be3c97cff2a0ac907d2ccc5d6bcd31
-vendor/lib64/libllvm-glnext.so|45d47539bf7a60fe7c55970684ba234e145be381
-vendor/lib64/libllvm-qcom.so|30e26aa99a4051b3c6dfc02a4a71686d0aefe6d8
-vendor/lib64/libpvr.so|47e3c25f30a05c7ee09249556b4b9f3c42274956
-vendor/lib64/librs_adreno.so|9fd579685953efba80e14162a8527375ef0f17b1
-vendor/lib64/librs_adreno_sha1.so|632cbc71a48b78cc4667ae8a8a51457bf1104873
-vendor/lib/egl/eglSubDriverAndroid.so|fdd661b92a81c0d12f087e4daa732680a7027df7
-vendor/lib/egl/libEGL_adreno.so|f836c5c1eaa8373d7847dd126e0f0ea82e473f16
-vendor/lib/egl/libGLESv1_CM_adreno.so|4c2cd7ef5858e14a2e116feb765d47b011954e96
-vendor/lib/egl/libGLESv2_adreno.so|5160a66e4f6a5d4076df6274cbaaefff62520496
-vendor/lib/egl/libQTapGLES.so|01513864db7478637c94f31b547d1e9c7b389da1
-vendor/lib/egl/libq3dtools_adreno.so|6276d79737358fe27836d41a4aca3d8e9f2b76df
-vendor/lib/egl/libq3dtools_esx.so|0b6c3c2a50e0c9de730fc74786a64cd62b6989d2
-vendor/lib/libC2D2.so|a89c611c33d136ac335f8ab077a4dd9ab16722a6
-vendor/lib/libCB.so|a149d8cf839ee09c8006fd9544db4bb341bae0cd
-vendor/lib/libOpenCL.so|df83abbc452249d07b52bf67c1c9b537c76019af
-vendor/lib/libRSDriver_adreno.so|f7234dc9ce8e5abe3898ddeb6d1106d1100b66ef
-vendor/lib/libadreno_utils.so|de54930ce9fc6e13de930aa7a942967828fe4daf
-vendor/lib/libbccQTI.so|3e0a4fe0242a797a19a70b282fe0cf0bd1ce75da
-vendor/lib/libc2d30_bltlib.so|0ecaba6ce84154d88c0df57a235609ecd98d6f6d
-vendor/lib/libgsl.so|3e4b1cf25084af432e56cd9f6c531aa09492b9df
-vendor/lib/libllvm-glnext.so|b8f3faa6192e21749c5bb55bbd9fbe51b3502f79
-vendor/lib/libllvm-qcom.so|a287c1b2a3024da72f0665d6434844fcf2439eeb
-vendor/lib/libpvr.so|b136124b70c996aedc269580088b15a86d8152bb
-vendor/lib/librs_adreno.so|81ac0aaaf36c049113e1dec7640d962a07e07f7f
-vendor/lib/librs_adreno_sha1.so|ca3051d0730a23e029573fb27d4618c76d5a2fca
+# Graphics - from LA.UM.8.11.r1-03300-NICOBAR.0
+vendor/lib64/egl/eglSubDriverAndroid.so|d7e3af7f2f08c6a6d311f32ce1dc6646e054bb26
+vendor/lib64/egl/libEGL_adreno.so|73c8bc42d4f097156508ad501b3affcd8bfb1e55
+vendor/lib64/egl/libGLESv1_CM_adreno.so|2c60e39e06eb18eac2db775021d5ed45da92fa54
+vendor/lib64/egl/libGLESv2_adreno.so|ac6866dbb9a1bc7a7c365e2e799117ddc9e711f8
+vendor/lib64/egl/libQTapGLES.so|aa7f8f3a5a33a54408368775cf79af63dca2c91a
+vendor/lib64/egl/libq3dtools_adreno.so|00566ccecfd29bd5c79d631c0d5ccadd0ee7446e
+vendor/lib64/egl/libq3dtools_esx.so|23dad56ed76fdcece3366018a401f97fee070559
+vendor/lib64/libC2D2.so|53db84268b65d20226e1daf5f7a55d3d2140b041
+vendor/lib64/libCB.so|c3d2009611209569e8dfa6ab25771ba6a366c41d
+vendor/lib64/libOpenCL.so|7e6133e888f5bf542940f8c9fbe3eae0ddf21aca
+vendor/lib64/libRSDriver_adreno.so|be6708df68503eba85c35101029b50938bf181b6
+vendor/lib64/libadreno_utils.so|ce9c2afabfd71d3d3b6a914a63aa0da3e0cc8883
+vendor/lib64/libbccQTI.so|44d1fef80ee78339264588f53696d9c2bbfaff06
+vendor/lib64/libc2d30_bltlib.so|29017987444fe077f1bac00d18f82a1a6900a3ad
+vendor/lib64/libgsl.so|1ecb89ffd26025de4d277e33152e677222a41d0c
+vendor/lib64/libllvm-glnext.so|832d47ac513eed63eea01825f0224260d85906c5
+vendor/lib64/libllvm-qcom.so|515b23b0e1ebf2b73a9380d89739a55fe6e88a5c
+vendor/lib64/libpvr.so|a15c61aff68787c4abb8f0ec61c5459b687a29e4
+vendor/lib64/librs_adreno.so|71affd7d82629fd21ad8ed553f0def43b4f664ee
+vendor/lib64/librs_adreno_sha1.so|14a13f6fd3b165fe1283fca28be90c3b01b0fe06
+vendor/lib/egl/eglSubDriverAndroid.so|7bd57ae573b7db35f1e7a8a9b41b26e9980f8093
+vendor/lib/egl/libEGL_adreno.so|b74f548f7762817b9f1c4ff7f9ee0ab5abe21ccf
+vendor/lib/egl/libGLESv1_CM_adreno.so|9b598c109e6fd9a1ae7fcb463b5b075ca638b812
+vendor/lib/egl/libGLESv2_adreno.so|2aa5c8e3131d6f321f7c64791efedea120d0ae69
+vendor/lib/egl/libQTapGLES.so|934ef4b849204b557efd0fb38d2cc5bd85d88f93
+vendor/lib/egl/libq3dtools_adreno.so|5d25d3f8d5f5e86f6d1b83df3a15561ff257756d
+vendor/lib/egl/libq3dtools_esx.so|a2f68d0254bf028416a067e341f48c8e5cb624ef
+vendor/lib/libC2D2.so|c189d8794a261824b8fdeca4e65d63eb92c0cc0a
+vendor/lib/libCB.so|c704622e46d0cd531d7774bdeb24a0134d83b773
+vendor/lib/libOpenCL.so|6fe1ec3442653efedf49f64aa9301e0ed91abac0
+vendor/lib/libRSDriver_adreno.so|fe6fb5fab0f2f69ff1779e03c2ed83f1149935a2
+vendor/lib/libadreno_utils.so|1fd9e4a6dbfd6370acbb1ebdfaf39724fb78bd85
+vendor/lib/libbccQTI.so|0be327b62b993d09953fc0758fbf19672d58d3ec
+vendor/lib/libc2d30_bltlib.so|0baf85bbde259bd0bc76425d7b5b09760761471d
+vendor/lib/libgsl.so|d80a4f39925ccc52eb008fc75ddc1d4c0a0cb46f
+vendor/lib/libllvm-glnext.so|15294168ecedde216843aa03192957c45c824480
+vendor/lib/libllvm-qcom.so|8f24d6b19e0337f3f267428f8d5c078ae80313ae
+vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
+vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
+vendor/lib/librs_adreno_sha1.so|17a2c3090312905147360713f30b7e5740478e71
 
 # Graphics (SDM) - from LA.UM.8.1.r1-14500-sm8150.0
 vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
@@ -1719,9 +1719,9 @@ vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
 vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
 vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
-# Graphics (Vulkan) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/lib/hw/vulkan.trinket.so|ec434cfa02cbb6b783a74d6c9518451e8126fe2f
-vendor/lib64/hw/vulkan.trinket.so|7de77bf67c85334dda4e01805e5170b4a4609fb3
+# Graphics (Vulkan) - from LA.UM.8.11.r1-03300-NICOBAR.0
+vendor/lib/hw/vulkan.trinket.so|d19d68f070172e1da6a5a2a9b83b5707de52deb6
+vendor/lib64/hw/vulkan.trinket.so|86dee35ca0c3bce5b9280eb8a89f5baee1aa9c41
 
 # IO Prefetcher - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|4ecba6fdc1ef0c7796a03afb7e6cc1a3f1ed51c0
