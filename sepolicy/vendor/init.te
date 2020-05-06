@@ -3,5 +3,6 @@ allow init cache_file:file append;
 allow init firmware_file:filesystem getattr;
 allow init persist_block_device:lnk_file relabelto;
 allow init vendor_file:file execute;
+allow init adsprpcd_file:file mounton;
 dontaudit init bt_firmware_file:filesystem getattr;
 dontaudit init firmware_file:filesystem getattr;
