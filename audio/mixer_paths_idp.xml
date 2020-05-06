@@ -2294,8 +2294,8 @@
     <!-- Add by dzy for ce mode 20181206-->
     <path name="headphones-ce">
         <path name="headphones" />
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX1 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="80" />
+        <ctl name="RX_RX1 Digital Volume" value="80" />
     </path>
 
     <path name="headphones-no-ce">
