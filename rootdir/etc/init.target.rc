@@ -60,6 +60,11 @@ on fs
     mkdir /mnt/vendor/persist/misys 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
 
+    mkdir /mnt/vendor/dsp 0770 root root
+    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
+    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
+    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+
 on early-boot
     write /dev/ipa 1
 
