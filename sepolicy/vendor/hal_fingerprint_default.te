@@ -6,7 +6,7 @@ allow hal_fingerprint_default sysfs_fps_attr:file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 allow hal_fingerprint_default system_data_file:file { getattr read write };
-
+allow hal_fingerprint_default system_prop:property_service set;
 allow hal_fingerprint_default rootfs:dir { read open };
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)

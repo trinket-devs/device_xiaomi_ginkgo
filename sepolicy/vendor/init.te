@@ -14,3 +14,7 @@ allow init self:tcp_socket getattr;
 allow init self:udp_socket ioctl;
 allow init location_socket:sock_file { read write open getattr };
 allow init location:unix_stream_socket { connectto };
+allow init sysfs:file { open read };
+allow init storage_file:lnk_file read;
+allow init vendor_file:file { execute execute_no_trans };
+allow init vendor_toolbox_exec:file execute_no_trans;

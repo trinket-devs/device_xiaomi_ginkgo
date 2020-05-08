@@ -1,0 +1,2 @@
+allow hal_wifi_ext wifihal_socket:dir { add_name remove_name write };
+allow hal_wifi_ext wifihal_socket:sock_file { create setattr unlink };
