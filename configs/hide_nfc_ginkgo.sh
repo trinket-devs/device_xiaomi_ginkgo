@@ -4,6 +4,7 @@
 
 if [ "$(getprop ro.boot.hwversion)" != "18.39.0" ] || [ "$(getprop ro.boot.hwc)" != "Global_B" ] ; then
     rm -rf /vendor/etc/permissions/*nfc*
+    rm -rf /vendor/etc/*nfc*
 else
     exit 0
 fi
