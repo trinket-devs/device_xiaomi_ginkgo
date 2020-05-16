@@ -69,6 +69,9 @@ on init
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
+    # Disable sched autogroup
+    write /proc/sys/kernel/sched_autogroup_enabled 0
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -504,6 +507,9 @@ on property:persist.vendor.sys.rawdump_copy=0
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 
+    # Enable ZRAM
+    swapon_all /vendor/etc/fstab.qcom
+
     #Reset read ahead for dm-0, dm-1, dm-3, dm-4, dm-5 and dm-6 to 128b
     write /sys/block/dm-0/queue/read_ahead_kb 128
     write /sys/block/dm-1/queue/read_ahead_kb 128
@@ -529,8 +535,6 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
     # Enable UFS powersaving
-    write /sys/devices/soc/${ro.boot.bootdevice}/clkscale_enable 1
-    write /sys/devices/soc/${ro.boot.bootdevice}/clkgate_enable 1
     write /sys/module/lpm_levels/parameters/sleep_disabled N
 
 on property:persist.vendor.radio.atfwd.start=false
