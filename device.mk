@@ -7,9 +7,6 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
