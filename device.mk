@@ -7,9 +7,6 @@
 # Vendor blobs
 $(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
