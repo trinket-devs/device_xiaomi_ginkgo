@@ -4,8 +4,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-filter=speed \
-    ro.sys.fw.dex2oat_thread_count=8 \
-    ro.vendor.qti.am.reschedule_service=true
+    ro.sys.fw.dex2oat_thread_count=8
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -98,10 +97,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bluetooth.modem_nv_support=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac \
+    persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.enable.splita2dp=false \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     vendor.audio.feature.a2dp_offload.enable=false \
+    vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee
+
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_zsl_mode=true \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit \
+    vendor.camera.not.cts.apk=1 \
+    vendor.camera.not.ctsverify.apk=1 \
+    persist.vendor.camera.preview.ubwc=0 \
+    persist.vendor.camera.isp.clock.optmz=0 \
+    persist.vendor.camera.isp.turbo=1 \
+    persist.vendor.camera.imglib.usefdlite=1 \
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.mpo.disabled=1 \
+    persist.vendor.camera.manufacturer=Xiaomi \
+    persist.vendor.camera.model=Redmi Note 8 \
+    persist.vendor.camera.stats.test=0 \
+    persist.vendor.camera.awb.sync=2 \
+    persist.vendor.camera.af.sync=2 \
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -110,20 +131,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.nsrm.bkg.evt=3955 \
     ro.vendor.use_data_netmgrd=true
 
-# Ccodec
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.ccodec=1 \
-    debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
-
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1 \
     debug.sf.hw=0 \
     persist.hwc.enable_vds=1 \
     persist.demo.hdmirotationlock=false \
@@ -151,6 +166,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Hack for YouTube
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=3840x2160
+
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
@@ -166,18 +185,33 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.kill_timeout_ms=100 \
     ro.lmk.use_minfree_levels=true
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=1 \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
+    media.aac_51_output_enabled=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-fma2dp=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-scan=true \
+    persist.mm.enable.prefetch=true
+
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.se.type=HCE,UICC
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q6125-17995-1
+
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.data.df.dev_name=rmnet_usb0 \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent
-
-# Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
 
 # PASR
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -199,6 +233,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
     persist.radio.multisim.config=dsds \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
@@ -227,3 +265,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
+# WFD
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
