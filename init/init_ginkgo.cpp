@@ -77,6 +77,9 @@ void vendor_load_properties()
         property_override(string("ro.") + prop + string("build.fingerprint"), fp);
     }
 
+    // Set hardware SKU prop
+    property_override("ro.boot.product.hardware.sku", device);
+
     // Set dalvik heap configuration
     char const *heapstartsize;
     char const *heapgrowthlimit;

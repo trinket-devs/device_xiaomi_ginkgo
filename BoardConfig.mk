@@ -113,6 +113,8 @@ USE_DEVICE_SPECIFIC_GPS := true
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/configs/hidl/manifest_willow.xml
+ODM_MANIFEST_SKUS += willow
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
