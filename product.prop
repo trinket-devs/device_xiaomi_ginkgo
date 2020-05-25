@@ -9,6 +9,7 @@ ro.qc.sdk.audio.fluencetype=fluence
 ro.qc.sdk.audio.ssr=false
 
 # Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 ro.bluetooth.library_name=libbluetooth_qti.so
