@@ -153,7 +153,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     libdng_sdk.vendor \
-    libshim_camera \
     Snap
 
 # Context Hub
