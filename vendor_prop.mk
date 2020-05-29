@@ -108,9 +108,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=true \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit \
-    vendor.camera.not.cts.apk=1 \
-    vendor.camera.not.ctsverify.apk=1 \
     persist.vendor.camera.preview.ubwc=0 \
     persist.vendor.camera.isp.clock.optmz=0 \
     persist.vendor.camera.isp.turbo=1 \
@@ -123,6 +120,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.stats.test=0 \
     persist.vendor.camera.awb.sync=2 \
     persist.vendor.camera.af.sync=2 \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.is_type=5 \
+    persist.vendor.camera.is_type_preview=5 \
+    persist.vendor.camera.gyro.disable=0 \
+    persist.vendor.camera.llnoise=1 \
+    persist.vendor.denoise.process.plates=2 \
+    persist.vendor.tnr.process.plates=2 \
+    persist.vendor.camera.tnr.preview=1 \
+    persist.vendor.camera.swtnr.preview=1 \
+    persist.vendor.camera.tnr.video=1 \
+    persist.vendor.camera.aec.sync=1 \
+    persist.vendor.camera.CDS=Auto \
+    persist.vendor.camera.video.CDS=Auto \
+    persist.vendor.dualcam.lpm.enable=0 \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera \
+    vendor.camera.not.cts.apk=1 \
+    vendor.camera.not.ctsverify.apk=1
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
