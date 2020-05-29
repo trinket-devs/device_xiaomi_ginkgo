@@ -94,8 +94,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
-    libdng_sdk.vendor \
-    libshim_camera
+    libdng_sdk.vendor
 
 $(call inherit-product, vendor/ANXCamera/config.mk)
 

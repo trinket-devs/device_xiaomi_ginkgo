@@ -199,6 +199,7 @@ vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libalCFR.so
 vendor/lib/libalRnBRT_GL_GBWRAPPER.so
+vendor/lib/libalLDC.so
 vendor/lib/libalhLDC.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
@@ -1395,9 +1396,6 @@ vendor/lib/camera.device@3.4-external-impl.so
 vendor/lib/camera.device@3.4-impl.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-
-# Camera LDC - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/lib/libalLDC.so|f12e2c0d9ccb9235f968db6c10b1bda1ec7ef81a
 
 # Camera service shim
 lib/libshim_cameraservice.so

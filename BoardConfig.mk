@@ -196,11 +196,6 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 TARGET_SEPOLICY_DIR := trinket
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /vendor/lib/hw/camera.trinket.so|libshim_camera.so \
-    /vendor/lib/libalRnBRT_GL_GBWRAPPER.so|libshim_camera.so
-
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
