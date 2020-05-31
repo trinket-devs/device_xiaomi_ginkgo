@@ -5,4 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ginkgo.mk
+    $(LOCAL_DIR)/titanium_ginkgo.mk
+
+
+COMMON_LUNCH_CHOICES := \
+	 titanium_ginkgo-userdebug \
+	titanium_ginkgo-eng \
+	titanium_ginkgo-user \

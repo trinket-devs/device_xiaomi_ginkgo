@@ -61,3 +61,6 @@ sys.display-size=3840x2160
 debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# TitaniumOS Maintainer
+ro.titanium.maintainer=CustomTurtle
