@@ -1678,8 +1678,8 @@ vendor/lib64/libGPTEE_vendor.so|3dc7837571204f609bc93e4ca2d1b827ab11334d
 vendor/lib64/libQTEEConnector_vendor.so|a89cbeaed5302ab4a6ebe593f68bd2c104f02c7a
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|deb4c2efaa06b4af49023896c5f35d6451b94ff6
 
-# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
+# Telephony (qti-telephony-common) - from LA.UM.8.13.r1-08500-sm8250.0
+product/framework/qti-telephony-common.jar|76c6f526e82a56ac5bbc15b825b35fde991d49e6
 
 # Radio - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 -product/app/QtiTelephonyService/QtiTelephonyService.apk|db60b6fe27b3033f6468b3170b23af18dd0bcdaf
