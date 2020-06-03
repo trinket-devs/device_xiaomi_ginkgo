@@ -1,24 +1,33 @@
-# ADSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/bin/adsprpcd|2e28ed075e8d2686ec33a63253d4e31e605aa276
-vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
-vendor/lib/libadsprpc.so|261606110272a14b58711ab70e5c4138b674aebe
-vendor/lib/libmdsprpc.so|0e174694f7de192a15c56cc558a1ed63cc5451d9
-vendor/lib/libsdsprpc.so|db73d636aa383ae74cc74ea9232fe289eead94d9
-vendor/lib64/libadsp_default_listener.so|1316afa37cf8047c6008d504ce777aaf8640de97
-vendor/lib64/libadsprpc.so|feaff57fc71448ea8a7e83af934d0925d3ffc43a
-vendor/lib64/libmdsprpc.so|3f6d4e3f8575dcfbb4515543d36cbd6277a869ba
-vendor/lib64/libsdsprpc.so|593381b7215163f4c5898e745678c27cf8b23f63
+# ADSP
+vendor/bin/adsprpcd
+vendor/lib/libadsprpc.so
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libfastcvopt.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
 
-# ADSP modules - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so|936d440dc25c049efe71d9fe404b8c141250dcc6
-vendor/lib/rfsa/adsp/libVC1Dec.so|79a8425bc640ed3401a784ca5f4f04865a3e38e3
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|e108bf1175b6ebaead5b9eec3b9279c8edbb52e3
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|de5ea1c639d93d1a66f43d3d3e8f4e1602c0a83e
-vendor/lib/rfsa/adsp/libdspCV_skel.so|c1ab1b81cd2f2c584aa51e722244c436a0f24f6b
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|1dc2f84efcb8ac9a72f98de014b7f763ad61847b
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
-vendor/lib/rfsa/adsp/misound_res.bin|60e475cb5c8dccedac50e9758bb56ad7f20f0bfb
+# ADSP modules
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libVC1Dec.so
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin
+vendor/lib/rfsa/adsp/misound_res.bin
 
 # Alarm - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
@@ -1276,12 +1285,12 @@ vendor/lib/libdng_sdkvendor.so|a198809faa5f630d3f4debaa8b045ccc7ed935fe
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 vendor/lib/miwatermark.so|632cc1d2891eb3e0150ffac4261403b305843e05
 
-# CDSP - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/bin/cdsprpcd|b76dd062f530a4a9d51e4e5107ccd7588e33e55f
-vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
-vendor/lib/libcdsprpc.so|991f6ba0ad95f24050040c9a5bf8ea2826eb6e24
-vendor/lib64/libcdsp_default_listener.so|921ed7d9a103932e152ffd6097a56840ff346ecf
-vendor/lib64/libcdsprpc.so|7bbffe619580bb7feaad4fc4ad65df70c1bd484f
+# CDSP
+vendor/bin/cdsprpcd
+vendor/lib/libcdsprpc.so
+vendor/lib/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libcdsp_default_listener.so
 
 # Charger - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hvdcp_opti|c7c5140c5e1f84a039618d5211c754df6bd0290c
@@ -1785,13 +1794,10 @@ vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
 vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
 vendor/libnfc-nxp_RF.conf
 
-# Neural-networks - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti|6d9e9de8a13f10b1b0f51080a86984704a7df8a2
-vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc|db9900f3a9d88f2f207c1a86ec6184f32551ab39
-vendor/lib64/libhexagon_nn_stub.so|2d6e67292cf0440c1eef4d8de74d661ee58fb336
-vendor/lib64/unnhal-acc-adreno.so|a503c8face277880eacbf89c7ad0c5efbb5ad2d5
-vendor/lib64/unnhal-acc-common.so|8a4480e55306c620fe9c77dc383cbe00f2b6a901
-vendor/lib64/unnhal-acc-hvx.so|dacf445adc87646738b5c65626c56a49bbf5082d
+# Neural-networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc
+vendor/lib64/libhexagon_nn_stub.so
 
 # Mlipay - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/bin/mlipayd@1.1|caff3f800ba16c251d0f7ace8e031fe86dd47a2e
@@ -2165,60 +2171,52 @@ vendor/etc/sensors/config/tmd2725.json
 vendor/etc/sensors/config/tmx4903.json
 vendor/etc/sensors/sns_reg_config
 
-# Snapdragon Computer Vision Engine - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|27e96067d1b96cc1d6efbc7d988fbf03cc3a41e1
-product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|c4c864724ffe4ba7d8f4ffb5fa1eecf9ce4131a9
-product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|8d5c27721ff0ab9dff140e156b6bc2895dcbf840
-product/lib/vendor.qti.hardware.scve.panorama@1.0.so|f4a3c4c04cc1774546f4991c8cc39e49a75acc22
-product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|a003a4e3290e7777d52f5695cc6491a376ca71da
-product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|8613a107e2e318f67d27888cedea2e583263088f
-product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|1374198e008c0bcc9f09172eb70dddc458f4790b
-product/lib64/vendor.qti.hardware.scve.panorama@1.0.so|b7a1fd4813ce3204d140ca8110fda6018c709daa
-vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service|1090cc3a42e416fd8be62f5ed7db9b1f5cb18114
-vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service|9303d71ec835462c4d8e66ab1ecde8c688e58070
-vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc|f9a24454c4dee54e9fad73e9ead57b96a212c5b6
-vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc|b9fad8788ca16fbe7daabe88f536ca411e3ab364
-vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|aef878f4c68313e9ec1b214d45f6aff6bf0e5fe4
-vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so|d09c722ad7a1d7a5159af1917f337d0c00321f3c
-vendor/lib/libfastcvdsp_stub.so|5ceb289becc5ddd0838472d8f57f46125231f234
-vendor/lib/libfastcvopt.so|bce6003513fdb4281290978d24cfddd30b61309d
-vendor/lib/libscveBlobDescriptor.so|34a0abee4a0018feb3ae21da3437f89dcbcdd2b0
-vendor/lib/libscveBlobDescriptor_stub.so|c26e9de3c564760734843274577a34d1b6f130d2
-vendor/lib/libscveCommon.so|5ef54affaa6df4d2328a20c8e42ade4b6be30e39
-vendor/lib/libscveCommon_stub.so|3a8685352857a64d01b9f9411083b160fd135b87
-vendor/lib/libscveObjectSegmentation.so|9675011baa09bbb50bfa1d8491f32525d4cc8e0f
-vendor/lib/libscveObjectSegmentation_stub.so|d7d62ceac6b104f987b01e75a059bc2ede375ac9
-vendor/lib/libscveObjectTracker.so|bd29aca4cb465b8cd854e7499fdbb531db03928b
-vendor/lib/libscveObjectTracker_stub.so|deb807e02a7a3ed218bbbf4bd2391b7eb1b18e81
-vendor/lib/libscvePanorama.so|d45a07969217f2b07d23f11771ca7a6e91f14279
-vendor/lib/libscvePanorama_lite.so|c1d2f2f389726c7cf37b115cb69c666a3076f705
-vendor/lib/rfsa/adsp/libfastcvadsp.so|5c86de2533d60534ce5b07e6be13bcf988e4b03b
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d16a
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|637e3c05ff05fb62ff9eede4ba394cd8f1874e18
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|b1c232b8fe7a11754a2f2148d4d2f12496a1dbe1
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so|85f6d4fd0186e1aa3a41590da1121cfbb5ed4004
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|6f968b5eb270e643274c631ab5d9d558ab0b621f
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so|07c65474bf7ec19e55a569c2aa9e35db164fb3ea
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|5ed9860d826b0438625b5a8101a651ca8b7573f8
-vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|a08237f61b443bacb278a1e0ae3058dfa509a391
-vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so|a08237f61b443bacb278a1e0ae3058dfa509a391
-vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so|f1bb31ee6cd684844e862bdb88adbb9a64881ccf
-vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so|f1bb31ee6cd684844e862bdb88adbb9a64881ccf
-vendor/lib64/libfastcvdsp_stub.so|ca9111bbae96a6c62936d91d8fe86d8199480f46
-vendor/lib64/libfastcvopt.so|6d269d07e82cdfcef7754485683463f5bff44c18
-vendor/lib64/libscveBlobDescriptor.so|afac314d971d53ff7eac4fca305cdf372a7c94b3
-vendor/lib64/libscveBlobDescriptor_stub.so|1ef52c8d21c6c76344d5360059e039bcae9f66d3
-vendor/lib64/libscveCommon.so|18e1662c250d80256ce8da8bffe069e0b3560718
-vendor/lib64/libscveCommon_stub.so|3b69ead7cb6efb63d00794a098170d94ccdb3a1d
-vendor/lib64/libscveObjectSegmentation.so|c5322d0d4994f92218ca969d17e1ed3a55695af1
-vendor/lib64/libscveObjectSegmentation_stub.so|ec8d0288efbff88aae301061c9228a76994d695e
-vendor/lib64/libscveObjectTracker.so|86f9e82c6d937df04d56d47c1471525f92281913
-vendor/lib64/libscveObjectTracker_stub.so|a5fdf3100b012c34f7b5c3974805c204111835fd
-vendor/lib64/libscvePanorama.so|7a6fd6cd7baf0477a081878d280251decae3026c
-vendor/lib64/libscvePanorama_lite.so|c49017ad2072037480dbb61895b2d66aadf4e8a0
-vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|d3f2a7b171981c759a8e791a3820d52d54300644
-vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|4a767e9b40fe8f084c476b2251fd4be1bc097b7a
+# Snapdragon Computer Vision Engine (SCVE)
+lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+lib/vendor.qti.hardware.scve.panorama@1.0.so
+lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+lib64/vendor.qti.hardware.scve.panorama@1.0.so
+vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
+vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service
+vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib/libscveBlobDescriptor.so
+vendor/lib/libscveBlobDescriptor_stub.so
+vendor/lib/libscveCommon.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveObjectSegmentation.so
+vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib/libscvePanorama.so
+vendor/lib/libscvePanorama_lite.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib64/libscveBlobDescriptor.so
+vendor/lib64/libscveBlobDescriptor_stub.so
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectSegmentation_stub.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscveObjectTracker_stub.so
+vendor/lib64/libscvePanorama.so
+vendor/lib64/libscvePanorama_lite.so
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SOTER - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
