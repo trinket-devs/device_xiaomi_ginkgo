@@ -230,25 +230,21 @@
     <hal format="hidl">
         <name>android.hardware.neuralnetworks</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.1</version>
         <interface>
             <name>IDevice</name>
-            <instance>qti-default</instance>
-            <instance>qti-dsp</instance>
-            <instance>qti-gpu</instance>
+            <instance>default</instance>
         </interface>
-        <fqname>@1.2::IDevice/qti-default</fqname>
-        <fqname>@1.2::IDevice/qti-dsp</fqname>
-        <fqname>@1.2::IDevice/qti-gpu</fqname>
+        <fqname>@1.1::IDevice/default</fqname>
     </hal>
-    <hal format="hidl">                                                                                                                                                
-        <name>android.hardware.nfc</name>                                                                                                                              
-        <transport>hwbinder</transport>                                                                                                                                
-        <version>1.2</version>                                                                                                                                         
-        <interface>                                                                                                                                                    
-            <name>INfc</name>                                                                                                                                          
-            <instance>default</instance>                                                                                                                               
-        </interface>                                                                                                                                                   
+    <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
