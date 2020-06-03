@@ -123,6 +123,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.is_type=5 \
     persist.vendor.camera.is_type_preview=5 \
+    persist.vendor.camera.pproc.eispostcpp=1 \
     persist.vendor.camera.gyro.disable=0 \
     persist.vendor.camera.llnoise=1 \
     persist.vendor.denoise.process.plates=2 \
@@ -131,12 +132,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.swtnr.preview=1 \
     persist.vendor.camera.tnr.video=1 \
     persist.vendor.camera.aec.sync=1 \
+    persist.vendor.camera.instant.aec=1 \
+    persist.vendor.camera.ae.instant.bound=20 \
     persist.vendor.camera.CDS=Auto \
     persist.vendor.camera.video.CDS=Auto \
+    persist.vendor.camera.depurple=1 \
     persist.vendor.dualcam.lpm.enable=0 \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera \
     vendor.camera.not.cts.apk=1 \
-    vendor.camera.not.ctsverify.apk=1
+    vendor.camera.not.ctsverify.apk=1 \
+    vendor.camera.vidhance.eis.enabled=1 \
+    vendor.camera.vidhanceEis.force=1
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
