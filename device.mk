@@ -96,6 +96,9 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     libdng_sdk.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/releasetools/anx_config.sh:install/bin/anx_config.sh
+
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
 # Context Hub
@@ -264,10 +267,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hide_nfc_ginkgo.sh:install/bin/hide_nfc_ginkgo.sh \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    $(LOCAL_PATH)/configs/releasetools/hide_nfc_ginkgo.sh:install/bin/hide_nfc_ginkgo.sh
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
