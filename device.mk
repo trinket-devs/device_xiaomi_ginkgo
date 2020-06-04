@@ -144,6 +144,9 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     Snap
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/releasetools/anx_config.sh:install/bin/anx_config.sh
+
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
@@ -315,10 +318,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hide_nfc_ginkgo.sh:install/bin/hide_nfc_ginkgo.sh \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf
+    $(LOCAL_PATH)/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    $(LOCAL_PATH)/configs/releasetools/hide_nfc_ginkgo.sh:install/bin/hide_nfc_ginkgo.sh
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
