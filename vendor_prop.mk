@@ -124,7 +124,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.is_type=4 \
     persist.vendor.camera.is_type_preview=4 \
-    persist.vendor.camera.pproc.eispostcpp=1 \
     persist.vendor.camera.gyro.disable=0 \
     persist.vendor.camera.llnoise=1 \
     persist.vendor.denoise.process.plates=2 \
