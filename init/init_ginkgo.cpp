@@ -68,7 +68,7 @@ bool has_tianma_panel()
 void vendor_load_properties()
 {
     string device, model, desc;
-    string fp = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
+    string fp = "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys";
 
     string device_region = GetProperty("ro.boot.hwc", "");
     string device_hwversion = GetProperty("ro.boot.hwversion", "");
