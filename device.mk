@@ -77,9 +77,9 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.effect@4.0-impl \
     android.hardware.audio@2.0-service \
-    android.hardware.audio@5.0-impl \
+    android.hardware.audio@4.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
     audio.primary.trinket \
@@ -88,17 +88,6 @@ PRODUCT_PACKAGES += \
     liba2dpoffload \
     libaudio-resampler \
     libaudioroute \
-    libbatterylistener \
-    libcomprcapture \
-    libexthwplugin \
-    libhdmiedid \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
-    libtinycompress \
-    libtinycompress.vendor \
     libvolumelistener \
     tinymix
 
