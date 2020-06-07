@@ -23,7 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.ras.enabled=false \
     ro.af.client_heap_size_kbyte=7168 \
     ro.vendor.audio.sdk.fluencetype=fluence \
-    ro.vendor.audio.sdk.ssr=false \
     ro.vendor.audio.sos=true \
     vendor.audio.adm.buffering.ms=2 \
     vendor.audio.chk.cal.spk=2 \
