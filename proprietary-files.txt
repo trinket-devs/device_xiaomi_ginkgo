@@ -169,6 +169,7 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libvideoutils.so
+vendor/lib/libvidhance.so
 vendor/lib/libxiaomiAI_sensor.so
 vendor/lib/mibokeh_660_opencl.bin
 vendor/lib64/libseemore.so
@@ -1369,9 +1370,6 @@ vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i.so
 
 # Camera service shim
 lib/libshim_cameraservice.so
-
-# Camera video enhancer - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
-vendor/lib/libvidhance.so|90e6c82441064145899a13c547279994ef6d1387
 
 # Camera watermark - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/lib/libdng_sdkvendor.so|a198809faa5f630d3f4debaa8b045ccc7ed935fe
