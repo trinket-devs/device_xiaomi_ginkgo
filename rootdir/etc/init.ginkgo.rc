@@ -9,6 +9,7 @@ on early-init
 on post-fs
     # Start services for bootanim
     start surfaceflinger
+    start themed_bootanimation
     start bootanim
     start vendor.hwcomposer-2-4
     start vendor.configstore-hal
