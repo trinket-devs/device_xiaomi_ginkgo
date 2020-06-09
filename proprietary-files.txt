@@ -1710,6 +1710,12 @@ vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|17a2c3090312905147360713f30b7e5740478e71
 
+# Graphics (QTI Mapper) - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
+vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|3acf758a3da0748c7a9081c4bfdedea604f988df
+vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|f05f06b6cb09549ed9dac7afa81033438c19511f
+vendor/lib/libgrallocutils.so|ed1b10bf46ba1aeeadbc934a841fe086066a7f3c
+vendor/lib64/libgrallocutils.so|1c0edeeb276ab2b8ca3c5c4507980166d760f8c5
+
 # Graphics (SDM) - from LA.UM.8.1.r1-14500-sm8150.0
 vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
 vendor/lib64/libdpps.so|dc21df7b0af8f05f0f0d4c39e2c103c7989ece8b
