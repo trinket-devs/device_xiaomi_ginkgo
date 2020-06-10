@@ -1673,6 +1673,10 @@ vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|17a2c3090312905147360713f30b7e5740478e71
 
+# Gralloc - source built with raw10 fix
+vendor/lib/libgrallocutils.so|42b16c8bee0ad715c2509b526f4cb67c325cec31
+vendor/lib64/libgrallocutils.so|175cce1c7b7cb20c745f39b84201936d5629937b
+
 # Graphics (SDM) - from LA.UM.8.1.r1-14500-sm8150.0
 vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
 vendor/lib64/libdpps.so|dc21df7b0af8f05f0f0d4c39e2c103c7989ece8b
