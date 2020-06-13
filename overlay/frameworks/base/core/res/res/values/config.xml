@@ -700,9 +700,4 @@
 
     <!-- Whether to allow sending active app broadcast -->
     <bool name="config_allowActivePackageBroadcast">true</bool>
-
-    <!-- Whether device supports sensor based doze customizations -->
-    <bool name="config_dozePulsePickup">true</bool>
-    <bool name="config_dozePulseTilt">true</bool>
-    <bool name="config_dozePulseProximity">true</bool>
 </resources>
