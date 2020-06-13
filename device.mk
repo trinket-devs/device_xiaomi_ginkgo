@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
-    audio.primary.trinket \
     audio.r_submix.default \
     audio.usb.default \
     liba2dpoffload \
