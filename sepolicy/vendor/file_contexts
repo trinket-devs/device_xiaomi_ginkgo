@@ -37,10 +37,5 @@
 # Neural networks
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti		u:object_r:hal_neuralnetworks_default_exec:s0
 
-# KCAL
-/sys/module/msm_drm/parameters/kcal_red         u:object_r:sysfs_kcal:s0
-/sys/module/msm_drm/parameters/kcal_green       u:object_r:sysfs_kcal:s0
-/sys/module/msm_drm/parameters/kcal_blue        u:object_r:sysfs_kcal:s0
-
 # Audio socket
 /dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0

@@ -3,4 +3,3 @@ allow init cache_file:file append;
 allow init firmware_file:filesystem getattr;
 allow init persist_block_device:lnk_file relabelto;
 allow init vendor_file:file execute;
-allow init sysfs_kcal:file w_file_perms;
