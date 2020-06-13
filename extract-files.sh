@@ -60,8 +60,6 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 
 BLOB_ROOT="${AOSPA_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
-find $BLOB_ROOT -type f | xargs sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/g"
-
 sed -i 's/libui.so/libuq.so/g' "${BLOB_ROOT}/vendor/lib/hw/camera.trinket.so"
 
 patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib/hw/audio.primary.trinket.so"

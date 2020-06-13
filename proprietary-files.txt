@@ -1113,7 +1113,7 @@ vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_india_i_zsl_video_3a.so
 # Camera configs
 vendor/etc/camera/arcsoft_calibration_data.bin
 vendor/etc/camera/cameraconfig.txt
-vendor/etc/camera/camera_config.xml
+vendor/etc/camera/camera_config.xml|785164cdcfa5ed61aead66543dc4b8db83584109
 vendor/etc/camera/CFR_para.bin
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
@@ -1203,7 +1203,7 @@ lib/vndk-28/android.hardware.camera.metadata@3.3.so:lib/vndk-29/android.hardware
 lib/vndk-28/android.hardware.camera.provider@2.4.so:lib/vndk-29/android.hardware.camera.provider@2.4.so
 lib/vndk-28/libcamera_metadata.so:lib/vndk-29/libcamera_metadata.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc|655b17a43029e65318a38dbfa9183f7d2621679f
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -1397,9 +1397,9 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|3dab489feaf8d
 
 # CNE - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 -vendor/app/CneApp/CneApp.apk|b582ee0bc180dfb051b76857d0081cf1af7a7fbc
-etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7
-etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35
-etc/cne/Nexus/VZW/VZW_profiles.xml|0d35b3266ea656d8868ae8f5d7e938f4859e9b0a
+etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
+etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
+etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
 product/framework/com.quicinc.cne.api-V1.1-java.jar|207b66fb9d79b4f06e0a67a0e82c19c1f3b2d210
 product/framework/com.quicinc.cne.constants-V1.0-java.jar|96476b6df625fcd79d546faa097a20eb6360d858
 product/framework/com.quicinc.cne.constants-V2.0-java.jar|847d4c453e6192da9374f0b01f72f28a297a65d1
@@ -1735,9 +1735,9 @@ vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 vendor/lib/hw/vulkan.trinket.so|d19d68f070172e1da6a5a2a9b83b5707de52deb6
 vendor/lib64/hw/vulkan.trinket.so|86dee35ca0c3bce5b9280eb8a89f5baee1aa9c41
 
-# Hotword Enrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+# Hotword Enrollment - from cepheus
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|0741b5ada5d9da2227b4ff0bc77c3be7d6eb430b
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|78d1ef42447dcae6c506ee35a6bea0dd7612af7c
 
 # IO Prefetcher - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|4ecba6fdc1ef0c7796a03afb7e6cc1a3f1ed51c0
@@ -1884,7 +1884,7 @@ vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 
-# NFC
+# NFC - from willow V11.0.9.0.PCXEUXM
 vendor/bin/nqnfcinfo|74e45f565d8be40a1377909b411465502dd366e7
 vendor/lib/libsn100u_fw.so|8f22d9b555acc25b501f1c48983e7d33547231f7
 vendor/etc/sn100u_pnx_pcv.pnscr|709a2628cf83bbbed2760145db92d4300715efca
@@ -1903,7 +1903,7 @@ vendor/etc/sn100u_pnx_ese_fabkey.pnscr|b2ff3ed93a0bb1c57df58b27c0b6fd41fcc6f6e4
 vendor/etc/sn100u_bootup.pnscr|ef641bf68ae831f38552bfeb1c54b3f20b2421f6
 vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
 vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
-vendor/libnfc-nxp_RF.conf
+vendor/libnfc-nxp_RF.conf|231f0999d00b5abcefc99d4ae39ecc6808e53904
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
