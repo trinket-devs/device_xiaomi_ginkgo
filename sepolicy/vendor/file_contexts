@@ -39,3 +39,7 @@
 
 # Audio socket
 /dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0
+
+# Offline charger
+/system/bin/offlinecharger                    u:object_r:charger_exec:s0
+
