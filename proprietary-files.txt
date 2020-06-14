@@ -1588,8 +1588,10 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 # FM - from Xiaomi/laurel_sprout/laurel_sprout:10/QKQ1.190910.002/V11.0.14.0.QFQMIXM:user/release-keys
 lib/fm_helium.so|3e02cb1f3b0896cb42e9c1bb145cc260b570f006
 lib/libfm-hci.so|d6214ae6da054ad32221ed27a10b722b31a08317
+-lib/libqcomfm_jni.so|558e8de9f46074e486337e18c9dea2f4e8a4f2a9
 lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
 lib64/libfm-hci.so|1def11a6c90a7895a91d71e3aafe6bc79297321e
+-lib64/libqcomfm_jni.so|dc419f93af4659472253d503ebea02fee25f6b02
 -product/lib/vendor.qti.hardware.fm@1.0.so|71efd722f71d858c6b02d4a0baaff0163691348e
 -product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
 vendor/bin/fm_qsoc_patches|2043cf7a0245b6dc81f049478afe1bb0af8f8ef7
