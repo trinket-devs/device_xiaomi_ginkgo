@@ -1,16 +1,5 @@
-# Audio
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicecomm=true
-persist.audio.fluence.voicerec=false
-ro.config.media_vol_steps=25
-ro.config.vc_call_vol_steps=7
-ro.qc.sdk.audio.fluencetype=fluence
-ro.qc.sdk.audio.ssr=false
-
 # Camera
 camera.disable_zsl_mode=true
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
 persist.vendor.camera.preview.ubwc=0
 persist.vendor.camera.isp.clock.optmz=0
 persist.vendor.camera.isp.turbo=1
@@ -23,6 +12,28 @@ persist.vendor.camera.model=Redmi Note 8
 persist.vendor.camera.stats.test=0
 persist.vendor.camera.awb.sync=2
 persist.vendor.camera.af.sync=2
+persist.vendor.camera.eis.enable=1
+persist.vendor.camera.is_type=4
+persist.vendor.camera.is_type_preview=4
+persist.vendor.camera.gyro.disable=0
+persist.vendor.camera.llnoise=1
+persist.vendor.denoise.process.plates=2
+persist.vendor.tnr.process.plates=2
+persist.vendor.camera.tnr.preview=1
+persist.vendor.camera.swtnr.preview=1
+persist.vendor.camera.tnr.video=1
+persist.vendor.camera.aec.sync=1
+persist.vendor.camera.instant.aec=1
+persist.vendor.camera.ae.instant.bound=20
+persist.vendor.camera.CDS=Auto
+persist.vendor.camera.video.CDS=Auto
+persist.vendor.camera.depurple=1
+persist.vendor.dualcam.lpm.enable=0
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+vendor.camera.not.cts.apk=1
+vendor.camera.not.ctsverify.apk=1
+vendor.camera.vidhance.eis.enabled=1
+vendor.camera.vidhanceEis.force=1
 
 # LMKD
 ro.config.low_ram=false
@@ -57,7 +68,13 @@ persist.radio.calls.on.ims=1
 # Hack for Youtube
 sys.display-size=3840x2160
 
+# Time
+persist.vendor.delta_time.enable=true
+
 # Wireless display
 debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# TitaniumOS Maintainer
+ro.titanium.maintainer=CustomTurtle

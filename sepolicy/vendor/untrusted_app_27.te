@@ -2,3 +2,24 @@ allow untrusted_app_27 proc_zoneinfo:file read;
 allow untrusted_app_27 persist_camera_prop:file read;
 allow untrusted_app_27 vendor_default_prop:file read;
 allow untrusted_app_27 persist_camera_prop:file open;
+allow untrusted_app_27 adsprpcd_file:dir { getattr open read };
+allow untrusted_app_27 apex_mnt_dir:dir { open read };
+allow untrusted_app_27 apexd_prop:file { getattr map open };
+allow untrusted_app_27 cgroup:dir open;
+allow untrusted_app_27 cgroup_desc_file:file { getattr open read };
+allow untrusted_app_27 charger_exec:file getattr;
+allow untrusted_app_27 init_exec:lnk_file read;
+allow untrusted_app_27 mac_perms_file:file getattr;
+allow untrusted_app_27 mediaswcodec_exec:file { getattr open read };
+allow untrusted_app_27 proc_net:file { getattr open read };
+allow untrusted_app_27 proc_uptime:file getattr;
+allow untrusted_app_27 proc_zoneinfo:file { getattr open };
+allow untrusted_app_27 rootfs:dir read;
+allow untrusted_app_27 rootfs:file getattr;
+allow untrusted_app_27 sepolicy_file:file { getattr open read };
+allow untrusted_app_27 service_contexts_file:file open;
+allow untrusted_app_27 sysfs_kgsl:file { getattr open };
+allow untrusted_app_27 sysfs_net:dir search;
+allow untrusted_app_27 sysfs_net:file { getattr open read };
+
+get_prop(untrusted_app_27, vendor_default_prop)
