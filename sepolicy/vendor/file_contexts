@@ -21,3 +21,26 @@
 
 # Executables
 /(vendor|system/vendor)/bin/mlipayd@1\.1     u:object_r:hal_mlipay_default_exec:s0
+
+# Hexagon DSP-side executable needed for Halide operation
+# This is labeled as same_process_hal_file as it needs to be read by apps
+# (e.g. Google Camera App)
+/(vendor|system/vendor)/dsp/cdsp/fastrpc_shell_3        u:object_r:same_process_hal_file:s0
+
+# Misys
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                                             u:object_r:hal_misys_default_exec:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?    u:object_r:camera_persist_file:s0
+
+# Neural networks
+/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti		u:object_r:hal_neuralnetworks_default_exec:s0
+
+# KCAL
+/sys/module/msm_drm/parameters/kcal_red         u:object_r:sysfs_kcal:s0
+/sys/module/msm_drm/parameters/kcal_green       u:object_r:sysfs_kcal:s0
+/sys/module/msm_drm/parameters/kcal_blue        u:object_r:sysfs_kcal:s0
+
+# Audio socket
+/dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0

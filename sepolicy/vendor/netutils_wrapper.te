@@ -1,0 +1,2 @@
+# disable logspam
+dontaudit netutils_wrapper vendor_file:file r_file_perms;

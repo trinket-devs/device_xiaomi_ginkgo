@@ -1,4 +1,5 @@
 get_prop(system_server, vendor_camera_prop)
+get_prop(system_server, vendor_default_prop)
 get_prop(system_server, persist_camera_prop)
 get_prop(system_server, vendor_fp_prop)
 allow system_server persist_camera_prop:file read;
