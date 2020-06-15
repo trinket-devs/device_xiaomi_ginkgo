@@ -66,6 +66,7 @@ on init
     write /dev/stune/top-app/schedtune.boost 10
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
+on late-init
     # Start services for bootanim
     start surfaceflinger
     start bootanim
