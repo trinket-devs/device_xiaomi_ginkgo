@@ -161,11 +161,34 @@ on boot
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
 
+    #define back flash and front flash
+    chmod 0660 /sys/android_camera/sensor
+    chmod 0660 /sys/class/leds/led:flash_0/brightness
+    chmod 0660 /sys/class/leds/led:flash_1/brightness
+    chmod 0660 /sys/class/leds/led:flash_2/brightness
+    chmod 0660 /sys/class/leds/led:torch_0/brightness
+    chmod 0660 /sys/class/leds/led:torch_1/brightness
+    chmod 0660 /sys/class/leds/led:torch_2/brightness
+    chmod 0660 /sys/class/leds/led:switch_0/brightness
+    chmod 0660 /sys/class/leds/led:switch_1/brightness
+    chmod 0660 /sys/class/leds/flashlight/brightness
+    chown system system /sys/android_camera/sensor
+    chown system system /sys/class/leds/led:flash_0/brightness
+    chown system system /sys/class/leds/led:flash_1/brightness
+    chown system system /sys/class/leds/led:flash_2/brightness
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:torch_2/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:switch_1/brightness
+    chown system system /sys/class/leds/flashlight/brightness
+
     mkdir /persist/drm 0770 system system
     mkdir /mnt/vendor/persist/bluetooth 0770 bluetooth bluetooth
     mkdir /persist/misc 0770 system system
     mkdir /mnt/vendor/persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
+    mkdir /mnt/vendor/persist/camera 0755 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
     mkdir /mnt/vendor/persist/iar_db 0770 system system
     mkdir /mnt/vendor/spunvm 0770 system system
@@ -275,7 +298,7 @@ on post-fs-data
     mkdir /data/vendor/qtee 0770 system system
 
     #Create folder of camera
-    mkdir /data/vendor/camera 0770 camera camera
+    mkdir /data/vendor/camera 0777 camera camera
 
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
@@ -400,9 +423,6 @@ on post-fs-data
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
-
-    #Start move time data to /data/vendor once post-fs-data done
-    start vendor.move_time_data
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
@@ -915,10 +935,10 @@ service profiler_daemon /system/bin/profiler_daemon
 
 service charger /system/bin/offlinecharger
     class charger
-    user root
-    group root system graphics input
-    seclabel u:r:charger:s0
+    user system
+    group system graphics input
     capabilities SYS_BOOT
+    seclabel u:r:charger:s0
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
@@ -1041,13 +1061,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
-service vendor.move_time_data /vendor/bin/move_time_data.sh
-    class main
-    user system
-    group system
-    disabled
-    oneshot
-
 service vendor.hbtp /vendor/bin/hbtp_daemon
      class main
      user system
@@ -1086,6 +1099,7 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     # an additional auto-restart from the init process isn't needed.
     socket audio_hw_socket seqpacket 0666 system system
     oneshot
+    interface android.hardware.audio@5.0::IDevicesFactory default
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
 
@@ -1102,3 +1116,9 @@ service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@
 #add MIUI camera flag
 on property:sys.camera.miui.apk=*
     setprop vendor.camera.miui.apk ${sys.camera.miui.apk}
+
+#add 720p@240fps video
+on  property:vendor.camera.cpuperf.en=1
+	write /dev/stune/foreground/schedtune.prefer_idle 1
+on  property:vendor.camera.cpuperf.en=0
+	write /dev/stune/foreground/schedtune.prefer_idle 0

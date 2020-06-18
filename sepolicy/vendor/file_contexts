@@ -30,12 +30,10 @@
 # Misys
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                                             u:object_r:hal_misys_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service                                             u:object_r:hal_misys_default_exec:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?    u:object_r:camera_persist_file:s0
-
-# Neural networks
-/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti		u:object_r:hal_neuralnetworks_default_exec:s0
 
 # Audio socket
 /dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0

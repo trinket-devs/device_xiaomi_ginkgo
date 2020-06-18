@@ -136,9 +136,14 @@ on fs
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
     chown root root /sys/class/thermal/thermal_message/temp_state
 
+    mkdir /mnt/vendor/persist/misys 0755 system system
+    mkdir /mnt/vendor/persist/camera 0777 root root
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+
+on early-boot
     write /dev/ipa 1
 
 on late-fs
@@ -241,14 +246,11 @@ on property:sys.shutdown.requested=*
     stop vendor.ims_rtp_daemon
 
 on charger
+    chown system system /sys/class/leds/red/brightness
+    chmod 0666 /sys/class/leds/red/brightness
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
     start vendor.power_off_alarm
-
-service vendor.qseecomd /vendor/bin/qseecomd
-    class core
-    user root
-    group root
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main

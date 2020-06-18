@@ -210,6 +210,7 @@ Only the three quirks included above are recognized at this point:
              <Limit name="concurrent-instances" max="16" />
              <Limit name="performance-point-1280x720" value="30" />
         </MediaCodec>
+        <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true" enabled="false" />
     </Encoders>
     <Decoders>
        <!-- Video Hardware  -->
@@ -228,6 +229,20 @@ Only the three quirks included above are recognized at this point:
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1920x1088" range="120" />
             <Limit name="performance-point-1280x720" value="240" />
+        </MediaCodec>
+        <MediaCodec name="OMX.qcom.video.decoder.avc.secure" type="video/avc" >
+            <Quirk name="requires-allocate-on-input-ports" />
+            <Quirk name="requires-allocate-on-output-ports" />
+            <Limit name="size" min="96x96" max="3840x2160" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
+            <Limit name="bitrate" range="1-35000000" />
+            <Limit name="frame-rate" range="1-30" />
+            <Feature name="adaptive-playback" />
+            <Feature name="secure-playback" required="true" />
+            <Limit name="concurrent-instances" max="6" />
+            <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.mpeg2" type="video/mpeg2" >
             <Quirk name="requires-allocate-on-input-ports" />

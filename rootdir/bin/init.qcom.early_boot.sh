@@ -78,7 +78,7 @@ function set_density_by_fb() {
         elif [ $fb_width -ge 1440 ]; then
            setprop vendor.display.lcd_density 560
         elif [ $fb_width -ge 1080 ]; then
-           setprop vendor.display.lcd_density 420
+           setprop vendor.display.lcd_density 480
         elif [ $fb_width -ge 720 ]; then
            setprop vendor.display.lcd_density 320 #for 720X1280 resolution
         elif [ $fb_width -ge 480 ]; then
@@ -323,6 +323,16 @@ case "$target" in
         case "$soc_hwplatform" in
             *)
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc1/sku_version` 2> /dev/null
+                if [ $sku_ver -eq 1 ]; then
+                    setprop vendor.media.target.version 1
+                fi
+                ;;
+        esac
+        ;;
+    "bengal")
+        case "$soc_hwplatform" in
+            *)
+                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
                 if [ $sku_ver -eq 1 ]; then
                     setprop vendor.media.target.version 1
                 fi
