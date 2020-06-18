@@ -141,10 +141,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# Hack for YouTube
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.display-size=3840x2160
-
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
