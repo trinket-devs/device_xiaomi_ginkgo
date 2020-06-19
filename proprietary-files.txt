@@ -1140,7 +1140,7 @@ vendor/lib/libchromatix_ginkgo_s5kgm1_sunny_india_i_zsl_video_3a.so
 # Camera configs
 vendor/etc/camera/arcsoft_calibration_data.bin
 vendor/etc/camera/cameraconfig.txt
-vendor/etc/camera/camera_config.xml
+vendor/etc/camera/camera_config.xml|785164cdcfa5ed61aead66543dc4b8db83584109
 vendor/etc/camera/CFR_para.bin
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
