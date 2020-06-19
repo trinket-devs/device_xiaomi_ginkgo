@@ -110,12 +110,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.nsrm.bkg.evt=3955 \
     ro.vendor.use_data_netmgrd=true
 
-# Ccodec
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.ccodec=1 \
-    debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
-
 # Display/Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
@@ -150,9 +144,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
-# LCD Density
+# Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=440
+    debug.stagefright.ccodec=1 \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0
+
+# Memory optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.sys.fw.bservice_enable=true
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -162,10 +162,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent
-
-# Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
 
 # PASR
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -217,4 +213,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_phase_offset_ns=500000 \
-    debug.sf.enable_hwc_vds=1
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1

@@ -60,15 +60,7 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 
 BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
-sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${BLOB_ROOT}/lib64/libfm-hci.so" "${BLOB_ROOT}/lib/libfm-hci.so"
-sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${BLOB_ROOT}/vendor/bin/hw/vendor.display.color@1.0-service"
-sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${BLOB_ROOT}/vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service"
-sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${BLOB_ROOT}/vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so" "${BLOB_ROOT}/vendor/lib/vendor.qti.hardware.cvp@1.0-halimpl.so"
-
-patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib/hw/audio.primary.trinket.so"
-patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib64/hw/audio.primary.trinket.so"
-patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib/hw/sound_trigger.primary.trinket.so"
-patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib64/hw/sound_trigger.primary.trinket.so"
+find $BLOB_ROOT -type f | xargs sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/g"
 
 sed -i 's/libui.so/libuq.so/g' "${BLOB_ROOT}/vendor/lib/hw/camera.trinket.so"
 

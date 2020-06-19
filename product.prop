@@ -74,13 +74,9 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.radio.calls.on.ims=1
 
-# Hack for Youtube
-sys.display-size=3840x2160
-
 # Time
 persist.vendor.delta_time.enable=true
 
 # Wireless display
-debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
