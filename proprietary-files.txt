@@ -1643,53 +1643,53 @@ vendor/firmware/novatek_ts_ebbg_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
-# Graphics
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libpvr.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libpvr.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
+# Graphics - from laurus-user 10 QKQ1.190910.002 20.6.17
+vendor/lib64/egl/eglSubDriverAndroid.so|d7e3af7f2f08c6a6d311f32ce1dc6646e054bb26
+vendor/lib64/egl/libEGL_adreno.so|73c8bc42d4f097156508ad501b3affcd8bfb1e55
+vendor/lib64/egl/libGLESv1_CM_adreno.so|2c60e39e06eb18eac2db775021d5ed45da92fa54
+vendor/lib64/egl/libGLESv2_adreno.so|686fc21ef21d7ba72d7c287e56800cf92eddb018
+vendor/lib64/egl/libQTapGLES.so|aa7f8f3a5a33a54408368775cf79af63dca2c91a
+vendor/lib64/egl/libq3dtools_adreno.so|00566ccecfd29bd5c79d631c0d5ccadd0ee7446e
+vendor/lib64/egl/libq3dtools_esx.so|23dad56ed76fdcece3366018a401f97fee070559
+vendor/lib64/libC2D2.so|53db84268b65d20226e1daf5f7a55d3d2140b041
+vendor/lib64/libCB.so|9c7921725709eb4231ad8ffac2fa042dfc4d239a
+vendor/lib64/libOpenCL.so|7e6133e888f5bf542940f8c9fbe3eae0ddf21aca
+vendor/lib64/libRSDriver_adreno.so|be6708df68503eba85c35101029b50938bf181b6
+vendor/lib64/libadreno_utils.so|ce9c2afabfd71d3d3b6a914a63aa0da3e0cc8883
+vendor/lib64/libbccQTI.so|2105f35a46f936940e124ddba3d4bcf3c7162404
+vendor/lib64/libc2d30_bltlib.so|29017987444fe077f1bac00d18f82a1a6900a3ad
+vendor/lib64/libgsl.so|1ecb89ffd26025de4d277e33152e677222a41d0c
+vendor/lib64/libllvm-glnext.so|c9b382ee49380f07653a2da17cc83334c5d43353
+vendor/lib64/libllvm-qcom.so|515b23b0e1ebf2b73a9380d89739a55fe6e88a5c
+vendor/lib64/libpvr.so|47e3c25f30a05c7ee09249556b4b9f3c42274956
+vendor/lib64/librs_adreno.so|71affd7d82629fd21ad8ed553f0def43b4f664ee
+vendor/lib64/librs_adreno_sha1.so|f3d09bfb9dcbf862aac94c20f54731595791e86e
+vendor/lib/egl/eglSubDriverAndroid.so|7bd57ae573b7db35f1e7a8a9b41b26e9980f8093
+vendor/lib/egl/libEGL_adreno.so|b74f548f7762817b9f1c4ff7f9ee0ab5abe21ccf
+vendor/lib/egl/libGLESv1_CM_adreno.so|9b598c109e6fd9a1ae7fcb463b5b075ca638b812
+vendor/lib/egl/libGLESv2_adreno.so|13eade0909bec570de95c61880bf78a994cd784b
+vendor/lib/egl/libQTapGLES.so|934ef4b849204b557efd0fb38d2cc5bd85d88f93
+vendor/lib/egl/libq3dtools_adreno.so|5d25d3f8d5f5e86f6d1b83df3a15561ff257756d
+vendor/lib/egl/libq3dtools_esx.so|2a2ec15a258c4dfae1aa541fdfa3a6675cad8727
+vendor/lib/libC2D2.so|c189d8794a261824b8fdeca4e65d63eb92c0cc0a
+vendor/lib/libCB.so|821bd5f640f2ad101095e38047ca3dbd8d5ad724
+vendor/lib/libOpenCL.so|6fe1ec3442653efedf49f64aa9301e0ed91abac0
+vendor/lib/libRSDriver_adreno.so|fe6fb5fab0f2f69ff1779e03c2ed83f1149935a2
+vendor/lib/libadreno_utils.so|1fd9e4a6dbfd6370acbb1ebdfaf39724fb78bd85
+vendor/lib/libbccQTI.so|3e0a4fe0242a797a19a70b282fe0cf0bd1ce75da
+vendor/lib/libc2d30_bltlib.so|0baf85bbde259bd0bc76425d7b5b09760761471d
+vendor/lib/libgsl.so|d74d0f32d540744e310f96b76eda690aa68d71fd
+vendor/lib/libllvm-glnext.so|6e6fd884e9ac720faa3b111f928bae1434c285f1
+vendor/lib/libllvm-qcom.so|a56bd31751091eec4d4121d357cc38615914f52c
+vendor/lib/libpvr.so|b136124b70c996aedc269580088b15a86d8152bb
+vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
+vendor/lib/librs_adreno_sha1.so|be896c0fd4db3661ac33ced7f4a1dfa3b9cdd2a3
 
-# Graphics - QTI Mapper
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib/libgrallocutils.so
-vendor/lib64/libgrallocutils.so
+# Graphics - QTI Mapper - from laurus-user 10 QKQ1.190910.002 20.6.17
+vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|8981bf6a014eff86006a55d41ba5239fa28c55a3
+vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|d823745e69ce1bd9a154c8320f5f97d5764f4fd9
+vendor/lib/libgrallocutils.so|9ec92f93fbcdc50146307c457e9ab9712bae0da8
+vendor/lib64/libgrallocutils.so|3e0dc02e6b89bdfd04bf299bc289b3ed43fc38ac
 
 # Graphics - SDM - from LA.UM.8.1.r1-14500-sm8150.0
 vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
@@ -1706,9 +1706,9 @@ vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
 vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
 vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
-# Graphics - Vulkan
-vendor/lib/hw/vulkan.trinket.so
-vendor/lib64/hw/vulkan.trinket.so
+# Graphics - Vulkan - from laurus-user 10 QKQ1.190910.002 20.6.17
+vendor/lib/hw/vulkan.trinket.so|4a909668f446164113e8a709906100ae4cb79fd9
+vendor/lib64/hw/vulkan.trinket.so|4401c87f9cd3a8a4c5820b367679804967bd5722
 
 # Hotword Enrollment - from cepheus
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|0741b5ada5d9da2227b4ff0bc77c3be7d6eb430b
