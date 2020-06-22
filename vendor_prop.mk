@@ -92,20 +92,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.bluetooth.a2dp_offload.disabled=false \
     persist.bluetooth.bluetooth_audio_hal.disabled=true \
     persist.vendor.bluetooth.modem_nv_support=true \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
-    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac \
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
     persist.vendor.btstack.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    vendor.audio.feature.a2dp_offload.enable=false \
+    ro.bluetooth.a2dp_offload.supported=true \
     vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
