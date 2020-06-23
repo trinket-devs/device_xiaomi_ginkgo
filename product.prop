@@ -41,6 +41,7 @@ vendor.camera.not.cts.apk=1
 vendor.camera.not.ctsverify.apk=1
 persist.vendor.camera.depurple=1
 vendor.camera.vidhanceEis.force=1
+vendor.vidhance.video.enabled=1
 
 # LMKD
 ro.config.low_ram=false

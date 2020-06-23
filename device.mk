@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.audio@2.0-service \
     android.hardware.audio@5.0-impl \
-    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.primary.trinket \
     audio.r_submix.default \
@@ -148,6 +148,9 @@ BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor \
     Snap
 

@@ -393,9 +393,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-    #Start move time data to /data/vendor once post-fs-data done
-    start vendor.move_time_data
-
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
@@ -910,10 +907,10 @@ service profiler_daemon /system/bin/profiler_daemon
 
 service charger /system/bin/charger
     class charger
-    user root
-    group root system graphics input
-    seclabel u:r:charger:s0
+    user system
+    group system graphics input
     capabilities SYS_BOOT
+    seclabel u:r:charger:s0
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
@@ -1043,13 +1040,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
-service vendor.move_time_data /vendor/bin/move_time_data.sh
-    class main
-    user system
-    group system
-    disabled
-    oneshot
-
 service vendor.hbtp /vendor/bin/hbtp_daemon
      class main
      user system
@@ -1105,3 +1095,9 @@ service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@
 #add MIUI camera flag
 on property:sys.camera.miui.apk=*
     setprop vendor.camera.miui.apk ${sys.camera.miui.apk}
+
+#add 720p@240fps video
+on  property:vendor.camera.cpuperf.en=1
+	write /dev/stune/foreground/schedtune.prefer_idle 1
+on  property:vendor.camera.cpuperf.en=0
+	write /dev/stune/foreground/schedtune.prefer_idle 0
