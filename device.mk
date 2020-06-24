@@ -95,10 +95,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/releasetools/anx_config.sh:install/bin/anx_config.sh
-
-$(call inherit-product, vendor/ANXCamera/config.mk)
+$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
 # Context Hub
 PRODUCT_PACKAGES += \

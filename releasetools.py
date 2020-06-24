@@ -57,10 +57,7 @@ def AddImage(info, input_zip, basename, dest):
 def OTA_InstallEnd(info, input_zip):
   AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
-  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system_root", "");')
   info.script.Mount("/vendor")
   info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/hide_nfc_ginkgo.sh");')
-  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/anx_config.sh");')
   info.script.Unmount("/vendor")
-  info.script.AppendExtra('unmount("/system_root");')
   return
