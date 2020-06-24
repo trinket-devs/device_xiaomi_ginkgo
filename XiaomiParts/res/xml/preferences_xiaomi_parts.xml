@@ -78,6 +78,21 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="speaker"
+        android:title="@string/speaker_category">
+
+        <Preference
+            android:key="clear_speaker_settings" 
+            android:title="@string/clear_speaker_title"
+            android:icon="@drawable/ic_speaker_cleaner_icon" >
+            <intent 
+                android:action="android.intent.action.MAIN" 
+                android:targetClass="org.lineageos.settings.device.speaker.ClearSpeakerActivity"
+                android:targetPackage="org.lineageos.settings.device.speaker" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="vibration"
         android:title="@string/vibration_title">
 

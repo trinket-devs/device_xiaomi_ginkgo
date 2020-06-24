@@ -24,10 +24,11 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
 import org.lineageos.settings.device.kcal.KCalSettingsActivity;
+import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
 import org.lineageos.settings.device.preferences.SecureSettingListPreference;
 import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
-import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
+import org.lineageos.settings.device.speaker.ClearSpeakerActivity;
 
 import java.lang.Math.*;
 
@@ -44,6 +45,8 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private static final String PREF_DEVICE_KCAL = "device_kcal";
 
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+
     public static final String CATEGORY_VIBRATOR = "vibration";
     public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
     public static final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
@@ -51,6 +54,8 @@ public class DeviceSettings extends PreferenceFragment implements
     // value of vtg_min and vtg_max
     public static final int MIN_VIBRATION = 116;
     public static final int MAX_VIBRATION = 3596;
+
+    private Preference mClearSpeakerPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -89,6 +94,13 @@ public class DeviceSettings extends PreferenceFragment implements
 
         kcal.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
+        mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
+        mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
             startActivity(intent);
             return true;
         });

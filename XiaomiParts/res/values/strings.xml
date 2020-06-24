@@ -106,6 +106,14 @@
     <string name="kcal_presets">@string/presets_dialog_title</string>
     <string name="kcal_reset">Reset</string>
 
+    <!-- Speaker -->
+    <string name="speaker_category">Speaker</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Clear speaker</string>
+    <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
+    <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
+
     <!-- Vibration -->
     <string name="vibration_title">Haptic feedback</string>
     <string name="vibration_strength_title">Strength</string>
