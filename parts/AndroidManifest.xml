@@ -62,6 +62,17 @@
                        android:resource="@string/device_settings_summary" />
         </activity>
 
+        <activity
+            android:name=".speaker.ClearSpeakerActivity" 
+            android:exported="false" 
+            android:label="@string/clear_speaker_title">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".dirac.DiracTileService"
             android:icon="@drawable/dirac_qs_tile_icon"

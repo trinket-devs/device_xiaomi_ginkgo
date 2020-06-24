@@ -45,6 +45,13 @@
             android:summary="%s" 
             android:icon="@drawable/ic_preset" />
 
+        <Preference
+            android:key="clear_speaker_settings" 
+            android:title="@string/clear_speaker_title" >
+            <intent 
+                android:action="android.intent.action.MAIN" 
+                android:targetClass="org.lineageos.settings.speaker.ClearSpeakerActivity"
+                android:targetPackage="org.lineageos.settings.speaker" />
+        </Preference>
     </PreferenceCategory>
-
 </PreferenceScreen>
