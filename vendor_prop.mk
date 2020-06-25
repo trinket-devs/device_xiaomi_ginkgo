@@ -166,6 +166,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.vendor.display.sensortype=2 \
+    ro.vendor.display.svi=1 \
     vendor.display.comp_mask=0 \
     vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0 \
     vendor.display.disable_decimation=1 \
@@ -178,7 +179,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.display.enable_force_split=0 \
     vendor.display.enable_null_display=0 \
-    vendor.display.enable_optimize_refresh=1
+    vendor.display.enable_optimize_refresh=1 \
+    vendor.display.svi.config=1 \
+    vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
