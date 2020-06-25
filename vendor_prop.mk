@@ -218,7 +218,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
     media.stagefright.enable-qcp=true \
     media.stagefright.enable-scan=true \
-    persist.mm.enable.prefetch=true
+    persist.mm.enable.prefetch=true \
+    vendor.mm.enable.qcom_parser=63963135
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \

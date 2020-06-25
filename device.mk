@@ -360,7 +360,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti.xml
 
-TARGET_COMMON_QTI_COMPONENTS := perf
+TARGET_COMMON_QTI_COMPONENTS := perf av
 
 # QMI
 PRODUCT_PACKAGES += \
