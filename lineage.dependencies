@@ -1,8 +1,8 @@
 [
   {
-    "repository": "trinket-devs/vendor_aeonax_ANXCamera",
-    "target_path": "vendor/aeonax/ANXCamera",
-    "branch": "master",
+    "repository": "trinket-devs/vendor_miuicamera",
+    "target_path": "vendor/miuicamera",
+    "branch": "10.0",
     "remote": "github"
   }
 ]
