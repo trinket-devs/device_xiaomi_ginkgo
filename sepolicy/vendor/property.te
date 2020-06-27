@@ -4,6 +4,9 @@ type camera_ro_prop, property_type;
 # Fingerprint
 type vendor_fp_prop, property_type;
 
+# IR
+type lirc_prop, property_type;
+
 # Insmod
 type vendor_device_prop, property_type;
 
