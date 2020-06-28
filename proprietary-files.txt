@@ -218,8 +218,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # FM
--lib/libqcomfm_jni.so
--lib64/libqcomfm_jni.so
 -product/lib/vendor.qti.hardware.fm@1.0.so
 -product/lib64/vendor.qti.hardware.fm@1.0.so
 lib/fm_helium.so
