@@ -1,14 +1,12 @@
 #!/bin/bash
 #
 # Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2020 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
-
-DEVICE=ginkgo
-VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -26,11 +24,17 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
-SECTION=
-KANG=
+ONLY_COMMON=false
+ONLY_DEVICE=false
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
+        -o | --only-common )
+                ONLY_COMMON=true
+                ;;
+        -d | --only-device )
+                ONLY_DEVICE=true
+                ;;
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
                 ;;
@@ -52,16 +56,24 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${AOSPA_ROOT}" true "${CLEAN_VENDOR}"
+function blob_fixup() {
+    case "${1}" in
+    vendor/bin/mlipayd@1.1 | vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so)
+        patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
+        ;;
+    esac
+}
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
-        "${KANG}" --section "${SECTION}"
+if [ "$ONLY_DEVICE" == "false" ] && [ -s "${MY_DIR}/proprietary-files.txt" ]; then
+    # Initialize the helper for common
+    setup_vendor "$DEVICE_COMMON" "$VENDOR" "$AOSPA_ROOT" true "$CLEAN_VENDOR"
+    extract "${MY_DIR}/proprietary-files.txt" "$SRC" "$KANG" --section "$SECTION"
+fi
 
-BLOB_ROOT="${AOSPA_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+if [ "$ONLY_COMMON" == "false" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
+    # Reinitialize the helper for device
+    setup_vendor "$DEVICE" "$VENDOR" "$AOSPA_ROOT" false "$CLEAN_VENDOR"
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "$SRC" "$KANG" --section "$SECTION"
+fi
 
-patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${BLOB_ROOT}/vendor/bin/mlipayd@1.1"
-patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${BLOB_ROOT}/vendor/lib64/libmlipay.so"
-patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${BLOB_ROOT}/vendor/lib64/libmlipay@1.1.so"
-
-"${MY_DIR}/setup-makefiles.sh"
+ONLY_DEVICE=$ONLY_DEVICE ONLY_COMMON=$ONLY_COMMON "${MY_DIR}/setup-makefiles.sh"
