@@ -117,7 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.power.pasr.enabled=true
 
 # ParanoidDoze
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.sensor.proximity=true \
     ro.sensor.pickup=xiaomi.sensor.pickup
 
