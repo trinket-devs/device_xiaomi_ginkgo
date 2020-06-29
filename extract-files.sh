@@ -52,6 +52,18 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+    vendor/bin/mlipayd@1.1 | vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so)
+        patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
+        ;;
+    vendor/etc/camera/camera_config.xml)
+        # Remove vtcamera for ginkgo
+        gawk -i inplace '{ p = 1 } /<CameraModuleConfig>/{ t = $0; while (getline > 0) { t = t ORS $0; if (/ginkgo_vtcamera/) p = 0; if (/<\/CameraModuleConfig>/) break } $0 = t } p' "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
@@ -61,9 +73,5 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
 find $BLOB_ROOT -type f | xargs sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/g"
-
-patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${BLOB_ROOT}/vendor/bin/mlipayd@1.1"
-patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${BLOB_ROOT}/vendor/lib64/libmlipay.so"
-patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${BLOB_ROOT}/vendor/lib64/libmlipay@1.1.so"
 
 "${MY_DIR}/setup-makefiles.sh"
