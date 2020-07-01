@@ -1,42 +1,29 @@
-# Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.ginkgo u:object_r:hal_fingerprint_default_exec:s0
-
 # Light HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.ginkgo u:object_r:hal_light_default_exec:s0
-
-# Power HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service\.ginkgo u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_trinket u:object_r:hal_light_default_exec:s0
 
 # IR
-/dev/spidev[0-9]\.1          u:object_r:lirc_device:s0
+/dev/spidev[0-9]\.1                                                                  u:object_r:lirc_device:s0
 
 # Data files
-/data/vendor/goodix(/.*)?    u:object_r:fingerprint_data_file:s0
-/data/vendor/fpc(/.*)?       u:object_r:fingerprint_data_file:s0
-/data/vendor/thermal(/.*)?   u:object_r:thermal_data_file:s0
-/data/vendor/mac_addr(/.*)?  u:object_r:wifi_vendor_data_file:s0
-
-# Fingerprint devices
-/dev/goodix_fp               u:object_r:fingerprint_device:s0
-
-# Executables
-/(vendor|system/vendor)/bin/mlipayd@1\.1     u:object_r:hal_mlipay_default_exec:s0
-
+/data/vendor/goodix(/.*)?                                                            u:object_r:fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                                               u:object_r:fingerprint_data_file:s0
+/data/vendor/thermal(/.*)?                                                           u:object_r:thermal_data_file:s0
+/data/vendor/mac_addr(/.*)?                                                          u:object_r:wifi_vendor_data_file:s0
+ 
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as same_process_hal_file as it needs to be read by apps
 # (e.g. Google Camera App)
-/(vendor|system/vendor)/dsp/cdsp/fastrpc_shell_3        u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/dsp/cdsp/fastrpc_shell_3                                     u:object_r:same_process_hal_file:s0
 
 # Misys
-/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                                             u:object_r:hal_misys_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service          u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service          u:object_r:hal_misys_default_exec:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?    u:object_r:camera_persist_file:s0
+/mnt/vendor/persist/camera(/.*)?                                                     u:object_r:camera_persist_file:s0
 
 # Audio socket
-/dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0
+/dev/socket/audio_hw_socket                                                          u:object_r:audio_socket:s0
 
 # Offline charger
-/system/bin/offlinecharger                    u:object_r:charger_exec:s0
-
+/system/bin/offlinecharger                                                           u:object_r:charger_exec:s0

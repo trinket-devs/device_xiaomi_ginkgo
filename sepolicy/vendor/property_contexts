@@ -9,10 +9,6 @@ vidhance.                   u:object_r:vendor_camera_prop:s0
 # IR
 ro.lirc.dev                 u:object_r:lirc_prop:s0
 
-# Mlipay
-persist.sys.ifaa            u:object_r:ifaa_prop:s0
-persist.vendor.sys.pay.     u:object_r:ifaa_prop:s0
-
 # Miui
 ro.miui.                    u:object_r:exported_default_prop:s0
 ro.cust.test                u:object_r:exported_default_prop:s0
