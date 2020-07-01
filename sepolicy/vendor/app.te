@@ -1,0 +1,1 @@
+get_prop({ appdomain -isolated_app }, ifaa_prop)

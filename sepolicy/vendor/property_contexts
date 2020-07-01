@@ -1,0 +1,3 @@
+# Mlipay
+persist.sys.ifaa            u:object_r:ifaa_prop:s0
+persist.vendor.sys.pay.     u:object_r:ifaa_prop:s0
