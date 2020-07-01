@@ -1,1 +1,1 @@
-allow hal_wifi_supplicant_default mnt_vendor_file:dir getattr;
+r_dir_file(hal_wifi_supplicant_default, mnt_vendor_file)
