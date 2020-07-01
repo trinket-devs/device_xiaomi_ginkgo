@@ -125,10 +125,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.vidhanceEis.force=1 \
     vendor.vidhance.video.enabled=1
 
-# LCD Density
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=440
-
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.se.type=HCE,UICC
