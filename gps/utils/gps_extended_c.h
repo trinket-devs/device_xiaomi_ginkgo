@@ -468,6 +468,13 @@ typedef uint32_t GnssAdditionalSystemInfoMask;
 #define NAVIC_SV_PRN_MIN    401
 #define NAVIC_SV_PRN_MAX    414
 
+/* Checking svIdOneBase can be set to the corresponding bit in mask */
+#define svFitsMask(mask, svIdOneBase)                 \
+    ((svIdOneBase) >= 1 && (svIdOneBase) <= (sizeof(mask) << 3))
+/* Setting svIdOneBase specific bit in the mask if the bit offset fits */
+#define setSvMask(mask, svIdOneBase)                  \
+    if (svFitsMask(mask, svIdOneBase)) mask |= (1ULL << ((svIdOneBase) - 1))
+
 typedef enum {
     LOC_RELIABILITY_NOT_SET = 0,
     LOC_RELIABILITY_VERY_LOW = 1,
@@ -2256,6 +2263,12 @@ struct OdcpiRequestInfo {
 };
 /* Callback to send ODCPI request to framework */
 typedef std::function<void(const OdcpiRequestInfo& request)> OdcpiRequestCallback;
+
+/* ODCPI callback priorities*/
+enum OdcpiPrioritytype {
+    ODCPI_HANDLER_PRIORITY_LOW,
+    ODCPI_HANDLER_PRIORITY_HIGH
+};
 
 /*
  * Callback with AGNSS(IpV4) status information.

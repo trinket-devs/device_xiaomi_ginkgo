@@ -87,6 +87,7 @@ GnssAdapter::GnssAdapter() :
     mOdcpiRequestActive(false),
     mOdcpiTimer(this),
     mOdcpiRequest(),
+    mCallbackPriority(OdcpiPrioritytype::ODCPI_HANDLER_PRIORITY_LOW),
     mSystemStatus(SystemStatus::getInstance(mMsgTask)),
     mServerUrl(":"),
     mXtraObserver(mSystemStatus->getOsObserver(), mMsgTask),
@@ -3433,9 +3434,9 @@ GnssAdapter::needReportForGnssClient(const UlpLocation& ulpLocation,
 bool
 GnssAdapter::needReportForFlpClient(enum loc_sess_status status,
                                     LocPosTechMask techMask) {
-    if ((status == LOC_SESS_INTERMEDIATE) &&
-        !(techMask & LOC_POS_TECH_MASK_SENSORS) &&
-        (!getAllowFlpNetworkFixes())) {
+    if (((LOC_SESS_INTERMEDIATE == status) && !(techMask & LOC_POS_TECH_MASK_SENSORS) &&
+        (!getAllowFlpNetworkFixes())) ||
+        (LOC_SESS_FAILURE == status)) {
         return false;
     } else {
         return true;
@@ -3610,7 +3611,7 @@ void
 GnssAdapter::reportSv(GnssSvNotification& svNotify)
 {
     int numSv = svNotify.count;
-    int16_t gnssSvId = 0;
+    uint16_t gnssSvId = 0;
     uint64_t svUsedIdMask = 0;
     for (int i=0; i < numSv; i++) {
         svUsedIdMask = 0;
@@ -3654,6 +3655,9 @@ GnssAdapter::reportSv(GnssSvNotification& svNotify)
                         svUsedIdMask = mGnssSvIdUsedInPosition.glo_sv_used_ids_mask;
                     }
                 }
+                // map the svid to respective constellation range 1..xx
+                // then repective constellation svUsedIdMask map correctly to svid
+                gnssSvId = gnssSvId - GLO_SV_PRN_MIN + 1;
                 break;
             case GNSS_SV_TYPE_BEIDOU:
                 if (mGnssSvIdUsedInPosAvail) {
@@ -3679,6 +3683,7 @@ GnssAdapter::reportSv(GnssSvNotification& svNotify)
                         svUsedIdMask = mGnssSvIdUsedInPosition.bds_sv_used_ids_mask;
                     }
                 }
+                gnssSvId = gnssSvId - BDS_SV_PRN_MIN + 1;
                 break;
             case GNSS_SV_TYPE_GALILEO:
                 if (mGnssSvIdUsedInPosAvail) {
@@ -3698,6 +3703,7 @@ GnssAdapter::reportSv(GnssSvNotification& svNotify)
                         svUsedIdMask = mGnssSvIdUsedInPosition.gal_sv_used_ids_mask;
                     }
                 }
+                gnssSvId = gnssSvId - GAL_SV_PRN_MIN + 1;
                 break;
             case GNSS_SV_TYPE_QZSS:
                 if (mGnssSvIdUsedInPosAvail) {
@@ -3720,11 +3726,13 @@ GnssAdapter::reportSv(GnssSvNotification& svNotify)
                         svUsedIdMask = mGnssSvIdUsedInPosition.qzss_sv_used_ids_mask;
                     }
                 }
+                gnssSvId = gnssSvId - QZSS_SV_PRN_MIN + 1;
                 break;
             case GNSS_SV_TYPE_NAVIC:
                 if (mGnssSvIdUsedInPosAvail) {
                     svUsedIdMask = mGnssSvIdUsedInPosition.navic_sv_used_ids_mask;
                 }
+                gnssSvId = gnssSvId - NAVIC_SV_PRN_MIN + 1;
                 break;
             default:
                 svUsedIdMask = 0;
@@ -3733,7 +3741,7 @@ GnssAdapter::reportSv(GnssSvNotification& svNotify)
 
         // If SV ID was used in previous position fix, then set USED_IN_FIX
         // flag, else clear the USED_IN_FIX flag.
-        if ((gnssSvId < 64) && (svUsedIdMask & (1ULL << (gnssSvId - 1)))) {
+        if (svFitsMask(svUsedIdMask, gnssSvId) && (svUsedIdMask & (1ULL << (gnssSvId - 1)))) {
             svNotify.gnssSvs[i].gnssSvOptionsMask |= GNSS_SV_OPTIONS_USED_IN_FIX_BIT;
         }
     }
@@ -3757,6 +3765,7 @@ GnssAdapter::reportSv(GnssSvNotification& svNotify)
     }
 
     mGnssSvIdUsedInPosAvail = false;
+    mGnssMbSvIdUsedInPosAvail = false;
 }
 
 void
@@ -4264,8 +4273,12 @@ void GnssAdapter::requestOdcpi(const OdcpiRequestInfo& request)
         // the request is being stopped, but allow timer to expire first
         // before stopping the timer just in case more ODCPI requests come
         // to avoid spamming more odcpi requests to the framework
-        } else {
+        } else if (ODCPI_REQUEST_TYPE_STOP == request.type) {
+            LOC_LOGd("request: type %d, isEmergency %d", request.type, request.isEmergencyMode);
+            mOdcpiRequestCb(request);
             mOdcpiRequestActive = false;
+        } else {
+            LOC_LOGE("Invalid ODCPI request type..");
         }
     } else {
         LOC_LOGw("ODCPI request not supported");
@@ -4294,31 +4307,38 @@ bool GnssAdapter::reportGnssAdditionalSystemInfoEvent(
     return true;
 }
 
-void GnssAdapter::initOdcpiCommand(const OdcpiRequestCallback& callback)
+void GnssAdapter::initOdcpiCommand(const OdcpiRequestCallback& callback,
+            OdcpiPrioritytype priority)
 {
     struct MsgInitOdcpi : public LocMsg {
         GnssAdapter& mAdapter;
         OdcpiRequestCallback mOdcpiCb;
+        OdcpiPrioritytype mPriority;
         inline MsgInitOdcpi(GnssAdapter& adapter,
-                const OdcpiRequestCallback& callback) :
+                const OdcpiRequestCallback& callback,
+                OdcpiPrioritytype priority) :
                 LocMsg(),
                 mAdapter(adapter),
-                mOdcpiCb(callback) {}
+                mOdcpiCb(callback), mPriority(priority){}
         inline virtual void proc() const {
-            mAdapter.initOdcpi(mOdcpiCb);
+            mAdapter.initOdcpi(mOdcpiCb, mPriority);
         }
     };
 
-    sendMsg(new MsgInitOdcpi(*this, callback));
+    sendMsg(new MsgInitOdcpi(*this, callback, priority));
 }
 
-void GnssAdapter::initOdcpi(const OdcpiRequestCallback& callback)
+void GnssAdapter::initOdcpi(const OdcpiRequestCallback& callback,
+            OdcpiPrioritytype priority)
 {
-    mOdcpiRequestCb = callback;
-
-    /* Register for WIFI request */
-    updateEvtMask(LOC_API_ADAPTER_BIT_REQUEST_WIFI,
-            LOC_REGISTRATION_MASK_ENABLED);
+    LOC_LOGd("In priority: %d, Curr priority: %d", priority, mCallbackPriority);
+    if (priority >= mCallbackPriority) {
+        mOdcpiRequestCb = callback;
+        mCallbackPriority = priority;
+        /* Register for WIFI request */
+        updateEvtMask(LOC_API_ADAPTER_BIT_REQUEST_WIFI,
+                LOC_REGISTRATION_MASK_ENABLED);
+    }
 }
 
 void GnssAdapter::injectOdcpiCommand(const Location& location)
