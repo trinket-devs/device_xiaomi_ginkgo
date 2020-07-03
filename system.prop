@@ -5,6 +5,7 @@ ro.sys.fw.dex2oat_thread_count=8
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.btstack.enable.splita2dp=true
 ro.bluetooth.library_name=libbluetooth_qti.so
