@@ -10,9 +10,6 @@ $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
