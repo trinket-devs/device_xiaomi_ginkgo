@@ -263,6 +263,9 @@ on post-fs-data
     #Create folder of camera
     mkdir /data/vendor/camera 0777 camera camera
 
+    #Create folder of NFC
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
     mkdir /data/vendor/tombstones/rfs 0771 system system
@@ -388,41 +391,6 @@ on post-fs-data
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
-
-service nqnfcinfo /system/vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-    disabled
-
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    disabled
-
-service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    disabled
-
-service secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.0-service
-    override
-    class hal
-    interface android.hardware.secure_element@1.0::ISecureElement eSE1
-    user secure_element
-    group secure_element
-    disabled
-
-on property:ro.product.device=willow
-    enable nqnfcinfo
-    enable vendor.nfc_hal_service
-    enable nqnfc_1_2_hal_service
-    enable secure_element_hal_service
 
 service iop /system/vendor/bin/iop
     class main
