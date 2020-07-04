@@ -11,21 +11,10 @@
     <hal format="hidl">
         <name>vendor.nxp.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.1</version>
         <interface>
             <name>INqNfc</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-            <instance>SIM2</instance>
-            <instance>eSE1</instance>
         </interface>
     </hal>
 </manifest>

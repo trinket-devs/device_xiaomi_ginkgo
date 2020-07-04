@@ -327,13 +327,6 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     oneshot
     disabled
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    disabled
-
 service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
     override
     class hal
@@ -341,19 +334,9 @@ service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
     group nfc
     disabled
 
-service secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.0-service
-    override
-    class hal
-    interface android.hardware.secure_element@1.0::ISecureElement eSE1
-    user secure_element
-    group secure_element
-    disabled
-
 on property:ro.product.device=willow
     enable nqnfcinfo
-    enable vendor.nfc_hal_service
     enable nqnfc_1_2_hal_service
-    enable secure_element_hal_service
 
 on property:sys.thermallct.isincall=1
     write /sys/class/power_supply/battery/device/thermalcall 1
