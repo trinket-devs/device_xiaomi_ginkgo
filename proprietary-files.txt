@@ -1639,7 +1639,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/libgrallocutils.so|42b16c8bee0ad715c2509b526f4cb67c325cec31
 vendor/lib64/libgrallocutils.so|175cce1c7b7cb20c745f39b84201936d5629937b
 
-# Graphics - from laurus-user 10 QKQ1.190910.002 20.6.17
+# Graphics - from LA.UM.8.11.r1-03500-NICOBAR.0
 vendor/lib64/egl/eglSubDriverAndroid.so|d7e3af7f2f08c6a6d311f32ce1dc6646e054bb26
 vendor/lib64/egl/libEGL_adreno.so|73c8bc42d4f097156508ad501b3affcd8bfb1e55
 vendor/lib64/egl/libGLESv1_CM_adreno.so|2c60e39e06eb18eac2db775021d5ed45da92fa54
@@ -1681,11 +1681,11 @@ vendor/lib/libpvr.so|b136124b70c996aedc269580088b15a86d8152bb
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|be896c0fd4db3661ac33ced7f4a1dfa3b9cdd2a3
 
-# Graphics - SDM - from LA.UM.8.1.r1-14500-sm8150.0
-vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
-vendor/lib64/libdpps.so|dc21df7b0af8f05f0f0d4c39e2c103c7989ece8b
-vendor/lib64/libdisplayqos.so|8e5f13a5b7ea0efa8db2902c8719380d710bc857
-vendor/lib64/libhdr_tm.so|a04a0abf52d940ddb4916e74d48cc2b16526e355
+# Graphics (HDR) - from LA.UM.8.11.r1-03500-NICOBAR.0
+vendor/lib64/libhdr_tm.so|a8538faa77fa5d2b6e8210daaefe5267d9eb43a0
+vendor/lib/libhdr_tm.so|16dd863f092e23e19aa5c1b3f0b4181d59195b94
+
+# Graphics (SDM) - from LA.UM.8.1.r1-14500-sm8150.0
 vendor/lib64/libqseed3.so|3fb480721b26a2df0a2a96359814ef37a5da9148
 vendor/lib64/libsdedrm.so|21ef252babf0bba0d79a22fa3c67a7ec15bba5b4
 vendor/lib64/libsdm-color.so|9d301706c16ce768a3fe72e9990f2d8799aeb9f6
@@ -1693,10 +1693,9 @@ vendor/lib64/libsdm-colormgr-algo.so|98a55014ebce7dd77319745c118af8368dec5e27
 vendor/lib64/libsdm-diag.so|f080993703d425a337faaa5d2cc3c05119db6ac1
 vendor/lib64/libsdm-disp-vndapis.so|d928e16612715d7a416d8c3b7920311bd9a93fed
 vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
-vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
 vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
-# Graphics - Vulkan - from laurus-user 10 QKQ1.190910.002 20.6.17
+# Graphics (Vulkan) - from LA.UM.8.11.r1-03500-NICOBAR.0
 vendor/lib/hw/vulkan.trinket.so|4a909668f446164113e8a709906100ae4cb79fd9
 vendor/lib64/hw/vulkan.trinket.so|4401c87f9cd3a8a4c5820b367679804967bd5722
 
@@ -1808,6 +1807,7 @@ vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxWmaDec.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
@@ -1833,6 +1833,7 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxWmaDec.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
@@ -1943,11 +1944,17 @@ vendor/lib64/libperipheral_client.so
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libdisp-aba.so
+vendor/lib/libdpps.so
+vendor/lib/libdisplayqos.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
 vendor/lib/vendor.display.color@1.2.so
 vendor/lib/vendor.display.color@1.3.so
 vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdpps.so
+vendor/lib64/libdisplayqos.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
