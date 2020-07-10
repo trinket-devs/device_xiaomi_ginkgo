@@ -2,3 +2,4 @@ allow vendor_init proc_dirty:file write;
 
 set_prop(vendor_init, audio_prop)
 set_prop(vendor_init, reschedule_service_prop)
+set_prop(vendor_init, vendor_camera_prop)
