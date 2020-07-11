@@ -45,6 +45,8 @@ on early-init
 
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
+    # Load WIGIG platform driver
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
 on init
     # Loading kernel modules in background
@@ -65,9 +67,7 @@ on init
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
-    # Disable sched autogroup
-    write /proc/sys/kernel/sched_autogroup_enabled 0
-
+on late-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
@@ -158,6 +158,7 @@ on boot
     mkdir /persist/misc 0770 system system
     mkdir /mnt/vendor/persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
+    mkdir /mnt/vendor/persist/camera 0755 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
     mkdir /mnt/vendor/persist/iar_db 0770 system system
     mkdir /mnt/vendor/spunvm 0770 system system
@@ -209,10 +210,6 @@ on boot
     chown system system /sys/class/backlight/panel1-backlight/brightness
     chown system system /sys/class/backlight/panel1-backlight/max_brightness
 
-    #add flashlight
-    chmod 0660 /sys/class/leds/flashlight/brightness
-    chown system system /sys/class/leds/flashlight/brightness
-
     # Allow access to sensors device attributes
     chown system system /sys/class/sensors/MPU6050-accel/enable
     chown system system /sys/class/sensors/MPU6050-accel/poll_delay
@@ -234,15 +231,9 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
-    # Create pa-cal driver directory lct-20181009
-    mkdir /mnt/vendor/persist/audio 0770 audio audio
-
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
-
-    # Thermal Profile
-    write /sys/class/thermal/thermal_message/sconfig 0
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -267,7 +258,7 @@ on post-fs-data
     mkdir /data/vendor/qtee 0770 system system
 
     #Create folder of camera
-    mkdir /data/vendor/camera 0770 camera camera
+    mkdir /data/vendor/camera 0777 camera camera
 
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
@@ -387,6 +378,11 @@ on post-fs-data
     mkdir /data/vendor/swap 0770 root system
     chmod 2770 /data/vendor/swap
 
+    # set aggressive read ahead for dm-0 and dm-1 during boot up
+    write /sys/block/dm-0/queue/read_ahead_kb 2048
+    write /sys/block/dm-1/queue/read_ahead_kb 2048
+    write /sys/block/dm-2/queue/read_ahead_kb 2048
+
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
 
@@ -500,33 +496,17 @@ on property:persist.vendor.sys.rawdump_copy=0
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
-
-    # Enable ZRAM
-    swapon_all /vendor/etc/fstab.qcom
-
-    #Reset read ahead for dm-0, dm-1, dm-3, dm-4, dm-5 and dm-6 to 128b
-    write /sys/block/dm-0/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/dm-2/queue/read_ahead_kb 128
-    write /sys/block/dm-3/queue/read_ahead_kb 128
-    write /sys/block/dm-4/queue/read_ahead_kb 128
-    write /sys/block/dm-5/queue/read_ahead_kb 128
-    write /sys/block/dm-6/queue/read_ahead_kb 128
-
-    # Back to default VM settings
-    write /proc/sys/vm/dirty_expire_centisecs 3000
-    write /proc/sys/vm/dirty_background_ratio 10
-
-    # Setup runtime blkio
-    # value for group_idle is us
-    write /dev/blkio/blkio.weight 1000
-    write /dev/blkio/background/blkio.weight 200
-    write /dev/blkio/blkio.group_idle 2000
-    write /dev/blkio/background/blkio.group_idle 0
+    #Reset read ahead for dm-0, dm-1 and dm-2 to 512kb
+    write /sys/block/dm-0/queue/read_ahead_kb 512
+    write /sys/block/dm-1/queue/read_ahead_kb 512
+    write /sys/block/dm-2/queue/read_ahead_kb 512
 
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
+
+    # Enable ZRAM on boot complete
+    swapon_all /vendor/etc/fstab.qcom
 
 # corefile limit
 on property:persist.debug.trace=1
@@ -535,6 +515,9 @@ on property:persist.debug.trace=1
 
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd
+
+on property:vendor.media.target.version=*
+    setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
 service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
     class core
@@ -603,7 +586,7 @@ on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
 
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
-    -O/data/vendor/wifi/wpa/sockets -puse_p2p_group_interface=1 \
+    -O/data/vendor/wifi/wpa/sockets -puse_p2p_group_interface=1 -dd \
     -g@android:vendor_wpa_wlan0
 #   we will start as root and wpa_supplicant will switch to user wifi
 #   after setting up the capabilities required for WEXT
@@ -611,7 +594,6 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 #   group wifi inet keystore
     interface android.hardware.wifi.supplicant@1.0::ISupplicant default
     interface android.hardware.wifi.supplicant@1.1::ISupplicant default
-    interface android.hardware.wifi.supplicant@1.2::ISupplicant default
     class main
     socket vendor_wpa_wlan0 dgram 660 wifi wifi
     disabled
@@ -640,25 +622,6 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     disabled
     oneshot
 
-# FST Manager with hostapd (softap) - all settings inside ini file
-service fstman /vendor/bin/fstman -B -ddd -c /data/vendor/wifi/fstman.ini -a 1
-    user wifi
-    group wifi
-    capabilities NET_ADMIN NET_RAW
-    class main
-    disabled
-    oneshot
-
-# FST Manager with supplicant - connect to supplicant socket
-service fstman_wlan0 /vendor/bin/fstman -B -ddd -c /data/vendor/wifi/fstman.ini \
-    -a 0 @android:vendor_wpa_wlan0
-    user wifi
-    group wifi
-    capabilities NET_ADMIN NET_RAW
-    class main
-    disabled
-    oneshot
-
 service wigignpt /vendor/bin/wigignpt
     interface vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner default
     class hal
@@ -667,6 +630,9 @@ service wigignpt /vendor/bin/wigignpt
     group wifi
     capabilities NET_ADMIN
     disabled
+
+on property:persist.vendor.wigig.npt.enable=1
+    start wigignpt
 
 service dhcpcd_wlan0 /system/bin/dhcpcd -ABKLG
     class late_start
@@ -970,6 +936,14 @@ service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /system/vendor/etc
     group root
     disabled
 
+# service for USERDEBUG
+service vendor.LKCore-dbg /vendor/bin/LKCore
+    class late_start
+    oneshot
+    disabled
+    user root
+    group root system log diag net_raw
+
 # service for USER
 service vendor.LKCore-rel /vendor/bin/LKCore
     class late_start
@@ -1071,6 +1045,14 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
 
+service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0-service
+    override
+    class hal
+    interface android.hardware.contexthub@1.0::IContexthub default
+    user system
+    group system
+    disabled
+
 service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@2.3-service
     override
     class hal animation
@@ -1084,6 +1066,14 @@ service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@
 #add MIUI camera flag
 on property:sys.camera.miui.apk=*
     setprop vendor.camera.miui.apk ${sys.camera.miui.apk}
+
+#add cts camera flag
+on property:sys.camera.not.cts.apk=*
+    setprop vendor.camera.not.cts.apk ${sys.camera.not.cts.apk}
+
+#add cts verify flag
+on property:sys.camera.not.ctsverify.apk=*
+    setprop vendor.camera.not.ctsverify.apk ${sys.camera.not.ctsverify.apk}
 
 #add 720p@240fps video
 on  property:vendor.camera.cpuperf.en=1

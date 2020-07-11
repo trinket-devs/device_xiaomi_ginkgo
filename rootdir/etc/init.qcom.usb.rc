@@ -73,6 +73,7 @@ on boot
     mkdir /config/usb_gadget/g1/functions/ffs.adb
     mkdir /config/usb_gadget/g1/functions/diag.diag
     mkdir /config/usb_gadget/g1/functions/diag.diag_mdm
+    mkdir /config/usb_gadget/g1/functions/diag.diag_mdm2
     mkdir /config/usb_gadget/g1/functions/cser.dun.0
     mkdir /config/usb_gadget/g1/functions/cser.nmea.1
     mkdir /config/usb_gadget/g1/functions/cser.dun.2
@@ -102,7 +103,7 @@ on boot
     mkdir /dev/usb-ffs/adb 0770 shell system
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=1000,rmode=0770,fmode=0660
     write /sys/class/android_usb/android0/f_ffs/aliases adb
-    setprop sys.usb.mtp.device_type 2
+    setprop sys.mtp.device_type 2
     setprop vendor.usb.controller ${sys.usb.controller}
     enable vendor.qcom-usb-sh
 
@@ -116,6 +117,9 @@ service vendor.qcom-usb-sh /vendor/bin/init.qcom.usb.sh
 #    setprop persist.sys.usb.config ${persist.vendor.usb.config}
 
 on boot && property:ro.boot.usbconfigfs=true
+        setprop sys.usb.configfs 1
+
+on property:vendor.usb.configfs=1 && property:sys.usb.configfs=0
         setprop sys.usb.configfs 1
 
 # Following are the parameters required for usb functionality. They provide configurable options like
@@ -830,7 +834,7 @@ on property:vendor.usb.tethering=true
     write /sys/class/net/rndis0/queues/rx-0/rps_cpus ${vendor.usb.rps_mask}
 
 on property:sys.usb.config=rndis
-    setprop sys.usb.config rndis,${persist.vendor.usb.config.extra}
+    setprop sys.usb.config rndis,none
 
 on property:sys.usb.config=rndis,none && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 0
@@ -843,7 +847,7 @@ on property:sys.usb.config=rndis,none && property:sys.usb.configfs=0
     setprop sys.usb.state rndis
 
 on property:sys.usb.config=rndis,adb && property:sys.usb.configfs=0
-    setprop sys.usb.config rndis,${persist.vendor.usb.config.extra},adb
+    setprop sys.usb.config rndis,none,adb
 
 on property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 0

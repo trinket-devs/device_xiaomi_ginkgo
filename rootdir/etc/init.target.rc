@@ -46,69 +46,6 @@ on init
 on early-fs
     start vold
 
-# Add a cpuset for the camera daemon
-# We want all cores for camera
-    mkdir /dev/cpuset/camera-daemon
-    write /dev/cpuset/camera-daemon/cpus 0-7
-    write /dev/cpuset/camera-daemon/mems 0
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
-    chmod 0660 /dev/cpuset/camera-daemon/tasks
-
-    # Create an stune group for camera-specific processes
-    mkdir /dev/stune/camera-daemon
-    write /dev/stune/camera-daemon/schedtune.prefer_idle 1
-    write /dev/stune/camera-daemon/schedtune.boost 0
-    chown system system /dev/stune/camera-daemon
-    chown system system /dev/stune/camera-daemon/tasks
-    chmod 0664 /dev/stune/camera-daemon/tasks
-
-    mkdir /dev/cpuset/system 0750 root system
-    write /dev/cpuset/system/cpus 0
-    write /dev/cpuset/system/mems 0
-    chown system system /dev/cpuset/system/tasks
-    chmod 0660 /dev/cpuset/system/tasks
-
-    mkdir /dev/cpuset/system/performance 0750 root system
-    write /dev/cpuset/system/performance/cpus 0
-    write /dev/cpuset/system/performance/mems 0
-    chown system system /dev/cpuset/system/performance/tasks
-    chmod 0660 /dev/cpuset/system/performance/tasks
-
-    mkdir /dev/cpuset/system/background 0750 root system
-    write /dev/cpuset/system/background/cpus 0
-    write /dev/cpuset/system/background/mems 0
-    chown system system /dev/cpuset/system/background/tasks
-    chmod 0660 /dev/cpuset/system/background/tasks
-
-    mkdir /dev/cpuset/application 0750 root system
-    write /dev/cpuset/application/cpus 0
-    write /dev/cpuset/application/mems 0
-    chown system system /dev/cpuset/application/tasks
-    chmod 0660 /dev/cpuset/application/tasks
-
-    mkdir /dev/cpuset/application/performance 0750 root system
-    write /dev/cpuset/application/performance/cpus 0
-    write /dev/cpuset/application/performance/mems 0
-    chown system system /dev/cpuset/application/performance/tasks
-    chmod 0660 /dev/cpuset/application/performance/tasks
-
-    mkdir /dev/cpuset/application/background 0750 root system
-    write /dev/cpuset/application/background/cpus 0
-    write /dev/cpuset/application/background/mems 0
-    chown system system /dev/cpuset/application/background/tasks
-    chmod 0660 /dev/cpuset/application/background/tasks
-
-    write /dev/cpuset/kernel/cpus 0-7
-    write /dev/cpuset/system/cpus 0-7
-    write /dev/cpuset/system/performance/cpus 0-7
-    write /dev/cpuset/system/background/cpus 0-7
-    write /dev/cpuset/system/cpus 0-7
-    write /dev/cpuset/application/cpus 0-7
-    write /dev/cpuset/application/performance/cpus 0-7
-    write /dev/cpuset/application/background/cpus 0-7
-    write /dev/cpuset/application/cpus 0-7
-
 on fs
     start hwservicemanager
     mount_all /vendor/etc/fstab.qcom --early
@@ -120,9 +57,8 @@ on fs
 
     chmod 0664 /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/sconfig
-
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
-    chown root root /sys/class/thermal/thermal_message/temp_state
+    chown system system /sys/class/thermal/thermal_message/temp_state
 
     mkdir /mnt/vendor/persist/misys 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
@@ -130,6 +66,8 @@ on fs
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+
+on early-boot
     write /dev/ipa 1
 
 on late-fs
@@ -168,7 +106,6 @@ on post-fs-data
 # Silver Only configuration cannot work with 0-7
 on boot
     chown system system /sys/kernel/hbtp/display_pwr
-    chown system system /sys/kernel/qvr_external_sensor/fd
     start rmt_storage
     start rfs_access
     write /dev/cpuset/top-app/cpus 0-3
@@ -183,6 +120,15 @@ on boot
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+# Add a cpuset for the camera daemon
+# We want all cores for camera
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
+    chmod 0660 /dev/cpuset/camera-daemon/tasks
+
 # D2TW
     chown system system /proc/tp_gesture
     chmod 0660 /proc/tp_gesture
@@ -190,19 +136,16 @@ on boot
 # access permissions for FPC service
    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
-   chmod 0666 /dev/qseecom
 
 #Load WLAN driver
-    chown wifi wifi /sys/module/wlan/parameters/fwpath
-
-# Thermal Profile
-    write /sys/class/thermal/thermal_message/sconfig 0
+    insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
+    setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
 #pd-mapper
@@ -229,10 +172,11 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-    stop vendor.ims_rtp_daemon
 
 on charger
-    setprop vendor.usb.controller a600000.dwc3
+    chown system system /sys/class/leds/red/brightness
+    chmod 0666 /sys/class/leds/red/brightness
+    setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
     start vendor.power_off_alarm
 
@@ -244,23 +188,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
-
-service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
-   class main
-   user system
-   group system wifi inet sdcard_rw media_rw diag
-   disabled
-
-service qfp-daemon /vendor/bin/qfp-daemon
-    class late_start
-    user system
-    group system drmrpc diag input
-
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
 
 service adsprpcd_root /vendor/bin/adsprpcd
    class main
@@ -282,8 +209,59 @@ service cdsprpcd /vendor/bin/cdsprpcd
    user system
    group system
 
-on property:sys.thermallct.isincall=1
-    write /sys/class/power_supply/battery/device/thermalcall 1
+# imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
+service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
+    class main
+    user system
+    socket ims_qmid stream 0660 system radio
+    group radio log diag
 
-on property:sys.thermallct.isincall=0
-    write /sys/class/power_supply/battery/device/thermalcall 0
+# imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
+service vendor.imsdatadaemon /system/vendor/bin/imsdatadaemon
+    class main
+    user system
+    socket ims_datad stream 0660 system radio
+    group system wifi radio inet log diag
+    disabled
+
+service vendor.imsrcsservice /system/vendor/bin/imsrcsd
+    class main
+    user system
+    group radio diag inet log wakelock
+
+on property:vendor.ims.QMI_DAEMON_STATUS=1
+    start vendor.imsdatadaemon
+
+on property:vold.decrypt=trigger_restart_framework
+   start vendor.cnss_diag
+
+service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
+   class main
+   user system
+   group system wifi inet sdcard_rw media_rw diag
+   oneshot
+
+service vendor.ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
+   class main
+   user system
+   group radio diag inet log
+
+on property:vendor.ims.DATA_DAEMON_STATUS=1
+    restart vendor.ims_rtp_daemon
+
+service hbtp /system/vendor/bin/hbtp_daemon
+     class main
+     user system
+     group system
+     disabled
+
+service qfp-daemon /vendor/bin/qfp-daemon
+    class late_start
+    user system
+    group system drmrpc diag input
+
+service energy-awareness /system/vendor/bin/energy-awareness
+    class main
+    user system
+    group system
+    oneshot
