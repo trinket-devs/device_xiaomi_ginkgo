@@ -35,6 +35,9 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
+# Incremental FS
+ro.incremental.enable=1
+
 # LMKD
 ro.lmk.low_ram=false
 
