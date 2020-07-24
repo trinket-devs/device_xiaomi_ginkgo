@@ -277,47 +277,47 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0-service.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 
-# Graphics - from laurus-user 10 QKQ1.190910.002 20.6.23
+# Graphics - from LA.UM.8.11.r1-03800-NICOBAR.0
 vendor/lib64/egl/eglSubDriverAndroid.so|d7e3af7f2f08c6a6d311f32ce1dc6646e054bb26
 vendor/lib64/egl/libEGL_adreno.so|73c8bc42d4f097156508ad501b3affcd8bfb1e55
 vendor/lib64/egl/libGLESv1_CM_adreno.so|2c60e39e06eb18eac2db775021d5ed45da92fa54
-vendor/lib64/egl/libGLESv2_adreno.so|686fc21ef21d7ba72d7c287e56800cf92eddb018
+vendor/lib64/egl/libGLESv2_adreno.so|244eb18fa3c483efd9ad9784bcacad88e1b55c19
 vendor/lib64/egl/libQTapGLES.so|aa7f8f3a5a33a54408368775cf79af63dca2c91a
 vendor/lib64/egl/libq3dtools_adreno.so|00566ccecfd29bd5c79d631c0d5ccadd0ee7446e
 vendor/lib64/egl/libq3dtools_esx.so|23dad56ed76fdcece3366018a401f97fee070559
 vendor/lib64/libC2D2.so|53db84268b65d20226e1daf5f7a55d3d2140b041
-vendor/lib64/libCB.so|9c7921725709eb4231ad8ffac2fa042dfc4d239a
+vendor/lib64/libCB.so|186056db0194bcaf5e955facf46047304ace00cd
 vendor/lib64/libOpenCL.so|7e6133e888f5bf542940f8c9fbe3eae0ddf21aca
 vendor/lib64/libRSDriver_adreno.so|be6708df68503eba85c35101029b50938bf181b6
-vendor/lib64/libadreno_utils.so|ce9c2afabfd71d3d3b6a914a63aa0da3e0cc8883
-vendor/lib64/libbccQTI.so|2105f35a46f936940e124ddba3d4bcf3c7162404
+vendor/lib64/libadreno_utils.so|35bf98d7a2766d01453cdbf7c028604677a6062f
+vendor/lib64/libbccQTI.so|44d1fef80ee78339264588f53696d9c2bbfaff06
 vendor/lib64/libc2d30_bltlib.so|29017987444fe077f1bac00d18f82a1a6900a3ad
 vendor/lib64/libgsl.so|1ecb89ffd26025de4d277e33152e677222a41d0c
-vendor/lib64/libllvm-glnext.so|c9b382ee49380f07653a2da17cc83334c5d43353
+vendor/lib64/libllvm-glnext.so|eecb32dc620dbab9e950e74a1293751b022045ad
 vendor/lib64/libllvm-qcom.so|515b23b0e1ebf2b73a9380d89739a55fe6e88a5c
-vendor/lib64/libpvr.so|47e3c25f30a05c7ee09249556b4b9f3c42274956
+vendor/lib64/libpvr.so|a15c61aff68787c4abb8f0ec61c5459b687a29e4
 vendor/lib64/librs_adreno.so|71affd7d82629fd21ad8ed553f0def43b4f664ee
-vendor/lib64/librs_adreno_sha1.so|f3d09bfb9dcbf862aac94c20f54731595791e86e
+vendor/lib64/librs_adreno_sha1.so|cbccc94bea129433bffcc86771874c745ebe440b
 vendor/lib/egl/eglSubDriverAndroid.so|7bd57ae573b7db35f1e7a8a9b41b26e9980f8093
 vendor/lib/egl/libEGL_adreno.so|b74f548f7762817b9f1c4ff7f9ee0ab5abe21ccf
 vendor/lib/egl/libGLESv1_CM_adreno.so|9b598c109e6fd9a1ae7fcb463b5b075ca638b812
-vendor/lib/egl/libGLESv2_adreno.so|13eade0909bec570de95c61880bf78a994cd784b
+vendor/lib/egl/libGLESv2_adreno.so|fb3411af3ec55ae26211241beb00ef0fbf83d268
 vendor/lib/egl/libQTapGLES.so|934ef4b849204b557efd0fb38d2cc5bd85d88f93
 vendor/lib/egl/libq3dtools_adreno.so|5d25d3f8d5f5e86f6d1b83df3a15561ff257756d
 vendor/lib/egl/libq3dtools_esx.so|2a2ec15a258c4dfae1aa541fdfa3a6675cad8727
 vendor/lib/libC2D2.so|c189d8794a261824b8fdeca4e65d63eb92c0cc0a
-vendor/lib/libCB.so|821bd5f640f2ad101095e38047ca3dbd8d5ad724
+vendor/lib/libCB.so|ebc1aa1881a71fbf9ee90ad5a15e2b52089f9d25
 vendor/lib/libOpenCL.so|6fe1ec3442653efedf49f64aa9301e0ed91abac0
 vendor/lib/libRSDriver_adreno.so|fe6fb5fab0f2f69ff1779e03c2ed83f1149935a2
-vendor/lib/libadreno_utils.so|1fd9e4a6dbfd6370acbb1ebdfaf39724fb78bd85
-vendor/lib/libbccQTI.so|3e0a4fe0242a797a19a70b282fe0cf0bd1ce75da
+vendor/lib/libadreno_utils.so|54eedfc81c3228ade708c4ebc8dd0cc25fcd46cf
+vendor/lib/libbccQTI.so|0be327b62b993d09953fc0758fbf19672d58d3ec
 vendor/lib/libc2d30_bltlib.so|0baf85bbde259bd0bc76425d7b5b09760761471d
 vendor/lib/libgsl.so|d74d0f32d540744e310f96b76eda690aa68d71fd
-vendor/lib/libllvm-glnext.so|6e6fd884e9ac720faa3b111f928bae1434c285f1
+vendor/lib/libllvm-glnext.so|772a563826b9925329b5918abc878ce8a2a1237a
 vendor/lib/libllvm-qcom.so|a56bd31751091eec4d4121d357cc38615914f52c
-vendor/lib/libpvr.so|b136124b70c996aedc269580088b15a86d8152bb
+vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
-vendor/lib/librs_adreno_sha1.so|be896c0fd4db3661ac33ced7f4a1dfa3b9cdd2a3
+vendor/lib/librs_adreno_sha1.so|9f5c5e85d22ce85fd51b02c0b8fc03a996c3c390
 
 # Graphics - Gralloc-Mapper - from laurus-user 10 QKQ1.190910.002 20.6.23
 vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|8981bf6a014eff86006a55d41ba5239fa28c55a3
@@ -325,24 +325,24 @@ vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|d823745
 vendor/lib/libgrallocutils.so|9ec92f93fbcdc50146307c457e9ab9712bae0da8
 vendor/lib64/libgrallocutils.so|3e0dc02e6b89bdfd04bf299bc289b3ed43fc38ac
 
-# Graphics - SDM - from LA.UM.8.1.r1-14500-sm8150.0
-vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
-vendor/lib64/libdpps.so|dc21df7b0af8f05f0f0d4c39e2c103c7989ece8b
-vendor/lib64/libdisplayqos.so|8e5f13a5b7ea0efa8db2902c8719380d710bc857
-vendor/lib64/libhdr_tm.so|a04a0abf52d940ddb4916e74d48cc2b16526e355
-vendor/lib64/libqseed3.so|3fb480721b26a2df0a2a96359814ef37a5da9148
-vendor/lib64/libsdedrm.so|21ef252babf0bba0d79a22fa3c67a7ec15bba5b4
-vendor/lib64/libsdm-color.so|9d301706c16ce768a3fe72e9990f2d8799aeb9f6
-vendor/lib64/libsdm-colormgr-algo.so|98a55014ebce7dd77319745c118af8368dec5e27
-vendor/lib64/libsdm-diag.so|f080993703d425a337faaa5d2cc3c05119db6ac1
-vendor/lib64/libsdm-disp-vndapis.so|d928e16612715d7a416d8c3b7920311bd9a93fed
-vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
-vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
-vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
+# Graphics - SDM - from LA.UM.8.11.r1-03800-NICOBAR.0
+vendor/lib64/libdisp-aba.so|88ad90c2af98bb5e340a64459df088c0a6e6437c
+vendor/lib64/libdpps.so|6f06bf0acaeb7e0c855eb70b835fa76440defdad
+vendor/lib64/libdisplayqos.so|eadfe4288da708a3f9d43f84222a22a22b83318e
+vendor/lib64/libhdr_tm.so|ab20fed34db2d55bc65a6082a5967e719d0e1746
+vendor/lib64/libqseed3.so|bde5b14fe41537d32a566f5f1bd36c4add2a42da
+vendor/lib64/libsdedrm.so|a453fe91b3a7d65cdd75595b266930b31dd94855
+vendor/lib64/libsdm-color.so|326529a43487eb80396899260fbfffafd942a986
+vendor/lib64/libsdm-colormgr-algo.so|0afc608b23a702dedf07e6507c2eb902914eb46a
+vendor/lib64/libsdm-diag.so|eca5c410849c8fcc013f935dd92e2e0af362c395
+vendor/lib64/libsdm-disp-vndapis.so|c4bd9dfa837244740d76a4bd7ed5370bcab6b15f
+vendor/lib64/libsdmextension.so|97e6d267a1b629d45fa4ef3bcc801ff835b4a6f6
+vendor/lib64/libtinyxml.so|2936c16dd8641ca9a27951c55ec0f6d2f4fc19c0
+vendor/lib64/libtinyxml2_1.so|0061bbae0a73101c9d5fc6a8d99c69674e265d6e
 
-# Graphics - Vulkan - from laurus-user 10 QKQ1.190910.002 20.6.23
-vendor/lib/hw/vulkan.trinket.so|4a909668f446164113e8a709906100ae4cb79fd9
-vendor/lib64/hw/vulkan.trinket.so|4401c87f9cd3a8a4c5820b367679804967bd5722
+# Graphics - Vulkan - from LA.UM.8.11.r1-03800-NICOBAR.0
+vendor/lib/hw/vulkan.trinket.so|da8e458be5240ca672b4433c8417e014495c053f
+vendor/lib64/hw/vulkan.trinket.so|ee55fd7a3a4109cf913034cc2517f2d0dd661ec4
 
 # Hotword Enrollment - from cepheus
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|0741b5ada5d9da2227b4ff0bc77c3be7d6eb430b
@@ -496,20 +496,20 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.color@1.3.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Postprocessing - from LA.UM.8.11.r1-03800-NICOBAR.0
+vendor/bin/hw/vendor.display.color@1.0-service|5acec3bd582419c68678463c28daa5c60d9bd315
+vendor/bin/ppd|59248d1ee131502c15b494d9b4cd188989cde085
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/vendor.display.color@1.0.so|3d5ebce380c46116026baef0fd6957ce25d21439
+vendor/lib/vendor.display.color@1.1.so|3236167da804c4464077947ede61d2902e671628
+vendor/lib/vendor.display.color@1.2.so|1a29be0dccd6b654d2a6149a95a68139e028e95b
+vendor/lib/vendor.display.color@1.3.so|62b91dbdfb886091167759a36be0a20bb29442c7
+vendor/lib/vendor.display.postproc@1.0.so|ef1a55d5c17e5eaa6b37b7be4c6221934596dee2
+vendor/lib64/vendor.display.color@1.0.so|1a93f22cb8e9ed266caa3dbf516df76b558e803a
+vendor/lib64/vendor.display.color@1.1.so|8d2de621f8b5c84b9c6dbf58ab1e0e87afb79488
+vendor/lib64/vendor.display.color@1.2.so|825f77d27eab7769d7809b150bdbfe68ea27397a
+vendor/lib64/vendor.display.color@1.3.so|f3d417b548fc48b9fab4be6209c100712799cfa6
+vendor/lib64/vendor.display.postproc@1.0.so|d7cbc0bc2021d223e9c6576bedcf90065fc24bf2
 
 # QMI
 etc/permissions/qti_libpermissions.xml
@@ -548,11 +548,11 @@ vendor/lib64/libqmiservices.so
 # QTI Telephony - from LA.UM.8.13.r1-08500-sm8250.0
 product/framework/qti-telephony-common.jar|76c6f526e82a56ac5bbc15b825b35fde991d49e6
 
-# Qualcomm Display Utils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+# Qualcomm Display Utils - from LA.UM.8.11.r1-03800-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|c9937c644ed4319890e6c75d0877f24607adff5c
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|ef77bab21bad3f992bdf32243cdd2f90f8b8f3ad
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|7f1087435b842b9e566477d37cfa29cf6ba40e53
 
 # Qualcomm Trusted Execution Environment (QTEE)
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
