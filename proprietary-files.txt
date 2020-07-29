@@ -319,12 +319,6 @@ vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|9f5c5e85d22ce85fd51b02c0b8fc03a996c3c390
 
-# Graphics - Gralloc-Mapper - from laurus-user 10 QKQ1.190910.002 20.6.23
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|8981bf6a014eff86006a55d41ba5239fa28c55a3
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so|d823745e69ce1bd9a154c8320f5f97d5764f4fd9
-vendor/lib/libgrallocutils.so|9ec92f93fbcdc50146307c457e9ab9712bae0da8
-vendor/lib64/libgrallocutils.so|3e0dc02e6b89bdfd04bf299bc289b3ed43fc38ac
-
 # Graphics - SDM - from LA.UM.8.11.r1-03800-NICOBAR.0
 vendor/lib64/libdisp-aba.so|88ad90c2af98bb5e340a64459df088c0a6e6437c
 vendor/lib64/libdpps.so|6f06bf0acaeb7e0c855eb70b835fa76440defdad
