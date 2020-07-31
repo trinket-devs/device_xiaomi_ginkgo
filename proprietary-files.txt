@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo's MIUI 20.7.3 China Beta package, unless pinned
+# Device proprietary files - from ginkgo's MIUI 20.7.30 China Beta package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1417,6 +1417,7 @@ vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i.so
 
 # Charger
 vendor/bin/hvdcp_opti
+vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # ConfigStore
