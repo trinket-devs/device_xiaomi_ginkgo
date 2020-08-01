@@ -12,9 +12,6 @@
 # (e.g. Google Camera App)
 /(vendor|system/vendor)/dsp/cdsp/fastrpc_shell_3        u:object_r:same_process_hal_file:s0
 
-# Insmod
-/(vendor|system/vendor)/bin/init\.insmod\.sh u:object_r:init-insmod-sh_exec:s0
-
 # IR
 /dev/spidev[0-9]\.1          u:object_r:lirc_device:s0
 

@@ -29,8 +29,6 @@ ro.miui.cust_variant                u:object_r:public_vendor_default_prop:s0
 # IR
 ro.lirc.dev                 u:object_r:lirc_prop:s0
 
-# Insmod
-vendor.all.devices.ready        u:object_r:vendor_device_prop:s0
 # Mlipay
 persist.sys.ifaa            u:object_r:ifaa_prop:s0
 persist.vendor.sys.pay.     u:object_r:ifaa_prop:s0

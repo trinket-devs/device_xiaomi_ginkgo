@@ -7,9 +7,6 @@ type vendor_fp_prop, property_type;
 # IR
 type lirc_prop, property_type;
 
-# Insmod
-type vendor_device_prop, property_type;
-
 # Mlipay
 type ifaa_prop, property_type;
 
