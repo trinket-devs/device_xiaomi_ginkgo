@@ -25,4 +25,7 @@ java_library {
         "app-compat-annotations",
         "unsupportedappusage",
     ],
+    aidl: {
+        local_include_dirs: ["src"],
+    },
 }
