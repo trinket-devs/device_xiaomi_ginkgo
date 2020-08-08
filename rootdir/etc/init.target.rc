@@ -60,10 +60,6 @@ on fs
     mkdir /mnt/vendor/persist/misys 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
 
-on post-fs
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
-
 on early-boot
     write /dev/ipa 1
 
