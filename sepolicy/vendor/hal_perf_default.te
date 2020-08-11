@@ -1,0 +1,2 @@
+allow hal_perf_default system_server:dir search;
+allow hal_perf_default system_server:file { getattr open read };
