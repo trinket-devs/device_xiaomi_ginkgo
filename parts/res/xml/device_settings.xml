@@ -47,6 +47,7 @@
 
         <Preference
             android:key="clear_speaker_settings" 
+            android:icon="@drawable/ic_speaker_cleaner_icon"
             android:title="@string/clear_speaker_title" >
             <intent 
                 android:action="android.intent.action.MAIN" 
