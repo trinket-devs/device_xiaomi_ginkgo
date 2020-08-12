@@ -611,7 +611,7 @@
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>40</item>
+        <item>25</item>
     </integer-array>
 
     <!-- Regex of wired ethernet ifaces -->
