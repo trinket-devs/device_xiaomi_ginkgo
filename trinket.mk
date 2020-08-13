@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
+    BluetoothQti \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     libbluetooth_qti \
