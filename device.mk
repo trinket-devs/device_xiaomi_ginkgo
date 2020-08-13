@@ -54,6 +54,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
 # NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.nxp.nfc.nq \
