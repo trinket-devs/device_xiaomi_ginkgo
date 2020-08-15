@@ -830,6 +830,8 @@ etc/init/wfdservice.rc
 etc/wfdconfigsink.xml
 -framework/WfdCommon.jar
 lib64/libFileMux.so
+lib64/libmmosal.so
+lib64/libmmparser_lite.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
 lib64/libwfdclient.so
@@ -848,6 +850,8 @@ lib64/libwfduibcsrcinterface.so
 lib64/libwfduibcsrc.so
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libFileMux.so
+lib/libmmosal.so
+lib/libmmparser_lite.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
 lib/libwfdaac.so
