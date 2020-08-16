@@ -25,7 +25,7 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">@*android:string/config_mainBuiltInDisplayCutout</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">29.089996dp</dimen>
+    <dimen name="status_bar_height_portrait">80.0px</dimen>
     <dimen name="status_bar_height_landscape">28.0dp</dimen>
     <dimen name="rounded_corner_radius_top">106px</dimen>
 
