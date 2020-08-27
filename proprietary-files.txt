@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo's MIUI 20.7.30 China Beta package, unless pinned
+# Device proprietary files - from ginkgo's MIUI 20.8.27 China Beta package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1280,7 +1280,6 @@ vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_arcsoftbokeh_lib.so
-vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_bokeh.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
@@ -1297,7 +1296,6 @@ vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_irs1645.so
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -1342,24 +1340,13 @@ vendor/lib/libmmcamera_isp_scaler_viewfinder46.so
 vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
-vendor/lib/libmmcamera_le2464c_eeprom.so
-vendor/lib/libmmcamera_le2464c_master_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
-vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so
-vendor/lib/libmmcamera_s5k3m2xm.so
-vendor/lib/libmmcamera_s5k3m2xx.so
-vendor/lib/libmmcamera_sony_imx298_eeprom.so
-vendor/lib/libmmcamera_sony_imx378_eeprom.so
 vendor/lib/libmmcamera_stillmore_lib.so
-vendor/lib/libmmcamera_sunny_gt24c64a_imx376_eeprom.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -2063,7 +2050,7 @@ vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
-vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 
 # Radio - IMS
 -product/app/uceShimService/uceShimService.apk
