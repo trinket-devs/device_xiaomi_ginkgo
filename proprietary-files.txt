@@ -338,10 +338,6 @@ vendor/lib64/libtinyxml2_1.so|0061bbae0a73101c9d5fc6a8d99c69674e265d6e
 vendor/lib/hw/vulkan.trinket.so|da8e458be5240ca672b4433c8417e014495c053f
 vendor/lib64/hw/vulkan.trinket.so|ee55fd7a3a4109cf913034cc2517f2d0dd661ec4
 
-# Hotword Enrollment - from cepheus
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|0741b5ada5d9da2227b4ff0bc77c3be7d6eb430b
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|78d1ef42447dcae6c506ee35a6bea0dd7612af7c
-
 # IO Prefetcher
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
