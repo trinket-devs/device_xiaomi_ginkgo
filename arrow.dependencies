@@ -1,0 +1,29 @@
+[
+    {
+        "repository":   "android_device_xiaomi_trinket-common",
+        "target_path":  "device/xiaomi/trinket-common"
+    },
+    {
+        "repository":   "android_kernel_xiaomi_ginkgo",
+        "target_path":  "kernel/xiaomi/ginkgo"
+    },
+    {
+        "repository":   "android_vendor_xiaomi_ginkgo",
+        "target_path":  "vendor/xiaomi/ginkgo"
+    },
+    {
+        "repository":   "android_vendor_xiaomi_trinket-common",
+        "target_path":  "vendor/xiaomi/trinket-common"
+    },
+    {
+        "repository":   "android_vendor_miuicamera",
+        "target_path":  "vendor/miuicamera",
+        "branch":       "arrow-10.0-ginkgo"
+    },
+    {
+        "remote":       "github",
+        "repository":   "kdrag0n/proton-clang",
+        "target_path":  "prebuilts/clang/host/linux-x86/clang-12.0",
+        "branch":       "master"
+    }
+]
