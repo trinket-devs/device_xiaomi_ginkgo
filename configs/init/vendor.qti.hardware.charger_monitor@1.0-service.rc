@@ -10,6 +10,7 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     user system
     group system wakelock
     capabilities BLOCK_SUSPEND WAKE_ALARM
+    writepid /dev/cpuset/system-background/tasks
     disabled
 
 service vendor.qti-chg-policy-sh /vendor/bin/init.qti.chg_policy.sh

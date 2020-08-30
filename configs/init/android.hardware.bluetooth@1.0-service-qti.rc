@@ -3,3 +3,4 @@ service vendor.bluetooth-1-0-qti /vendor/bin/hw/android.hardware.bluetooth@1.0-s
     user bluetooth
     group bluetooth system wakelock oem_2901
     capabilities BLOCK_SUSPEND NET_ADMIN
+    writepid /dev/cpuset/system-background/tasks

@@ -6,3 +6,4 @@ service vendor.capabilityconfigstore /vendor/bin/hw/vendor.qti.hardware.capabili
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

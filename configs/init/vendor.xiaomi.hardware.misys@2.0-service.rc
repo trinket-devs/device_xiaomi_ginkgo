@@ -2,3 +2,4 @@ service vendor.misys@2.0 /vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

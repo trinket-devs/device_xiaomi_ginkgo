@@ -14,6 +14,7 @@ service vendor.ipacm-diag /system/vendor/bin/ipacm-diag
     user radio
     socket ipacm_log_file dgram 660 radio radio
     group radio diag oem_2901
+    writepid /dev/cpuset/system-background/tasks
 
 on post-fs
 	start vendor.ipacm-diag

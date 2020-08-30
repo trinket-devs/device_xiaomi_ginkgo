@@ -2,3 +2,4 @@ service vendor.servicetracker-1-1 /vendor/bin/hw/vendor.qti.hardware.servicetrac
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

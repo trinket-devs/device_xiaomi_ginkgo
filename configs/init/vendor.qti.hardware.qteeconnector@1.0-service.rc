@@ -2,3 +2,4 @@ service qteeconnector-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.qteeconnector@1
     class hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

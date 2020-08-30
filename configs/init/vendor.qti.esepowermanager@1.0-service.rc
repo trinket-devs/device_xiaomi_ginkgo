@@ -2,3 +2,4 @@ service qti_esepowermanager_service /vendor/bin/hw/vendor.qti.esepowermanager@1.
     class hal
     user system
     group nfc system
+    writepid /dev/cpuset/system-background/tasks

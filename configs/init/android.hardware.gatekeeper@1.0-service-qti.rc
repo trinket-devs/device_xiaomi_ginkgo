@@ -2,3 +2,4 @@ service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qt
     class early_hal
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks

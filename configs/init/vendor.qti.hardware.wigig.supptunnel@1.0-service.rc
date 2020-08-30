@@ -9,6 +9,7 @@ service wigighalsvc /vendor/bin/wigighalsvc
     class hal
     user wifi
     group wifi
+    writepid /dev/cpuset/system-background/tasks
     disabled
 
 # wpa_supplicant instance for running WIGIG P2P under WIFI
@@ -60,4 +61,3 @@ on property:vendor.wigig.driver.probed=1
     chown system wifi /sys/class/net/wigig0/gro_flush_timeout
     chmod 0660 /sys/class/net/wigig0/device/wil6210/fst_config
     chown system wifi /sys/class/net/wigig0/device/wil6210/fst_config
-

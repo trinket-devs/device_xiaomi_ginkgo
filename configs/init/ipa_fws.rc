@@ -4,5 +4,5 @@
 #
 
 on post-fs
-write /dev/ipa 1
+    write /dev/ipa 1
 

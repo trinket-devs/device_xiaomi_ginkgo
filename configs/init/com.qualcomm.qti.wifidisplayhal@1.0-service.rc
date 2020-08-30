@@ -7,3 +7,4 @@ service wifidisplayhalservice /vendor/bin/wifidisplayhalservice
   class main
   user system
   group inet input audio media uhid
+  writepid /dev/cpuset/system-background/tasks

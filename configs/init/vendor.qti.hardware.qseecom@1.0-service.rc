@@ -12,3 +12,4 @@ service qseecom-service /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
     class hal
     user system
     group system drmrpc
+    writepid /dev/cpuset/system-background/tasks
