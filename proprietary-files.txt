@@ -72,11 +72,15 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 
+# Audio - Dirac - from jasmine-user-10-QKQ1.190910.002-V11.0.4.0.QDIMIXM
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 # Audio FX modules
 etc/permissions/audiosphere.xml
 framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libasphere.so
 
 # Audio ACDB
