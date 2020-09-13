@@ -5,3 +5,4 @@ type kcal_dev, sysfs_type, fs_type;
 type proc_touchpanel, fs_type, proc_type;
 type public_adsprpcd_file, file_type;
 type thermal_data_file, data_file_type, file_type;
+type vibrator_dev, sysfs_type, fs_type;

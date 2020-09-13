@@ -37,3 +37,6 @@
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?    u:object_r:camera_persist_file:s0
+
+# Vibrator
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,vibrator@5700/leds/vibrator/vtg_level u:object_r:vibrator_dev:s0
