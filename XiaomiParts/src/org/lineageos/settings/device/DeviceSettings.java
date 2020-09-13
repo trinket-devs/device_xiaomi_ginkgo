@@ -49,11 +49,11 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String CATEGORY_VIBRATOR = "vibration";
     public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
-    public static final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
+    public static final String VIBRATION_STRENGTH_PATH = "/sys/class/leds/vibrator/vtg_level";
 
     // value of vtg_min and vtg_max
-    public static final int MIN_VIBRATION = 116;
-    public static final int MAX_VIBRATION = 3596;
+    public static final int MIN_VIBRATION = 1504;
+    public static final int MAX_VIBRATION = 3544;
 
     private Preference mClearSpeakerPref;
 
