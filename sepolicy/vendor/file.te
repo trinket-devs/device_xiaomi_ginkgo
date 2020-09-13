@@ -8,3 +8,4 @@ type public_adsprpcd_file, file_type;
 type sysfs_battery_saver, fs_type, sysfs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type kcal_dev, sysfs_type, fs_type;
+type vibrator_dev, sysfs_type, fs_type;
