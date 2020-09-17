@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI 20.8.27 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 20.9.16 China Beta package, unless pinned
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
