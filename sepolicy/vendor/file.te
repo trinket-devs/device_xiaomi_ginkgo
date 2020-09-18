@@ -1,0 +1,1 @@
+type sysfs_battery_saver, fs_type, sysfs_type;

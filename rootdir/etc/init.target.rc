@@ -167,9 +167,13 @@ on boot
     chown system system /sys/class/leds/led:switch_1/brightness
     chown system system /sys/class/leds/flashlight/brightness
 
-    # D2TW
+    # DT2W
     chown system system /proc/tp_gesture
     chmod 0660 /proc/tp_gesture
+
+    # Kernelspace battery saver
+    chown system system /sys/module/battery_saver/parameters/enabled
+    chmod 0660 /sys/module/battery_saver/parameters/enabled
 
     # access permissions for FPC service
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq

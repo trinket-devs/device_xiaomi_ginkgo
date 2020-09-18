@@ -51,6 +51,7 @@
 #include "power-common.h"
 
 #define MIN_VAL(X,Y) ((X>Y)?(Y):(X))
+#define BATTERY_SAVER_TOGGLE "/sys/module/battery_saver/parameters/enabled"
 
 static int video_encode_hint_sent;
 
@@ -75,6 +76,11 @@ int power_hint_override(power_hint_t hint, void *data)
         case POWER_HINT_VIDEO_DECODE:
         {
             process_video_encode_hfr_hint(data);
+            return HINT_HANDLED;
+        }
+        case POWER_HINT_LOW_POWER:
+        {
+            sysfs_write(BATTERY_SAVER_TOGGLE, data ? "Y" : "N");
             return HINT_HANDLED;
         }
     }
