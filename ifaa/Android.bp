@@ -21,4 +21,8 @@ java_library {
         "src/**/*.java",
         "src/**/I*.aidl",
     ],
+    libs: [
+        "app-compat-annotations",
+        "unsupportedappusage",
+    ],
 }
