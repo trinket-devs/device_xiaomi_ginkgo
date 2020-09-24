@@ -59,8 +59,7 @@ static int camera_hint_ref_count;
 static void process_video_encode_hint(void *metadata);
 static void process_video_encode_hfr_hint(void *metadata);
 
-int  power_hint_override(struct power_module *module, power_hint_t hint,
-        void *data)
+int power_hint_override(power_hint_t hint, void *data)
 {
     switch(hint) {
         case POWER_HINT_VSYNC:
@@ -82,7 +81,7 @@ int  power_hint_override(struct power_module *module, power_hint_t hint,
     return HINT_NONE;
 }
 
-int  set_interactive_override(struct power_module *module, int on)
+int set_interactive_override(struct power_module *module, int on)
 {
     return HINT_HANDLED; /* to set hints for display on and off. Not in use now */
 }
