@@ -524,9 +524,6 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
-# QTI Telephony - from DRG
-product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
-
 # Qualcomm Display Utils - from LA.UM.8.11.r1-04300-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|c9937c644ed4319890e6c75d0877f24607adff5c
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|ef77bab21bad3f992bdf32243cdd2f90f8b8f3ad
