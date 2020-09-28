@@ -1390,7 +1390,7 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
 # NFC - from willow V11.0.9.0.PCXEUXM
 vendor/bin/nqnfcinfo|74e45f565d8be40a1377909b411465502dd366e7
-vendor/lib/libsn100u_fw.so|8f22d9b555acc25b501f1c48983e7d33547231f7
+vendor/lib/libsn100u_fw.so|987e60b447aa289402bfe120591b8ab9b5e4454e
 vendor/etc/sn100u_pnx_pcv.pnscr|709a2628cf83bbbed2760145db92d4300715efca
 vendor/etc/sn100u_pnx_ese_3.pnscr|90ce26e27519cc74122ab9b84bce17a41ec02d65
 vendor/etc/sn100u_pnx_ese_cplc.pnscr|6548e28fa2af9b9b0e68ebde14e0c84869a688e4
