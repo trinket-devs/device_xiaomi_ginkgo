@@ -58,7 +58,6 @@ on init
 on early-fs
     start vold
 
-
 on fs
     start hwservicemanager
     mount_all /vendor/etc/fstab.qcom --early
@@ -121,20 +120,6 @@ on boot
     chown system system /sys/kernel/qvr_external_sensor/fd
     start rmt_storage
     start rfs_access
-
-    # For cpusets initialize for Silver Only first and then Silver + Gold
-    # Silver Only configuration cannot work with 0-7
-    write /dev/cpuset/top-app/cpus 0-3
-    write /dev/cpuset/audio-app/cpus 1-2
-    write /dev/cpuset/foreground/cpus 0-3
-    write /dev/cpuset/foreground/boost/cpus 0-3
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-7
 
     # Add a cpuset for the camera daemon
     # We want all cores for camera
