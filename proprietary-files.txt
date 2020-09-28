@@ -1314,8 +1314,8 @@ vendor/lib/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 
-# Charger
-bin/charger
+# Charger - from miui_CMI_20.9.28_171a6c0851_11.0.zip
+bin/charger|c745c3febb01b2b6a868a30ddb7bd8c1c343b3e7
 
 # Display calibration
 vendor/etc/qdcm_calib_data_ft8719_video_mode_dsi_huaxing_panel.xml
