@@ -363,6 +363,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
