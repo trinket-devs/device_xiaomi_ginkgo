@@ -1,0 +1,10 @@
+allow vendor_qti_init_shell configfs:dir write;
+
+# Persist context hack
+allow vendor_qti_init_shell vendor_persist_audio_file:dir { read open search getattr relabelfrom relabelto };
+allow vendor_qti_init_shell vendor_persist_sensors_file:dir { read open search getattr relabelfrom relabelto };
+allow vendor_qti_init_shell vendor_persist_sensors_file:file { read getattr relabelfrom relabelto };
+allow vendor_qti_init_shell vendor_persist_sensors_file:fifo_file { read getattr relabelfrom relabelto };
+allow vendor_qti_init_shell unlabeled:dir { read open search getattr relabelfrom relabelto };
+allow vendor_qti_init_shell unlabeled:file { read getattr relabelfrom relabelto };
+allow vendor_qti_init_shell unlabeled:fifo_file { read getattr relabelfrom relabelto };

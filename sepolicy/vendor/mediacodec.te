@@ -1,1 +1,1 @@
-allow mediacodec persist_audio_file:dir search;
+allow mediacodec vendor_persist_audio_file:dir search;

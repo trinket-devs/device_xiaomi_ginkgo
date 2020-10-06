@@ -1,6 +1,6 @@
 # Allow appdomain to get persist_camera_prop
 get_prop(appdomain, vendor_camera_prop)
-get_prop(appdomain, persist_camera_prop)
+get_prop(appdomain, vendor_persist_camera_prop)
 
 # allow apps to read battery status
 r_dir_file(untrusted_app, sysfs_battery_supply)

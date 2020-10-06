@@ -1,5 +1,5 @@
-allow hal_bluetooth_default wifi_vendor_data_file:dir getattr;
+allow hal_bluetooth_default vendor_wifi_vendor_data_file:dir getattr;
 allow hal_bluetooth_default vendor_bt_data_file:dir r_dir_perms;
 
 # disable logspam
-dontaudit hal_bluetooth_default diag_device:chr_file { read write };
+dontaudit hal_bluetooth_default vendor_diag_device:chr_file { read write };

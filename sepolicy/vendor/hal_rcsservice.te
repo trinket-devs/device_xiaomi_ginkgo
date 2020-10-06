@@ -1,2 +1,0 @@
-allow hal_rcsservice mnt_vendor_file:dir getattr;
-allow hal_rcsservice persist_audio_file:dir getattr;

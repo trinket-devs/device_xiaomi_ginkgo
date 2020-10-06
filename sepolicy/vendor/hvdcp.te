@@ -1,1 +1,0 @@
-allow hvdcp mnt_vendor_file:dir getattr;

@@ -1,2 +1,0 @@
-# disable logspam
-dontaudit ims diag_device:chr_file { read write };

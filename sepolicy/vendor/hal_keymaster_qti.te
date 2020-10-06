@@ -1,2 +1,0 @@
-allow hal_keymaster_qti mnt_vendor_file:dir getattr;
-allow hal_keymaster_qti persist_audio_file:dir getattr;
