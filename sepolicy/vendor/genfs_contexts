@@ -1,2 +1,5 @@
 genfscon sysfs /touchpanel u:object_r:sysfs_touchpanel:s0
 genfscon sysfs /module/battery_saver/parameters/enabled u:object_r:sysfs_battery_saver:s0
+
+# USB fastcharge
+genfscon sysfs /kernel/fast_charge/force_fast_charge      u:object_r:sysfs_fcharge:s0
