@@ -50,6 +50,10 @@
     <string name="proximity_wake_title">Proximity wake</string>
     <string name="proximity_wake_enable_summary">Wake device on hand wave</string>
 
+    <!-- Wake on gesture -->
+    <string name="wake_on_gesture_title">Wake up on gestures</string>
+    <string name="wake_on_gesture_summary">Wake the device instead of pulsing notifications on gesture events</string>
+
     <!-- Dialog texts -->
     <string name="dialog_ok">OK</string>
 
