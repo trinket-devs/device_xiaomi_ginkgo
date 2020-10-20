@@ -131,9 +131,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := sdllvm
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 
-# Keystore
-TARGET_PROVIDES_KEYMASTER := true
-
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
