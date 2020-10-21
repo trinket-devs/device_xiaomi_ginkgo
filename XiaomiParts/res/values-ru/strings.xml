@@ -20,7 +20,7 @@
     <!-- Dirac settings -->
     <string name="dirac_title">Улучшение звука Mi</string>
     <string name="dirac_summary">Улучшение качества звука</string>
-    <string name="dirac_headset_title"Тип наушниковe</string>
+    <string name="dirac_headset_title">Тип наушников</string>
     <string name="dirac_preset_title">Выберите настройку</string>
 
     <!-- Dirac settings: Headset types -->
@@ -83,7 +83,7 @@
     <string name="saturation">Насыщенность</string>
     <string name="value">Значение</string>
     <string name="contrast">Контрастность</string>
-    <string name="hue">Hue</string>
+    <string name="hue">Оттенок</string>
     <string name="grayscale">Оттенки серого</string>
 
     <!-- Presets For KCAL -->
@@ -122,6 +122,6 @@
 
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Выбрать новое значение</string>
-    <string name="default_value">Default Value</string>
+    <string name="default_value">Значение по умолчанию</string>
     <string name="edit_hint">Значение между %1$d и %2$d</string>
 </resources>
