@@ -48,7 +48,7 @@
     <string name="dirac_headset_earphone">Mi Earphones</string>
 
     <!-- Dirac settings: Equalizer presets -->
-    <string name="dirac_preset_default">>За замовчуванням</string>
+    <string name="dirac_preset_default">За замовчуванням</string>
     <string name="dirac_preset_rock">Рок</string>
     <string name="dirac_preset_jazz">Джаз</string>
     <string name="dirac_preset_pop">Поп</string>
@@ -109,16 +109,16 @@
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Очищення динаміка</string>
     <string name="clear_speaker_summary">Включає 30 секундний звук, щоб очистити динамік</string>
-    <string name="clear_speaker_description">Запустіть цю функцію один або два рази, якщо ви виявили що ваш динамік злегка забруднене пилом. І також встановіть максимальну гучність мультимедіа.\n\nЯкщо динамік сильно забруднений, запустіть цю функцію 2-5 разів, при цьому струшуючи пристрої</string>
+    <string name="clear_speaker_description">Запустіть цю функцію один або два рази, якщо ви виявили що ваш динамік забруднений пилом. І також встановіть максимальну гучність мультимедіа.\n\nЯкщо динамік сильно забруднений, запустіть цю функцію 2-5 разів, при цьому струшуючи пристрої</string>
 
     <!-- USB fastcharge -->
     <string name="usb_fastcharge_title">Швидка зарядка по USB</string>
-    <string name="fastcharge_title">Включити швидку зарядку по USB</string>
+    <string name="fastcharge_title">Увiмкнути швидку зарядку по USB</string>
     <string name="fastcharge_summary">Зарядка до 900 мА при підключенні до комп'ютера через порт USB 3.0</string>
 
     <!-- Vibration -->
     <string name="vibration_title">Вібрація</string>
-    <string name="vibration_strength_title">сила вібрації</string>
+    <string name="vibration_strength_title">Сила вібрації</string>
 
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Вибрати нове значення</string>
