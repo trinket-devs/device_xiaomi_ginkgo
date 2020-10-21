@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The Xiaomi-SDM660 Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="advanced_settings">Налаштування Xiaomi</string>
+    <string name="advanced_settings_summary">Додаткові налаштування</string>
+
+    <!--  Audio -->
+    <string name="audio_title"Звук</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Поліпшення звуку Mi</string>
+    <string name="dirac_summary">Поліпшення якості звуку</string>
+    <string name="dirac_headset_title">Тип навушників</string>
+    <string name="dirac_preset_title">Виберіть настройку</string>
+
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_default">По умолчанию</string>
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general">Вкладыши</string>
+    <string name="dirac_headset_general_inear">Вакуумные</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_headphone">Mi Headphones</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">По умолчанию</string>
+    <string name="dirac_preset_rock">Рок</string>
+    <string name="dirac_preset_jazz">Джаз</string>
+    <string name="dirac_preset_pop">Поп</string>
+    <string name="dirac_preset_classical">Классика</string>
+    <string name="dirac_preset_hiphop">Хип хоп</string>
+    <string name="dirac_preset_blues">Блюз</string>
+    <string name="dirac_preset_electronic">Электронная</string>
+    <string name="dirac_preset_country">Кантри</string>
+    <string name="dirac_preset_dance">Танцевальная</string>
+    <string name="dirac_preset_metal">Металл</string>
+
+    <!-- Display -->
+    <string name="display_title">Дисплей</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Ambient Display</string>
+
+    <!-- KCAL -->
+    <string name="device_kcal_title">Калибровка цвета дисплея</string>
+    <string name="advanced_settings_kcal">Калибровка цвета дисплея</string>
+    <string name="cat_colormanagement">Настройки цвета</string>
+    <string name="cat_calibration">Калибровка дисплея</string>
+
+    <string name="kcal_enabled">Вкл</string>
+    <string name="kcal_disabled">Выкл</string>
+    <string name="set_on_boot">Установить при загрузке</string>
+    <string name="color_red">Красный</string>
+    <string name="color_green">Зеленый</string>
+    <string name="color_blue">Синий</string>
+    <string name="color_minimum">Минимум</string>
+    <string name="saturation">Насыщенность</string>
+    <string name="value">Значение</string>
+    <string name="contrast">Контрастность</string>
+    <string name="hue">Оттенок</string>
+    <string name="grayscale">Оттенки серого</string>
+
+    <!-- Presets For KCAL -->
+    <string name="presets_dialog_title">Выбрать предустановку</string>
+    <string name="preset_default">По умолчанию</string>
+    <string name="preset_version_1">Версия 1</string>
+    <string name="preset_version_2">Версия 2</string>
+    <string name="preset_version_3">Версия 3</string>
+    <string name="preset_triluminous">Трілумінозний</string>
+    <string name="preset_deep_black_white">Глибокий чорний і білий</string>
+    <string name="preset_deep_natural">Глибокий натуральний</string>
+    <string name="preset_cool_amoled">Крутий Амолед</string>
+    <string name="preset_extreme_amoled">Екстримальний Амолед</string>
+    <string name="preset_warm_amoled">Теплий амолед</string>
+    <string name="preset_hybrid_mamba">Гібридна мамба</string>
+
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Сбросить</string>
+
+    <!-- Speaker -->
+    <string name="speaker_category">Динамик</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динамика</string>
+    <string name="clear_speaker_summary">Включает 30 секундный звук, чтобы очистить динамик</string>
+    <string name="clear_speaker_description">Запустите эту функцию один или два раза, если вы обнаружили что ваш динамик слегка загрязнен пылью. И также установите максимальную громкость мультимедиа.\n\nЕсли динамик сильно загрязнен, запустите эту функцию 2-5 раз, при этом встряхивая устройства</string>
+
+    <!-- USB fastcharge -->
+    <string name="usb_fastcharge_title">Быстрая зарядка по USB</string>
+    <string name="fastcharge_title">Включить быструю зарядку по USB</string>
+    <string name="fastcharge_summary">Зарядка до 900 мА при подключении к компьютеру через порт USB 3.0</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Вибрация</string>
+    <string name="vibration_strength_title">Сила вибрации</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Выбрать новое значение</string>
+    <string name="default_value">Значение по умолчанию</string>
+    <string name="edit_hint">Значение между %1$d и %2$d</string>
+</resources>
