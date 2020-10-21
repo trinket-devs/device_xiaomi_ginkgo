@@ -24,12 +24,12 @@
     <string name="dirac_preset_title">Виберіть настройку</string>
 
     <!-- Dirac settings: Headset types -->
-    <string name="dirac_headset_default">По умолчанию</string>
+    <string name="dirac_headset_default">За замовчуванням</string>
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
     <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
     <string name="dirac_headset_piston_1">Mi Piston-1</string>
-    <string name="dirac_headset_general">Вкладыши</string>
-    <string name="dirac_headset_general_inear">Вакуумные</string>
+    <string name="dirac_headset_general">Вкладиші</string>
+    <string name="dirac_headset_general_inear">Вакуумні</string>
     <string name="dirac_headset_piston_basic">Basic Edition</string>
     <string name="dirac_headset_piston_2">Mi Piston-2</string>
     <string name="dirac_headset_piston_standard">Standard Edition</string>
@@ -48,17 +48,17 @@
     <string name="dirac_headset_earphone">Mi Earphones</string>
 
     <!-- Dirac settings: Equalizer presets -->
-    <string name="dirac_preset_default">По умолчанию</string>
+    <string name="dirac_preset_default">>За замовчуванням</string>
     <string name="dirac_preset_rock">Рок</string>
     <string name="dirac_preset_jazz">Джаз</string>
     <string name="dirac_preset_pop">Поп</string>
     <string name="dirac_preset_classical">Классика</string>
-    <string name="dirac_preset_hiphop">Хип хоп</string>
+    <string name="dirac_preset_hiphop">Хіп-хоп</string>
     <string name="dirac_preset_blues">Блюз</string>
-    <string name="dirac_preset_electronic">Электронная</string>
-    <string name="dirac_preset_country">Кантри</string>
-    <string name="dirac_preset_dance">Танцевальная</string>
-    <string name="dirac_preset_metal">Металл</string>
+    <string name="dirac_preset_electronic">Електронна</string>
+    <string name="dirac_preset_country">Кантрі</string>
+    <string name="dirac_preset_dance">Танцювальна</string>
+    <string name="dirac_preset_metal">Метал</string>
 
     <!-- Display -->
     <string name="display_title">Дисплей</string>
@@ -68,30 +68,30 @@
     <string name="advanced_doze_summary">Ambient Display</string>
 
     <!-- KCAL -->
-    <string name="device_kcal_title">Калибровка цвета дисплея</string>
-    <string name="advanced_settings_kcal">Калибровка цвета дисплея</string>
-    <string name="cat_colormanagement">Настройки цвета</string>
-    <string name="cat_calibration">Калибровка дисплея</string>
+    <string name="device_kcal_title">Калібрування кольору дисплея</string>
+    <string name="advanced_settings_kcal">Калібрування кольору дисплея</string>
+    <string name="cat_colormanagement">Налаштування кольору</string>
+    <string name="cat_calibration">Калібрування дисплея</string>
 
-    <string name="kcal_enabled">Вкл</string>
-    <string name="kcal_disabled">Выкл</string>
-    <string name="set_on_boot">Установить при загрузке</string>
-    <string name="color_red">Красный</string>
-    <string name="color_green">Зеленый</string>
-    <string name="color_blue">Синий</string>
-    <string name="color_minimum">Минимум</string>
-    <string name="saturation">Насыщенность</string>
-    <string name="value">Значение</string>
-    <string name="contrast">Контрастность</string>
-    <string name="hue">Оттенок</string>
-    <string name="grayscale">Оттенки серого</string>
+    <string name="kcal_enabled">Увімкнути</string>
+    <string name="kcal_disabled">Виключено</string>
+    <string name="set_on_boot">Встановити при завантаженні</string>
+    <string name="color_red">Червоний</string>
+    <string name="color_green">Зелений</string>
+    <string name="color_blue">Синій</string>
+    <string name="color_minimum">Мінімум</string>
+    <string name="saturation">Насиченість</string>
+    <string name="value">Значення</string>
+    <string name="contrast">Контрастність</string>
+    <string name="hue">Відтінок</string>
+    <string name="grayscale">Відтінки сірого</string>
 
     <!-- Presets For KCAL -->
-    <string name="presets_dialog_title">Выбрать предустановку</string>
-    <string name="preset_default">По умолчанию</string>
-    <string name="preset_version_1">Версия 1</string>
-    <string name="preset_version_2">Версия 2</string>
-    <string name="preset_version_3">Версия 3</string>
+    <string name="presets_dialog_title">Вибрати попередню</string>
+    <string name="preset_default">За замовчуванням</string>
+    <string name="preset_version_1">Версія 1</string>
+    <string name="preset_version_2">Версія 2</string>
+    <string name="preset_version_3">Версія 3</string>
     <string name="preset_triluminous">Трілумінозний</string>
     <string name="preset_deep_black_white">Глибокий чорний і білий</string>
     <string name="preset_deep_natural">Глибокий натуральний</string>
@@ -101,27 +101,27 @@
     <string name="preset_hybrid_mamba">Гібридна мамба</string>
 
     <string name="kcal_presets">@string/presets_dialog_title</string>
-    <string name="kcal_reset">Сбросить</string>
+    <string name="kcal_reset">Скинути</string>
 
     <!-- Speaker -->
-    <string name="speaker_category">Динамик</string>
+    <string name="speaker_category">Динамік</string>
 
     <!-- Clear Speaker -->
-    <string name="clear_speaker_title">Очистка динамика</string>
-    <string name="clear_speaker_summary">Включает 30 секундный звук, чтобы очистить динамик</string>
-    <string name="clear_speaker_description">Запустите эту функцию один или два раза, если вы обнаружили что ваш динамик слегка загрязнен пылью. И также установите максимальную громкость мультимедиа.\n\nЕсли динамик сильно загрязнен, запустите эту функцию 2-5 раз, при этом встряхивая устройства</string>
+    <string name="clear_speaker_title">Очищення динаміка</string>
+    <string name="clear_speaker_summary">Включає 30 секундний звук, щоб очистити динамік</string>
+    <string name="clear_speaker_description">Запустіть цю функцію один або два рази, якщо ви виявили що ваш динамік злегка забруднене пилом. І також встановіть максимальну гучність мультимедіа.\n\nЯкщо динамік сильно забруднений, запустіть цю функцію 2-5 разів, при цьому струшуючи пристрої</string>
 
     <!-- USB fastcharge -->
-    <string name="usb_fastcharge_title">Быстрая зарядка по USB</string>
-    <string name="fastcharge_title">Включить быструю зарядку по USB</string>
-    <string name="fastcharge_summary">Зарядка до 900 мА при подключении к компьютеру через порт USB 3.0</string>
+    <string name="usb_fastcharge_title">Швидка зарядка по USB</string>
+    <string name="fastcharge_title">Включити швидку зарядку по USB</string>
+    <string name="fastcharge_summary">Зарядка до 900 мА при підключенні до комп'ютера через порт USB 3.0</string>
 
     <!-- Vibration -->
-    <string name="vibration_title">Вибрация</string>
-    <string name="vibration_strength_title">Сила вибрации</string>
+    <string name="vibration_title">Вібрація</string>
+    <string name="vibration_strength_title">сила вібрації</string>
 
     <!-- CustomSeekBarPreference -->
-    <string name="edit_value">Выбрать новое значение</string>
-    <string name="default_value">Значение по умолчанию</string>
-    <string name="edit_hint">Значение между %1$d и %2$d</string>
+    <string name="edit_value">Вибрати нове значення</string>
+    <string name="default_value">Значення за замовчуванням</string>
+    <string name="edit_hint">Значення між %1$d i %2$d</string>
 </resources>
