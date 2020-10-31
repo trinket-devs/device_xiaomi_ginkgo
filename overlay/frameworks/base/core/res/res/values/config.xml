@@ -554,6 +554,8 @@
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+        <item>"/data/dalvik-cache/arm64/system@system_ext@priv-app@SystemUI@SystemUI.apk@classes.dex"</item>
+        <item>"/data/dalvik-cache/arm64/system@system_ext@priv-app@SystemUI@SystemUI.apk@classes.vdex"</item>
     </string-array>
 
     <!-- List of files pinned by the Pinner Service with the JIT Zygote boot image b/119800099 -->
