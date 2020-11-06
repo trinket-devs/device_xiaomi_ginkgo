@@ -16,9 +16,6 @@
 */
 -->
 <resources>
-    <!-- define status bar extra padding -->
-    <dimen name="status_bar_extra_padding">15dp</dimen>
-
-    <!-- for 20dp of padding at 2.75px/dp at default density -->
-    <dimen name="rounded_corner_content_padding">55px</dimen>
+    <!-- for 13dp of padding at 2.75px/dp at default density -->
+    <dimen name="rounded_corner_content_padding">36px</dimen>
 </resources>
