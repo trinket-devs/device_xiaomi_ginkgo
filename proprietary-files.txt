@@ -1388,26 +1388,9 @@ vendor/lib64/libmlipay.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
-# NFC - from willow V11.0.9.0.PCXEUXM
-vendor/bin/nqnfcinfo|74e45f565d8be40a1377909b411465502dd366e7
+# NFC - from LA.UM.9.11.r1-02100-NICOBAR.0
+vendor/bin/nqnfcinfo|383844eea1225e99edf4e31bf58ed62ac38dda50
 vendor/lib/libsn100u_fw.so|987e60b447aa289402bfe120591b8ab9b5e4454e
-vendor/etc/sn100u_pnx_pcv.pnscr|709a2628cf83bbbed2760145db92d4300715efca
-vendor/etc/sn100u_pnx_ese_3.pnscr|90ce26e27519cc74122ab9b84bce17a41ec02d65
-vendor/etc/sn100u_pnx_ese_cplc.pnscr|6548e28fa2af9b9b0e68ebde14e0c84869a688e4
-vendor/etc/sn100u_ese_disableIsoRead.pnscr|47b46b8510a4e630ad7659fb61c7464a5e79056d
-vendor/etc/sn100u_pnx_cui.pnscr|96ef69f32c71a1d9517bdaa2862d07fbb096e2ff
-vendor/etc/sn100u_pnx_ese_keyset.pnscr|2748af4af1c6e4c1156c6af4e06f208db7ca2f01
-vendor/etc/sn100u_ese_disableIso.pnscr|aed6cf4b00a0b6b7ef2dbf541f790805cec6be5c
-vendor/etc/sn100u_pnx_ndi.pnscr|2fdded0f12940de9115a4070dfb6e09a48d8943b
-vendor/etc/sn100u_pnx_chr.pnscr|d02067de3a279c62c61d8910caa0beed303378c6
-vendor/etc/sn100u_nfcon.pnscr|a320c8cc973695f14e5a86cb392b94980df4eb55
-vendor/etc/sn100u_pnx_ese_aclog.pnscr|93d120cde91895f324b38805e93d13ad1110e1bf
-vendor/etc/sn100u_pnx_ese_sn.pnscr|3fd88326471e3d64366e91699c72d543f33866c5
-vendor/etc/sn100u_pnx_ese_fabkey.pnscr|b2ff3ed93a0bb1c57df58b27c0b6fd41fcc6f6e4
-vendor/etc/sn100u_bootup.pnscr|ef641bf68ae831f38552bfeb1c54b3f20b2421f6
-vendor/etc/sn100u_pnx_sst.pnscr|4937e0750dd61933512442a7e06aff76b8b01f02
-vendor/etc/sn100u_pnx_ese_free.pnscr|2af6a512000e27f5eae5c7cbf43b77b75569a4e9
-vendor/libnfc-nxp_RF.conf|231f0999d00b5abcefc99d4ae39ecc6808e53904
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
