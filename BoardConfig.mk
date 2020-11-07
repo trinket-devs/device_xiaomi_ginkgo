@@ -69,4 +69,3 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk
--include vendor/miuicamera/common/BoardConfigVendor.mk

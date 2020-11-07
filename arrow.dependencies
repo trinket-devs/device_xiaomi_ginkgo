@@ -16,11 +16,6 @@
         "target_path":  "vendor/xiaomi/trinket-common"
     },
     {
-        "repository":   "android_vendor_miuicamera",
-        "target_path":  "vendor/miuicamera",
-        "branch":       "arrow-10.0-ginkgo"
-    },
-    {
         "remote":       "github",
         "repository":   "kdrag0n/proton-clang",
         "target_path":  "prebuilts/clang/host/linux-x86/clang-12.0",
