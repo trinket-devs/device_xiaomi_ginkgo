@@ -410,12 +410,15 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail_vendor \
     libdisplayconfig.vendor \
     libnl \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor \
-    libwfdaac
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

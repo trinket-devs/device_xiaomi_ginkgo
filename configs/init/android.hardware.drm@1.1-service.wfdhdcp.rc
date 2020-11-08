@@ -6,4 +6,4 @@
 service wfdhdcphalservice /vendor/bin/wfdhdcphalservice
     class main
     user system
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow

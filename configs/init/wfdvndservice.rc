@@ -8,4 +8,4 @@ service wfdvndservice /vendor/bin/wfdvndservice
   class main
   user system
   group inet
-  writepid /dev/cpuset/system-background/tasks
+  task_profiles ServiceCapacityLow
