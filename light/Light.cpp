@@ -63,7 +63,7 @@ static int get(std::string path) {
 
 static int getMaxBrightness(std::string path) {
     int value = get(path);
-    ALOGW("Got max brightness %d", value);
+    ALOGV("Got max brightness %d", value);
     return value;
 }
 
