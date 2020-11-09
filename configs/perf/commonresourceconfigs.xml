@@ -73,8 +73,8 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x12" Node="/dev/cpuset/background/cpus" />
         <Minor OpcodeValue="0x13" Node="/proc/sys/kernel/sched_freq_aggregate" />
         <Minor OpcodeValue="0x14" Node="/proc/sys/kernel/sched_enable_thread_grouping" />
-        <Minor OpcodeValue="0x15" Node="/proc/sys/kernel/sched_upmigrate" />
-        <Minor OpcodeValue="0x16" Node="/proc/sys/kernel/sched_downmigrate" />
+        <Minor OpcodeValue="0x15" Node="/proc/sys/kernel/sched_group_upmigrate" />
+        <Minor OpcodeValue="0x16" Node="/proc/sys/kernel/sched_group_downmigrate" />
         <!-- sched_freq_aggr_threshold perflock will have contention with sched_boost level 3,
         so disable this resource for the target which is going to use sched boost 3 level.-->
         <Minor OpcodeValue="0x17" Node="/proc/sys/kernel/sched_freq_aggregate_threshold" />
