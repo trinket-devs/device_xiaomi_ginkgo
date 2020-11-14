@@ -125,8 +125,6 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
 # ConfigStore
--vendor/lib/libplatformconfig.so
--vendor/lib64/libplatformconfig.so
 product/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
 product/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
