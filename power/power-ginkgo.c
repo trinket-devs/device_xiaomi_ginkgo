@@ -87,7 +87,7 @@ int power_hint_override(power_hint_t hint, void *data)
     return HINT_NONE;
 }
 
-int set_interactive_override(struct power_module *module, int on)
+int set_interactive_override(int on)
 {
     return HINT_HANDLED; /* to set hints for display on and off. Not in use now */
 }
