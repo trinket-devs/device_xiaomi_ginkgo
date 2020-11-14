@@ -49,6 +49,7 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 
 # Power
 BOARD_POWER_CUSTOM_BOARD_LIB := libpower_ginkgo
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
