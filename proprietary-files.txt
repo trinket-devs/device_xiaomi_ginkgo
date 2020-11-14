@@ -305,20 +305,31 @@ vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
 vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
 vendor/lib/librs_adreno_sha1.so|4e118237d8df196c85a95fa97ea81104d7236fc2
 
-# Graphics - SDM - from LA.UM.8.11.r1-04300-NICOBAR.0
-vendor/lib64/libdisp-aba.so|88ad90c2af98bb5e340a64459df088c0a6e6437c
-vendor/lib64/libdpps.so|8a8c047e1cf894c3b0f30ce09fe7881b4289609c
-vendor/lib64/libdisplayqos.so|eadfe4288da708a3f9d43f84222a22a22b83318e
-vendor/lib64/libhdr_tm.so|ab20fed34db2d55bc65a6082a5967e719d0e1746
-vendor/lib64/libqseed3.so|3be58bd9142af303006fad8a4b8d22b3768d44c2
-vendor/lib64/libsdedrm.so|19a74c684b7c102c61a520ab238514218bd47b0d
-vendor/lib64/libsdm-color.so|c7144e8d1a04de11947030a8fd0d5940104ed742
-vendor/lib64/libsdm-colormgr-algo.so|0afc608b23a702dedf07e6507c2eb902914eb46a
-vendor/lib64/libsdm-diag.so|eca5c410849c8fcc013f935dd92e2e0af362c395
-vendor/lib64/libsdm-disp-vndapis.so|78f59089f14a87a98676f24a7046df60e3ce4857
-vendor/lib64/libsdmextension.so|053e4861a804f9b495d7473fbf5589e59c0a427e
-vendor/lib64/libtinyxml.so|2936c16dd8641ca9a27951c55ec0f6d2f4fc19c0
-vendor/lib64/libtinyxml2_1.so|0061bbae0a73101c9d5fc6a8d99c69674e265d6e
+# Graphics - SDM - from LA.UM.9.11.r1-02100-NICOBAR.0
+vendor/lib/libdisp-aba.so|3f78e36e0a16668a45462070e4243bbdcf1bcdbb
+vendor/lib/libdisplayqos.so|3937fe7575fa86815e2f920a0fe0b4c0cbe910d3
+vendor/lib/libdpps.so|462677d0802fafbf78ce0efacd0a823273124911
+vendor/lib/libhdr_tm.so|e8697773d1868876f36e98dc68500919668c9acb
+vendor/lib/libqseed3.so|4bd5267c3a360de23a65cdb8b3996191851e9648
+vendor/lib/libsdedrm.so|002a4df48537d84f3d950ed9af549c2f6ac2ef39
+vendor/lib/libsdm-color.so|6a4d79c1cc79809afa72baddac9e5f23c6a50cec
+vendor/lib/libsdm-colormgr-algo.so|881ffdf26992858dcc3ac6024cf1c6deeaed0cfe
+vendor/lib/libsdm-diag.so|d173de1d03f266e8e38d81eb9e08b78d4c180c70
+vendor/lib/libsdm-disp-vndapis.so|2aa9e2c14b069b7acbe339499f3a35714dcc5c8a
+vendor/lib/libsdmextension.so|e222fb7365ab2845da4533f5b259f7b829af17fa
+vendor/lib/libtinyxml2_1.so|f00b8f6218271d57fd1fb67b192db956e42e66fb
+vendor/lib64/libdisp-aba.so|b7c8567c3079372479c85834ba1aab4e2eee5522
+vendor/lib64/libdisplayqos.so|13aa5350813e6b3b619ba26a4854e512302e2d97
+vendor/lib64/libdpps.so|589892b909afb835e9a953aa3dc530d552683961
+vendor/lib64/libhdr_tm.so|e4638c3bf21685b84650c5858bafe384ab2118ff
+vendor/lib64/libqseed3.so|1395834daf3c6cd07acbdbc44110decb3be362c2
+vendor/lib64/libsdedrm.so|6fc5f0623502de3745204f64ff695f27711310af
+vendor/lib64/libsdm-color.so|afd10b2103bed34c16ce00893d4e58fd779d05ea
+vendor/lib64/libsdm-colormgr-algo.so|11b65733d87ff65633a5fe8f4207dde12391625c
+vendor/lib64/libsdm-diag.so|55dafc05ba68666f10412a534f7122d7f45bf403
+vendor/lib64/libsdm-disp-vndapis.so|9ab6725a5efba29b77d1d6ab33e10e3ff3296960
+vendor/lib64/libsdmextension.so|d9cbfa43999c86018c84798b2b6819781ae87077
+vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
 
 # Graphics - Vulkan - from LA.UM.8.11.r1-04300-NICOBAR.0
 vendor/lib/hw/vulkan.trinket.so|56cffb41b29e21432e81ef89b35a18124e1522b1
@@ -467,26 +478,26 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Postprocessing - from LA.UM.8.11.r1-04300-NICOBAR.0
-etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
--framework/com.qti.snapdragon.sdk.display.jar|d66820631a3ee4edff80e584f3976a3919f5e93a
--product/app/colorservice/colorservice.apk|cbca1e8275ad0a913c17e968639446b3428acc2a
-product/lib/libsd_sdk_display.qti.so|7c6da97fd06796a2abedde8082c5935f545565d4
-product/lib/libsdm-disp-apis.qti.so|13b28385c9398d8f75663a94d89aa1be03659f3e
-product/lib64/libsd_sdk_display.qti.so|fef4f3b3f36063d6c709ed692d1ec01ccddcfcfe
-product/lib64/libsdm-disp-apis.qti.so|58eef47e6617446fc4f30769d21fa82de233d613
-vendor/bin/hw/vendor.display.color@1.0-service|5acec3bd582419c68678463c28daa5c60d9bd315
-vendor/bin/ppd|59248d1ee131502c15b494d9b4cd188989cde085
-vendor/lib/vendor.display.color@1.0.so|3d5ebce380c46116026baef0fd6957ce25d21439
-vendor/lib/vendor.display.color@1.1.so|3236167da804c4464077947ede61d2902e671628
-vendor/lib/vendor.display.color@1.2.so|1a29be0dccd6b654d2a6149a95a68139e028e95b
-vendor/lib/vendor.display.color@1.3.so|62b91dbdfb886091167759a36be0a20bb29442c7
-vendor/lib/vendor.display.postproc@1.0.so|ef1a55d5c17e5eaa6b37b7be4c6221934596dee2
-vendor/lib64/vendor.display.color@1.0.so|1a93f22cb8e9ed266caa3dbf516df76b558e803a
-vendor/lib64/vendor.display.color@1.1.so|8d2de621f8b5c84b9c6dbf58ab1e0e87afb79488
-vendor/lib64/vendor.display.color@1.2.so|825f77d27eab7769d7809b150bdbfe68ea27397a
-vendor/lib64/vendor.display.color@1.3.so|f3d417b548fc48b9fab4be6209c100712799cfa6
-vendor/lib64/vendor.display.postproc@1.0.so|d7cbc0bc2021d223e9c6576bedcf90065fc24bf2
+# Postprocessing - from LA.UM.9.11.r1-02100-NICOBAR.0
+product/etc/permissions/com.qti.snapdragon.sdk.display.xml|4c71d110023088c6ea8072227c714416e2792d75
+-product/framework/com.qti.snapdragon.sdk.display.jar|b7946684b16ef1e334920b44eb95f873ce5bf04e
+-system_ext/app/colorservice/colorservice.apk|52050facd288fbed88ba453b8f5d9268075154ec
+system_ext/lib/libsd_sdk_display.qti.so|010c3ea562dd6c0080aa17169d70dc4fd6ebd543
+system_ext/lib/libsdm-disp-apis.qti.so|2edb0d1e1f9983b75e11b752e2d43275984caca9
+system_ext/lib64/libsd_sdk_display.qti.so|3c298d3695d03a4cf1a9c786ee1d206dae4a2fe8
+system_ext/lib64/libsdm-disp-apis.qti.so|6606e07ca39d087dff2fed998c749b29c7585cee
+vendor/bin/hw/vendor.display.color@1.0-service|ce61a8290f57c5d759280038e6cfd3f7db887269
+vendor/bin/ppd|a4ece99b04a9d66b5f96771511c5a40dc089af84
+vendor/lib/vendor.display.color@1.0.so|080d62ec8813482a9a49bb875cd3c09b9a7d7406
+vendor/lib/vendor.display.color@1.1.so|a90fdba3b696f889346cd49f6b125199405fa931
+vendor/lib/vendor.display.color@1.2.so|2f58efe8909ad5dd51306211dec2ff2eda4aefd6
+vendor/lib/vendor.display.color@1.3.so|c57cf51e76ab59370c8755a70c2b505f8e5b0ba2
+vendor/lib/vendor.display.postproc@1.0.so|3a8a4d20666c62ab0547f0b947718ca4ce65cd7f
+vendor/lib64/vendor.display.color@1.0.so|0d5948db7f32a9a799ab2fbf136c568ab2fce366
+vendor/lib64/vendor.display.color@1.1.so|4665050e8f509b49c56a378e8ca40df6641815d8
+vendor/lib64/vendor.display.color@1.2.so|1d4ed0df3fcb207a3ff184ad63d45de785075aad
+vendor/lib64/vendor.display.color@1.3.so|27837f9b11dd381d33de00f7e13baeac9fe86961
+vendor/lib64/vendor.display.postproc@1.0.so|1b1823653b06109b5ade5cc4e520464911b1e1da
 
 # QMI
 etc/permissions/qti_libpermissions.xml
@@ -789,7 +800,6 @@ system_ext/etc/seccomp_policy/wfdservice.policy|fcd493de8a282c3776740d389280dbe1
 system_ext/etc/wfdconfigsink.xml|eeaf6d97db961a2af25614390bf7c183b736e9db
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|d1b42bfb512a6573155308ce0eab892d1ceb2ccc
 system_ext/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so|d11f9e2e43d2d936fee343b1af61c1e714496194
-system_ext/lib/libdisplayconfig.qti.so|cb62e8ed0d8e69b1b82439cf36f3c3c8187118c4
 system_ext/lib/libmiracastsystem.so|516045aa75eff33ff3a09554617a1eb89978df24
 system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
 system_ext/lib/libmmparser_lite.so|50f7f6141a2139cbf2a07e4ee07efdca45f0b300
@@ -817,7 +827,6 @@ system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0.so|dd443e41c9442ecd8be632a
 system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so|b15a5d5b19c1c4e443343743d2b4ce7db8915d6a
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|48815a18144f60747555bb93650726206c54323f
 system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so|8de3060b2bf000e17f4ec48e66f2b14693611a4a
-system_ext/lib64/libdisplayconfig.qti.so|130b075e66890e648fceea2639221e9503a43c41
 system_ext/lib64/libmiracastsystem.so|1b1e9c92a21297260a9e6f702b297f3b164e9b0c
 system_ext/lib64/libmmosal.so|c930168ad5d7a0d8b16727f76d4ece72617b9696
 system_ext/lib64/libmmparser_lite.so|9cee11816fb8a9cbce723e8df7201773d33b1017
@@ -845,7 +854,6 @@ vendor/etc/seccomp_policy/wfdvndservice.policy|b46f0c22a1f9b65c6750205e161c0a3f8
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy|f113f27e0e301a18baf0ade08c23071a27c7dc52
 vendor/etc/wfdconfig.xml|9e13371f7ae509cc0bbb3f2ace93c5ea5d87bf0f
 vendor/lib/libFileMux_proprietary.so|e59edd4604a7c73147118161cab5b7ac6bb16c82
-vendor/lib/libdisplayconfig.qti.so|bbb467000f331e86bc238b99a8f9d97b5e86277b
 vendor/lib/libmiracast.so|f0b7eeafd263d8016eb4ae7aaeb0a04bbd1df269
 vendor/lib/libmmosal.so|31ca68b67eae1a3822b5310fb034f2722506f248
 vendor/lib/libmmrtpdecoder_proprietary.so|9232f505ea8f0c1e9f81a049c583fba32a450d73
@@ -871,7 +879,6 @@ vendor/lib/libwfdutils_proprietary.so|57afdff5a44aa77efd426d038a7c0ae7ca5e4620
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so|859280dcb00fedbcf2778bbd860bbde445e7e846
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|fdba1b3c11ace4b0415be4e5944cdb288cd35f58
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|044c6cfd4bc603e4aa372ab1a3d287a8d8e5fc48
-vendor/lib64/libdisplayconfig.qti.so|2ad8f58d85f970ff1b4228f2308147f0fcd2bed6
 vendor/lib64/libmiracast.so|ef21ecfc8215d1bb1ac03e0de4c73b725eabd203
 vendor/lib64/libmmosal.so|c805b657bc98a23279bb5cba847207836e760736
 vendor/lib64/libwfddisplayconfig_proprietary.so|2e627e1b54424569dc6d9632ddcedb5ec63f17d1
