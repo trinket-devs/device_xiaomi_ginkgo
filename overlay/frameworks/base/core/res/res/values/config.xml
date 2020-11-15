@@ -525,12 +525,6 @@
         <item>"/system/framework/ext.jar"</item>
         <item>"/system/framework/arm/boot-ext.oat"</item>
         <item>"/system/framework/arm64/boot-ext.oat"</item>
-        <item>"/system/framework/QPerformance.jar"</item>
-        <item>"/system/framework/arm/boot-QPerformance.oat"</item>
-        <item>"/system/framework/arm64/boot-QPerformance.oat"</item>
-        <item>"/system/framework/UxPerformance.jar"</item>
-        <item>"/system/framework/arm/boot-UxPerformance.oat"</item>
-        <item>"/system/framework/arm64/boot-UxPerformance.oat"</item>
         <item>"/system/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/system_ext/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
         <item>"/system/lib/libsurfaceflinger.so"</item>
