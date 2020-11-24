@@ -32,63 +32,32 @@
 <HintConfigs>
     <Powerhint>
 
-        <!-- camera 30fps and camera preview -->
+ <!-- camera 30fps and camera preview -->
         <!--L CPU CORE 0 SCHED LOAD BOOST -->
         <!--L CPU CORE 1 SCHED LOAD BOOST -->
         <!--L CPU CORE 2 SCHED LOAD BOOST -->
         <!--L CPU CORE 3 SCHED LOAD BOOST -->
         <!--L CPU CORE 4 SCHED LOAD BOOST -->
         <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--L CPU Hispeed freq of 1017Mhz -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
         <!--L CPU - Set hispeed load 95 -->
         <!--BWMON - Set sample_ms 20 -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!-- Silver Max frequency -->
         <Config
             Id="0x00001331" Enable="true" Timeout="0" Target="msmtrinket"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x43034000, 0x14"/>
-
-        <!-- camera 60 FPS -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--BWMON - Set sample_ms 20 -->
-        <Config
-            Id="0x00001332" Enable="true" Timeout="0" Target="msmtrinket"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x43034000, 0x14"/>
+            Resources="0x40C68100, 0xFFFFFFF1, 0x40C68110, 0xFFFFFFF1, 0x40C68120, 0xFFFFFFF1,
+            0x40C68130, 0xFFFFFFF1, 0x40C68000, 0xFFFFFFF1, 0x40C68010, 0xFFFFFFF1, 0x40C68020, 0xFFFFFFF1, 0x40C68030, 0xFFFFFFF1,
+            0x41440100, 0x5F, 0x41820000, 0x14, 0x41440000, 0x5F, 0x40804100, 0x64C"/>
 
         <!-- camera HFR -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
         <!--BWMON - Set sample_ms 20 -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--L CPU - Set hispeed frequency -->
         <Config
             Id="0x00001333" Enable="true" Timeout="0" Target="msmtrinket"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x43034000, 0x14"/>
-
-        <!-- Dual camera -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--BWMON - Set sample_ms 20 -->
-        <Config
-            Id="0x00001334" Enable="true" Timeout="0" Target="msmtrinket"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x43034000, 0x14"/>
+            Resources="0x41820000, 0x14, 0x41440100, 0x5F, 0x4143C100, 0x3F9"/>
 
     </Powerhint>
 </HintConfigs>
