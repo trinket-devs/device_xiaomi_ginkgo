@@ -19,6 +19,7 @@
     <string name="device_settings_title">Xiaomi Parts</string>
     <string name="device_settings_summary">Extra Settings</string>
     <string name="audio_title">Audio</string>
+    <string name="display_title">Display</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Sound Enhancer</string>
@@ -71,4 +72,19 @@
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
+
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Display color calibration</string>
+    <string name="kcal_settings_summary">Adjust the colors of your display using KCAL</string>
+    <string name="kcal_enable_title">Enable display color configuration</string>
+    <string name="kcal_enable_summary">Enables the configuration of the display color for a custom adjustment</string>
+    <string name="red_slider_title">Red</string>
+    <string name="green_slider_title">Green</string>
+    <string name="blue_slider_title">Blue</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Color calibration</string>
+    <string name="saturation_slider_title">Saturation</string>
+    <string name="reset_default_button_title">Reset to default configuration</string>
+    <string name="reset_default_button_summary">Reset all the configurations of this screen</string>
+    <string name="contrast_slider_title">Contrast</string>
 </resources>

@@ -83,5 +83,15 @@
             </intent-filter>
         </service>
 
+        <activity
+            android:name=".display.KcalSettingsActivity"
+            android:exported="false"
+            android:label="@string/kcal_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

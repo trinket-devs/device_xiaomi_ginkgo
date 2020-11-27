@@ -26,6 +26,7 @@ import androidx.preference.ListPreference;
 
 import org.lineageos.settings.R;
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.display.KcalSettingsActivity;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
 
 public class DeviceSettingsFragment extends PreferenceFragment implements
@@ -35,12 +36,14 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_PRESET = "dirac_preset_pref";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+    private static final String PREF_KCAL_SETTINGS = "kcal_settings";
 
     private SwitchPreference mDiracPref;
 
     private ListPreference mHeadsetPref;
     private ListPreference mPresetPref;
 
+    private Preference mKcalSettingsPref;
     private Preference mClearSpeakerPref;
 
     private DiracUtils mDiracUtils;
@@ -68,6 +71,13 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
         mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
         mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
+        mKcalSettingsPref = (Preference) findPreference(PREF_KCAL_SETTINGS);
+        mKcalSettingsPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), KcalSettingsActivity.class);
             startActivity(intent);
             return true;
         });
