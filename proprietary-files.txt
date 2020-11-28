@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI V12.0.1.0.QCOMIXM package, unless pinned
+# Device proprietary files - from ginkgo MIUI V12.0.2.0.QCOMIXM Global Stable package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -705,6 +705,49 @@ vendor/lib/libchromatix_ginkgo_ov13855_sunny_india_ii_video_weixin.so
 vendor/lib/libchromatix_ginkgo_ov13855_sunny_india_ii_weixin_video_3a.so
 vendor/lib/libchromatix_ginkgo_ov13855_sunny_india_ii_zsl_preview_bu64297.so
 vendor/lib/libchromatix_ginkgo_ov13855_sunny_india_ii_zsl_video_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_common.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_ds_chromatix.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_hfr_120.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_hfr_60.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_hfr_90.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_liveshot.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_liveshot_720p.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_preview.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_snapshot.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_snapshot_hdr.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_snapshot_mfnr.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_us_chromatix.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_video.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_video_720p.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_video_face.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_video_full.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_video_qq.so
+vendor/lib/libchromatix_ginkgo_ov13B10_cpp_video_weixin.so
+vendor/lib/libchromatix_ginkgo_ov13B10_default_preview_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_default_video.so
+vendor/lib/libchromatix_ginkgo_ov13B10_default_video_720p.so
+vendor/lib/libchromatix_ginkgo_ov13B10_default_video_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_face_video_3a.so
+vendor/lib/libchromatix_ginkgo_ov13B10_hfr_120.so
+vendor/lib/libchromatix_ginkgo_ov13B10_hfr_120_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_hfr_60.so
+vendor/lib/libchromatix_ginkgo_ov13B10_hfr_60_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_hfr_90.so
+vendor/lib/libchromatix_ginkgo_ov13B10_hfr_90_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_postproc.so
+vendor/lib/libchromatix_ginkgo_ov13B10_preview.so
+vendor/lib/libchromatix_ginkgo_ov13B10_qq_video_3a.so
+vendor/lib/libchromatix_ginkgo_ov13B10_snapshot.so
+vendor/lib/libchromatix_ginkgo_ov13B10_snapshot_hdr.so
+vendor/lib/libchromatix_ginkgo_ov13B10_snapshot_its.so
+vendor/lib/libchromatix_ginkgo_ov13B10_video_720p.so
+vendor/lib/libchromatix_ginkgo_ov13B10_video_face.so
+vendor/lib/libchromatix_ginkgo_ov13B10_video_full.so
+vendor/lib/libchromatix_ginkgo_ov13B10_video_qq.so
+vendor/lib/libchromatix_ginkgo_ov13B10_video_weixin.so
+vendor/lib/libchromatix_ginkgo_ov13B10_weixin_video_3a.so
+vendor/lib/libchromatix_ginkgo_ov13B10_zsl_preview_bu64297.so
+vendor/lib/libchromatix_ginkgo_ov13B10_zsl_video_bu64297.so
 vendor/lib/libchromatix_ginkgo_ov8856_ofilm_ii_common.so
 vendor/lib/libchromatix_ginkgo_ov8856_ofilm_ii_cpp_ds_chromatix.so
 vendor/lib/libchromatix_ginkgo_ov8856_ofilm_ii_cpp_hfr_60.so
@@ -1296,6 +1339,8 @@ vendor/lib/libmmcamera_ginkgo_ov13855_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_ginkgo_ov13855_ofilm_i.so
 vendor/lib/libmmcamera_ginkgo_ov13855_sunny_ii_eeprom.so
 vendor/lib/libmmcamera_ginkgo_ov13855_sunny_ii.so
+vendor/lib/libmmcamera_ginkgo_ov13B10.so
+vendor/lib/libmmcamera_ginkgo_ov13B10_eeprom.so
 vendor/lib/libmmcamera_ginkgo_ov8856_ofilm_ii_eeprom.so
 vendor/lib/libmmcamera_ginkgo_ov8856_ofilm_ii.so
 vendor/lib/libmmcamera_ginkgo_ov8856_sunny_i_eeprom.so
