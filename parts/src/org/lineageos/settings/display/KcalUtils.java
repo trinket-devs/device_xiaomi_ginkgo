@@ -17,6 +17,8 @@
 
 package org.lineageos.settings.display;
 
+import android.content.SharedPreferences;
+
 import org.lineageos.settings.utils.FileUtils;
 
 public final class KcalUtils {
@@ -27,6 +29,7 @@ public final class KcalUtils {
     public static final String KCAL_CONTRAST_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_cont";
 
     // Write the given value to the given position on the KCAL node
+    // position 0 is the full node, so the function will write the value to the node without following a pattern
     // position 1 is RED
     // position 2 is GREEN
     // position 3 is BLUE
@@ -61,7 +64,7 @@ public final class KcalUtils {
 
     // Get the value of the given position
     // 0 is the full node value
-    // 1, 2 and 3 give the first, second and third value respectively
+    // 1, 2 and 3 will return the first, second and third string divided by an space in the specified node
     public static String getNodeData(String node, int position) {
         String mNodeData = FileUtils.readOneLine(node);
         switch(position) {
@@ -74,5 +77,16 @@ public final class KcalUtils {
             default:
                 return null;
         }
+    }
+
+    public static void writeCurrentSettings(SharedPreferences sharedPrefs) {
+        FileUtils.writeLine(KcalUtils.KCAL_ENABLE_NODE,
+            sharedPrefs.getBoolean("kcal_enable", false) ? "1" : "0");
+
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 1, sharedPrefs.getInt("red_slider", 256));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 2, sharedPrefs.getInt("green_slider", 256));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 3, sharedPrefs.getInt("blue_slider", 256));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_SATURATION_NODE, 0, sharedPrefs.getInt("saturation_slider", 255));
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_CONTRAST_NODE, 0, sharedPrefs.getInt("contrast_slider", 255));
     }
 }
