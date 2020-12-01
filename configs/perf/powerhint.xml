@@ -46,7 +46,7 @@
         <!--L CPU - Set hispeed load 95 -->
         <!-- Silver Max frequency -->
         <Config
-            Id="0x00001331" Enable="true" Timeout="0" Target="msmtrinket"
+            Id="0x00001331" Enable="true" Timeout="0" Target="trinket"
             Resources="0x40C68100, 0xFFFFFFF1, 0x40C68110, 0xFFFFFFF1, 0x40C68120, 0xFFFFFFF1,
             0x40C68130, 0xFFFFFFF1, 0x40C68000, 0xFFFFFFF1, 0x40C68010, 0xFFFFFFF1, 0x40C68020, 0xFFFFFFF1, 0x40C68030, 0xFFFFFFF1,
             0x41440100, 0x5F, 0x41820000, 0x14, 0x41440000, 0x5F, 0x40804100, 0x64C"/>
@@ -56,7 +56,7 @@
         <!--L CPU - Set hispeed load 95 -->
         <!--L CPU - Set hispeed frequency -->
         <Config
-            Id="0x00001333" Enable="true" Timeout="0" Target="msmtrinket"
+            Id="0x00001333" Enable="true" Timeout="0" Target="trinket"
             Resources="0x41820000, 0x14, 0x41440100, 0x5F, 0x4143C100, 0x3F9"/>
 
     </Powerhint>
