@@ -71,4 +71,18 @@
     <string name="clear_speaker_title">Очистка динамика</string>
     <string name="clear_speaker_summary">Воспроизвести 30-и секундный звук для очистки динамика</string>
     <string name="clear_speaker_description">Включите этот параметр 1-2 раз, если динамик немного загрязнен. Также поставьте звук на максимальную громкость.\n\nЕсли динамик сильно загрязнен, запустите этот параметр 2-5 раз и потрясите телефон. Динамик должен смотреть вниз</string>
+	
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Калибровка цветов экрана</string>
+    <string name="kcal_settings_summary">Редактируйте цвета вашего экрана, используя KCAL</string>
+    <string name="kcal_enable_title">Конфигурации цветов экрана</string>
+    <string name="kcal_enable_summary">Включает настройки цветов экрана для его редактирования</string>
+    <string name="red_slider_title">Красный</string>
+    <string name="green_slider_title">Зелёный</string>
+    <string name="blue_slider_title">Синий</string>    
+    <string name="kcal_calibration_preference_category_title">Калибровка цветов</string>
+    <string name="saturation_slider_title">Насыщенность</string>
+    <string name="reset_default_button_title">Сбросить настройки</string>
+    <string name="reset_default_button_summary">Сбрасывает все настройки KCAL</string>
+    <string name="contrast_slider_title">Контраст</string>
 </resources>
