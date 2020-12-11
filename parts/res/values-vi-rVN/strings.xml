@@ -16,11 +16,17 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Xiaomi Parts -->
+    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_summary">Sẵn sàng để khám phá những tùy chỉnh dành riêng cho Note 8 !</string>
+    <string name="audio_title">Âm thanh</string>
     <!-- Dirac settings -->
+	
     <string name="dirac_title">Tăng cường Mi Sound</string>
     <string name="dirac_summary">Tối ưu chất lượng âm thanh</string>
     <string name="dirac_headset_title">Chọn loại tai nghe</string>
     <string name="dirac_preset_title">Chọn hiệu chỉnh sẵn có</string>
+	
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Mặc định</string>
     <string name="dirac_headset_earbuds">Mi Earbud</string>
@@ -44,6 +50,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Tai nghe Mi</string>
+	
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Mặc định</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -56,6 +63,26 @@
     <string name="dirac_preset_country">Quê hương</string>
     <string name="dirac_preset_dance">Khiêu vũ</string>
     <string name="dirac_preset_metal">Kim loại</string>
+	
 <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Âm thanh Mi</string>
+	
+<!-- Clear Speaker -->
+    <string name="clear_speaker_title">Làm sạch loa</string>
+    <string name="clear_speaker_summary">Phát âm thanh 30s để làm sạch loa</string>
+    <string name="clear_speaker_description">Bật tùy chọn này 1-2 lần nếu loa hơi bẩn. Đồng thời đặt âm lượng ở mức tối đa.\n\nNếu loa quá bẩn, hãy chạy tùy chọn này 2-5 lần và lắc điện thoại.Điện thoại nên hướng xuống</string>
+	
+<!-- Kcal settings -->
+    <string name="kcal_settings_title">Hiệu chỉnh màu màn hình</string>
+    <string name="kcal_settings_summary">Chỉnh sửa màu màn hình của bạn bằng KCAL</string>
+    <string name="kcal_enable_title">Cấu hình màu màn hình</string>
+    <string name="kcal_enable_summary">Kích hoạt bao gồm cài đặt màu màn hình để chỉnh sửa nó</string>
+    <string name="red_slider_title">Màu Đỏ</string>
+    <string name="green_slider_title">Màu xanh lá</string>
+    <string name="blue_slider_title">Màu xanh da trời</string>    
+    <string name="kcal_calibration_preference_category_title">Hiệu chỉnh màu</string>
+    <string name="saturation_slider_title">Độ bão hòa</string>
+    <string name="reset_default_button_title">Khôi phuc cài đặt</string>
+    <string name="reset_default_button_summary">Khôi phục tất cả cài đặt KCAL</string>
+    <string name="contrast_slider_title">Độ tương phản</string>
 </resources>
