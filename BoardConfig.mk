@@ -196,6 +196,10 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2 --set_hashtree_disabled_flag
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    system/lib/libcameraservice.so|libmedia_jni_shim.so
+
 # Vendor SPL
 VENDOR_SECURITY_PATCH := 2021-02-01
 
