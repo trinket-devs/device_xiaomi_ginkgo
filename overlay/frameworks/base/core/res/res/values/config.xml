@@ -630,16 +630,6 @@
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
 
-    <!-- Enable dual LTE capability support-->
-    <bool name="config_dual_LTE_capability">true</bool>
-
-    <!-- Whether to artificially interpret all signal strengths as
-         one bar higher than they actually are -->
-    <bool name="config_inflateSignalStrength">true</bool>
-
-    <!-- Whether to allow sending active app broadcast -->
-    <bool name="config_allowActivePackageBroadcast">true</bool>
-
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 

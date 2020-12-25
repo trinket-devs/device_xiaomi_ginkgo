@@ -1,5 +1,0 @@
-allow cameraserver init:unix_stream_socket connectto;
-allow cameraserver property_socket:sock_file write;
-
-get_prop(cameraserver, vendor_camera_prop)
-set_prop(cameraserver, system_prop)

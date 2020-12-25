@@ -1,6 +1,3 @@
-# ART
-ro.sys.fw.dex2oat_thread_count=8
-
 # Bluetooth
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
@@ -59,10 +56,6 @@ vendor.mm.enable.qcom_parser=63963135
 
 # Netflix
 ro.netflix.bsp_rev=Q6125-17995-1
-
-# ParanoidDoze
-ro.sensor.proximity=true
-ro.sensor.pickup=xiaomi.sensor.pickup
 
 # Shutdown
 ro.build.shutdown_timeout=2
