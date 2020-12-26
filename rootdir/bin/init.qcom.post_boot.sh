@@ -3097,7 +3097,7 @@ case "$target" in
 
             # schedtune settings
             echo 1 > /dev/stune/foreground/schedtune.prefer_idle
-            echo 1 > /dev/stune/top-app/schedtune.boost
+            echo 10 > /dev/stune/top-app/schedtune.boost
             echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
             # configure governor settings for little cluster
@@ -3115,6 +3115,10 @@ case "$target" in
             echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
             echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
             echo 652800 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+
+            # enable input boost
+            echo "0:1305600 4:1056000" > /sys/module/cpu_boost/parameters/input_boost_freq
+            echo 100 > /sys/module/cpu_boost/parameters/input_boost_ms
 
             echo 0 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
