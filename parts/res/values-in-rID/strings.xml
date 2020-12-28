@@ -80,9 +80,9 @@
     <string name="red_slider_title">Merah</string>
     <string name="green_slider_title">Hijau</string>
     <string name="blue_slider_title">Biru</string>    
-    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_rgb_preference_category_title">Pengaturan Warna</string>
     <string name="kcal_calibration_preference_category_title">Kalibrasi warna</string>
-    <string name="saturation_slider_title">Kejenuhan</string>
+    <string name="saturation_slider_title">Saturasi</string>
     <string name="reset_default_button_title">Setel ulang ke konfigurasi bawaan</string>
     <string name="reset_default_button_summary">Setel ulang semua konfigurasi layar ini</string>
     <string name="contrast_slider_title">Kontras</string>
