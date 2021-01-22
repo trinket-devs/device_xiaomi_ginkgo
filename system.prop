@@ -1,3 +1,7 @@
+# Audio
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+
 # Bluetooth
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
@@ -38,6 +42,9 @@ ro.incremental.enable=1
 
 # LMKD
 ro.lmk.low_ram=false
+
+# NFC
+ro.se.type=HCE,UICC
 
 # Media
 debug.stagefright.ccodec=1

@@ -1,0 +1,16 @@
+[
+    {
+        "repository":   "android_kernel_xiaomi_ginkgo",
+        "target_path":  "kernel/xiaomi/ginkgo"
+    },
+    {
+        "repository":   "android_vendor_xiaomi_ginkgo",
+        "target_path":  "vendor/xiaomi/ginkgo"
+    },
+    {
+        "remote":       "github",
+        "repository":   "ThankYouMario/proprietary_vendor_qcom_sdclang",
+        "target_path":  "prebuilts/clang/host/linux-x86/clang-sdllvm",
+        "branch":       "ruby"
+    }
+]
