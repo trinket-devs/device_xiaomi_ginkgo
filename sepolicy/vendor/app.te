@@ -10,5 +10,4 @@ allow system_server sysfs_usb_supply:file { getattr open read write };
 
 allow { appdomain -isolated_app } adsprpcd_file:dir r_dir_perms;
 allow { appdomain -isolated_app } public_adsprpcd_file:file r_file_perms;
-get_prop({ appdomain -isolated_app }, ifaa_prop)
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
