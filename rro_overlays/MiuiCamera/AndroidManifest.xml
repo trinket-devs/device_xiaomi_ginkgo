@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.camera.overlay.ginkgo">
+    <overlay android:targetPackage="com.android.camera" android:isStatic="true" android:priority="800"/>
+</manifest>
