@@ -1774,11 +1774,9 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
 
 # Listen - Hardware
-vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.trinket.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 
