@@ -2,23 +2,17 @@
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
-persist.vendor.audio.fluence.audiorec=true
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=true
+persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.audio.ras.enabled=false
+persist.vendor.bt.aac_frm_ctl.enabled=true
 ro.af.client_heap_size_kbyte=7168
-ro.config.media_vol_steps=25
-ro.config.vc_call_vol_steps=7
-ro.vendor.audio.sdk.fluencetype=fluence
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
-ro.vendor.audio.sos=true
 vendor.audio.adm.buffering.ms=2
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=true
-vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
 vendor.audio.feature.audiozoom.enable=false
@@ -72,14 +66,15 @@ vendor.audio.offload.track.enable=false
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=false
 vendor.audio.tunnel.encode=false
+vendor.audio.hw.aac.encoder=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
-vendor.audio.volume.headset.gain.depcal=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
-vendor.voice.path.for.pcm.voip=false
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.voice.path.for.pcm.voip=true
 
 # ART
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
@@ -95,16 +90,17 @@ dalvik.vm.image-dex2oat-threads=8
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
-persist.bluetooth.bluetooth_audio_hal.disabled=true
-persist.vendor.bluetooth.modem_nv_support=true
-persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=true
+persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
-camera.disable_zsl_mode=true
 persist.vendor.camera.preview.ubwc=0
 persist.vendor.camera.isp.clock.optmz=0
 persist.vendor.camera.isp.turbo=1
@@ -121,8 +117,6 @@ persist.vendor.camera.is_type=4
 persist.vendor.camera.is_type_preview=4
 persist.vendor.camera.gyro.disable=0
 persist.vendor.camera.llnoise=1
-persist.vendor.denoise.process.plates=2
-persist.vendor.tnr.process.plates=2
 persist.vendor.camera.tnr.preview=1
 persist.vendor.camera.swtnr.preview=1
 persist.vendor.camera.tnr.video=1
@@ -130,8 +124,11 @@ persist.vendor.camera.aec.sync=1
 persist.vendor.camera.instant.aec=1
 persist.vendor.camera.ae.instant.bound=20
 persist.vendor.camera.depurple=1
+persist.vendor.denoise.process.plates=2
 persist.vendor.dualcam.lpm.enable=0
+persist.vendor.tnr.process.plates=2
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+vendor.camera.cpp.set.clock=576
 vendor.camera.not.cts.apk=1
 vendor.camera.not.ctsverify.apk=1
 vendor.camera.vidhance.eis.enabled=1
@@ -170,14 +167,15 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_inline_rotator=1
 vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
-vendor.gralloc.disable_ubwc=0
 vendor.display.disable_ui_3d_tonemap=1
 vendor.display.enable_default_color_mode=1
 vendor.display.enable_force_split=0
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
+vendor.display.idle_time=1200
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+vendor.gralloc.disable_ubwc=0
 
 # DRM
 drm.service.enabled=true
@@ -187,6 +185,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Keystore
 ro.hardware.keystore_desede=true
+
+# PASR
+vendor.power.pasr.enabled=true
+vendor.pasr.activemode.enabled=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
@@ -212,9 +214,16 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.sib16_support=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
+
+# Sensors
+persist.vendor.sensors.enable.bypass_worker=true
+persist.vendor.sensors.enable.mag_filter=true
+persist.vendor.sensors.enable.rt_task=false
+persist.vendor.sensors.support_direct_channel=false
 
 # SurfaceFlinger
 debug.sf.use_phase_offsets_as_durations=1
@@ -226,7 +235,6 @@ debug.sf.earlyGl.sf.duration=13500000
 debug.sf.earlyGl.app.duration=21000000
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_wide_color_display=1
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
