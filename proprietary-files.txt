@@ -1983,6 +1983,9 @@ vendor/lib64/vendor.display.color@1.2.so|1d4ed0df3fcb207a3ff184ad63d45de785075aa
 vendor/lib64/vendor.display.color@1.3.so|27837f9b11dd381d33de00f7e13baeac9fe86961
 vendor/lib64/vendor.display.postproc@1.0.so|1b1823653b06109b5ade5cc4e520464911b1e1da
 
+# Public Libraries
+vendor/etc/public.libraries.txt
+
 # QMI (Qualcomm MSM Interface)
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
