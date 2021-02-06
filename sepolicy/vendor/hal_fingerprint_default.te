@@ -8,6 +8,10 @@ allow hal_fingerprint_default rootfs:dir { read open };
 allow hal_fingerprint_default mnt_user_file:lnk_file read;
 allow hal_fingerprint_default sdcardfs:dir search;
 
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+allow hal_fingerprint_default goodix_fingerprint_data_file:dir create_dir_perms;
+allow hal_fingerprint_default goodix_fingerprint_data_file:file create_file_perms;
+
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
 

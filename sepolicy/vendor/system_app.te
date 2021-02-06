@@ -1,7 +1,6 @@
 allow system_app vendor_hal_pasrmanager_qti:binder call;
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file { getattr open read };
-allow system_app vendor_default_prop:file map;
 allow system_app wificond:binder call;
 
 hal_client_domain(system_app, vendor_hal_fm)

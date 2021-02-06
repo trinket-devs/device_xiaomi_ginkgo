@@ -5,6 +5,7 @@
 /dev/spidev[0-9]\.1                                                                  u:object_r:lirc_device:s0
 
 # Data files
+/data/gf_data(/.*)?                                                                  u:object_r:goodix_fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                                            u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                                               u:object_r:fingerprint_data_file:s0
 /data/vendor/thermal(/.*)?                                                           u:object_r:thermal_data_file:s0
@@ -18,18 +19,13 @@
 # Misys
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service          u:object_r:hal_misys_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service          u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service          u:object_r:hal_misys_default_exec:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                     u:object_r:camera_persist_file:s0
 
 # Audio socket
 /dev/socket/audio_hw_socket                                                          u:object_r:audio_socket:s0
-
-# Neural networks
-/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti    u:object_r:vendor_hal_neuralnetworks_default_exec:s0
-
-# DPMD
-/(product|system/product)/bin/dpmd                                                   u:object_r:vendor_dpmd_exec:s0
 
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.ginkgo u:object_r:hal_fingerprint_default_exec:s0

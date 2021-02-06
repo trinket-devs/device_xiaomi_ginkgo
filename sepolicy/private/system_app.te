@@ -1,2 +1,0 @@
-allow system_app storaged:binder call;
-allow system_app system_suspend:binder call;
