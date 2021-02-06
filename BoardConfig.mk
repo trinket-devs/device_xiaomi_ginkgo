@@ -179,7 +179,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
