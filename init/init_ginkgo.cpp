@@ -68,9 +68,6 @@ void vendor_load_properties()
     // Set camera model for EXIF data
     property_override("persist.vendor.camera.model", model);
 
-    // Enable UI blur
-    property_override("persist.sys.sf.disable_blurs", "0");
-
     // Set dalvik heap configuration
     string heapstartsize, heapgrowthlimit, heapsize, heapminfree,
 			heapmaxfree, heaptargetutilization;
