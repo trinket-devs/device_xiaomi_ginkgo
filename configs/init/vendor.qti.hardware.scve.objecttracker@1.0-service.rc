@@ -1,5 +1,0 @@
-service objectTracker /vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
-    class hal
-    user system
-    group camera system
-    writepid /dev/cpuset/camera-daemon/tasks

@@ -1,9 +1,0 @@
-# Copyright (c) 2019 Qualcomm Technologies, Inc.
-# All Rights Reserved.
-# Confidential and Proprietary - Qualcomm Technologies, Inc.
-#
-service vendor.capabilityconfigstore /vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-    class hal
-    user system
-    group system
-    writepid /dev/cpuset/system-background/tasks
