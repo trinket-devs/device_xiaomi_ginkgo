@@ -2038,6 +2038,8 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
+etc/permissions/privapp-permissions-qti.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/app/atfwd/atfwd.apk
