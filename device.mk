@@ -443,7 +443,7 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail_vendor \
+    libavservices_minijail.vendor \
     libnl \
     libqdMetaData \
     libqdMetaData.system \
