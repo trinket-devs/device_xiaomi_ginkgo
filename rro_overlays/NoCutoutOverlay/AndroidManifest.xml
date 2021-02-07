@@ -15,12 +15,12 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.internal.display.cutout.emulation.NotchBarKiller"
+        package="com.android.internal.display.cutout.emulation.noCutout"
         android:versionCode="1"
         android:versionName="1.0">
     <overlay android:targetPackage="android"
             android:category="com.android.internal.display_cutout_emulation"
-            android:priority="0"/>
+            android:priority="850"/>
 
     <application android:label="@string/display_cutout_emulation_overlay" android:hasCode="false"/>
 </manifest>
