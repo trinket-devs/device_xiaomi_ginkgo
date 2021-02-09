@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
-# Copyright (C) 2020 Paranoid Android
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #

@@ -18,6 +18,9 @@
 */
 -->
 <resources>
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
+
     <!-- IDs for each color mode. The values must match the corresponding constants in
          android.view.Display -->
     <integer-array name="color_mode_ids">
