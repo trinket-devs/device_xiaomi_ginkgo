@@ -1547,8 +1547,17 @@ vendor/lib64/librmp.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# DRM - Widevine L1 - from laurel_sprout V12.0.3.0.RFQMIXM
-vendor/lib64/liboemcrypto.so|78a0009bc53e9f4f37cea2974f960fb0253e2328
+# DRM - Widevine L1 - from ginkgo MIUI V12.0.2.0.QCOMIXM
+vendor/lib64/liboemcrypto.so|4bc107c69108c71b53d8a04c9f4d4e3f7ece18e7
+modem/image/widevine.b00:vendor/firmware/widevine.b00|02440d68e90e2606978d705a6de0aca576be6e66
+modem/image/widevine.b01:vendor/firmware/widevine.b01|5d728eb86180d82a6a8b6a5b124e995f6b9841c2
+modem/image/widevine.b02:vendor/firmware/widevine.b02|0c6041480787fff2f7f79782bc180c5e0e391126
+modem/image/widevine.b03:vendor/firmware/widevine.b03|86eb9c5b5ef411f1de65efeab8571bf996088840
+modem/image/widevine.b04:vendor/firmware/widevine.b04|8418e1096d854bc0f91c2fed02aba8237cea1afb
+modem/image/widevine.b05:vendor/firmware/widevine.b05|14e522435fe75b168168e7e5dc4aa6cad0d753a1
+modem/image/widevine.b06:vendor/firmware/widevine.b06|1f8cbb03036616214eb01bdaf9cc04e6ac0af8bc
+modem/image/widevine.b07:vendor/firmware/widevine.b07|c6fb2f2db136ce0bf45bd53dd9bde0287d936429
+modem/image/widevine.mdt:vendor/firmware/widevine.mdt|43fdadd783b66c4448529c68b493cd9005e426df
 
 # DSP
 vendor/bin/dspservice
