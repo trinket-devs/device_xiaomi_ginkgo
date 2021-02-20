@@ -21,14 +21,11 @@ ro.charger.enable_suspend=true
 
 # CNE/DPM
 persist.vendor.cne.feature=1
-persist.vendor.dpm.feature=11
 persist.vendor.dpmhalservice.enable=1
 
 # Data
 persist.data.df.dev_name=rmnet_usb0
 
-# Fwk detect
-ro.vendor.qti.va_odm.support=1
 
 # IMS
 persist.vendor.ims.disableADBLogs=1
