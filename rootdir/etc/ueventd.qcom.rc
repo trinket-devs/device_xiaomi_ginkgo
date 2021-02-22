@@ -182,6 +182,16 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 /dev/bus/usb/003/001      0660   system     system
 /dev/bus/usb/003/002      0660   system     system
 /dev/bus/usb/003/003      0660   system     system
+/dev/hidraw0              0660   system     system
+/dev/hidraw1              0660   system     system
+/dev/hidraw2              0660   system     system
+/dev/hidraw3              0660   system     system
+/dev/hidraw4              0660   system     system
+/dev/hidraw5              0660   system     system
+/dev/hidraw6              0660   system     system
+/dev/hidraw7              0660   system     system
+/dev/hidraw8              0660   system     system
+/dev/hidraw9              0660   system     system
 
 # wlan
 /dev/wcnss_wlan           0660   system     system
