@@ -7,5 +7,6 @@ hal_client_domain(system_app, vendor_hal_fm)
 allow system_app kcal_dev:dir search;
 allow system_app kcal_dev:file rw_file_perms;
 allow system_app sysfs_fcharge:file rw_file_perms;
+allow system_app sysfs_leds:dir search;
 allow system_app vibrator_dev:dir search;
 allow system_app vibrator_dev:file rw_file_perms;
