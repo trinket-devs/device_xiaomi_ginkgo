@@ -103,8 +103,6 @@ on property:vendor.post_boot.parsed=1
     # Setup scheduler tunables
     write /proc/sys/kernel/sched_upmigrate 85
     write /proc/sys/kernel/sched_downmigrate 75
-    write /proc/sys/kernel/sched_autogroup_enabled 0
-    write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
 
     # Setup EAS tunables
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
