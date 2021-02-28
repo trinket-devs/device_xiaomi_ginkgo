@@ -552,18 +552,6 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Average Current for bluetooth controller when idle. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_idle_cur_ma">3</integer>
-
-    <!-- Average Current for bluetooth controller when receiving. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_rx_cur_ma">20</integer>
-
-    <!-- Average Current for bluetooth controller when transmitting. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_tx_cur_ma">33</integer>
-
-    <!-- Operating volatage for bluetooth controller. 0 by default-->
-    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
-
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/bin/surfaceflinger"</item>
