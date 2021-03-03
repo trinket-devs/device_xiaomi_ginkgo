@@ -59,6 +59,7 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 /dev/ipa_adpl             0660   system     oem_2905
 /dev/synx_device          0660   root       camera
 /dev/hab                  0666   system     system
+/dev/hgsl                 0666   system     system
 /dev/iio:device*          0664   system     system
 
 #permissions for UFS RPMB BSG device node
