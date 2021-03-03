@@ -228,7 +228,7 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
     </Encoders>
     <Decoders>
-       <!-- Video Hardware  -->
+        <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
