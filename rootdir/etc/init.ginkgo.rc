@@ -6,13 +6,17 @@ on early-init
     write /dev/stune/schedtune.boost 50
     write /dev/stune/schedtune.prefer_idle 1
 
-on late-init
+on post-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
     start vendor.hwcomposer-2-4
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
+
+on post-fs-data
+    #Create folder of NFC
+    mkdir /data/vendor/nfc 0770 nfc nfc
 
 on boot
     # DT2W
