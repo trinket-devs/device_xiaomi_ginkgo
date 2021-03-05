@@ -153,6 +153,15 @@ on charger
     setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
 
+service thermal-engine /system/vendor/bin/thermal-engine
+   class main
+   user root
+   socket thermal-send-client stream 0666 system system
+   socket thermal-recv-client stream 0660 system system
+   socket thermal-recv-passive-client stream 0666 system system
+   socket thermal-send-rule stream 0660 system system
+   group root
+
 on property:vold.decrypt=trigger_restart_framework
    start vendor.cnss_diag
 

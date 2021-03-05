@@ -2473,7 +2473,6 @@ vendor/lib64/libtime_genoff.so
 
 # Thermal
 vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalfeature.so
 vendor/lib64/libthermalclient.so
