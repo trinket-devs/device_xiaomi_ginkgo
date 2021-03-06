@@ -91,7 +91,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
@@ -103,10 +103,10 @@ GNSS_HIDL_VERSION := 2.1
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
-ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/configs/hidl/manifest_willow.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/manifest_willow.xml
 ODM_MANIFEST_SKUS += willow
 
 # Init
