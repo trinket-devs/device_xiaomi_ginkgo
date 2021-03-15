@@ -107,6 +107,50 @@ else
 fi
 }
 
+function configure_automotive_sku_parameters_sa8195() {
+
+	#Setting the min supported frequencies
+        echo 1113600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+        echo 1171200 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+        echo 940800000  > /sys/class/devfreq/18321110.qcom,cpu0-cpu-l3-lat/min_freq
+        echo 940800000  > /sys/class/devfreq/18321110.qcom,cpu4-cpu-l3-lat/min_freq
+        echo 1651200000 > /sys/class/devfreq/18321110.qcom,cpu0-cpu-l3-lat/max_freq
+        echo 1651200000 > /sys/class/devfreq/18321110.qcom,cpu4-cpu-l3-lat/max_freq
+	echo 940800000  > /sys/class/devfreq/soc\:qcom,cpu0-cpu-l3-lat/min_freq
+        echo 940800000  > /sys/class/devfreq/soc\:qcom,cpu4-cpu-l3-lat/min_freq
+        echo 1651200000 > /sys/class/devfreq/soc\:qcom,cpu0-cpu-l3-lat/max_freq
+	echo 1651200000 > /sys/class/devfreq/soc\:qcom,cpu4-cpu-l3-lat/max_freq
+
+	#read feature id
+        reg_val=`cat /sys/devices/platform/soc/780130.qfprom/qfprom0/nvmem | od -An -t d4`
+        feature_id=$(((reg_val >> 20) & 0xFF))
+
+        #setting min gpu freq to 392  MHz
+        echo 4 > /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+        if [ $feature_id == 0 ]; then
+                echo "feature_id is 0 for SA8195AA"
+
+                #setting max cpu freq to 2.496GHz
+                echo 2496000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+                #setting max gpu freq to 530 MHz
+                echo 3 > /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+                echo {class:ddr, res:capped, val: 1804} > /sys/kernel/debug/aop_send_message
+        elif [ $feature_id == 1 ] || [ $feature_id == 2 ]; then
+                echo "feature_id is 1 for external SA8195AB"
+                echo "feature_id is 2 for internal SA8195AB"
+
+                #setting max cpu freq to 2.496GHz
+                echo 2496000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+                #setting max gpu freq to 670 MHz
+                echo 0 > /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+                echo {class:ddr, res:capped, val: 2092} > /sys/kernel/debug/aop_send_message
+        elif [ $feature_id == 3 ]; then
+                echo "feature_id is 3 for external SA8195AC"
+        else
+                echo "unknown feature_id value" $feature_id
+        fi
+}
+
 function configure_sku_parameters() {
 
 #read feature id from nvram
@@ -719,8 +763,6 @@ if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$Produc
       echo 100 > /proc/sys/vm/swappiness
 else
     arch_type=`uname -m`
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
 
     # Set parameters for 32-bit Go targets.
     if [ "$low_ram" == "true" ]; then
@@ -761,17 +803,6 @@ else
 
             vmpres_file_min=$((minfree_5 + (minfree_5 - rem_minfree_4)))
             echo $vmpres_file_min > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
-            if [ $MemTotal -lt 2097152 ]; then
-                echo "18432,23040,27648,32256,69010,100640" > /sys/module/lowmemorykiller/parameters/minfree
-            elif  [ $MemTotal -lt 3145728 ]; then
-                echo "18432,23040,27648,32256,100640,120640" > /sys/module/lowmemorykiller/parameters/minfree
-            elif [ $MemTotal -lt 4194304 ]; then
-                echo "18432,23040,27648,38708,120640,144768" > /sys/module/lowmemorykiller/parameters/minfree
-            elif [ $MemTotal -lt 6291456 ]; then
-                echo "18432,23040,27648,64512,165888,225792" > /sys/module/lowmemorykiller/parameters/minfree
-            else
-                echo "18432,23040,27648,96768,276480,362880" > /sys/module/lowmemorykiller/parameters/minfree
-            fi
         else
             # Set LMK series, vmpressure_file_min for 32 bit non-go targets.
             # Disable Core Control, enable KLMK for non-go 8909.
@@ -811,7 +842,7 @@ else
               *)
                 #Set PPR parameters for all other targets.
                 echo $set_almk_ppr_adj > /sys/module/process_reclaim/parameters/min_score_adj
-                echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
+                echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
                 echo 50 > /sys/module/process_reclaim/parameters/pressure_min
                 echo 70 > /sys/module/process_reclaim/parameters/pressure_max
                 echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
@@ -2836,6 +2867,9 @@ case "$target" in
                 ;;
             esac
 
+	    # Disable cdsprpcd daemon for sdm630
+	    setprop vendor.fastrpc.disable.cdsprpcd.daemon 1
+
             # Setting b.L scheduler parameters
             echo 85 > /proc/sys/kernel/sched_upmigrate
             echo 85 > /proc/sys/kernel/sched_downmigrate
@@ -3153,11 +3187,9 @@ case "$target" in
             echo 100 > /proc/sys/kernel/sched_group_upmigrate
 
             # cpuset settings
-            echo 0-2     > /dev/cpuset/background/cpus
-            echo 0-3     > /dev/cpuset/system-background/cpus
-            echo 4-7     > /dev/cpuset/foreground/boost/cpus
-            echo 0-2,4-7 > /dev/cpuset/foreground/cpus
-            echo 0-7     > /dev/cpuset/top-app/cpus
+            echo 0-3 > /dev/cpuset/background/cpus
+            echo 0-3 > /dev/cpuset/system-background/cpus
+
 
             # configure governor settings for little cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -3173,12 +3205,7 @@ case "$target" in
             echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
             echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-            echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-            # enable input boost
-            echo "0:1401600" > /sys/module/cpu_boost/parameters/input_boost_freq
-            echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
-            echo "0:1612800 1:0 2:0 3:0 4:1747200 5:0 6:0 7:0" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
-            echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
+	    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
             # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
             echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
@@ -3873,6 +3900,9 @@ case "$target" in
             echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
             echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rtg_boost_freq
 
+            echo "0:1017600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+            echo 80 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+
 	    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
             # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
@@ -3943,7 +3973,7 @@ case "$target" in
 
         # Scuba perf/power tunings
         case "$soc_id" in
-             "441" )
+             "441" | "473" | "474" )
 
             # Quad-core device. disable core_ctl
             echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
@@ -4986,9 +5016,18 @@ case "$target" in
     echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
     configure_memory_parameters
     target_type=`getprop ro.hardware.type`
+	if [ -f /sys/devices/soc0/soc_id ]; then
+                soc_id=`cat /sys/devices/soc0/soc_id`
+            else
+                soc_id=`cat /sys/devices/system/soc/soc0/id`
+            fi
 	if [ "$target_type" == "automotive" ]; then
            # update frequencies
-           configure_automotive_sku_parameters
+	   if [ "$soc_id" == "340" ] | [ "$soc_id" == "405" ]; then #sa8195
+		configure_automotive_sku_parameters_sa8195
+	   else #sa8155
+		configure_automotive_sku_parameters
+	   fi
 	fi
 
     ;;

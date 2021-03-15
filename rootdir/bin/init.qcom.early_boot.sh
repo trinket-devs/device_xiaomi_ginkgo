@@ -262,10 +262,11 @@ case "$target" in
                     log -t BOOT -p i "SDM429 early_boot prop set for: HwID '$soc_hwid'"
                 fi
                 ;;
-            303|307|308|309|320)
+            303|307|308|309|320|386|436)
                 # Vulkan is not supported for 8917 variants
                 setprop vendor.opengles.version 196608
                 setprop persist.graphics.vulkan.disable true
+                setprop vendor.gralloc.disable_ahardware_buffer 1
                 ;;
             *)
                 setprop vendor.opengles.version 196608
@@ -335,17 +336,38 @@ case "$target" in
                     setprop vendor.media.target.version 3
                 fi
                 ;;
+            476)
+                # Fraser soc_id 476
+                setprop vendor.display.enable_qsync_idle 1
+                ;;
         esac
         ;;
     "bengal")
         case "$soc_hwid" in
-            441)
+            441|473)
+                # 441 is for scuba and 473 for scuba iot qcm
+                setprop vendor.fastrpc.disable.cdsprpcd.daemon 1
+                setprop vendor.media.target.version 2
+                setprop vendor.gralloc.disable_ubwc 1
+                setprop vendor.display.enhance_idle_time 1
+                setprop vendor.netflix.bsp_rev ""
+                # 196609 is decimal for 0x30001 to report version 3.1
+                setprop vendor.opengles.version 196609
+                sku_ver=`cat /sys/devices/platform/soc/5a00000.qcom,vidc1/sku_version` 2> /dev/null
+                if [ $sku_ver -eq 1 ]; then
+                   setprop vendor.media.target.version 3
+                fi
+                ;;
+            471|474)
+                # 471 is for scuba APQ and 474 for scuba iot qcs
                 setprop vendor.fastrpc.disable.cdsprpcd.daemon 1
                 setprop vendor.gralloc.disable_ubwc 1
+                setprop vendor.display.enhance_idle_time 1
+                setprop vendor.netflix.bsp_rev ""
                 ;;
-            471)
-                #scuba APQ
-                setprop vendor.gralloc.disable_ubwc 1
+            *)
+                # default case is for bengal
+                setprop vendor.netflix.bsp_rev "Q6115-31409-1"
                 ;;
         esac
         ;;
@@ -391,22 +413,6 @@ case "$target" in
                 if [ $soc_hwid -eq 385 ]; then
                     setprop vendor.media.target.version 1
                 fi
-                ;;
-        esac
-        ;;
-    "lahaina")
-        case "$soc_hwid" in
-            450)
-                setprop vendor.media.target_variant "_shima_v3"
-                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target_variant "_shima_v1"
-                elif [ $sku_ver -eq 2 ]; then
-                    setprop vendor.media.target_variant "_shima_v2"
-                fi
-                ;;
-            *)
-                setprop vendor.media.target_variant "_lahaina"
                 ;;
         esac
         ;;
@@ -499,7 +505,7 @@ else
     set_perms /sys/devices/virtual/hdcp/msm_hdcp/min_level_change system.graphics 0660
 fi
 
-# fix the persist sensors context
+# Fix the persist sensors context
 chcon -R u:object_r:vendor_persist_sensors_file:s0 /mnt/vendor/persist/sensors
 
 # allow system_graphics group to access pmic secure_mode node
