@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2018 The Xiaomi-SDM660 Project
+<!-- Copyright (C) 2021 The Trinket-Devs Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,14 +20,14 @@
         android:key="audio"
         android:title="@string/audio_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
             android:defaultValue="false"
             android:key="dirac_enabled"
             android:summary="@string/dirac_summary"
             android:title="@string/dirac_title"
             android:icon="@drawable/ic_dirac" />
 
-        <org.lineageos.settings.device.preferences.SecureSettingListPreference
+        <com.xiaomi.parts.preferences.SecureSettingListPreference
             android:defaultValue="0"
             android:dependency="dirac_enabled"
             android:entries="@array/dirac_headset_pref_entries"
@@ -37,7 +37,7 @@
             android:title="@string/dirac_headset_title"
             android:icon="@drawable/ic_headphones" />
 
-        <org.lineageos.settings.device.preferences.SecureSettingListPreference
+        <com.xiaomi.parts.preferences.SecureSettingListPreference
             android:defaultValue="0,0,0,0,0,0,0"
             android:dependency="dirac_enabled"
             android:entries="@array/dirac_preset_pref_entries"
@@ -87,8 +87,8 @@
             android:icon="@drawable/ic_speaker_cleaner_icon" >
             <intent 
                 android:action="android.intent.action.MAIN" 
-                android:targetClass="org.lineageos.settings.device.speaker.ClearSpeakerActivity"
-                android:targetPackage="org.lineageos.settings.device.speaker" />
+                android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
+                android:targetPackage="com.xiaomi.parts.speaker" />
         </Preference>
     </PreferenceCategory>
 
@@ -96,7 +96,7 @@
         android:key="usb_fastcharge"
         android:title="@string/usb_fastcharge_title" >
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
             android:key="fastcharge"
             android:defaultValue="true"
             android:title="@string/fastcharge_title"
@@ -108,7 +108,7 @@
         android:key="vibration"
         android:title="@string/vibration_title">
 
-        <org.lineageos.settings.device.preferences.VibrationSeekBarPreference
+        <com.xiaomi.parts.preferences.VibrationSeekBarPreference
             android:defaultValue="80"
             android:key="vibration_strength"
             android:max="100"

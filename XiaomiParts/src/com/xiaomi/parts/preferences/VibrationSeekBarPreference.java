@@ -1,4 +1,4 @@
-package org.lineageos.settings.device.preferences;
+package com.xiaomi.parts.preferences;
 
 import android.content.Context;
 import android.os.VibrationEffect;

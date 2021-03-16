@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The Xiaomi-SDM660 Project
+ * Copyright (C) 2021 The Trinket-Devs Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.lineageos.settings.device.kcal;
+package com.xiaomi.parts.kcal;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -23,7 +23,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import org.lineageos.settings.device.R;
+import com.xiaomi.parts.R;
 
 public class KCalSettingsActivity extends Activity implements Utils {
 

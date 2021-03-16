@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.speaker;
+package com.xiaomi.parts.speaker;
 
 import android.app.Activity;
 import android.app.Fragment;

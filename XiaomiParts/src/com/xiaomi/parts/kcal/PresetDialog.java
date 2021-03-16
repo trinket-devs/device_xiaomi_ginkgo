@@ -1,4 +1,4 @@
-package org.lineageos.settings.device.kcal;
+package com.xiaomi.parts.kcal;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -7,7 +7,7 @@ import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import org.lineageos.settings.device.R;
+import com.xiaomi.parts.R;
 
 public class PresetDialog extends DialogFragment {
     private CharSequence[] mEntries;

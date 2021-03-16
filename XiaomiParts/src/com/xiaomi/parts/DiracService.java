@@ -1,4 +1,4 @@
-package org.lineageos.settings.device;
+package com.xiaomi.parts;
 
 import android.app.Service;
 import android.content.Intent;

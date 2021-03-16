@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.lineageos.settings.device.preferences;
+package com.xiaomi.parts.preferences;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -34,7 +34,7 @@ import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.lineageos.settings.device.R;
+import com.xiaomi.parts.R;
 
 public class CustomSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
     private static final String APP_NS = "http://schemas.android.com/apk/res-auto";

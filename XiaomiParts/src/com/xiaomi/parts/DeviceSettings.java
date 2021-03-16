@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2019 The Xiaomi-SDM660 Project
+ * Copyright (C) 2021 The Trinket-Devs Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.lineageos.settings.device;
+package com.xiaomi.parts;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -23,12 +23,12 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
-import org.lineageos.settings.device.kcal.KCalSettingsActivity;
-import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
-import org.lineageos.settings.device.preferences.SecureSettingListPreference;
-import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
-import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
-import org.lineageos.settings.device.speaker.ClearSpeakerActivity;
+import com.xiaomi.parts.kcal.KCalSettingsActivity;
+import com.xiaomi.parts.preferences.CustomSeekBarPreference;
+import com.xiaomi.parts.preferences.SecureSettingListPreference;
+import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
+import com.xiaomi.parts.preferences.VibrationSeekBarPreference;
+import com.xiaomi.parts.speaker.ClearSpeakerActivity;
 
 import java.lang.Math.*;
 

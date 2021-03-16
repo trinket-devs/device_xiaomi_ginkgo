@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2018 The Xiaomi-SDM660 Project
+ * Copyright (C) 2021 The Trinket-Devs Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License,Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -14,17 +14,17 @@
  * limitations under the License
  */
 
-package org.lineageos.settings.device.kcal;
+package com.xiaomi.parts.kcal;
 
 import android.os.Bundle;
 import android.provider.Settings;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 
-import org.lineageos.settings.device.FileUtils;
-import org.lineageos.settings.device.R;
-import org.lineageos.settings.device.preferences.SecureSettingCustomSeekBarPreference;
-import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
+import com.xiaomi.parts.FileUtils;
+import com.xiaomi.parts.R;
+import com.xiaomi.parts.preferences.SecureSettingCustomSeekBarPreference;
+import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
 
 public class KCalSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener, Utils {

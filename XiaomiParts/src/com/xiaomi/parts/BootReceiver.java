@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2019 The Xiaomi-SDM660 Project
+ * Copyright (C) 2021 The Trinket-Devs Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License
  */
 
-package org.lineageos.settings.device;
+package com.xiaomi.parts;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
 
-import org.lineageos.settings.device.kcal.Utils;
+import com.xiaomi.parts.kcal.Utils;
 
 import java.lang.Math.*;
 
