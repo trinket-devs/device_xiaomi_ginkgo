@@ -2476,7 +2476,7 @@ vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-camera.conf
 vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-normal.conf|2baa94be4e700c4641772c9b6a535cf17cfb178a
+vendor/etc/thermal-engine-normal.conf|9edbe3241da1d26e9b0905ae6c58c28a529737cc
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalfeature.so
 vendor/lib64/libthermalclient.so
