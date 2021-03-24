@@ -71,7 +71,7 @@ on property:ro.product.device=willow
 
 on property:persist.sys.device_provisioned=1
     # Use foreground cpuset for dex2oat
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,6,7
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,5,6,7
     setprop dalvik.vm.dex2oat-threads 6
 
 on property:sys.boot_completed=1
