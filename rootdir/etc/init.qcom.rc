@@ -625,7 +625,6 @@ on property:vendor.opengles.version=*
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
 
-#fix misound not work
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
