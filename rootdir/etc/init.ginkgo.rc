@@ -104,6 +104,7 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_upmigrate 85
     write /proc/sys/kernel/sched_downmigrate 75
     write /proc/sys/kernel/sched_child_runs_first 1
+    write /proc/sys/kernel/sched_conservative_pl 1
 
     # Setup EAS tunables
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 1000
