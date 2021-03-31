@@ -25,6 +25,9 @@ final class DiracUtils {
     }
 
     void onBootCompleted() {
+        setEnabled(mDiracSound.getMusic() == 1);
+        mDiracSound.setHeadsetType(mDiracSound.getHeadsetType());
+        setLevel(getLevel());
     }
 
     void setEnabled(boolean enable) {
@@ -34,6 +37,16 @@ final class DiracUtils {
 
     boolean isDiracEnabled() {
         return mDiracSound.getMusic() == 1;
+    }
+
+    private String getLevel() {
+        StringBuilder selected = new StringBuilder();
+        for (int band = 0; band <= 6; band++) {
+            int temp = (int) mDiracSound.getLevel(band);
+            selected.append(temp);
+            if (band != 6) selected.append(",");
+        }
+        return selected.toString();
     }
 
     void setLevel(String preset) {

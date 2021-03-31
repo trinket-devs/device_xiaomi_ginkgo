@@ -2,4 +2,6 @@ allow hal_audio_default mnt_vendor_file:dir search;
 allow hal_audio_default property_socket:sock_file write;
 allow hal_audio_default audio_socket:sock_file rw_file_perms;
 
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, vendor_audio_prop)

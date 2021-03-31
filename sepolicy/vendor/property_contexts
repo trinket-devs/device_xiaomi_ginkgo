@@ -6,6 +6,9 @@ ro.boot.hwc                 u:object_r:vendor_camera_prop:s0
 vendor.camera.              u:object_r:vendor_camera_prop:s0
 vidhance.                   u:object_r:vendor_camera_prop:s0
 
+# Dirac
+persist.audio.dirac.        u:object_r:dirac_prop:s0
+
 # IR
 ro.lirc.dev                 u:object_r:lirc_prop:s0
 

@@ -1,5 +1,8 @@
-# Thermal
-type thermal_engine_prop, property_type;
+# Dirac
+type dirac_prop, property_type;
+
+# Fingerprint
+type vendor_fp_prop, property_type;
 
 # IR
 type lirc_prop, property_type;
@@ -7,5 +10,5 @@ type lirc_prop, property_type;
 # Mlipay
 type ifaa_prop, property_type;
 
-# Fingerprint
-type vendor_fp_prop, property_type;
+# Thermal
+type thermal_engine_prop, property_type;

@@ -112,6 +112,15 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # DRM
 drm.service.enabled=true
 
+# Dirac algo tsx 9/12
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+# Dirac headset effect
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
+
 # FM
 vendor.hw.fm.init=0
 
