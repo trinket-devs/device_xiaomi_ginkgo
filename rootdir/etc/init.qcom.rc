@@ -75,8 +75,6 @@ on init
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
-    chown 0660 /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/red/brightness
 
 on early-boot
     # Allow subsystem (modem etc) debugging
@@ -211,11 +209,6 @@ on boot
     chmod 0660 /dev/block/bootdevice/by-name/ramdump
     chown root system /sys/kernel/dload/dload_mode
     chmod 0660 /sys/kernel/dload/dload_mode
-
-    chown system system /sys/class/backlight/panel0-backlight/brightness
-    chown system system /sys/class/backlight/panel0-backlight/max_brightness
-    chown system system /sys/class/backlight/panel1-backlight/brightness
-    chown system system /sys/class/backlight/panel1-backlight/max_brightness
 
     # Allow access to sensors device attributes
     chown system system /sys/class/sensors/MPU6050-accel/enable
