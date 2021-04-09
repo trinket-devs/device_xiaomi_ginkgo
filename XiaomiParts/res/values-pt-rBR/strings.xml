@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2021 The Trinket-Devs Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="advanced_settings">XiaomiParts</string>
+    <string name="advanced_settings_summary">Configurações adicionais do dispositivo</string>
+
+    <!--  Audio -->
+    <string name="audio_title">Áudio</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Otimizador de som Mi</string>
+    <string name="dirac_summary">Otimizar qualidade de áudio</string>
+    <string name="dirac_headset_title">Escolha o tipo de fones de ouvido</string>
+    <string name="dirac_preset_title">Escolha uma predefinição</string>
+
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_default">Padrão</string>
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general">Geral</string>
+    <string name="dirac_headset_general_inear">Intra-auricular Geral</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_headphone">Mi Headphones</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Padrão</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Clássica</string>
+    <string name="dirac_preset_hiphop">Hip Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Eletrônica</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Intensificador de Graves</string>
+
+    <!-- Display -->
+    <string name="display_title">Tela</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Tela Ambiente</string>
+
+    <!-- KCAL -->
+    <string name="device_kcal_title">Calibração de Cor da Tela</string>
+    <string name="advanced_settings_kcal">Calibração de Cor da Tela</string>
+    <string name="cat_colormanagement">Configurações de Cor</string>
+    <string name="cat_calibration">Calibração de Tela</string>
+
+    <string name="kcal_enabled">Ligado</string>
+    <string name="kcal_disabled">Desligado</string>
+    <string name="set_on_boot">Definir ao Iniciar</string>
+    <string name="color_red">Vermelho</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_minimum">Mínimo</string>
+    <string name="saturation">Saturação</string>
+    <string name="value">Valor</string>
+    <string name="contrast">Contraste</string>
+    <string name="hue">Matiz</string>
+    <string name="grayscale">Tela em tons de cinza</string>
+
+    <!-- Presets For KCAL -->
+    <string name="presets_dialog_title">Selecionar Predefinição</string>
+    <string name="preset_default">Padrão</string>
+    <string name="preset_version_1">Versão 1</string>
+    <string name="preset_version_2">Versão 2</string>
+    <string name="preset_version_3">Versão 3</string>
+    <string name="preset_triluminous">Triluminoso</string>
+    <string name="preset_deep_black_white">Preto e Branco Profundo</string>
+    <string name="preset_deep_natural">Natural Profundo</string>
+    <string name="preset_cool_amoled">Amoled Frio</string>
+    <string name="preset_extreme_amoled">Amoled Extremo</string>
+    <string name="preset_warm_amoled">Amoled Quente</string>
+    <string name="preset_hybrid_mamba">Mamba Híbrida</string>
+
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Redefinir</string>
+
+    <!-- Speaker -->
+    <string name="speaker_category">Alto-falante</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Limpar alto-falante</string>
+    <string name="clear_speaker_summary">Reproduz um áudio de 30 segundos para limpar o alto-falante</string>
+    <string name="clear_speaker_description">Use esse recurso uma ou duas vezes se achar que o alto-falante está levemente bloqueado por poeira. Aumente o volume ao máximo.\n\nSe o alto-falante estiver fortemente obstruído, use o recurso de 2 a 5 vezes enquanto sacode o dispositivo com o alto-falante virado para baixo.</string>
+
+    <!-- USB fastcharge -->
+    <string name="usb_fastcharge_title">Carregamento rápido por USB</string>
+    <string name="fastcharge_title">Ativar Carregamento rápido por USB</string>
+    <string name="fastcharge_summary">Carregue em até 900mA quando conectado a um computador via porta USB 3.0</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Controle de Vibração</string>
+    <string name="vibration_strength_title">Força</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">Escolha um Novo Valor</string>
+    <string name="default_value">Valor Padrão</string>
+    <string name="edit_hint">Valor entre %1$d e %2$d</string>
+</resources>
