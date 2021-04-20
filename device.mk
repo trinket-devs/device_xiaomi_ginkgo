@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Config Store
 PRODUCT_PACKAGES += \
     disable_configstore
