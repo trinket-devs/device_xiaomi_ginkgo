@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI 21.4.7 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 21.4.28 China Beta package, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
