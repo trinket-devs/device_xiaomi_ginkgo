@@ -26,3 +26,7 @@ persist.vendor.sys.fp.      u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.         u:object_r:vendor_fp_prop:s0
 persist.sys.fp.             u:object_r:vendor_fp_prop:s0
 sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
+
+# Wifi Display 
+persist.vendor.setWFDInfo.  u:object_r:vendor_wfd_sys_debug_prop:s0
+
