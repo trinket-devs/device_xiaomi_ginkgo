@@ -74,7 +74,17 @@ on init
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
 on post-fs
+    # set RLIMIT_MEMLOCK to 64MB
+    setrlimit 8 67108864 67108864
     chmod 0755 /sys/kernel/debug/tracing
+
+on late-fs
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-3
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
 
 on early-boot
     # Allow subsystem (modem etc) debugging
@@ -515,6 +525,9 @@ service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     user system
     group system inet net_admin wifi
     capabilities NET_ADMIN
+
+on property:ro.boot.hwversion=*
+    setprop vendor.boot.hwversion ${ro.boot.hwversion}
 
 on property:sys.shutdown.requested=*
     write /sys/kernel/shutdown_wlan/shutdown 1

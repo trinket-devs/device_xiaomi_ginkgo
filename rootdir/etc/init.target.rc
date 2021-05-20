@@ -61,10 +61,6 @@ on fs
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
     chown system system /sys/class/thermal/thermal_message/temp_state
 
-on post-fs
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
-
 on early-boot
     write /dev/ipa 1
 
@@ -82,6 +78,9 @@ on post-fs-data
     chown system system /dev/goodix_fp
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
+
+    #Create folder of NFC
+    mkdir /data/vendor/nfc 0770 nfc nfc
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
@@ -121,6 +120,31 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
+
+# DT2W
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
+
+# nqnfcinfo
+service nqnfcinfo /vendor/bin/nqnfcinfo
+    class late_start
+    group nfc
+    user system
+    oneshot
+    override
+    disabled
+
+# nqnfc_2_0_hal_service
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    class hal
+    user nfc
+    group nfc
+    override
+    disabled
+
+on property:ro.product.device=willow
+    enable nqnfcinfo
+    enable nqnfc_2_0_hal_service
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper

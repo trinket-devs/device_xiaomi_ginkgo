@@ -6,23 +6,7 @@ on early-init
     write /dev/stune/schedtune.boost 50
     write /dev/stune/schedtune.prefer_idle 1
 
-on post-fs
-    # Start services for bootanim
-    start surfaceflinger
-    start bootanim
-    start vendor.hwcomposer-2-4
-    start vendor.configstore-hal
-    start vendor.qti.hardware.display.allocator
-
-on post-fs-data
-    #Create folder of NFC
-    mkdir /data/vendor/nfc 0770 nfc nfc
-
 on boot
-    # DT2W
-    chown system system /sys/touchpanel/double_tap
-    chmod 0660 /sys/touchpanel/double_tap
-
     # Kernelspace battery saver
     chown system system /sys/module/battery_saver/parameters/enabled
     chmod 0660 /sys/module/battery_saver/parameters/enabled
@@ -46,31 +30,6 @@ on boot
 # Vibration
     chown system system /sys/class/leds/vibrator/vtg_level
     chmod 0660 /sys/class/leds/vibrator/vtg_level
-
-    # Thermal Profile
-    write /sys/class/thermal/thermal_message/sconfig 0
-
-service nqnfcinfo /vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-    override
-    disabled
-
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
-    class hal
-    user nfc
-    group nfc
-    override
-    disabled
-
-on property:ro.product.device=willow
-    enable nqnfcinfo
-    enable nqnfc_2_0_hal_service
-
-on property:ro.boot.hwversion=*
-    setprop vendor.boot.hwversion ${ro.boot.hwversion}
 
 on property:persist.sys.device_provisioned=1
     # Use foreground cpuset for dex2oat
