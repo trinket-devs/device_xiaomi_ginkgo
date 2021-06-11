@@ -58,32 +58,63 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
+vendor/lib/liba2dpoffload.so
 vendor/lib/libadiertac.so
+vendor/lib/libadm.so
 vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcirrusspkrprot.so
+vendor/lib/libcomprcapture.so
 vendor/lib/libdrc.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
+vendor/lib/libhfp.so
 vendor/lib/libqtigef.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib64/liba2dpoffload.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
+vendor/lib64/libbatterylistener.so
+vendor/lib64/libcirrusspkrprot.so
+vendor/lib64/libcomprcapture.so
+vendor/lib64/libexthwplugin.so
+vendor/lib64/libhdmiedid.so
 vendor/lib64/libhdmipassthru.so
+vendor/lib64/libhfp.so
 vendor/lib64/libqtigef.so
+vendor/lib64/libsndmonitor.so
+vendor/lib64/libspkrprot.so
 vendor/lib64/libssrec.so
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libqcompostprocbundle.so
+vendor/lib/soundfx/libqcomvisualizer.so
+vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
 
-# Audio - Dirac - from Xiaomi
-vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
-vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
-vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+# Audio HAL
+vendor/lib/hw/audio.primary.trinket.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib64/hw/audio.primary.trinket.so
+vendor/lib64/libaudio_log_utils.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
