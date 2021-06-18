@@ -22,4 +22,7 @@
 
     <!-- Disable bluetooth by default -->
     <bool name="def_bluetooth_on">false</bool>
+
+    <!-- Disable UI touch sounds by default -->
+    <bool name="def_sound_effects_enabled">false</bool>
 </resources>
