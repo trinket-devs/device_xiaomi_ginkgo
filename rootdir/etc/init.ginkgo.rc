@@ -54,13 +54,8 @@ on property:vendor.post_boot.parsed=1
 
     # Setup default schedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 5
+    write /dev/stune/top-app/schedtune.boost 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
-
-    # Configure dynamic stune boost
-    write /sys/module/cpu_boost/parameters/dynamic_stune_boost 15
-    write /sys/module/cpu_boost/parameters/dynamic_stune_boost_ms 1000
-    write /dev/stune/top-app/schedtune.sched_boost 15
 
     # Setup scheduler tunables
     write /proc/sys/kernel/sched_upmigrate 85
