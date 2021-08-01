@@ -6,26 +6,30 @@ ro.boot.hwc                 u:object_r:vendor_camera_prop:s0
 vendor.camera.              u:object_r:vendor_camera_prop:s0
 vidhance.                   u:object_r:vendor_camera_prop:s0
 
+# Fingerprint
+persist.vendor.sys.fp.      u:object_r:vendor_fp_prop:s0
+persist.vendor.fpc.         u:object_r:vendor_fp_prop:s0
+persist.sys.fp.             u:object_r:vendor_fp_prop:s0
+sys.fp.                     u:object_r:vendor_fp_prop:s0
+sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
+
 # IR
 ro.lirc.dev                 u:object_r:lirc_prop:s0
 
 # Miui
-ro.miui.                    u:object_r:exported_default_prop:s0
+ro.build.software.version   u:object_r:exported_default_prop:s0
 ro.cust.test                u:object_r:exported_default_prop:s0
-
-# Thermal
-sys.thermal.                u:object_r:thermal_engine_prop:s0
-persist.sys.thermal.        u:object_r:thermal_engine_prop:s0
+ro.fota.oem                 u:object_r:exported_default_prop:s0
+ro.miui.                    u:object_r:exported_default_prop:s0
+ro.product.mod_device       u:object_r:exported_default_prop:s0
 
 # Mlipay
 persist.sys.ifaa            u:object_r:ifaa_prop:s0
 persist.vendor.sys.pay.     u:object_r:ifaa_prop:s0
 
-# Fingerprint
-persist.vendor.sys.fp.      u:object_r:vendor_fp_prop:s0
-persist.vendor.fpc.         u:object_r:vendor_fp_prop:s0
-persist.sys.fp.             u:object_r:vendor_fp_prop:s0
-sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
+# Thermal
+sys.thermal.                u:object_r:thermal_engine_prop:s0
+persist.sys.thermal.        u:object_r:thermal_engine_prop:s0
 
 # Wifi Display 
 persist.vendor.setWFDInfo.  u:object_r:vendor_wfd_sys_debug_prop:s0
