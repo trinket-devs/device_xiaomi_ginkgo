@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI 21.7.14 China Beta package, unless pinned
+# Device proprietary files - from ginkgo MIUI 21.8.4 China Beta package, unless pinned
 
 # ACDB
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
@@ -2137,6 +2137,7 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 
 # Radio - EMBMS
 -system_ext/app/embms/embms.apk
