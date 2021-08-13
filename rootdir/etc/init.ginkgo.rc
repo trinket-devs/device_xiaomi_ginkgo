@@ -51,6 +51,8 @@ on property:vendor.post_boot.parsed=1
     # Setup cpu boosting
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1305600 4:1401600"
     write /sys/module/cpu_boost/parameters/input_boost_ms 100
+    write /sys/module/cpu_boost/parameters/powerkey_input_boost_freq "0:1804800 4:2016000"
+    write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms 750
 
     # Setup default schedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
