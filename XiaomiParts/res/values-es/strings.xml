@@ -11,8 +11,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="advanced_settings">XiaomiParts</string>
-    <string name="advanced_settings_summary">Configuraciones Adicionales del Dispositivo</string>
+    <string name="advanced_settings">Ajustes Xiaomi</string>
+    <string name="advanced_settings_summary">Ajustes Adicionales del Dispositivo</string>
 
     <!--  Audio -->
     <string name="audio_title">Audio</string>
@@ -71,7 +71,7 @@
     <!-- KCAL -->
     <string name="device_kcal_title">Calibración del Color de Pantalla</string>
     <string name="advanced_settings_kcal">Calibración del Color de Pantalla</string>
-    <string name="cat_colormanagement">Configuraciones de Color</string>
+    <string name="cat_colormanagement">Ajustes de Color</string>
     <string name="cat_calibration">Calibración de Pantalla</string>
 
     <string name="kcal_enabled">Activado</string>
