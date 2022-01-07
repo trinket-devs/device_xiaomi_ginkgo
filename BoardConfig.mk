@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/ginkgo
 
 BUILD_BROKEN_DUP_RULES := true
 
+
+# Architecture
+ALLOW_MISSING_DEPENDENCIES := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -61,7 +64,7 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 420
 TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
@@ -141,6 +144,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_USES_METADATA_PARTITION := true
 
 # Power
+BOARD_POWER_CUSTOM_BOARD_LIB := libpower_ginkgo
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -165,6 +169,11 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# We modify several neverallows, so let the build proceed
+ifneq ($(TARGET_BUILD_VARIANT),user)
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
 
 # Treble
 BOARD_VNDK_VERSION := current

@@ -1,0 +1,20 @@
+[
+    {
+        "repository":   "device_xiaomi_trinket-common",
+        "target_path":  "device/xiaomi/trinket-common"
+    },
+    {
+        "repository":   "vendor_xiaomi_ginkgo",
+        "target_path":  "vendor/xiaomi/ginkgo"
+    },
+    {
+        "repository":   "android_vendor_xiaomi_trinket-common",
+        "target_path":  "vendor/xiaomi/trinket-common"
+    },
+    {
+        "remote":       "github",
+        "repository":   "kubersharma001/android_packages_apps_GcamGOPrebuilt",
+        "target_path":  "packages/apps/GcamGOPrebuilt",
+        "branch":       "arrow-11.0"
+    }
+]
