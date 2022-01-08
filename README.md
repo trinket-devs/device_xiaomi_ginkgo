@@ -1,7 +1,8 @@
 # Configure source
 
-Feel free to commit change, you are welcome <3
-To configure this device source to match with your compile/build rom source, see Configure your device.md for some detail
+Feel free to commit change, you are welcome <3.
+
+To configure this device source to match with your compile/build rom source, see Configure your device.md for some detail.
 
 
 
