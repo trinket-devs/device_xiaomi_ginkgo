@@ -9,6 +9,8 @@ DEVICE_PATH := device/xiaomi/ginkgo
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Use my toolchain, fuk google
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
 
 # Architecture
 ALLOW_MISSING_DEPENDENCIES := true
