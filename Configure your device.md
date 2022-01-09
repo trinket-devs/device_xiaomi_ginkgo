@@ -1,7 +1,7 @@
 # n. Setup ccache (must have if you dont want to wait 8 - 9 hours to compile)
 
     Please search google for install, i just point some config to make it work when compile
-        + Change .cache location
+        + Change .cache location (I use wsl2 on windows, install to D: (hdd) and i have to move cache and ccache dir to C: (ssd) )
 			mv ~/.cache /mnt/c/.ccache
 			ln -s  /mnt/c/.ccache ~/.cache
         + Set ccache to ~/.bashrc
