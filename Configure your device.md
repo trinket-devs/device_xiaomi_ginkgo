@@ -1,3 +1,8 @@
+# n+1. Contact
+	
+	Feel free to contact https://t.me/IamBigN, 
+	I hope i can help you solve your problems a bit
+	
 # n. Setup ccache (must have if you dont want to wait 8 - 9 hours to compile)
 
     Please search google for install, i just point some config to make it work when compile
