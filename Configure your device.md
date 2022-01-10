@@ -11,9 +11,13 @@
 			ln -s  /mnt/c/.ccache ~/.cache
         + Set ccache to ~/.bashrc
 			export USE_CCACHE=1
+			CCACHE_MAXSIZE=50G
 			export CCACHE_DIR=/mnt/c/.ccache
-			export CCACHE_TEMPDIR=/mnt/c/.ccache
-
+			export CCACHE_TEMPDIR=$CCACHE_DIR/tmp
+			export CCACHE_LIMIT_MULTIPLE=0.97
+			export CCACHE_LOGFILE=~/ccache-log.txt
+			export CCACHE_SLOPPINESS=file_macro,time_macros,include_file_mtime,include_file_ctime,file_stat_matches	
+			
         + Some information if you want to know more 
         https://github.com/LeCmnGend/scripts/blob/master/ccache-config.sh
    
